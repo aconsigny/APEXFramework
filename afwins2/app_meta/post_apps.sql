@@ -167,6 +167,17 @@ update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_23_DETL_RE
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_12_STRUC_APLIC_DESTN' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_23_RECHR' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_03_JOURN_STRUC_APLIC' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_entit');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_01_RESLT_DESTN' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_17_TELCP_AXIAT' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_25_VALR_CHAMP' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
@@ -268,6 +279,17 @@ update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_04_NAVGT_H
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_13_EMPLA_DOSR_VIRTL' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_13_PAGE_PREFR_NAVGT' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_12_GROUP_STAT' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_entit');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_11_VERSN' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_13_MENU' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
 update sie_11_entit set ref_atrib_entit_supr = null where code = 'SIE_25_PARMT_TYPE_PUBLC' and ref_versn = sie$migrt$pkg.obten_var_versn(521, 'Select');
@@ -361,17 +383,6 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_COURT' and ref_entit = sie$migrt$pkg.obten_var_entit(6658, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_VARCH' and ref_entit = sie$migrt$pkg.obten_var_entit(6701, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC_PRESN' and ref_entit = sie$migrt$pkg.obten_var_entit(6658, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6707, 'Select');
@@ -410,6 +421,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'TAIL_TABL_EXT
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6569, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6569, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DNR_REF_PRODT' and ref_entit = sie$migrt$pkg.obten_var_entit(6590, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DOMN' and ref_entit = sie$migrt$pkg.obten_var_entit(6729, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6726, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6680, 'Select');
@@ -511,6 +533,17 @@ update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(65
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DOMN' and ref_entit = sie$migrt$pkg.obten_var_entit(6648, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6692, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6614, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6614, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_MESG_RANGE_MODF' and ref_entit = sie$migrt$pkg.obten_var_entit(6666, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6572, 'Update') where code = 'REF_MESG_RANGE_INSER_SPECF' and ref_entit = sie$migrt$pkg.obten_var_entit(6650, 'Select');
@@ -612,17 +645,6 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'LARGR_REGN_AR
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DV_TYPE_MODL' and ref_entit = sie$migrt$pkg.obten_var_entit(6674, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_COURN' and ref_entit = sie$migrt$pkg.obten_var_entit(6720, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'LIBL' and ref_entit = sie$migrt$pkg.obten_var_entit(6630, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'URL_SERVL' and ref_entit = sie$migrt$pkg.obten_var_entit(6723, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_FORMT' and ref_entit = sie$migrt$pkg.obten_var_entit(6705, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6635, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CODE' and ref_entit = sie$migrt$pkg.obten_var_entit(6642, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_VERSN' and ref_entit = sie$migrt$pkg.obten_var_entit(6666, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6670, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6725, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_DATE9' and ref_entit = sie$migrt$pkg.obten_var_entit(6732, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SESS_ID' and ref_entit = sie$migrt$pkg.obten_var_entit(6656, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6712, 'Update') where code = 'REF_GROUP_STAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6636, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6650, 'Update') where code = 'REF_PAGE' and ref_entit = sie$migrt$pkg.obten_var_entit(6684, 'Select');
 null;
 end if;
 exception
@@ -634,6 +656,17 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'URL_SERVL' and ref_entit = sie$migrt$pkg.obten_var_entit(6723, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_FORMT' and ref_entit = sie$migrt$pkg.obten_var_entit(6705, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6635, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CODE' and ref_entit = sie$migrt$pkg.obten_var_entit(6642, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_VERSN' and ref_entit = sie$migrt$pkg.obten_var_entit(6666, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6670, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6725, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_DATE9' and ref_entit = sie$migrt$pkg.obten_var_entit(6732, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SESS_ID' and ref_entit = sie$migrt$pkg.obten_var_entit(6656, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6712, 'Update') where code = 'REF_GROUP_STAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6636, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6650, 'Update') where code = 'REF_PAGE' and ref_entit = sie$migrt$pkg.obten_var_entit(6684, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'COLN_DATE_FIN' and ref_entit = sie$migrt$pkg.obten_var_entit(6671, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'FORML_VALR_SSPI' and ref_entit = sie$migrt$pkg.obten_var_entit(6684, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6669, 'Select');
@@ -724,6 +757,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' a
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6681, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'TYPE_ICONE_NOEUD' and ref_entit = sie$migrt$pkg.obten_var_entit(6689, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'APP_ID' and ref_entit = sie$migrt$pkg.obten_var_entit(6630, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6639, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_FIN_EFECT' and ref_entit = sie$migrt$pkg.obten_var_entit(6658, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6670, 'Select');
@@ -825,6 +869,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' 
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6617, 'Update') where code = 'REF_LANG' and ref_entit = sie$migrt$pkg.obten_var_entit(6690, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6640, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6662, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6708, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'ORDRE_PRESN' and ref_entit = sie$migrt$pkg.obten_var_entit(6663, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6701, 'Select');
@@ -885,17 +940,6 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CODE' and ref
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6681, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_FIN_EFECT' and ref_entit = sie$migrt$pkg.obten_var_entit(6679, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6695, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6654, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6685, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6644, 'Select');
@@ -937,6 +981,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'ICONE' and re
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DETL_DOCMN' and ref_entit = sie$migrt$pkg.obten_var_entit(6676, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM_TABLE' and ref_entit = sie$migrt$pkg.obten_var_entit(6689, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DNR_REF_PRODT' and ref_entit = sie$migrt$pkg.obten_var_entit(6658, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6718, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_PRODT' and ref_entit = sie$migrt$pkg.obten_var_entit(6705, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6726, 'Select');
@@ -1038,6 +1093,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_NUMBR9' 
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6696, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'HASH_DERNR_URL' and ref_entit = sie$migrt$pkg.obten_var_entit(6630, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6693, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6713, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6658, 'Update') where code = 'REF_DV_CONDT_SAUVG' and ref_entit = sie$migrt$pkg.obten_var_entit(6661, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6725, 'Select');
@@ -1139,14 +1205,6 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_MESG_AUDI
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'FONCT_OBTEN_BASE_URL' and ref_entit = sie$migrt$pkg.obten_var_entit(6666, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_APLIC_COMNT_BOGUE' and ref_entit = sie$migrt$pkg.obten_var_entit(6666, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_APLIC_ACUEI' and ref_entit = sie$migrt$pkg.obten_var_entit(6666, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6742, 'Update') where code = 'REF_APLIC_AUTHE' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_APLIC_AUTHE' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NUMR_APLIC_APEX' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CODE' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
 null;
 end if;
 exception
@@ -1158,6 +1216,14 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
+update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6742, 'Update') where code = 'REF_APLIC_AUTHE' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_APLIC_AUTHE' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NUMR_APLIC_APEX' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CODE' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6666, 'Update') where code = 'REF_PRODT' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6650, 'Update') where code = 'REF_PAGE_CONXN' and ref_entit = sie$migrt$pkg.obten_var_entit(6742, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6666, 'Update') where code = 'REF_PRODT' and ref_entit = sie$migrt$pkg.obten_var_entit(6689, 'Select');
@@ -1251,6 +1317,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' a
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'TYPE_ALIMN' and ref_entit = sie$migrt$pkg.obten_var_entit(6655, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_VARCH8' and ref_entit = sie$migrt$pkg.obten_var_entit(6732, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'EXT' and ref_entit = sie$migrt$pkg.obten_var_entit(6685, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6632, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'ROLE' and ref_entit = sie$migrt$pkg.obten_var_entit(6717, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6731, 'Select');
@@ -1352,6 +1429,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DOMN' and
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6622, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6622, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6622, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6622, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CODE' and ref_entit = sie$migrt$pkg.obten_var_entit(6622, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_VERSN_PUBLC' and ref_entit = sie$migrt$pkg.obten_var_entit(6622, 'Select');
@@ -1409,17 +1497,6 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'AUTHE_METHD_S
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6642, 'Update') where code = 'REF_STRUC_APLIC' and ref_entit = sie$migrt$pkg.obten_var_entit(6684, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_RAFRC' and ref_entit = sie$migrt$pkg.obten_var_entit(6734, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_STRUC_APLIC' and ref_entit = sie$migrt$pkg.obten_var_entit(6592, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC_PRESN' and ref_entit = sie$migrt$pkg.obten_var_entit(6592, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6642, 'Update') where code = 'REF_STRUC_APLIC' and ref_entit = sie$migrt$pkg.obten_var_entit(6675, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_SUIVI' and ref_entit = sie$migrt$pkg.obten_var_entit(6592, 'Select');
@@ -1464,6 +1541,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM_STRUC_ACC
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6572, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6645, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_ORGAN' and ref_entit = sie$migrt$pkg.obten_var_entit(6658, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6677, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6696, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_VERL' and ref_entit = sie$migrt$pkg.obten_var_entit(6649, 'Select');
@@ -1565,6 +1653,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DNR_REF_SEQNC
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6652, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_TYPE_STRUC' and ref_entit = sie$migrt$pkg.obten_var_entit(6626, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_PRISE_CHARG_SIE01' and ref_entit = sie$migrt$pkg.obten_var_entit(6650, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'TIMST' and ref_entit = sie$migrt$pkg.obten_var_entit(6630, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_IMEDT' and ref_entit = sie$migrt$pkg.obten_var_entit(6722, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CODE_KEYDW' and ref_entit = sie$migrt$pkg.obten_var_entit(6633, 'Select');
@@ -1666,11 +1765,6 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DNR_REF_PRODT
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6676, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6658, 'Update') where code = 'REF_DV_TYPE_REGN_PILTB' and ref_entit = sie$migrt$pkg.obten_var_entit(6653, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC_CONTX' and ref_entit = sie$migrt$pkg.obten_var_entit(6638, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6651, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6717, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6701, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_SYSTM' and ref_entit = sie$migrt$pkg.obten_var_entit(6647, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6686, 'Select');
 null;
 end if;
 exception
@@ -1682,6 +1776,11 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6651, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6717, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6701, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_SYSTM' and ref_entit = sie$migrt$pkg.obten_var_entit(6647, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6686, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6613, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6656, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'TYPE_LIAIS' and ref_entit = sie$migrt$pkg.obten_var_entit(6615, 'Select');
@@ -1778,6 +1877,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' 
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_SEQNC_STRUC_APLIC' and ref_entit = sie$migrt$pkg.obten_var_entit(6606, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM_STRUC_ACCES' and ref_entit = sie$migrt$pkg.obten_var_entit(6621, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6574, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6607, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CSS_ICONE_BOOTS' and ref_entit = sie$migrt$pkg.obten_var_entit(6663, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DOMN' and ref_entit = sie$migrt$pkg.obten_var_entit(6594, 'Select');
@@ -1879,6 +1989,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_PARTG' 
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6599, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6611, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DESCR' and ref_entit = sie$migrt$pkg.obten_var_entit(6596, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REPNS_SERVR' and ref_entit = sie$migrt$pkg.obten_var_entit(6600, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'COULR_TEXTE' and ref_entit = sie$migrt$pkg.obten_var_entit(6596, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'STRUC_APLIC' and ref_entit = sie$migrt$pkg.obten_var_entit(6609, 'Select');
@@ -1933,17 +2054,6 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REPRT_WALT' a
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DOMN' and ref_entit = sie$migrt$pkg.obten_var_entit(6609, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_entit = sie$migrt$pkg.obten_var_entit(6594, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6594, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_FIN_PREVU' and ref_entit = sie$migrt$pkg.obten_var_entit(6576, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_SYSTM' and ref_entit = sie$migrt$pkg.obten_var_entit(6593, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6593, 'Select');
@@ -1991,6 +2101,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' a
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_SESN' and ref_entit = sie$migrt$pkg.obten_var_entit(6734, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6711, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_DATE8' and ref_entit = sie$migrt$pkg.obten_var_entit(6732, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6664, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6696, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6634, 'Select');
@@ -2092,6 +2213,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOMBR_RANG_EX
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DEBUT_EFECT' and ref_entit = sie$migrt$pkg.obten_var_entit(6626, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'AGEND_COLN_VALR' and ref_entit = sie$migrt$pkg.obten_var_entit(6671, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6719, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_CTRL' and ref_entit = sie$migrt$pkg.obten_var_entit(6633, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6712, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CONCT_PROPR_ENTET_GAUCH' and ref_entit = sie$migrt$pkg.obten_var_entit(6671, 'Select');
@@ -2193,8 +2325,6 @@ update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(66
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6663, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'INDIC_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6669, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6626, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6626, 'Select');
-update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6658, 'Update') where code = 'REF_DV_VALR_INSTA' and ref_entit = sie$migrt$pkg.obten_var_entit(6661, 'Select');
 null;
 end if;
 exception
@@ -2206,6 +2336,8 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
+update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6626, 'Select');
+update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6658, 'Update') where code = 'REF_DV_VALR_INSTA' and ref_entit = sie$migrt$pkg.obten_var_entit(6661, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_UTILS' and ref_entit = sie$migrt$pkg.obten_var_entit(6629, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6682, 'Update') where code = 'REF_ENTIT' and ref_entit = sie$migrt$pkg.obten_var_entit(6733, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6729, 'Select');
@@ -2305,6 +2437,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and re
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6700, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6706, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DV_TYPE_ATRIB1' and ref_entit = sie$migrt$pkg.obten_var_entit(6644, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'LIBL' and ref_entit = sie$migrt$pkg.obten_var_entit(6652, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6705, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6674, 'Select');
@@ -2406,6 +2549,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' 
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'VALR_DEFT_ATRIB1' and ref_entit = sie$migrt$pkg.obten_var_entit(6644, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'OBTEN_JSON_ARBRE_NOMBR_NIV' and ref_entit = sie$migrt$pkg.obten_var_entit(6689, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6676, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'APEX_REPTS_ID' and ref_entit = sie$migrt$pkg.obten_var_entit(6634, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6720, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DESCR' and ref_entit = sie$migrt$pkg.obten_var_entit(6704, 'Select');
@@ -2457,17 +2611,6 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM_ORGAN' an
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM_COLN' and ref_entit = sie$migrt$pkg.obten_var_entit(6573, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6573, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'COLN_DATE_FIN_JOURN_COMPL' and ref_entit = sie$migrt$pkg.obten_var_entit(6671, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM_FONCT' and ref_entit = sie$migrt$pkg.obten_var_entit(6573, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = sie$migrt$pkg.obten_var_entit(6573, 'Update') where code = 'REF_ATRIB_STRUC_APLIC' and ref_entit = sie$migrt$pkg.obten_var_entit(6573, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_UTILS' and ref_entit = sie$migrt$pkg.obten_var_entit(6608, 'Select');
@@ -2518,6 +2661,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_CREAT' a
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6606, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_UTILS' and ref_entit = sie$migrt$pkg.obten_var_entit(6574, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SENS' and ref_entit = sie$migrt$pkg.obten_var_entit(6611, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6591, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'CODE' and ref_entit = sie$migrt$pkg.obten_var_entit(6603, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6591, 'Select');
@@ -2619,6 +2773,17 @@ update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NOM' and ref_
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_COURL_ENTRA' and ref_entit = sie$migrt$pkg.obten_var_entit(6761, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'SEQNC' and ref_entit = sie$migrt$pkg.obten_var_entit(6761, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'UTILS_CREAT' and ref_entit = sie$migrt$pkg.obten_var_entit(6761, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_11_atrib_entit');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_11_atrib_entit');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'NUMR_PIECE_CORPS_MESG' and ref_entit = sie$migrt$pkg.obten_var_entit(6761, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'DATE_MODFC' and ref_entit = sie$migrt$pkg.obten_var_entit(6761, 'Select');
 update sie_11_atrib_entit set ref_entit_refrn = null where code = 'REF_DOMN' and ref_entit = sie$migrt$pkg.obten_var_entit(6641, 'Select');
@@ -2769,6 +2934,7 @@ update sie_13_mime_type set ref_type_fichr = null where ext = '.sgm' and mime_ty
 update sie_13_mime_type set ref_type_fichr = null where ext = '.sgm' and mime_type = 'text/x-sgml';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.sgml' and mime_type = 'text/sgml';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.sgml' and mime_type = 'text/x-sgml';
+update sie_13_mime_type set ref_type_fichr = null where ext = '.sh' and mime_type = 'application/x-bsh';
 null;
 end if;
 exception
@@ -2780,7 +2946,6 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('sie_13_mime_type');
-update sie_13_mime_type set ref_type_fichr = null where ext = '.sh' and mime_type = 'application/x-bsh';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.sh' and mime_type = 'application/x-sh';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.sh' and mime_type = 'application/x-shar';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.sh' and mime_type = 'text/x-script.sh';
@@ -2882,6 +3047,17 @@ update sie_13_mime_type set ref_type_fichr = null where ext = '.vrml' and mime_t
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xls' and mime_type = 'application/x-msexcel';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xlt' and mime_type = 'application/excel';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xlt' and mime_type = 'application/x-excel';
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_13_mime_type');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_13_mime_type');
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xlv' and mime_type = 'application/excel';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xlv' and mime_type = 'application/x-excel';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xlw' and mime_type = 'application/excel';
@@ -2983,6 +3159,17 @@ update sie_13_mime_type set ref_type_fichr = null where ext = '.com' and mime_ty
 update sie_13_mime_type set ref_type_fichr = null where ext = '.com' and mime_type = 'text/plain';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.conf' and mime_type = 'text/plain';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.cpio' and mime_type = 'application/x-cpio';
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_13_mime_type');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_13_mime_type');
 update sie_13_mime_type set ref_type_fichr = null where ext = '.cpp' and mime_type = 'text/x-c';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.cpt' and mime_type = 'application/mac-compactpro';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.cpt' and mime_type = 'application/x-compactpro';
@@ -3031,17 +3218,6 @@ update sie_13_mime_type set ref_type_fichr = null where ext = '.etx' and mime_ty
 update sie_13_mime_type set ref_type_fichr = null where ext = '.evy' and mime_type = 'application/envoy';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.evy' and mime_type = 'application/x-envoy';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(41, 'Update') where ext = '.exe' and mime_type = 'application/octet-stream';
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_13_mime_type');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_13_mime_type');
 update sie_13_mime_type set ref_type_fichr = null where ext = '.f' and mime_type = 'text/plain';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.f' and mime_type = 'text/x-fortran';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.f77' and mime_type = 'text/x-fortran';
@@ -3095,6 +3271,17 @@ update sie_13_mime_type set ref_type_fichr = null where ext = '.hqx' and mime_ty
 update sie_13_mime_type set ref_type_fichr = null where ext = '.hqx' and mime_type = 'application/x-binhex40';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.hqx' and mime_type = 'application/x-mac-binhex40';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.hta' and mime_type = 'application/hta';
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_13_mime_type');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_13_mime_type');
 update sie_13_mime_type set ref_type_fichr = null where ext = '.htc' and mime_type = 'text/x-component';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.htm' and mime_type = 'text/html';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.html' and mime_type = 'text/html';
@@ -3196,6 +3383,17 @@ update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(
 update sie_13_mime_type set ref_type_fichr = null where ext = '.midi' and mime_type = 'music/crescendo';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.midi' and mime_type = 'x-music/x-midi';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.mif' and mime_type = 'application/x-frame';
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_13_mime_type');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_13_mime_type');
 update sie_13_mime_type set ref_type_fichr = null where ext = '.mif' and mime_type = 'application/x-mif';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.mime' and mime_type = 'message/rfc822';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.mime' and mime_type = 'www/mime';
@@ -3293,6 +3491,10 @@ update sie_13_mime_type set ref_type_fichr = null where ext = '.pot' and mime_ty
 update sie_13_mime_type set ref_type_fichr = null where ext = '.pov' and mime_type = 'model/x-pov';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.ppa' and mime_type = 'application/vnd.ms-powerpoint';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(1, 'Update') where ext = '.ppm' and mime_type = 'image/x-portable-pixmap';
+update sie_13_mime_type set ref_type_fichr = null where ext = '.pps' and mime_type = 'application/mspowerpoint';
+update sie_13_mime_type set ref_type_fichr = null where ext = '.pps' and mime_type = 'application/vnd.ms-powerpoint';
+update sie_13_mime_type set ref_type_fichr = null where ext = '.ppt' and mime_type = 'application/mspowerpoint';
+update sie_13_mime_type set ref_type_fichr = null where ext = '.ppt' and mime_type = 'application/powerpoint';
 null;
 end if;
 exception
@@ -3304,10 +3506,6 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('sie_13_mime_type');
-update sie_13_mime_type set ref_type_fichr = null where ext = '.pps' and mime_type = 'application/mspowerpoint';
-update sie_13_mime_type set ref_type_fichr = null where ext = '.pps' and mime_type = 'application/vnd.ms-powerpoint';
-update sie_13_mime_type set ref_type_fichr = null where ext = '.ppt' and mime_type = 'application/mspowerpoint';
-update sie_13_mime_type set ref_type_fichr = null where ext = '.ppt' and mime_type = 'application/powerpoint';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.ppt' and mime_type = 'application/vnd.ms-powerpoint';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.ppt' and mime_type = 'application/x-mspowerpoint';
 update sie_13_mime_type set ref_type_fichr = null where ext = '.ppz' and mime_type = 'application/mspowerpoint';
@@ -3409,6 +3607,17 @@ update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xla' and mime_type = 'application/excel';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xla' and mime_type = 'application/x-excel';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xla' and mime_type = 'application/x-msexcel';
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_13_mime_type');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_13_mime_type');
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xlb' and mime_type = 'application/excel';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xlb' and mime_type = 'application/vnd.ms-excel';
 update sie_13_mime_type set ref_type_fichr = sie$migrt$pkg.obten_var_type_fichr(21, 'Update') where ext = '.xlb' and mime_type = 'application/x-excel';
@@ -3784,6 +3993,17 @@ update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, 
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, ref_page_liste = null where code = 'ACUEI_APLIC_SAFS';
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = sie$migrt$pkg.obten_var_page(17281, 'Update'), ref_page_liste = sie$migrt$pkg.obten_var_page(17279, 'Update') where code = 'DOMN_VALR';
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = sie$migrt$pkg.obten_var_page(17283, 'Update'), ref_page_liste = sie$migrt$pkg.obten_var_page(17282, 'Update') where code = 'TYPE_DOMN_VALR';
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_12_struc_aplic');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_12_struc_aplic');
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = sie$migrt$pkg.obten_var_page(17267, 'Update'), ref_page_liste = null where code = 'INSTA_PREFR';
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, ref_page_liste = null where code = 'MOTR_PDF';
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, ref_page_liste = null where code = 'JOURN';
@@ -3885,6 +4105,17 @@ update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, 
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, ref_page_liste = null where code = 'AFW_ROLE_UTILS';
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, ref_page_liste = null where code = 'AFW_SCHEM';
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, ref_page_liste = null where code = 'AFW_DEFN_CAPTR';
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_12_struc_aplic');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_12_struc_aplic');
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, ref_page_liste = null where code = 'TEST_EN_INSCR';
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = sie$migrt$pkg.obten_var_page(18071, 'Update'), ref_page_liste = sie$migrt$pkg.obten_var_page(18070, 'Update') where code = 'AFW_FONCT';
 update sie_12_struc_aplic set ref_mesg_err_suprs = null, ref_page_forml = null, ref_page_liste = null where code = 'AFW_ASURN_QUALT';
@@ -3949,17 +4180,6 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'DATE_MODFC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3674, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_12_atrib_struc_aplic');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_12_atrib_struc_aplic');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_MESG_RANGE_SUPRM_SPECF' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3674, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_MESG_RANGE_MODF_SPECF' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3674, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_MESG_RANGE_INSER_SPECF' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3674, 'Select');
@@ -4048,6 +4268,17 @@ update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln 
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NUMR_MESG' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3682, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOM_ORGAN' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4560, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'POSTN' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4560, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_12_atrib_struc_aplic');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_12_atrib_struc_aplic');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'VALR_DEFT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4560, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'UTILS_CREAT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4560, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'DATE_MODFC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4560, 'Select');
@@ -4149,6 +4380,17 @@ update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln 
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'SEQNC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4551, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'COURL' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4551, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_CHANG_MOT_PASSE_FORMT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4551, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_12_atrib_struc_aplic');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_12_atrib_struc_aplic');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'UTILS_MODFC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4551, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'SEQNC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3082, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'UTILS_CREAT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3082, 'Select');
@@ -4211,17 +4453,6 @@ update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln 
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'MOT_PASSE' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4549, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'DATE_EXPIR' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4549, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_VERL' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4549, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_12_atrib_struc_aplic');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_12_atrib_struc_aplic');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_CHANG_MOT_PASSE' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4549, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_CHANG_MOT_PASSE_FORMT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4549, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'SEQNC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4534, 'Select');
@@ -4261,6 +4492,17 @@ update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln 
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_MESG_TROP_DON_TROUV' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3682, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'PAGE_ACUEI' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3682, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'TAIL_TABL_EXTRA' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3682, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_12_atrib_struc_aplic');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_12_atrib_struc_aplic');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_GROUP_UTILS_ADMIN' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3682, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_PROFL_COURL' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3682, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'IDENT_ENVIR' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(3682, 'Select');
@@ -4362,6 +4604,17 @@ update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln 
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'SEQNC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4936, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_EQUIP' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4936, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_EQUIP_FORMT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4936, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_12_atrib_struc_aplic');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_12_atrib_struc_aplic');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_JALON' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4936, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_JALON_FORMT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4936, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'DEBUT_EFECT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4936, 'Select');
@@ -4463,16 +4716,6 @@ update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln 
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_DV_TYPE_DON_SAIS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_REPNS_OBLIG' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'SEQNC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_INTER' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_REPNS_MULTP' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_MINM_OCURN_INTER' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_MAXM_OCURN_INTER' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_DV_TYPE_CHAMP_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_DOMN_VALR' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_CARCT_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_DV_MASQ_FORMT_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'LARGR_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
-update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_COLN_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
 null;
 end if;
 exception
@@ -4484,6 +4727,16 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('sie_12_atrib_struc_aplic');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_INTER' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_REPNS_MULTP' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_MINM_OCURN_INTER' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_MAXM_OCURN_INTER' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_DV_TYPE_CHAMP_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_DOMN_VALR' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_CARCT_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_DV_MASQ_FORMT_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'LARGR_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
+update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_COLN_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOMBR_RANGE_REPNS' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'INDIC_AUTRE' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_DV_TYPE_CHAMP_AUTRE' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4854, 'Select');
@@ -4575,6 +4828,17 @@ update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln 
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'DESCR' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4998, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'SEQNC' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4997, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'REF_PRODT' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4997, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_12_atrib_struc_aplic');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_12_atrib_struc_aplic');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'CODE' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4997, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'NOM' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4997, 'Select');
 update sie_12_atrib_struc_aplic set ref_atrib_struc_aplic = null where nom_coln = 'DESCR' and ref_struc_aplic = sie$migrt$pkg.obten_var_struc_aplic(4997, 'Select');
@@ -4817,17 +5081,6 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 update sie_13_ocurn_resrc set ref_dosr_virtl = null, ref_mime_type = sie$migrt$pkg.obten_var_mime_type(88, 'Update'), ref_versn = sie$migrt$pkg.obten_var_versn(144, 'Update') where ref_formt_resrc = sie$migrt$pkg.obten_var_formt_resrc(368, 'Select') and ref_resrc = sie$migrt$pkg.obten_var_resrc(3506, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_13_ocurn_resrc');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_13_ocurn_resrc');
 declare
   vnu_count pls_integer;
 begin
@@ -5186,6 +5439,17 @@ update sie_13_item_menu set ref_aplic = null, ref_dv_valr_insta_condt_afich = nu
 update sie_13_item_menu set ref_aplic = null, ref_dv_valr_insta_condt_afich = null, ref_dv_valr_insta_libl = null, ref_dv_valr_reqst = null, ref_dv_valr_sapc = sie_14_domn_valr_pkg.obten_seqnc('VALR_INSTA_SAFP','VALR_FIXE',sie$migrt$pkg.vva_code_prodt), ref_dv_valr_sapi = null, ref_dv_valr_scpc = null, ref_dv_valr_scpi = null, ref_dv_valr_snpi = null, ref_dv_valr_sspc = null, ref_dv_valr_sspi = null, ref_dv_valr_url = null, ref_formt_resrc = null, ref_item_menu = sie$migrt$pkg.obten_var_item_menu(428, 'Update'), ref_ocurn_resrc = null, ref_page = sie$migrt$pkg.obten_var_page(17166, 'Update'), ref_resrc = null, ref_struc_aplic = null where code = 'STRUC_ADMIN' and ref_menu = sie$migrt$pkg.obten_var_menu(141, 'Select');
 update sie_13_item_menu set ref_aplic = null, ref_dv_valr_insta_condt_afich = null, ref_dv_valr_insta_libl = null, ref_dv_valr_reqst = null, ref_dv_valr_sapc = sie_14_domn_valr_pkg.obten_seqnc('VALR_INSTA_SAFP','VALR_FIXE',sie$migrt$pkg.vva_code_prodt), ref_dv_valr_sapi = null, ref_dv_valr_scpc = null, ref_dv_valr_scpi = null, ref_dv_valr_snpi = null, ref_dv_valr_sspc = null, ref_dv_valr_sspi = null, ref_dv_valr_url = null, ref_formt_resrc = null, ref_item_menu = sie$migrt$pkg.obten_var_item_menu(428, 'Update'), ref_ocurn_resrc = null, ref_page = sie$migrt$pkg.obten_var_page(17174, 'Update'), ref_resrc = null, ref_struc_aplic = null where code = 'AUTOR' and ref_menu = sie$migrt$pkg.obten_var_menu(141, 'Select');
 update sie_13_item_menu set ref_aplic = null, ref_dv_valr_insta_condt_afich = null, ref_dv_valr_insta_libl = null, ref_dv_valr_reqst = null, ref_dv_valr_sapc = sie_14_domn_valr_pkg.obten_seqnc('VALR_INSTA_SAFP','VALR_FIXE',sie$migrt$pkg.vva_code_prodt), ref_dv_valr_sapi = null, ref_dv_valr_scpc = null, ref_dv_valr_scpi = null, ref_dv_valr_snpi = null, ref_dv_valr_sspc = null, ref_dv_valr_sspi = null, ref_dv_valr_url = null, ref_formt_resrc = null, ref_item_menu = sie$migrt$pkg.obten_var_item_menu(401, 'Update'), ref_ocurn_resrc = null, ref_page = sie$migrt$pkg.obten_var_page(17172, 'Update'), ref_resrc = null, ref_struc_aplic = null where code = 'TYPE' and ref_menu = sie$migrt$pkg.obten_var_menu(141, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_13_item_menu');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_13_item_menu');
 update sie_13_item_menu set ref_aplic = null, ref_dv_valr_insta_condt_afich = null, ref_dv_valr_insta_libl = null, ref_dv_valr_reqst = null, ref_dv_valr_sapc = sie_14_domn_valr_pkg.obten_seqnc('VALR_INSTA_SAFP','VALR_FIXE',sie$migrt$pkg.vva_code_prodt), ref_dv_valr_sapi = null, ref_dv_valr_scpc = null, ref_dv_valr_scpi = null, ref_dv_valr_snpi = null, ref_dv_valr_sspc = null, ref_dv_valr_sspi = null, ref_dv_valr_url = null, ref_formt_resrc = null, ref_item_menu = sie$migrt$pkg.obten_var_item_menu(420, 'Update'), ref_ocurn_resrc = null, ref_page = sie$migrt$pkg.obten_var_page(17313, 'Update'), ref_resrc = null, ref_struc_aplic = null where code = 'TYPE_PUBLC' and ref_menu = sie$migrt$pkg.obten_var_menu(143, 'Select');
 update sie_13_item_menu set ref_aplic = null, ref_dv_valr_insta_condt_afich = null, ref_dv_valr_insta_libl = null, ref_dv_valr_reqst = null, ref_dv_valr_sapc = sie_14_domn_valr_pkg.obten_seqnc('VALR_INSTA_SAFP','VALR_FIXE',sie$migrt$pkg.vva_code_prodt), ref_dv_valr_sapi = null, ref_dv_valr_scpc = null, ref_dv_valr_scpi = null, ref_dv_valr_snpi = null, ref_dv_valr_sspc = null, ref_dv_valr_sspi = null, ref_dv_valr_url = null, ref_formt_resrc = null, ref_item_menu = sie$migrt$pkg.obten_var_item_menu(420, 'Update'), ref_ocurn_resrc = null, ref_page = sie$migrt$pkg.obten_var_page(17318, 'Update'), ref_resrc = null, ref_struc_aplic = null where code = 'PUBLC' and ref_menu = sie$migrt$pkg.obten_var_menu(143, 'Select');
 update sie_13_item_menu set ref_aplic = null, ref_dv_valr_insta_condt_afich = null, ref_dv_valr_insta_libl = null, ref_dv_valr_reqst = null, ref_dv_valr_sapc = sie_14_domn_valr_pkg.obten_seqnc('VALR_INSTA_SAFP','VALR_FIXE',sie$migrt$pkg.vva_code_prodt), ref_dv_valr_sapi = null, ref_dv_valr_scpc = null, ref_dv_valr_scpi = null, ref_dv_valr_snpi = null, ref_dv_valr_sspc = null, ref_dv_valr_sspi = null, ref_dv_valr_url = null, ref_formt_resrc = null, ref_item_menu = sie$migrt$pkg.obten_var_item_menu(420, 'Update'), ref_ocurn_resrc = null, ref_page = sie$migrt$pkg.obten_var_page(17316, 'Update'), ref_resrc = null, ref_struc_aplic = null where code = 'GROUP_PUBLC' and ref_menu = sie$migrt$pkg.obten_var_menu(143, 'Select');
@@ -5344,6 +5608,17 @@ update sie_21_plugn_item_menu set ref_dv_align = null, ref_dv_contn_item_menu = 
 update sie_21_plugn_item_menu set ref_dv_align = null, ref_dv_contn_item_menu = null where ref_item_menu = sie$migrt$pkg.obten_var_item_menu(410, 'Select') and ref_plugn_menu = sie$migrt$pkg.obten_var_plugn_menu(1684, 'Select');
 update sie_21_plugn_item_menu set ref_dv_align = null, ref_dv_contn_item_menu = null where ref_item_menu = sie$migrt$pkg.obten_var_item_menu(423, 'Select') and ref_plugn_menu = sie$migrt$pkg.obten_var_plugn_menu(1684, 'Select');
 update sie_21_plugn_item_menu set ref_dv_align = null, ref_dv_contn_item_menu = null where ref_item_menu = sie$migrt$pkg.obten_var_item_menu(382, 'Select') and ref_plugn_menu = sie$migrt$pkg.obten_var_plugn_menu(1683, 'Select');
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_21_plugn_item_menu');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_21_plugn_item_menu');
 update sie_21_plugn_item_menu set ref_dv_align = sie_14_domn_valr_pkg.obten_seqnc('ALIGN_PLUGN_ITEM','DROIT',sie$migrt$pkg.vva_code_prodt), ref_dv_contn_item_menu = sie_14_domn_valr_pkg.obten_seqnc('CONTN_ITEM_MENU','COLN_SIMPL',sie$migrt$pkg.vva_code_prodt) where ref_item_menu = sie$migrt$pkg.obten_var_item_menu(433, 'Select') and ref_plugn_menu = sie$migrt$pkg.obten_var_plugn_menu(1683, 'Select');
 update sie_21_plugn_item_menu set ref_dv_align = null, ref_dv_contn_item_menu = sie_14_domn_valr_pkg.obten_seqnc('CONTN_ITEM_MENU','COLN_SIMPL',sie$migrt$pkg.vva_code_prodt) where ref_item_menu = sie$migrt$pkg.obten_var_item_menu(430, 'Select') and ref_plugn_menu = sie$migrt$pkg.obten_var_plugn_menu(1683, 'Select');
 update sie_21_plugn_item_menu set ref_dv_align = null, ref_dv_contn_item_menu = sie_14_domn_valr_pkg.obten_seqnc('CONTN_ITEM_MENU','COLN_SIMPL',sie$migrt$pkg.vva_code_prodt) where ref_item_menu = sie$migrt$pkg.obten_var_item_menu(431, 'Select') and ref_plugn_menu = sie$migrt$pkg.obten_var_plugn_menu(1683, 'Select');
@@ -5483,6 +5758,17 @@ begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 update sie_21_plugn_calnd set ref_dv_vue_deft = sie_14_domn_valr_pkg.obten_seqnc('VUE_DISPN_CALND','JOUR',sie$migrt$pkg.vva_code_prodt) where code = '61' and ref_prodt = sie$migrt$pkg.vnu_seqnc_prodt;
 update sie_21_plugn_calnd set ref_dv_vue_deft = sie_14_domn_valr_pkg.obten_seqnc('VUE_DISPN_CALND','SEMN_SIMPL',sie$migrt$pkg.vva_code_prodt) where code = '62' and ref_prodt = sie$migrt$pkg.vnu_seqnc_prodt;
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('sie_21_plugn_calnd');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('sie_21_plugn_calnd');
 update sie_21_plugn_calnd set ref_dv_vue_deft = sie_14_domn_valr_pkg.obten_seqnc('VUE_DISPN_CALND','JOUR',sie$migrt$pkg.vva_code_prodt) where code = '21' and ref_prodt = sie$migrt$pkg.vnu_seqnc_prodt;
 declare
   vnu_count pls_integer;

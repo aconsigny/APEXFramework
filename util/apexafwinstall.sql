@@ -24,7 +24,7 @@ acc arg number prompt 'Application ID:   '
 
 --prompt '&arg'
 
-exec sie_11_insta_afw_pkg.insta_afw_aplic_apex(&arg);
+exec sie_11_insta_afw_pkg.insta_afw_aplic_apex(&arg.);
 commit;
 
 prompt

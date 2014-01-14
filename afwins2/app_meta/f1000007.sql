@@ -12,7 +12,7 @@ prompt  APPLICATION 1000007 - SAFC - SIE APEXFramework - Configuration
 -- Application Export:
 --   Application:     1000007
 --   Name:            SAFC - SIE APEXFramework - Configuration
---   Date and Time:   22:13 Mercredi Décembre 18, 2013
+--   Date and Time:   11:43 Jeudi Décembre 19, 2013
 --   Exported By:     CONAL
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -37484,4 +37484,4 @@ end;
 commit;
 commit;
 
---export elap=          15.7876
+--export elap=          15.1038

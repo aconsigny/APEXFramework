@@ -12,7 +12,7 @@ prompt  APPLICATION 1000002 - SGA - SIE APEXFramework - Gestion Accès
 -- Application Export:
 --   Application:     1000002
 --   Name:            SGA - SIE APEXFramework - Gestion Accès
---   Date and Time:   22:13 Mercredi Décembre 18, 2013
+--   Date and Time:   11:43 Jeudi Décembre 19, 2013
 --   Exported By:     CONAL
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -27075,4 +27075,4 @@ end;
 commit;
 commit;
 
---export elap=           3.7435
+--export elap=           2.7087

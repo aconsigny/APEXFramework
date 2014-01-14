@@ -27,6 +27,17 @@ sie_03_journ_pkg.ecrir_journ('Debut - sie_11_versn');
 delete from tc$11$versn;
 
 insert into tc$11$versn (code, dnr_ref_aplic, dnr_ref_prodt, indic_docmn_verl, nom, numr_versn_1, numr_versn_2, numr_versn_3, numr_versn_4, ref_aplic, ref_plugn, ref_prodt, seqnc) values ('3000', sie$migrt$pkg.obten_var_aplic(187, 'Insert'), null, 'O', null, 3, 0, 0, 0, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), null, null, 183);
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('Fin partie - sie_11_versn');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('Debut partie - sie_11_versn');
 
 merge into sie_11_versn t
                         using tc$11$versn tf
@@ -50,6 +61,17 @@ begin
   end if;
 end;
 
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('Fin partie - sie_11_versn');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('Debut partie - sie_11_versn');
 select seqnc into sie$migrt$pkg.var_versn(183) from sie_11_versn where code = '3000' and ref_aplic = sie$migrt$pkg.obten_var_aplic(187, 'Select') and ref_plugn is null and ref_prodt is null;
 --Fin - sie_11_versn
 null;
@@ -66,11 +88,22 @@ if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('Debut - sie_13_page');
 delete from tc$13$page;
 
-insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-18 22:14:04', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'O', 'N', 'N', 'O', 'Page commune', 0, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17149);
-insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-18 22:14:04', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'N', 'N', 'N', 'N', 'Connexion', 101, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17150);
-insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-18 22:14:04', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'N', 'N', 'N', 'N', 'Mot de passe oublié', 103, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17152);
-insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-18 22:14:04', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'O', 'N', 'N', 'O', 'Code d''utilisateur oublié', 104, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17153);
-insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-18 22:14:04', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'N', 'N', 'N', 'N', 'Réinitialiser un mot de passe', 105, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17154);
+insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-19 11:44:05', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'O', 'N', 'N', 'O', 'Page commune', 0, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17149);
+insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-19 11:44:05', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'N', 'N', 'N', 'N', 'Connexion', 101, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17150);
+insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-19 11:44:05', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'N', 'N', 'N', 'N', 'Mot de passe oublié', 103, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17152);
+insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-19 11:44:05', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'O', 'N', 'N', 'O', 'Code d''utilisateur oublié', 104, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17153);
+insert into tc$13$page (date_dernr_maj_refrn_apex, descr, dnr_ref_aplic, indic_prise_charg_sie01, indic_prise_charg_sie04, indic_prise_charg_sie13_confr, indic_prise_charg_sie13_navgt, indic_prise_charg_sie14_popup, indic_prise_charg_sie18, indic_prise_charg_sie19, nom, numr_apex, prefx_mesg, ref_aplic, seqnc) values (to_date('2013-12-19 11:44:05', 'YYYY-MM-DD HH24:MI:SS'), null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'O', 'O', 'N', 'N', 'N', 'N', 'N', 'Réinitialiser un mot de passe', 105, null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 17154);
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('Fin partie - sie_13_page');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('Debut partie - sie_13_page');
 
 merge into sie_13_page t
                         using tc$13$page tf
@@ -94,6 +127,17 @@ begin
   end if;
 end;
 
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('Fin partie - sie_13_page');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('Debut partie - sie_13_page');
 select seqnc into sie$migrt$pkg.var_page(17149) from sie_13_page where numr_apex = 0 and ref_aplic = sie$migrt$pkg.obten_var_aplic(187, 'Select');
 select seqnc into sie$migrt$pkg.var_page(17150) from sie_13_page where numr_apex = 101 and ref_aplic = sie$migrt$pkg.obten_var_aplic(187, 'Select');
 select seqnc into sie$migrt$pkg.var_page(17152) from sie_13_page where numr_apex = 103 and ref_aplic = sie$migrt$pkg.obten_var_aplic(187, 'Select');
@@ -120,6 +164,17 @@ insert into tc$13$page$lang (dnr_ref_aplic, nom, ref_lang, ref_page, seqnc) valu
 insert into tc$13$page$lang (dnr_ref_aplic, nom, ref_lang, ref_page, seqnc) values (sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'Code d''utilisateur oublié', sie$migrt$pkg.obten_var_lang(61, 'Insert'), sie$migrt$pkg.obten_var_page(17153, 'Insert'), 13837);
 insert into tc$13$page$lang (dnr_ref_aplic, nom, ref_lang, ref_page, seqnc) values (sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'Réinitialiser un mot de passe', sie$migrt$pkg.obten_var_lang(61, 'Insert'), sie$migrt$pkg.obten_var_page(17154, 'Insert'), 13838);
 insert into tc$13$page$lang (dnr_ref_aplic, nom, ref_lang, ref_page, seqnc) values (sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 'Page commune', sie$migrt$pkg.obten_var_lang(162, 'Insert'), sie$migrt$pkg.obten_var_page(17149, 'Insert'), 13840);
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('Fin partie - sie_13_page_lang');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('Debut partie - sie_13_page_lang');
 
 merge into sie_13_page_lang t
                         using tc$13$page$lang tf
@@ -143,6 +198,17 @@ begin
   end if;
 end;
 
+null;
+end if;
+exception
+when others then
+sie$migrt$pkg.defnr_ereur ('Fin partie - sie_13_page_lang');
+end;
+/
+
+begin
+if sie$migrt$pkg.vnu_sql_code = 0 then
+sie_03_journ_pkg.ecrir_journ('Debut partie - sie_13_page_lang');
 select seqnc into sie$migrt$pkg.var_page_lang(13833) from sie_13_page_lang where ref_lang = sie$migrt$pkg.obten_var_lang(61, 'Select') and ref_page = sie$migrt$pkg.obten_var_page(17149, 'Select');
 select seqnc into sie$migrt$pkg.var_page_lang(13834) from sie_13_page_lang where ref_lang = sie$migrt$pkg.obten_var_lang(61, 'Select') and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');
 select seqnc into sie$migrt$pkg.var_page_lang(13836) from sie_13_page_lang where ref_lang = sie$migrt$pkg.obten_var_lang(61, 'Select') and ref_page = sie$migrt$pkg.obten_var_page(17152, 'Select');
@@ -225,17 +291,6 @@ sie_03_journ_pkg.ecrir_journ('Debut - sie_13_page_item');
 delete from tc$13$page$item;
 
 insert into tc$13$page$item (depsm_alias_coln, dnr_ref_aplic, id_apex, indic_confr_sauvg, indic_creat, indic_en_creat, indic_en_modfc, indic_modfc, indic_rechr, indic_suprs, libl, nom_apex, ref_page, seqnc, type_item) values (null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 128559938022013552, 'O', null, null, null, null, 'N', null, 'Code utilisateur oublié ?', 'P101_CODE_UTILS_OUBLI', sie$migrt$pkg.obten_var_page(17150, 'Insert'), 229558, 'ITEM');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_13_page_item');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_13_page_item');
 insert into tc$13$page$item (depsm_alias_coln, dnr_ref_aplic, id_apex, indic_confr_sauvg, indic_creat, indic_en_creat, indic_en_modfc, indic_modfc, indic_rechr, indic_suprs, libl, nom_apex, ref_page, seqnc, type_item) values (null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 128569455429081507, 'O', null, null, null, null, 'N', null, 'Mot de passe oublié ?', 'P101_MOT_PASSE_OUBLI', sie$migrt$pkg.obten_var_page(17150, 'Insert'), 229559, 'ITEM');
 insert into tc$13$page$item (depsm_alias_coln, dnr_ref_aplic, id_apex, indic_confr_sauvg, indic_creat, indic_en_creat, indic_en_modfc, indic_modfc, indic_rechr, indic_suprs, libl, nom_apex, ref_page, seqnc, type_item) values (null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 128570236007105658, 'O', null, null, null, null, 'N', null, 'Créer un compte SEM', 'P101_CREER_UTILS', sie$migrt$pkg.obten_var_page(17150, 'Insert'), 229560, 'ITEM');
 insert into tc$13$page$item (depsm_alias_coln, dnr_ref_aplic, id_apex, indic_confr_sauvg, indic_creat, indic_en_creat, indic_en_modfc, indic_modfc, indic_rechr, indic_suprs, libl, nom_apex, ref_page, seqnc, type_item) values (null, sie$migrt$pkg.obten_var_aplic(187, 'Insert'), 160685640623078711, 'O', null, null, null, null, 'N', null, '[P101_TYPE_REQT_INTER_CODE]', 'P101_TYPE_REQT_INTER_CODE', sie$migrt$pkg.obten_var_page(17150, 'Insert'), 229561, 'ITEM');
@@ -311,17 +366,6 @@ begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 sie_03_journ_pkg.ecrir_journ('Debut partie - sie_13_page_item');
 select seqnc into sie$migrt$pkg.var_page_item(229558) from sie_13_page_item where nom_apex = 'P101_CODE_UTILS_OUBLI' and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_13_page_item');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_13_page_item');
 select seqnc into sie$migrt$pkg.var_page_item(229559) from sie_13_page_item where nom_apex = 'P101_MOT_PASSE_OUBLI' and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');
 select seqnc into sie$migrt$pkg.var_page_item(229560) from sie_13_page_item where nom_apex = 'P101_CREER_UTILS' and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');
 select seqnc into sie$migrt$pkg.var_page_item(229561) from sie_13_page_item where nom_apex = 'P101_TYPE_REQT_INTER_CODE' and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');
@@ -598,17 +642,6 @@ end;
 begin
 if sie$migrt$pkg.vnu_sql_code = 0 then
 update sie_13_page_item set ref_mesg_aide = null, ref_opert = null where nom_apex = 'P101_CODE_UTILS_OUBLI' and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');
-null;
-end if;
-exception
-when others then
-sie$migrt$pkg.defnr_ereur ('sie_13_page_item');
-end;
-/
-
-begin
-if sie$migrt$pkg.vnu_sql_code = 0 then
-sie_03_journ_pkg.ecrir_journ('sie_13_page_item');
 update sie_13_page_item set ref_mesg_aide = null, ref_opert = null where nom_apex = 'P101_MOT_PASSE_OUBLI' and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');
 update sie_13_page_item set ref_mesg_aide = null, ref_opert = null where nom_apex = 'P101_CREER_UTILS' and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');
 update sie_13_page_item set ref_mesg_aide = null, ref_opert = null where nom_apex = 'P101_TYPE_REQT_INTER_CODE' and ref_page = sie$migrt$pkg.obten_var_page(17150, 'Select');

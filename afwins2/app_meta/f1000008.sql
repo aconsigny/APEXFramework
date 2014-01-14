@@ -12,7 +12,7 @@ prompt  APPLICATION 1000008 - SAFA - SIE APEXFramework - Assurance qualité
 -- Application Export:
 --   Application:     1000008
 --   Name:            SAFA - SIE APEXFramework - Assurance qualité
---   Date and Time:   22:13 Mercredi Décembre 18, 2013
+--   Date and Time:   11:43 Jeudi Décembre 19, 2013
 --   Exported By:     CONAL
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -35190,4 +35190,4 @@ end;
 commit;
 commit;
 
---export elap=          16.8737
+--export elap=          16.5395

@@ -1,6 +1,6 @@
 ﻿SET DEFINE OFF;
 Prompt Package SIE_01_DESTN_EVENM_NOTFB_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_destn_evenm_notfb_pkg
   authid current_user is
   type typ_destn is record
@@ -17,7 +17,7 @@ end sie_01_destn_evenm_notfb_pkg;
 /
 
 Prompt Package SIE_01_DESTN_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_destn_pkg as
   procedure creer_destn (pnu_destn in number,
                          pva_nom_elemn in varchar2,
@@ -31,7 +31,7 @@ end sie_01_destn_pkg;
 /
 
 Prompt Package SIE_01_ELEMN_CONFG_EN_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_elemn_confg_en_pkg is
   kva_prefx_elemn_subst_mesg     constant varchar2 (30) default '[#';
   kva_sufx_elemn_subst_mesg      constant varchar2 (30) default '#]';
@@ -47,7 +47,7 @@ end sie_01_elemn_confg_en_pkg;
 /
 
 Prompt Package SIE_01_ERR_APEX_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_err_apex_pkg is
   gbo_mode_debug                          boolean default false;
   gbo_mode_simlt                          boolean default false;
@@ -159,7 +159,7 @@ end sie_01_err_apex_pkg;
 /
 
 Prompt Package SIE_01_EVENM_NOTFB_CU_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_evenm_notfb_cu_pkg
   authid current_user as
   type typ_rec_destn is record
@@ -199,7 +199,7 @@ end sie_01_evenm_notfb_cu_pkg;
 /
 
 Prompt Package SIE_01_EVENM_NOTFB_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_evenm_notfb_pkg as
   procedure verfr_presn_doubl_aplic (pnu_evenm_notfb in number);
 
@@ -212,7 +212,7 @@ end sie_01_evenm_notfb_pkg;
 /
 
 Prompt Package SIE_01_GESTN_MESG_AIDE_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_gestn_mesg_aide_pkg is
   function obten_aide_page_item (pnu_numr_apex_page_item in number)
     return varchar2;
@@ -225,7 +225,7 @@ end sie_01_gestn_mesg_aide_pkg;
 /
 
 Prompt Package SIE_01_HIERC_APLIC_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_hierc_aplic_pkg as
   procedure creer_hierc_aplic (pnu_ref_evenm_notfb in number,
                                pnu_ref_atrib_struc_aplic in number,
@@ -239,7 +239,7 @@ end sie_01_hierc_aplic_pkg;
 /
 
 Prompt Package SIE_01_JAVSC_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_01_JAVSC_PKG" as
   procedure ajout_libr;
 
@@ -248,7 +248,7 @@ end sie_01_javsc_pkg;
 /
 
 Prompt Package SIE_01_LANG_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_01_LANG_PKG" as
   function obten_lang (pva_code in varchar2)
     return number;
@@ -268,7 +268,7 @@ end sie_01_lang_pkg;
 /
 
 Prompt Package SIE_01_MESG_TRADC_APEX_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_01_MESG_TRADC_APEX_PKG" as
   procedure pousr_mesg_dans_aplic_apex (pnu_prodt in number);
 
@@ -277,7 +277,7 @@ end sie_01_mesg_tradc_apex_pkg;
 /
 
 Prompt Package SIE_01_NOTFC_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_notfc_pkg as
   procedure notfc_sms (pnu_config_evenm_notfb in number,
                        pta_destn in sie_01_evenm_notfb_cu_pkg.typ_tab_destn,
@@ -292,7 +292,7 @@ end sie_01_notfc_pkg;
 /
 
 Prompt Package SIE_01_TYPE_COMNC_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_01_type_comnc_pkg is
   kva_code_courl                 constant varchar2 (30) default 'COURL';
   kva_code_sms                   constant varchar2 (30) default 'SMS';
@@ -307,7 +307,7 @@ end sie_01_type_comnc_pkg;
 /
 
 Prompt Package SIE_03_JOURN_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_03_JOURN_PKG" is
   --Ceci sert à séquencer, par session, les lignes dans sie_03_trace_exec
   gnu_fil                                 pls_integer default 0;
@@ -332,7 +332,7 @@ end sie_03_journ_pkg;
 /
 
 Prompt Package SIE_03_JOURN_UNITR_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_03_journ_unitr_pkg as
   procedure ajout_journ (actio_journ varchar2 default null,
                          don_nomnl varchar2 default null,
@@ -352,7 +352,7 @@ end sie_03_journ_unitr_pkg;
 /
 
 Prompt Package SIE_04_HISTR_NAVGT_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_04_histr_navgt_pkg as
   procedure genr_histr;
 
@@ -363,7 +363,7 @@ end sie_04_histr_navgt_pkg;
 /
 
 Prompt Package SIE_05_FORML_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_05_FORML_NOYAU_PKG"
   authid current_user as
   gva_varbl_varch                         varchar2 (4000);
@@ -376,7 +376,7 @@ end sie_05_forml_noyau_pkg;
 /
 
 Prompt Package SIE_06_RATIO_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_06_RATIO_PKG" is
   function resdr_ratio (pnu_valr in number,
                         pva_ratio in varchar2)
@@ -385,7 +385,7 @@ end sie_06_ratio_pkg;
 /
 
 Prompt Package SIE_07_APEX_COLCT_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_07_apex_colct_pkg is
   empty_vc_arr                            wwv_flow_global.vc_arr2;
   empty_n_arr                             wwv_flow_global.n_arr;
@@ -485,7 +485,7 @@ end sie_07_apex_colct_pkg;
 /
 
 Prompt Package SIE_07_CLOB_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_CLOB_PKG" as
   subtype typ_index is pls_integer;
 
@@ -591,14 +591,13 @@ end;
 /
 
 Prompt Package SIE_07_JAVSC_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_JAVSC_PKG" as
   procedure ajout_scrip_charg;
 
   --01.01.1970
   function obten_date_debut_calnd_javsc
-    return date
-    result_cache;
+    return date;
 
   function obten_date_oracl_calnd_javsc (pnu_milsc in number)
     return date;
@@ -606,7 +605,7 @@ end sie_07_javsc_pkg;
 /
 
 Prompt Package SIE_07_SEMPH_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:57 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_SEMPH_PKG" is
   semph_non_dispn                         exception;
 
@@ -652,7 +651,7 @@ end sie_07_semph_pkg;
 /
 
 Prompt Package SIE_07_SQL_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_SQL_PKG"
   authid current_user as
   -- Déclaration des types publics
@@ -704,7 +703,7 @@ end;
 /
 
 Prompt Package SIE_07_SQL_UTIL_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_SQL_UTIL_PKG" as
   subtype typ_index is pls_integer;
 
@@ -870,7 +869,7 @@ end;
 /
 
 Prompt Package SIE_07_UTIL_CHAIN_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_07_util_chain_pkg is
   --
   /*
@@ -948,7 +947,7 @@ end sie_07_util_chain_pkg;
 /
 
 Prompt Package SIE_07_UTIL_COMPR_ZIP_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_07_util_compr_zip_pkg is
   /*
 
@@ -1002,7 +1001,7 @@ end sie_07_util_compr_zip_pkg;
 /
 
 Prompt Package SIE_07_UTIL_CU_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_UTIL_CU_PKG"
   authid current_user as
   function obten_sourc_shutl_selct (pva_selct in varchar2)
@@ -1014,7 +1013,7 @@ end sie_07_util_cu_pkg;
 /
 
 Prompt Package SIE_07_UTIL_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_07_util_noyau_pkg is
   function obten_schem_apex
     return all_synonyms.table_owner%type;
@@ -1022,7 +1021,7 @@ end sie_07_util_noyau_pkg;
 /
 
 Prompt Package SIE_09_PILE_PKG;
-/* Formatted on 04/12/2013 11:34:51 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_09_PILE_PKG" as
   procedure init_pile (pva_nom_pile in varchar2);
 
@@ -1057,7 +1056,7 @@ end sie_09_pile_pkg;
 /
 
 Prompt Package SIE_10_DBA_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_10_DBA_PKG" as
   type typ_audit is record
   (
@@ -1111,7 +1110,7 @@ end sie_10_dba_pkg;
 /
 
 Prompt Package SIE_11_APLIC_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_11_APLIC_PKG" is
   /*
     &api: afw
@@ -1272,7 +1271,7 @@ end sie_11_aplic_pkg;
 /
 
 Prompt Package SIE_11_AUTHE_APEX_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_11_AUTHE_APEX_PKG" is
   function valid_utils (p_username in varchar2,
                         p_password in varchar2)
@@ -1281,7 +1280,7 @@ end sie_11_authe_apex_pkg;
 /
 
 Prompt Package SIE_11_INSTA_AFW_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_11_insta_afw_pkg as
   --A ajouter avant l'execution de sie_11_insta_afw_pkg
   --grant execute on apex_040200.wwv_flow_security to afw_unit;
@@ -1353,7 +1352,7 @@ end sie_11_insta_afw_pkg;
 /
 
 Prompt Package SIE_11_MIGRT_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_11_migrt_pkg is
   gva_ligne_inser                         varchar2 (32767);
   gva_ligne_selct                         varchar2 (32767);
@@ -1436,7 +1435,7 @@ end sie_11_migrt_pkg;
 /
 
 Prompt Package SIE_11_PARMT_AFW_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_11_PARMT_AFW_PKG" is
   function obten_valr_parmt (pva_code_parmt in varchar)
     return varchar2;
@@ -1444,7 +1443,7 @@ end sie_11_parmt_afw_pkg;
 /
 
 Prompt Package SIE_11_PRODT_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_11_PRODT_PKG" is
   gva_base_url                            varchar2 (1000);
 
@@ -1610,8 +1609,7 @@ create or replace package "SIE_11_PRODT_PKG" is
   procedure deplr_formt_resrc_prodt (pnu_prodt in number);
 
   function obten_dosr_fichr_afw (pnu_prodt in number default null)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_base_url (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
     return varchar2;
@@ -1646,7 +1644,7 @@ end sie_11_prodt_pkg;
 /
 
 Prompt Package SIE_11_UTILS_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_11_UTILS_PKG" as
   procedure ajout_role (pnu_utils in number,
                         pva_role in varchar2);
@@ -1669,7 +1667,7 @@ end sie_11_utils_pkg;
 /
 
 Prompt Package SIE_11_VERSN_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_11_VERSN_PKG" is
   function obten_numr_versn (pnu_versn_niv_1 in number,
                              pnu_versn_niv_2 in number,
@@ -1722,7 +1720,7 @@ end;
 /
 
 Prompt Package SIE_12_ARBRE_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_arbre_pkg as
   subtype tab_noeud is apex_application_global.vc_arr2;
 
@@ -1772,7 +1770,7 @@ end sie_12_arbre_pkg;
 /
 
 Prompt Package SIE_12_AUDIT_STRUC_APLIC_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_audit_struc_aplic_pkg as
   kva_creat                      constant varchar2 (3) default 'CRE';
   kva_modfc                      constant varchar2 (3) default 'MOD';
@@ -1802,7 +1800,7 @@ end sie_12_audit_struc_aplic_pkg;
 /
 
 Prompt Package SIE_12_CALND_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_calnd_pkg as
   function obten_date (pnu_numr_apex_regn in number)
     return date;
@@ -1854,7 +1852,7 @@ end sie_12_calnd_pkg;
 /
 
 Prompt Package SIE_12_DOMN_GROUP_UTILS_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_domn_group_utils_pkg as
   procedure maj_ocurn_group_expos (pnu_domn in number);
 
@@ -1863,7 +1861,7 @@ end sie_12_domn_group_utils_pkg;
 /
 
 Prompt Package SIE_12_DOMN_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_domn_pkg is
   procedure ajout_domn (pva_code in varchar2,
                         pva_nom in varchar2,
@@ -1973,7 +1971,7 @@ end sie_12_domn_pkg;
 /
 
 Prompt Package SIE_12_FAVR_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_favr_pkg as
   function obten_favr (pnu_struc_aplic in number,
                        pnu_seqnc_struc_aplic in number,
@@ -1998,7 +1996,7 @@ end sie_12_favr_pkg;
 /
 
 Prompt Package SIE_12_FONCT_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_fonct_pkg as
   function verif_activ_fonct_domn (pnu_struc_aplic in number)
     return boolean;
@@ -2018,7 +2016,7 @@ end sie_12_fonct_pkg;
 /
 
 Prompt Package SIE_12_GROUP_STAT_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:58 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_GROUP_STAT_PKG" as
   procedure creer_group_stat (pva_code in varchar2,
                               pva_nom in varchar2,
@@ -2040,7 +2038,7 @@ end sie_12_group_stat_pkg;
 /
 
 Prompt Package SIE_12_GROUP_UTILS_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_GROUP_UTILS_PKG" as
   function obten_code (pnu_group_utils in number)
     return varchar2;
@@ -2108,7 +2106,7 @@ end sie_12_group_utils_pkg;
 /
 
 Prompt Package SIE_12_LDAP_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_ldap_pkg is
   function obten_servr_ldap (pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn)
     return vd_sie_12_servr_ldap%rowtype;
@@ -2135,7 +2133,7 @@ end sie_12_ldap_pkg;
 /
 
 Prompt Package SIE_12_MEMBR_STRUC_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_MEMBR_STRUC_PKG" as
   function obten_code_utils_de_seqnc (pnu_seqnc_membr_struc in number)
     return varchar2;
@@ -2143,7 +2141,7 @@ end;
 /
 
 Prompt Package SIE_12_MENU_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_menu_pkg as
   function obten_item_racn (pnu_menu in number)
     return number;
@@ -2159,7 +2157,7 @@ end sie_12_menu_pkg;
 /
 
 Prompt Package SIE_12_MOT_PASSE_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_MOT_PASSE_PKG" is
   gbo_valdt_procd_niv_secrt               boolean default false;
 
@@ -2195,7 +2193,7 @@ end sie_12_mot_passe_pkg;
 /
 
 Prompt Package SIE_12_REQT_INTER_UTILS_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_reqt_inter_utils_pkg is
   function obten_reqt_inter_utils (pnu_reqt_inter_utils in vd_i_sie_12_reqt_inter_utils.seqnc%type)
     return vd_i_sie_12_reqt_inter_utils%rowtype;
@@ -2310,7 +2308,7 @@ end sie_12_reqt_inter_utils_pkg;
 /
 
 Prompt Package SIE_12_SESN_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_sesn_pkg is
   function obten_sesn
     return number;
@@ -2318,7 +2316,7 @@ end;
 /
 
 Prompt Package SIE_12_STAT_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_STAT_PKG" as
   gva_indic_stat_systm                    varchar2 (1) default 'N';
   gbo_indic_evolt_stat_code               boolean default false;
@@ -2326,105 +2324,85 @@ create or replace package "SIE_12_STAT_PKG" as
   function obten_stat (pva_code_struc_aplic in varchar2,
                        pva_code_stat in varchar2,
                        pva_code_prodt in varchar2 default null)
-    return number
-    result_cache;
+    return number;
 
   function obten_stat_group_stat (pva_code_group_stat in varchar2,
                                   pva_code_stat in varchar2,
                                   pva_code_prodt in varchar2 default null)
-    return number
-    result_cache;
+    return number;
 
   function obten_code_stat (pnu_seqnc_stat in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_stat_initl_struc_aplic (pva_code_struc_aplic in varchar2,
                                          pva_code_prodt in varchar2 default null)
-    return number
-    result_cache;
+    return number;
 
   function obten_stat_initl_struc_aplic (pnu_struc_aplic in number)
-    return number
-    result_cache;
+    return number;
 
   function obten_stat_initl_group_stat (pva_code_group_stat in varchar2,
                                         pva_code_prodt in varchar2 default null)
-    return number
-    result_cache;
+    return number;
 
   function obten_stat_initl_group_stat (pnu_group_stat in number)
-    return number
-    result_cache;
+    return number;
 
   function obten_code_stat_initl_struc_ap (pva_code_struc_aplic in varchar2,
                                            pva_code_prodt in varchar2 default null)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_code_stat_initl_struc_ap (pnu_struc_aplic in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
 
   function obten_code_stat_initl_group_st (pva_code_group_stat in varchar2,
                                            pva_code_prodt in varchar2 default null)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_code_stat_initl_group_st (pnu_group_stat in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_stat_formt (pva_code_stat in varchar2,
                              pnu_prodt in number default sie_11_prodt_pkg.obten_prodt_sesn)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_stat_formt (pnu_seqnc in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function valdr_evolt_stat (pnu_stat_ancie in number,
                              pnu_stat_nouv in number)
-    return boolean
-    result_cache;
+    return boolean;
 
   function difrn_ordre (pnu_ref_stat_1 in number,
                         pnu_ref_stat_2 in number)
-    return number
-    result_cache;
+    return number;
 
   function obten_liste_formt (pnu_stat in number,
                               pva_code in varchar2)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_postn_reltv (pva_struc_aplic in varchar2,
                               pva_code_stat_base in varchar2,
                               pva_code_stat_cible in varchar2,
                               pva_code_prodt in varchar2 default null)
-    return number
-    result_cache;
+    return number;
 
   function obten_postn_reltv (pva_struc_aplic in varchar2,
                               pnu_code_stat_base in number,
                               pnu_code_stat_cible in number)
-    return number
-    result_cache;
+    return number;
 
   function obten_postn_reltv_group_stat (pva_group_stat in varchar2,
                                          pva_code_stat_base in varchar2,
                                          pva_code_stat_cible in varchar2,
                                          pva_code_prodt in varchar2 default null)
-    return number
-    result_cache;
+    return number;
 
   function obten_postn_reltv_group_stat (pva_group_stat in varchar2,
                                          pnu_code_stat_base in number,
                                          pnu_code_stat_cible in number)
-    return number
-    result_cache;
+    return number;
 
   procedure creer_stat (pnu_ref_struc_aplic in number,
                         pva_code in varchar2,
@@ -2451,7 +2429,7 @@ end sie_12_stat_pkg;
 /
 
 Prompt Package SIE_12_STRUC_APLIC_CU_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_struc_aplic_cu_pkg
   authid current_user is
   kva_elemn_titre_court          constant number (1) default 1;
@@ -2482,7 +2460,7 @@ end sie_12_struc_aplic_cu_pkg;
 /
 
 Prompt Package SIE_12_STRUC_APLIC_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_STRUC_APLIC_PKG" as
   kva_elemn_titre_court          constant number (1) default 1;
   kva_elemn_titre                constant number (1) default 2;
@@ -2572,7 +2550,7 @@ end sie_12_struc_aplic_pkg;
 /
 
 Prompt Package SIE_12_UTILS_PKG;
-/* Formatted on 04/12/2013 11:34:52 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_UTILS_PKG" as
   gva_code_utils                          varchar2 (30);
   gva_code_utils_pour                     varchar2 (30) default null;
@@ -2660,8 +2638,7 @@ create or replace package "SIE_12_UTILS_PKG" as
     return varchar2;
 
   function obten_usagr_conct_sql (pva_code_utils in varchar2)
-    return number
-    result_cache;
+    return number;
 
   function obten_utils (pnu_utils in vd_i_sie_12_utils.seqnc%type)
     return vd_i_sie_12_utils%rowtype;
@@ -2692,7 +2669,7 @@ end sie_12_utils_pkg;
 /
 
 Prompt Package SIE_13_MENU_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_13_menu_pkg as
   gbo_menu_actif                          boolean default false;
   gnu_page_cible                          number default null;
@@ -2737,7 +2714,7 @@ end sie_13_menu_pkg;
 /
 
 Prompt Package SIE_13_MIME_TYPE_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_13_mime_type_pkg as
   function obten_seqnc (pva_mime_type in varchar2,
                         pva_nom_fichr in varchar2)
@@ -2756,7 +2733,7 @@ end sie_13_mime_type_pkg;
 /
 
 Prompt Package SIE_13_NAVGT_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_NAVGT_NOYAU_PKG" as
   type typ_item_rechr is record
   (
@@ -2841,7 +2818,7 @@ end;
 /
 
 Prompt Package SIE_13_NAVGT_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_NAVGT_PKG"
   authid current_user as
   type typ_rec_elemn is record
@@ -2928,7 +2905,7 @@ end sie_13_navgt_pkg;
 /
 
 Prompt Package SIE_13_OPERT_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_OPERT_PKG" as
   procedure creer_opert (pva_code_prodt in varchar2,
                          pva_code in varchar2,
@@ -2950,7 +2927,7 @@ end sie_13_opert_pkg;
 /
 
 Prompt Package SIE_13_PAGE_ITEM_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_PAGE_ITEM_PKG" as
   function obten_tradc_libl (pnu_item_id number)
     return varchar2;
@@ -2965,7 +2942,7 @@ end sie_13_page_item_pkg;
 /
 
 Prompt Package SIE_13_PAGE_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_PAGE_PKG" as
   type typ_info_extra is record
   (
@@ -3092,7 +3069,7 @@ end sie_13_page_pkg;
 /
 
 Prompt Package SIE_13_PAGE_PREFR_NAVGT_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_PAGE_PREFR_NAVGT_PKG" as
   procedure ajout_prefr_navgt (pnu_page in number,
                                pnu_page_ir in number);
@@ -3102,7 +3079,7 @@ end sie_13_page_prefr_navgt_pkg;
 /
 
 Prompt Package SIE_13_PREFR_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_PREFR_PKG" as
   gva_valr                                varchar2 (4000);
 
@@ -3121,7 +3098,7 @@ end sie_13_prefr_pkg;
 /
 
 Prompt Package SIE_13_RAPRT_INTER_CU_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_13_raprt_inter_cu_pkg
   authid current_user is
   type typ_seqnc_reprt_courn is table of number (10);
@@ -3137,7 +3114,7 @@ end sie_13_raprt_inter_cu_pkg;
 /
 
 Prompt Package SIE_13_REGN_PILTB_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_REGN_PILTB_PKG" as
   function obten_contn_page_courn (pva_code in varchar2,
                                    pva_code_lang in varchar2 default null,
@@ -3158,7 +3135,7 @@ end sie_13_regn_piltb_pkg;
 /
 
 Prompt Package SIE_13_RESRC_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_13_resrc_pkg as
   function obten_chemn_resrc (pva_propr in varchar2,                                           --PRODT|STRUC_APLIC|PLUGN
                               pva_code_resrc in varchar2,
@@ -3169,7 +3146,7 @@ end sie_13_resrc_pkg;
 /
 
 Prompt Package SIE_14_DOMN_VALR_CU_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_14_domn_valr_cu_pkg
   authid current_user as
   function obten_valr (pva_code_domn in varchar2,
@@ -3180,7 +3157,7 @@ end sie_14_domn_valr_cu_pkg;
 /
 
 Prompt Package SIE_14_DOMN_VALR_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_14_DOMN_VALR_PKG" as
   gbo_copie_domn                          boolean default false;
 
@@ -3193,20 +3170,16 @@ create or replace package "SIE_14_DOMN_VALR_PKG" as
   type table_rec_valr is table of rec_valr;
 
   function obten_valr (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_valr_court (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_code (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_code_parnt (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function obten_seqnc (pva_code_domn in varchar2,
                         pva_code_valr in varchar2,
@@ -3219,8 +3192,7 @@ create or replace package "SIE_14_DOMN_VALR_PKG" as
     return varchar2;
 
   function obten_valr_organ (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache;
+    return varchar2;
 
   function copr_domn_valr (pnu_domn_a_copr in number,
                            pnu_prodt_sourc in number default null,
@@ -3237,7 +3209,7 @@ end sie_14_domn_valr_pkg;
 /
 
 Prompt Package SIE_14_FORMT_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_14_FORMT_PKG" as
   function to_char2 (pnu_valr in number,
                      pva_formt in varchar2)
@@ -3254,14 +3226,14 @@ end sie_14_formt_pkg;
 /
 
 Prompt Package SIE_15_AJAX_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:23:59 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_15_AJAX_PKG" as
   procedure obten_json_sql (pva_sql in varchar2);
 end sie_15_ajax_pkg;
 /
 
 Prompt Package SIE_15_FTP_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_15_ftp_noyau_pkg
   authid current_user as
     /*
@@ -4144,7 +4116,7 @@ end sie_15_ftp_noyau_pkg;
 /
 
 Prompt Package SIE_15_FTP_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_15_ftp_pkg is
   /* THESE HAVE BEEN SETUP TO BE UTILIZED AS DIRECT CALLS VIA ORACLE APPLICATIONS */
   /* THEY RETURN FAILURE CODES APPROPRIATLY FOR USAGE IN REQUEST SETS AND PAGING ROUTINES */
@@ -4314,7 +4286,7 @@ end sie_15_ftp_pkg;
 /
 
 Prompt Package SIE_15_HTP_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_15_HTP_PKG" as
   -- Écriture différée
   procedure ecrit_difr (pbo_ecrit_difr in boolean default true);
@@ -4333,12 +4305,12 @@ create or replace package "SIE_15_HTP_PKG" as
                   pva_rempl_retr_br in varchar2 default 'N')
     return varchar2;
 
-  procedure echap (pva_texte in varchar2                     /*,
-                              pva_rempl_retr_br   in varchar2 default 'N'*/
+  procedure echap (pva_texte in varchar2 /*,
+          pva_rempl_retr_br   in varchar2 default 'N'*/
                                         );
 
-  procedure echap                                            /*(
-                                               pva_rempl_retr_br   in varchar2 default 'N')*/
+  procedure echap      /*(
+         pva_rempl_retr_br   in varchar2 default 'N')*/
                  ;
 
   procedure ecrir (pva_ligne in varchar2,
@@ -4477,7 +4449,7 @@ end sie_15_htp_pkg;
 /
 
 Prompt Package SIE_16_LOV_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_16_LOV_NOYAU_PKG" as
   function obten_lov_item (pnu_seqnc_item in number)
     return varchar2;
@@ -4485,7 +4457,7 @@ end;
 /
 
 Prompt Package SIE_16_LOV_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_16_LOV_PKG"
   authid current_user as
   gva_selct                               varchar2 (32500);
@@ -4507,7 +4479,7 @@ end;
 /
 
 Prompt Package SIE_16_VUE_PARMT_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_16_VUE_PARMT_PKG" is
   cursor cur_utils (pva_struc_aplic in varchar2,
                     pnu_membr_struc_admin in number,
@@ -4602,7 +4574,7 @@ end sie_16_vue_parmt_pkg;
 /
 
 Prompt Package SIE_17_ENVOI_COURL_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_17_ENVOI_COURL_PKG" as
   kva_destn_a                    constant varchar2 (10) default 'A';
   kva_destn_cc                   constant varchar2 (10) default 'CC';
@@ -4681,7 +4653,7 @@ end sie_17_envoi_courl_pkg;
 /
 
 Prompt Package SIE_17_ENVOI_TELCP_AXIAT_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_17_envoi_telcp_axiat_pkg as
   procedure envoy_telcp_simpl (pva_code_compt_axiat in varchar2,
                                pnu_a in number,
@@ -4710,7 +4682,7 @@ end sie_17_envoi_telcp_axiat_pkg;
 /
 
 Prompt Package SIE_17_NOTFC_SMS_TWILIO_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_17_notfc_sms_twilio_pkg as
   type typ_arr_parmt is table of varchar2 (255)
                           index by pls_integer;
@@ -4750,7 +4722,7 @@ end sie_17_notfc_sms_twilio_pkg;
 /
 
 Prompt Package SIE_17_PROFL_COURL_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_17_PROFL_COURL_PKG" as
   function obten_code (pnu_profl_courl in number)
     return varchar2;
@@ -4765,7 +4737,7 @@ end sie_17_profl_courl_pkg;
 /
 
 Prompt Package SIE_17_TRAVL_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_17_travl_pkg as
   procedure exect_envoi_sms;
 
@@ -4776,7 +4748,7 @@ end sie_17_travl_pkg;
 /
 
 Prompt Package SIE_18_ITF_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_18_ITF_PKG" is
   procedure desct_forml_tablr;
 
@@ -4790,7 +4762,7 @@ end sie_18_itf_pkg;
 /
 
 Prompt Package SIE_18_TABLR_FORM_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_18_TABLR_FORM_PKG" is
   function genr_html_color_pickr
     return varchar2;
@@ -4803,7 +4775,7 @@ end sie_18_tablr_form_pkg;
 /
 
 Prompt Package SIE_19_BOUTN_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_19_BOUTN_PKG" as
   gbo_prise_charg                         boolean := false;
 
@@ -4814,7 +4786,7 @@ end sie_19_boutn_pkg;
 /
 
 Prompt Package SIE_19_CLE_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_19_CLE_PKG" as
   function obten_cle_formt (pnu_cle in number)
     return varchar2;
@@ -4822,7 +4794,7 @@ end sie_19_cle_pkg;
 /
 
 Prompt Package SIE_19_FONCT_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_19_FONCT_PKG" as
   function obten_nom_lang (pnu_fonct in number,
                            pnu_lang in number default null)
@@ -4869,7 +4841,7 @@ end sie_19_fonct_pkg;
 /
 
 Prompt Package SIE_19_JAVSC_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_19_JAVSC_PKG" as
   gbo_prise_charg                         boolean;
 
@@ -4883,7 +4855,7 @@ end sie_19_javsc_pkg;
 /
 
 Prompt Package SIE_20_DOCMN_PKG;
-/* Formatted on 04/12/2013 11:34:53 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_20_docmn_pkg as
   function obten_sect_simpl_docmn (pva_code_struc_aplic in varchar2,
                                    pnu_seqnc_struc_aplic in number,
@@ -4898,7 +4870,7 @@ end sie_20_docmn_pkg;
 /
 
 Prompt Package SIE_20_MODL_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_20_modl_pkg as
   function obten_indic (pva_valr in varchar2)
     return varchar2;
@@ -4935,7 +4907,7 @@ end sie_20_modl_pkg;
 /
 
 Prompt Package SIE_21_ACTIO_DYNMQ_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_actio_dynmq_pkg
   authid current_user is
   type typ_code_plugn is table of varchar2 (30)
@@ -5164,7 +5136,7 @@ end sie_21_actio_dynmq_pkg;
 /
 
 Prompt Package SIE_21_AUTHE_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:00 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_authe_pkg
   authid current_user is
   function sentn (p_authentication in apex_plugin.t_authentication,
@@ -5185,7 +5157,7 @@ end sie_21_authe_pkg;
 /
 
 Prompt Package SIE_21_AUTOR_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_autor_pkg
   authid current_user is
   function genr_autor_acces_page (p_authorization in apex_plugin.t_authorization,
@@ -5227,7 +5199,7 @@ end sie_21_autor_pkg;
 /
 
 Prompt Package SIE_21_ITEM_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_item_pkg
   authid current_user is
   type typ_code_plugn is table of varchar2 (30)
@@ -5306,7 +5278,7 @@ end sie_21_item_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_ARBRE_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_arbre_pkg
   authid current_user as
   type typ_rec_enreg_arbre is record
@@ -5419,7 +5391,7 @@ end sie_21_plugn_arbre_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_BLOB_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_blob_pkg is
   kva_nom_colct_blob             constant varchar2 (255) default 'CA_SIESOLUTIONS_SIE21_COLCT_BLOB';
 
@@ -5440,7 +5412,7 @@ end sie_21_plugn_blob_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_CALND_COULR_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_calnd_coulr_pkg as
   function obten_image_aperc_coulr (pnu_ordre_presn in number,
                                     pva_libl in varchar2 default null,
@@ -5452,7 +5424,7 @@ end sie_21_plugn_calnd_coulr_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_CALND_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_calnd_pkg
   authid current_user as
   kva_s_mode                     constant varchar2 (60) default 'S_SIE_21_CALND_MODE';
@@ -5590,7 +5562,7 @@ end sie_21_plugn_calnd_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_CALND_TYPE_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_calnd_type_pkg as
   function obten_image_aperc_coulr (pnu_type_afich in number,
                                     pva_titre in varchar2 default null,
@@ -5600,7 +5572,7 @@ end sie_21_plugn_calnd_type_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_CONFR_SAUVG_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_confr_sauvg_pkg
   authid current_user is
   kva_s_mesg                     constant varchar2 (60) default 'S_SIE_21_CONFR_SAUVG_MESG';
@@ -5623,7 +5595,7 @@ end sie_21_plugn_confr_sauvg_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_DIALG_IFRAM_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_dialg_ifram_pkg is
   procedure defnr_contx_apres_fermt_dialg;
 
@@ -5634,7 +5606,7 @@ end sie_21_plugn_dialg_ifram_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_MENU_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_menu_pkg
   authid current_user as
   type typ_rec_confg_plugn is record
@@ -5746,7 +5718,7 @@ end sie_21_plugn_menu_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_NAVGT_ENREG_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_navgt_enreg_pkg
   authid current_user as
   function valdr_prise_charg
@@ -5779,7 +5751,7 @@ end sie_21_plugn_navgt_enreg_pkg;
 /
 
 Prompt Package SIE_21_PLUGN_SELCT_2_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_plugn_selct_2_pkg is
   procedure genr_item_tag (p_item in apex_plugin.t_page_item,
                            p_value in varchar2);
@@ -5799,7 +5771,7 @@ end sie_21_plugn_selct_2_pkg;
 /
 
 Prompt Package SIE_21_PROCS_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_procs_pkg
   authid current_user is
   function inser_trace (p_process in apex_plugin.t_process,
@@ -5864,7 +5836,7 @@ end sie_21_procs_pkg;
 /
 
 Prompt Package SIE_21_UTIL_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_util_pkg
   authid current_user is
   subtype t_plugn is apex_plugin.t_plugin;
@@ -5958,7 +5930,7 @@ end sie_21_util_pkg;
 /
 
 Prompt Package SIE_23_RECHR_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_23_rechr_pkg
   authid current_user is
   procedure purgr_rechr (pnu_utils in number default null,
@@ -5987,7 +5959,7 @@ end sie_23_rechr_pkg;
 /
 
 Prompt Package SIE_24_NAVBR_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_24_navbr_pkg
   authid current_user as
   type typ_rec_confg_plugn is record
@@ -6090,7 +6062,7 @@ end sie_24_navbr_pkg;
 /
 
 Prompt Package SIE_25_APPEL_RAPRT_APEX_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_25_APPEL_RAPRT_APEX_PKG" as
   procedure exect_raprt (pva_indic_secrs varchar2,                                            -- 'O' = https, 'N' = http
                          pva_servr varchar2,                                     -- Nom du serveur (ex: www.domaine.com)
@@ -6109,7 +6081,7 @@ end sie_25_appel_raprt_apex_pkg;
 /
 
 Prompt Package SIE_25_DOMN_TYPE_PUBLC_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_domn_type_publc_pkg is
   procedure ajout_domn_type_publc (pnu_domn in number,
                                    pnu_type in number);
@@ -6122,7 +6094,7 @@ end sie_25_domn_type_publc_pkg;
 /
 
 Prompt Package SIE_25_FORMT_IR_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_formt_ir_pkg is
   knu_porte_ligne                constant varchar2 (5) default 'LIGNE';
   knu_porte_coln                 constant varchar2 (5) default 'COLN';
@@ -6147,7 +6119,7 @@ end sie_25_formt_ir_pkg;
 /
 
 Prompt Package SIE_25_FUSN_PDF_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_25_FUSN_PDF_PKG" as
   procedure ajout_valr_champ_fusn (pnu_champ in number,
                                    pnu_publc_travl in number,
@@ -6164,14 +6136,14 @@ end sie_25_fusn_pdf_pkg;
 /
 
 Prompt Package SIE_25_JAVSC_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_25_JAVSC_PKG" as
   procedure ajout_scrip_charg;
 end sie_25_javsc_pkg;
 /
 
 Prompt Package SIE_25_PUBLC_IMEDT_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_publc_imedt_pkg as
   procedure ajout_parmt (pva_code_parmt in varchar2,
                          pva_valr_parmt in varchar2,
@@ -6216,7 +6188,7 @@ end sie_25_publc_imedt_pkg;
 /
 
 Prompt Package SIE_25_PUBLC_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_publc_noyau_pkg is
   function obten_travl_courn (pbo_imedt in boolean default true,
                               pnu_type_travl in number default null,
@@ -6269,7 +6241,7 @@ end sie_25_publc_noyau_pkg;
 /
 
 Prompt Package SIE_25_PUBLC_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_publc_pkg is
   function obten_travl_courn (pva_imedt in varchar2)
     return number;
@@ -6333,7 +6305,7 @@ end sie_25_publc_pkg;
 /
 
 Prompt Package SIE_25_TRAVL_PUBLC_CU_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_travl_publc_cu_pkg
   authid current_user is
   function obten_pdf (pnu_travl in number,
@@ -6344,7 +6316,7 @@ end sie_25_travl_publc_cu_pkg;
 /
 
 Prompt Package SIE_25_TRAVL_PUBLC_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_travl_publc_pkg as
   procedure lancr_travl (pnu_travl in number,
                          pnu_formt in varchar,
@@ -6388,21 +6360,21 @@ end sie_25_travl_publc_pkg;
 /
 
 Prompt Package SIE_25_TRI_ALTER_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_25_TRI_ALTER_PKG" as
   procedure afich_info_tri_alter;
 end sie_25_tri_alter_pkg;
 /
 
 Prompt Package SIE_25_TYPE_PUBLC_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_type_publc_pkg is
   procedure alimn_domn_type_publc (pnu_seqnc in number);
 end sie_25_type_publc_pkg;
 /
 
 Prompt Package SIE_25_TYPE_TRAVL_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_25_type_travl_pkg is
   function obten_seqnc (pnu_domn in number,
                         pva_code in varchar2)
@@ -6411,7 +6383,7 @@ end sie_25_type_travl_pkg;
 /
 
 Prompt Package SIE_29_ASURN_QUALT_CORCT_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_29_asurn_qualt_corct_pkg as
   procedure corgr_item_hidn (pnu_aplic number);
 
@@ -6426,7 +6398,7 @@ end sie_29_asurn_qualt_corct_pkg;
 /
 
 Prompt Package SIE_29_ASURN_QUALT_PKG;
-/* Formatted on 04/12/2013 11:34:54 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_29_asurn_qualt_pkg as
   procedure exect_reqt (pva_liste_contrl in varchar2,
                         pnu_page in number default null);
@@ -6434,7 +6406,7 @@ end sie_29_asurn_qualt_pkg;
 /
 
 Prompt Package SIE_01_GESTN_MESG_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_01_GESTN_MESG_PKG" as
   kva_type_mesg_err              constant varchar2 (1) default 'E';
   kva_type_mesg_err_critq        constant varchar2 (1) default 'C';
@@ -6531,7 +6503,7 @@ end sie_01_gestn_mesg_pkg;
 /
 
 Prompt Package SIE_03_ENVOI_COURL_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:01 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_03_envoi_courl_pkg as
   function creer (pva_servr in varchar2,
                   pnu_port in number,
@@ -6561,7 +6533,7 @@ end sie_03_envoi_courl_pkg;
 /
 
 Prompt Package SIE_07_SQL_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_SQL_NOYAU_PKG" as
   procedure obten_infor_coln_ir (pnu_ref_ir in number,
                                  pnu_rpts_id in number,
@@ -6570,7 +6542,7 @@ end;
 /
 
 Prompt Package SIE_07_UTIL_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_UTIL_PKG" as
   --Types pour les fonctions pipelined--
   type typ_apex_lov_rang is record
@@ -6928,7 +6900,7 @@ end sie_07_util_pkg;
 /
 
 Prompt Package SIE_08_URL_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_08_URL_PKG" as
   knu_sesn                       constant number default sie_12_sesn_pkg.obten_sesn;
   knu_app_id                     constant number default sie_11_aplic_pkg.obten_numr_apex_aplic;
@@ -7023,7 +6995,7 @@ end sie_08_url_pkg;
 /
 
 Prompt Package SIE_12_AUTHE_APEX_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_AUTHE_APEX_PKG" is
   gbo_valdt_procd_authe_exter             boolean default false;
 
@@ -7146,7 +7118,7 @@ end sie_12_authe_apex_pkg;
 /
 
 Prompt Package SIE_12_DIALG_IFRAM_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_12_dialg_ifram_pkg is
   procedure ouvri_dialg (pnu_numr_apex_actio_dynmq in number,
                          pnu_numr_apex_aplic in number,
@@ -7171,7 +7143,7 @@ end sie_12_dialg_ifram_pkg;
 /
 
 Prompt Package SIE_12_SECRT_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_12_SECRT_PKG" as
   function verfr_presn_utils_group (pva_group in varchar2,
                                     pbo_ignor_super in boolean default false,
@@ -7245,7 +7217,7 @@ end sie_12_secrt_pkg;
 /
 
 Prompt Package SIE_13_RAPRT_INTER_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_RAPRT_INTER_PKG" is
   type typ_seqnc_reprt_courn is table of number (10);
 
@@ -7298,7 +7270,7 @@ end sie_13_raprt_inter_pkg;
 /
 
 Prompt Package SIE_21_REGN_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_21_regn_pkg
   authid current_user is
   type typ_code_plugn is table of varchar2 (30)
@@ -7417,12 +7389,11 @@ end sie_21_regn_pkg;
 /
 
 Prompt Package SIE_25_PLPDF_EXPOR_IR_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_25_PLPDF_EXPOR_IR_PKG"
   authid current_user as
-  knu_marge_cel                  constant number
-                                            default plpdf_toolkit.conv (0.2,
-                                                                        'mm') ;
+  --En point
+  knu_marge_cel                  constant number default 0.6;
   kva_formt_nombr                constant varchar2 (30) default 'FM9G999G999G990D00';
 
   type typ_rec_coulr_pdf is record
@@ -7512,7 +7483,7 @@ end;
 /
 
 Prompt Package SIE_25_RAPRT_INTER_EXPOR_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_25_RAPRT_INTER_EXPOR_PKG"
   authid current_user as
   kva_seprt_coln                 constant varchar2 (1) default ',';
@@ -7530,7 +7501,7 @@ end;
 /
 
 Prompt Package SIE_25_SPX_EXPOR_IR_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_25_SPX_EXPOR_IR_PKG"
   authid current_user as
   kva_seprt_coln                 constant varchar2 (1) default ',';
@@ -7547,7 +7518,7 @@ end;
 /
 
 Prompt Package SIE_04_CONTX_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_04_contx_pkg as
   procedure synch_varbl (pnu_ofset_fil in number default 0,
                          pnu_fa_courn in number default sie_07_util_pkg.nv ('SIDF'));
@@ -7637,7 +7608,7 @@ end sie_04_contx_pkg;
 /
 
 Prompt Package SIE_04_FIL_ARIAN_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package sie_04_fil_arian_pkg as
   gnu_fa_page_inter                       number (10);
 
@@ -7683,7 +7654,7 @@ end sie_04_fil_arian_pkg;
 /
 
 Prompt Package SIE_07_SESN_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_07_SESN_PKG" as
   gva_aplic_en_cours                      number (10) default sie_07_util_pkg.v ('A_SAFP_APLIC');
   gva_prodt_en_cours                      number (10) default sie_07_util_pkg.v ('A_SAFP_PRODT');
@@ -7709,7 +7680,7 @@ end sie_07_sesn_pkg;
 /
 
 Prompt Package SIE_13_CONDT_PILTB_PKG;
-/* Formatted on 04/12/2013 11:34:55 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:02 AM (QP5 v5.185.11230.41888) */
 create or replace package "SIE_13_CONDT_PILTB_PKG" as
   vbo_en_charg                            boolean default false;
 
@@ -7759,7 +7730,7 @@ end sie_13_condt_piltb_pkg;
 /
 SET DEFINE OFF;
 Prompt Package Body SIE_01_DESTN_EVENM_NOTFB_PKG;
-/* Formatted on 04/12/2013 11:35:04 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:05 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_destn_evenm_notfb_pkg is
   function resdr (pnu_seqnc_destn_confg in number,
                   pnu_seqnc_struc_aplic in number)
@@ -7829,7 +7800,7 @@ end sie_01_destn_evenm_notfb_pkg;
 /
 
 Prompt Package Body SIE_01_DESTN_PKG;
-/* Formatted on 04/12/2013 11:35:04 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:05 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_destn_pkg as
   procedure creer_destn (pnu_destn in number,
                          pva_nom_elemn in varchar2,
@@ -7931,7 +7902,7 @@ end sie_01_destn_pkg;
 /
 
 Prompt Package Body SIE_01_ELEMN_CONFG_EN_PKG;
-/* Formatted on 04/12/2013 11:35:04 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:05 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_elemn_confg_en_pkg is
   procedure inser_elemn_confg_en (pnu_confg_evenm_notfb in vd_i_sie_01_elemn_confg_en.ref_confg_evenm_notfb%type,
                                   pva_code in vd_i_sie_01_elemn_confg_en.code%type,
@@ -7954,7 +7925,7 @@ end sie_01_elemn_confg_en_pkg;
 /
 
 Prompt Package Body SIE_01_ERR_APEX_PKG;
-/* Formatted on 04/12/2013 11:35:05 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:06 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_err_apex_pkg is
   gnu_versn_orcl                          number (3) default 102;
 
@@ -9082,7 +9053,7 @@ end sie_01_err_apex_pkg;
 /
 
 Prompt Package Body SIE_01_EVENM_NOTFB_CU_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:06 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_evenm_notfb_cu_pkg as
   type typ_valr is record
   (
@@ -9678,7 +9649,7 @@ end sie_01_evenm_notfb_cu_pkg;
 /
 
 Prompt Package Body SIE_01_EVENM_NOTFB_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:06 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_evenm_notfb_pkg as
   procedure verfr_presn_doubl_aplic (pnu_evenm_notfb in number) is
     cursor cur_doubl is
@@ -9749,7 +9720,9 @@ create or replace package body sie_01_evenm_notfb_pkg as
 
     vnu_seqnc_cen                           vd_sie_01_confg_evenm_notfb.seqnc%type;
   begin
-    vnu_seqnc_cen := sie_01_confg_evenm_notfb_seq.nextval;
+    select   sie_01_confg_evenm_notfb_seq.nextval
+      into   vnu_seqnc_cen
+      from   dual;
 
     insert into   vd_sie_01_confg_evenm_notfb (seqnc,
                                                ref_type_comnc,
@@ -9813,7 +9786,7 @@ end sie_01_evenm_notfb_pkg;
 /
 
 Prompt Package Body SIE_01_GESTN_MESG_AIDE_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:06 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_01_GESTN_MESG_AIDE_PKG" is
   function obten_aide_page_item (pnu_numr_apex_page_item in number)
     return varchar2 is
@@ -9883,7 +9856,7 @@ end sie_01_gestn_mesg_aide_pkg;
 /
 
 Prompt Package Body SIE_01_GESTN_MESG_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:07 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_01_GESTN_MESG_PKG" as
   function obten_seqnc_mesg (pva_numr_mesg in varchar2,
                              pva_code_prodt in varchar2 default null)
@@ -10500,7 +10473,7 @@ end sie_01_gestn_mesg_pkg;
 /
 
 Prompt Package Body SIE_01_HIERC_APLIC_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:07 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_hierc_aplic_pkg as
   procedure creer_hierc_aplic (pnu_ref_evenm_notfb in number,
                                pnu_ref_atrib_struc_aplic in number,
@@ -10529,7 +10502,7 @@ end sie_01_hierc_aplic_pkg;
 /
 
 Prompt Package Body SIE_01_JAVSC_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:07 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_01_JAVSC_PKG" as
   procedure ajout_libr is
   begin
@@ -10545,7 +10518,7 @@ end sie_01_javsc_pkg;
 /
 
 Prompt Package Body SIE_01_LANG_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:07 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_01_LANG_PKG" as
   kva_code_lang_deft             constant varchar2 (5) default 'FR-CA';
 
@@ -10603,7 +10576,7 @@ end sie_01_lang_pkg;
 /
 
 Prompt Package Body SIE_01_MESG_TRADC_APEX_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:07 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_01_MESG_TRADC_APEX_PKG" as
   function verif_exist_mesg (pnu_numr_aplic_apex in number,
                              pva_nom_mesg in varchar2,
@@ -10738,7 +10711,7 @@ end sie_01_mesg_tradc_apex_pkg;
 /
 
 Prompt Package Body SIE_01_NOTFC_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:07 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_notfc_pkg as
   procedure notfc_sms (pnu_config_evenm_notfb in number,
                        pta_destn in sie_01_evenm_notfb_cu_pkg.typ_tab_destn,
@@ -10841,7 +10814,7 @@ end sie_01_notfc_pkg;
 /
 
 Prompt Package Body SIE_01_TYPE_COMNC_PKG;
-/* Formatted on 04/12/2013 11:35:06 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:07 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_01_type_comnc_pkg is
   type typ_tab_const is table of varchar2 (30)
                           index by varchar2 (30);
@@ -10882,7 +10855,7 @@ end sie_01_type_comnc_pkg;
 /
 
 Prompt Package Body SIE_03_ENVOI_COURL_PKG;
-/* Formatted on 04/12/2013 11:35:07 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:08 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_03_envoi_courl_pkg as
   function creer (pva_servr in varchar2,
                   pnu_port in number,
@@ -11315,7 +11288,7 @@ end sie_03_envoi_courl_pkg;
 /
 
 Prompt Package Body SIE_03_JOURN_PKG;
-/* Formatted on 04/12/2013 11:35:07 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:08 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_03_JOURN_PKG" is
   gva_travl                               varchar2 (200);
 
@@ -11383,7 +11356,7 @@ end sie_03_journ_pkg;
 /
 
 Prompt Package Body SIE_03_JOURN_UNITR_PKG;
-/* Formatted on 04/12/2013 11:35:07 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:08 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_03_journ_unitr_pkg as
   type rec_ocurn_hisrc_struc_aplic is record
   (
@@ -11531,7 +11504,7 @@ end sie_03_journ_unitr_pkg;
 /
 
 Prompt Package Body SIE_04_CONTX_PKG;
-/* Formatted on 04/12/2013 11:35:08 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:09 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_04_contx_pkg as
   contx_intrv                             exception;
   fil_arian_intrv                         exception;
@@ -12784,7 +12757,7 @@ end sie_04_contx_pkg;
 /
 
 Prompt Package Body SIE_04_FIL_ARIAN_PKG;
-/* Formatted on 04/12/2013 11:35:08 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:09 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_04_fil_arian_pkg as
   gbo_mode_debug                 constant boolean default false;
   gnu_mod_encry                  constant pls_integer
@@ -13517,7 +13490,7 @@ end sie_04_fil_arian_pkg;
 /
 
 Prompt Package Body SIE_04_HISTR_NAVGT_PKG;
-/* Formatted on 04/12/2013 11:35:08 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:09 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_04_histr_navgt_pkg as
   procedure genr_histr is
     cursor cur_nagvt_histr (pnu_utils in number) is
@@ -13644,7 +13617,7 @@ end sie_04_histr_navgt_pkg;
 /
 
 Prompt Package Body SIE_05_FORML_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:35:08 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:09 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_05_FORML_NOYAU_PKG" as
   gva_code_exect                          varchar2 (32767);
 
@@ -13664,8 +13637,8 @@ create or replace package body "SIE_05_FORML_NOYAU_PKG" as
     return boolean is
   begin
     gva_code_exect :=
-      replace ('begin 
-                               if %pva_forml% then 
+      replace ('begin
+                               if %pva_forml% then
                                  sie_05_forml_noyau_pkg.gva_varbl_varch := ''O'';
                                else
                                    sie_05_forml_noyau_pkg.gva_varbl_varch := ''N'';
@@ -13695,13 +13668,13 @@ end sie_05_forml_noyau_pkg;
 /
 
 Prompt Package Body SIE_06_RATIO_PKG;
-/* Formatted on 04/12/2013 11:35:08 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:09 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_06_RATIO_PKG" is
   function resdr_ratio (pnu_valr in number,
                         pva_ratio in varchar2)
     return number is
   begin
-    execute immediate ' 
+    execute immediate '
       begin
         sie_05_forml_noyau_pkg.gnu_varbl_numbr := (' || pva_ratio || ') * :2;
       end;
@@ -13713,7 +13686,7 @@ end sie_06_ratio_pkg;
 /
 
 Prompt Package Body SIE_07_APEX_COLCT_PKG;
-/* Formatted on 04/12/2013 11:35:08 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:10 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_07_apex_colct_pkg is
   procedure suprm_colct (pva_colct_name in varchar2) is
   begin
@@ -13921,7 +13894,7 @@ end sie_07_apex_colct_pkg;
 /
 
 Prompt Package Body SIE_07_CLOB_PKG;
-/* Formatted on 04/12/2013 11:35:09 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:10 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_CLOB_PKG" as
   type typ_clob is record
   (
@@ -14465,7 +14438,7 @@ end;
 /
 
 Prompt Package Body SIE_07_JAVSC_PKG;
-/* Formatted on 04/12/2013 11:35:09 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:10 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_JAVSC_PKG" as
   procedure ajout_scrip_charg is
   begin
@@ -14481,8 +14454,7 @@ create or replace package body "SIE_07_JAVSC_PKG" as
   end ajout_scrip_charg;
 
   function obten_date_debut_calnd_javsc
-    return date
-    result_cache is
+    return date is
   begin
     return to_date ('19700101',
                     'YYYYMMDD');
@@ -14497,7 +14469,7 @@ end sie_07_javsc_pkg;
 /
 
 Prompt Package Body SIE_07_SEMPH_PKG;
-/* Formatted on 04/12/2013 11:35:09 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:10 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_SEMPH_PKG" is
   function verfr_semph (pva_code in varchar2,
                         pva_varbl1 in varchar2,
@@ -14747,7 +14719,7 @@ end sie_07_semph_pkg;
 /
 
 Prompt Package Body SIE_07_SESN_PKG;
-/* Formatted on 04/12/2013 11:35:09 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:10 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_SESN_PKG" as
   gbo_mode_debug                          boolean default false;
 
@@ -14820,7 +14792,7 @@ end sie_07_sesn_pkg;
 /
 
 Prompt Package Body SIE_07_SQL_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:35:09 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:10 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_SQL_NOYAU_PKG" as
   procedure obten_infor_coln_ir (pnu_ref_ir in number,
                                  pnu_rpts_id in number,
@@ -14869,7 +14841,7 @@ end;
 /
 
 Prompt Package Body SIE_07_SQL_PKG;
-/* Formatted on 04/12/2013 11:35:09 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:11 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_SQL_PKG" as
   knu_type_vc2                   constant number := 1;
   knu_type_numbr                 constant number := 2;
@@ -15247,7 +15219,7 @@ end;
 /
 
 Prompt Package Body SIE_07_SQL_UTIL_PKG;
-/* Formatted on 04/12/2013 11:35:10 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:11 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_SQL_UTIL_PKG" as
   --TODO: Faire un overload de la fonction "insert" a laquelle on va passer un sys_refcursor
   --      et qui va looper les insert pour chaque record
@@ -15858,7 +15830,7 @@ end;
 /
 
 Prompt Package Body SIE_07_UTIL_CHAIN_PKG;
-/* Formatted on 04/12/2013 11:35:10 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:12 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_07_util_chain_pkg is
   /* Package variables used repeatedly throughout the body. */
   len_string                              number;
@@ -15882,7 +15854,7 @@ create or replace package body sie_07_util_chain_pkg is
                    || Returns TRUE if the character passsed into the function is found
                    || in the list of delimiters.
                    */
-  is
+                  is
   begin
     return instr (delimiters_in,
                   character_in) > 0;
@@ -15946,14 +15918,14 @@ create or replace package body sie_07_util_chain_pkg is
                 return_value,
                 1);
       -- Exit the loop if:
-      exit when /* On a delimiter, since that is always an atomic */
-                a_delimiter (next_char)
-             or /* Was a delimiter, but am now in a word. */
+      exit when                                                     /* On a delimiter, since that is always an atomic */
+               a_delimiter (next_char)
+             or                                                             /* Was a delimiter, but am now in a word. */
                 (was_a_delimiter and not a_delimiter (next_char))
-             or /* Reached end of string scanning forward. */
-                next_char is null
-             or /* Reached beginning of string scanning backward. */
-                return_value < 0;
+             or                                                            /* Reached end of string scanning forward. */
+               next_char is null
+             or                                                     /* Reached beginning of string scanning backward. */
+               return_value < 0;
       /* Shift return_value to move the next character. */
       return_value := return_value + scan_increment_in;
     end loop;
@@ -15975,7 +15947,7 @@ create or replace package body sie_07_util_chain_pkg is
                                               however,
                                                   || to make it easier to read and debug the main body of the programs.
                                                   */
-  is
+                                                 is
   begin
     if count_type_in = 'ALL'
     or (count_type_in = 'WORD' and not a_delimiter (atomic_in))
@@ -15992,7 +15964,7 @@ create or replace package body sie_07_util_chain_pkg is
                                                     || loop. Otherwise I will raise a NO_DATA_FOUND exception. For a more
                                                     || elaborate display_table module, see Chapter 7 on PL/SQL tables.
                                                     */
-  is
+                                                   is
   begin
     for table_row in 1 .. num_rows_in loop
       dbms_output.put_line (nvl (table_in (table_row), 'NULL'));
@@ -16012,7 +15984,7 @@ create or replace package body sie_07_util_chain_pkg is
                                                                        ||      num_atomics_out - the number of atomics found.
                                                                        ||      delimiters_in - the set of delimiters used in parse.
                                                                        */
-  is
+                                                                      is
   begin
     /* Initialize variables. */
     num_atomics_out := 0;
@@ -16075,7 +16047,7 @@ create or replace package body sie_07_util_chain_pkg is
                                                                        || list in the format "|A|,|C|". I do not repeat any of the comments
                                                                        || from the first iteration of parse_string.
                                                                        */
-  is
+                                                                      is
   begin
     /* Initialize variables */
     num_atomics_out := 0;
@@ -16128,7 +16100,7 @@ create or replace package body sie_07_util_chain_pkg is
                    || words and DELIMITER to count only the delimiters. You can optionally
                    || pass your own set of delimiters into the function.
                    */
-  is
+                  is
     return_value                            integer := 0;
   begin
     /* Initialize variables. */
@@ -16175,7 +16147,7 @@ create or replace package body sie_07_util_chain_pkg is
                     || So you can ask for the third atomic, or the second word from the end
                     || of the string. You can pass your own list of delimiters as well.
                     */
-  is
+                   is
     /* Local copy of string. Supports up to 1000 characters. */
     local_string                            varchar2 (1000)
                                               := ltrim (rtrim (substr (string_in,
@@ -16261,7 +16233,7 @@ end sie_07_util_chain_pkg;
 /
 
 Prompt Package Body SIE_07_UTIL_COMPR_ZIP_PKG;
-/* Formatted on 04/12/2013 11:35:10 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:12 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_07_util_compr_zip_pkg is
   function raw2num (pra_value in raw)
     return number is
@@ -16691,7 +16663,7 @@ end sie_07_util_compr_zip_pkg;
 /
 
 Prompt Package Body SIE_07_UTIL_CU_PKG;
-/* Formatted on 04/12/2013 11:35:10 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:12 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_UTIL_CU_PKG" as
   function obten_sourc_shutl_selct (pva_selct in varchar2)
     return varchar2 is
@@ -16753,7 +16725,7 @@ end sie_07_util_cu_pkg;
 /
 
 Prompt Package Body SIE_07_UTIL_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:35:10 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:12 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_07_util_noyau_pkg is
   --Result cache par session
   gva_schem                               varchar2 (30);
@@ -16774,7 +16746,7 @@ end sie_07_util_noyau_pkg;
 /
 
 Prompt Package Body SIE_07_UTIL_PKG;
-/* Formatted on 04/12/2013 11:35:11 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:13 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_07_UTIL_PKG" as
   gti_timsp_initl                         timestamp;
 
@@ -18387,7 +18359,7 @@ end sie_07_util_pkg;
 /
 
 Prompt Package Body SIE_08_URL_PKG;
-/* Formatted on 04/12/2013 11:35:12 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:13 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_08_URL_PKG" as
   function obten_sesn
     return number is
@@ -18403,7 +18375,7 @@ create or replace package body "SIE_08_URL_PKG" as
 
   procedure redrg_page_rendr (pva_url in varchar2) is
   begin
-    htp.p (' <script type="text/javascript"> 
+    htp.p (' <script type="text/javascript">
           <!-- Rediriger
           self.location.href="' || pva_url || '";
           //--></script>');
@@ -18702,7 +18674,7 @@ end sie_08_url_pkg;
 /
 
 Prompt Package Body SIE_09_PILE_PKG;
-/* Formatted on 04/12/2013 11:35:12 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:14 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_09_PILE_PKG" as
   type typ_elemn_pile is record
   (
@@ -19021,7 +18993,7 @@ end sie_09_pile_pkg;
 /
 
 Prompt Package Body SIE_10_DBA_PKG;
-/* Formatted on 04/12/2013 11:35:12 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:15 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_10_DBA_PKG" as
   procedure index_foreign_key (pva_schem in varchar2) is
     vva_sql_comnd                           varchar2 (32767);
@@ -19524,16 +19496,16 @@ declare
 begin
   sie_09_pile_pkg.mode_depil (''NOM_PILE'');
   vro_rowid := sie_09_pile_pkg.depil_rowid (''NOM_PILE'');
-      
+
   while vro_rowid is not null loop
     --traitement ici
 
 
     vro_rowid := sie_09_pile_pkg.depil_rowid (''NOM_PILE'');
   end loop;
-      
+
   sie_09_pile_pkg.termn_utils_pile (''NOM_PILE'');
-      
+
 exception
 when others then
   sie_09_pile_pkg.vider_pile ();
@@ -19842,7 +19814,7 @@ end sie_10_dba_pkg;
 /
 
 Prompt Package Body SIE_11_APLIC_PKG;
-/* Formatted on 04/12/2013 11:35:13 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:15 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_11_APLIC_PKG" is
   gda_const_date                 constant date
     default to_date ('1' || '9' || '8' || '7' || '-' || '0' || '7' || '-' || '0' || '9',
@@ -20460,7 +20432,7 @@ end sie_11_aplic_pkg;
 /
 
 Prompt Package Body SIE_11_AUTHE_APEX_PKG;
-/* Formatted on 04/12/2013 11:35:13 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:15 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_11_authe_apex_pkg is
   gbo_defnr_sesn                          boolean default false;
   gva_code_utils_derv                     varchar2 (30);
@@ -20508,7 +20480,7 @@ end sie_11_authe_apex_pkg;
 /
 
 Prompt Package Body SIE_11_INSTA_AFW_PKG;
-/* Formatted on 04/12/2013 11:35:18 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:22 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_11_insta_afw_pkg as
   --Exceptions
   gex_page_globl_non_trouv                exception;
@@ -20528,7 +20500,7 @@ create or replace package body sie_11_insta_afw_pkg as
   kva_mesg_afw_non_insta         constant varchar2 (50) default 'AFW non installe.';
   kva_mesg_afw_insta_termn       constant varchar2 (50) default 'Installation AFW termine.';
   kva_chain_item_aplic           constant varchar2 (4000)
-    default 'A_SIE_04_ACTIO:A_SIE_04_AUTOR_DUPLQ_PAGE:A_SIE_04_CONTX:A_SIE_04_CONTX_FORMT:A_SIE_04_SEQNC_CONTX:A_SIE_04_SOURC_ACTIO:A_SIE_04_SOURC_CONTX:A_SIE_04_SOURC_CONTX_FORMT:A_SIE_04_SOURC_NUMR_APLIC:A_SIE_04_SOURC_NUMR_PAGE:A_SIE_04_SOURC_SEQNC_CONTX:A_SIE_04_SOURC_URL:A_SIE_04_SUPRM_FIL_COURN:A_SIE_04_SUR_SOUMS:A_SIE_11_ACRON_PRODT:A_SIE_11_DEPLC_RANGE_RAPRT:A_SIE_11_DOSR_FICHR:A_SIE_11_DOSR_FICHR_AFW:A_SIE_11_ENVIR:A_SIE_11_JQUER_UI_CSS_SCOPE:A_SIE_11_MESG_SUPRS:A_SIE_11_MESG_TOUT_DROIT_RESRV:A_SIE_11_NUMR_VERSN_PRODT:A_SIE_11_NUMR_VERSN_PRODT_AFW:A_SIE_11_TEMPL_CUSTM:A_SIE_11_TEMPL_ECHO_CUSTM:A_SIE_11_TEMPL_JAVSC_CORE_1:A_SIE_11_TEMPL_JAVSC_CORE_2:A_SIE_11_TEMPL_JAVSC_JQUER:A_SIE_11_TEMPL_THEME_JQUER_UI:A_SIE_11_TRAIT_MESGS_ERR:A_SIE_11_URL_ACUEI:A_SIE_11_URL_AUTHE_CIBLE:A_SIE_11_VERSN_PRODT:A_SIE_12_UTILS:A_SIE_12_UTILS_CODE:A_SIE_12_UTILS_NOM_FORMT:A_SIE_13_LIEN_EDITN_RAPRT:A_SIE_13_MESG_AUCUN_DON_TROUV:A_SIE_13_MESG_ECHEC_SPECF:A_SIE_13_MESG_IMPOS_FETCH:A_SIE_13_MESG_RANGE_INSER:A_SIE_13_MESG_RANGE_MODF:A_SIE_13_MESG_RANGE_SUPRM:A_SIE_13_MESG_SUCS_SPECF:A_SIE_13_MESG_TROP_DON_TROUV:A_SIE_13_MODE_RECHR:A_SIE_13_PAGE_META:A_SIE_13_PAGE_TITRE:A_SIE_13_PAGNT_NAVGT:A_SIE_14_POPUP_LOV_IR:A_SIE_14_POPUP_LOV_IR_RETR:A_SIE_25_URL_RAPRT';
+    default 'A_SIE_04_ACTIO:A_SIE_04_AUTOR_DUPLQ_PAGE:A_SIE_04_CONTX:A_SIE_04_CONTX_FORMT:A_SIE_04_SEQNC_CONTX:A_SIE_04_SOURC_ACTIO:A_SIE_04_SOURC_CONTX:A_SIE_04_SOURC_CONTX_FORMT:A_SIE_04_SOURC_NUMR_APLIC:A_SIE_04_SOURC_NUMR_PAGE:A_SIE_04_SOURC_SEQNC_CONTX:A_SIE_04_SOURC_URL:A_SIE_04_SUPRM_FIL_COURN:A_SIE_04_SUR_SOUMS:A_SIE_11_ACRON_PRODT:A_SIE_11_DEPLC_RANGE_RAPRT:A_SIE_11_DOSR_FICHR:A_SIE_11_DOSR_FICHR_AFW:A_SIE_11_ENVIR:A_SIE_11_JQUER_UI_CSS_SCOPE:A_SIE_11_MESG_SUPRS:A_SIE_11_MESG_TOUT_DROIT_RESRV:A_SIE_11_NUMR_VERSN_PRODT:A_SIE_11_NUMR_VERSN_PRODT_AFW:A_SIE_11_TEMPL_CUSTM:A_SIE_11_TEMPL_ECHO_CUSTM:A_SIE_11_TEMPL_JAVSC_CORE_1:A_SIE_11_TEMPL_JAVSC_CORE_2:A_SIE_11_TEMPL_JAVSC_JQUER:A_SIE_11_TEMPL_THEME_JQUER_UI:A_SIE_11_TRAIT_MESGS_ERR:A_SIE_11_URL_ACUEI:A_SIE_11_URL_AUTHE_CIBLE:A_SIE_11_VERSN_PRODT:A_SIE_12_UTILS:A_SIE_12_UTILS_CODE:A_SIE_12_UTILS_NOM_FORMT:A_SIE_13_LIEN_EDITN_RAPRT:A_SIE_13_MESG_AUCUN_DON_TROUV:A_SIE_13_MESG_ECHEC_SPECF:A_SIE_13_MESG_IMPOS_FETCH:A_SIE_13_MESG_RANGE_INSER:A_SIE_13_MESG_RANGE_MODF:A_SIE_13_MESG_RANGE_SUPRM:A_SIE_13_MESG_SUCS_SPECF:A_SIE_13_MESG_TROP_DON_TROUV:A_SIE_13_MODE_RECHR:A_SIE_13_PAGE_META:A_SIE_13_PAGE_TITRE:A_SIE_13_PAGNT_NAVGT:A_SIE_14_POPUP_LOV_IR:A_SIE_14_POPUP_LOV_IR_RETR:A_SIE_25_URL_RAPRT' ;
 
   function afw_deja_insta (pnu_numr_apex in number)
     return boolean is
@@ -37288,7 +37260,7 @@ end sie_11_insta_afw_pkg;
 /
 
 Prompt Package Body SIE_11_MIGRT_PKG;
-/* Formatted on 04/12/2013 11:35:20 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:24 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_11_migrt_pkg is
   type typ_rec_elemn_enonc_inser is record
   (
@@ -37640,8 +37612,8 @@ create or replace package body sie_11_migrt_pkg is
     vva_fonct :=
          'function obten_'
       || pva_nom_fonct
-      || ' (pnu_seqnc in number, 
-                                                      pva_contx in varchar2 default null) 
+      || ' (pnu_seqnc in number,
+                                                      pva_contx in varchar2 default null)
                     return number is
                   begin
                     return sie$migrt$pkg.'
@@ -38793,8 +38765,8 @@ create or replace package body sie_11_migrt_pkg is
     ajout_ligne (null,
                  gnu_index_updat);
 
-    ajout_ligne ('begin 
-                    sie_11_migrt_pkg.gva_indic_migrt := ''N''; 
+    ajout_ligne ('begin
+                    sie_11_migrt_pkg.gva_indic_migrt := ''N'';
                   end;
                   /',
                  gnu_index_updat);
@@ -39715,7 +39687,7 @@ create or replace package body sie_11_migrt_pkg is
 
     ajout_enonc_a_exect (
          'begin
-    
+
       open '
       || vva_varbl_ref_cursor
       || ' for '
@@ -39730,7 +39702,7 @@ create or replace package body sie_11_migrt_pkg is
 
     ajout_enonc_a_exect (
          ';
-      
+
       while '
       || vva_varbl_ref_cursor
       || '%found loop
@@ -39754,7 +39726,7 @@ create or replace package body sie_11_migrt_pkg is
         sie_11_migrt_pkg.alimn_clob_selct('
       || pnu_seqnc_entit
       || ', var_seqnc);
-        
+
         sie_11_migrt_pkg.alimn_clob_updat('
       || pnu_seqnc_entit
       || ', var_seqnc);
@@ -39768,7 +39740,7 @@ create or replace package body sie_11_migrt_pkg is
 
     ajout_enonc_a_exect (';
       end loop;
-      
+
       close ' || vva_varbl_ref_cursor || ';
     end;');
 
@@ -39885,7 +39857,7 @@ end sie_11_migrt_pkg;
 /
 
 Prompt Package Body SIE_11_PARMT_AFW_PKG;
-/* Formatted on 04/12/2013 11:35:20 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:24 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_11_PARMT_AFW_PKG" is
   function obten_valr_parmt (pva_code_parmt in varchar)
     return varchar2 is
@@ -39905,7 +39877,7 @@ end sie_11_parmt_afw_pkg;
 /
 
 Prompt Package Body SIE_11_PRODT_PKG;
-/* Formatted on 04/12/2013 11:35:21 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:25 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_11_PRODT_PKG" is
   gda_const_date                 constant date
     default to_date ('1' || '9' || '8' || '7' || '-' || '0' || '7' || '-' || '0' || '9',
@@ -40556,47 +40528,6 @@ create or replace package body "SIE_11_PRODT_PKG" is
            || '" type="text/javascript" defer></script>';
   end obten_templ_javsc_jquer;
 
-  function obten_templ_echo_custm (pnu_prodt in number default null)
-    return varchar2 is
-  begin
-    return    '<!-- APEXFramework - Theme - Echo 2.1 -->'
-           || '<link rel="stylesheet" href="'
-           || obten_dosr_fichr_afw
-           || 'theme/echo2.1/src/css/custom/theme.css?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/css" />'
-           || '<link rel="stylesheet" href="'
-           || obten_dosr_fichr_prodt
-           || 'theme/echo2.1/src/css/custom/theme.css?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/css" />'
-           || '<script type="text/javascript" src="'
-           || obten_dosr_fichr_afw
-           || 'theme/echo2.1/src/js/jquery.layout.js?v='
-           || obten_numr_versn_prodt_afw
-           || '"></script>'
-           || '<script type="text/javascript" src="'
-           || obten_dosr_fichr_afw
-           || 'theme/echo2.1/src/js/jquery.layout.state.js?v='
-           || obten_numr_versn_prodt_afw
-           || '"></script>'
-           || '<script type="text/javascript" src="'
-           || obten_dosr_fichr_afw
-           || 'theme/echo2.1/src/js/json2.js?v='
-           || obten_numr_versn_prodt_afw
-           || '"></script>'
-           || '<script type="text/javascript" src="'
-           || obten_dosr_fichr_afw
-           || 'theme/echo2.1/src/js/theme.js?v='
-           || obten_numr_versn_prodt_afw
-           || '"></script>'
-           || '<script type="text/javascript" src="'
-           || obten_dosr_fichr_afw
-           || 'theme/echo2.1/src/js/custom/theme.js?v='
-           || obten_numr_versn_prodt_afw
-           || '"></script>';
-  end obten_templ_echo_custm;
-
   function obten_templ_custm (pnu_prodt in number default null)
     return varchar2 is
   begin
@@ -40723,8 +40654,6 @@ create or replace package body "SIE_11_PRODT_PKG" is
                                      obten_templ_javsc_core_2);
     sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TEMPL_JAVSC_JQUER',
                                      obten_templ_javsc_jquer);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TEMPL_ECHO_CUSTM',
-                                     obten_templ_echo_custm || obten_templ_custm);
     sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TEMPL_CUSTM',
                                      obten_templ_custm);
     sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_MESG_SUPRS',
@@ -41029,8 +40958,7 @@ create or replace package body "SIE_11_PRODT_PKG" is
   end deplr_formt_resrc_prodt;
 
   function obten_dosr_fichr_afw (pnu_prodt in number default null)
-    return varchar2
-    result_cache relies_on (sie_11_prodt) is
+    return varchar2 is
     vva_dosr_fichr                          varchar2 (200);
   begin
     select   dosr_fichr
@@ -41313,7 +41241,7 @@ end sie_11_prodt_pkg;
 /
 
 Prompt Package Body SIE_11_UTILS_PKG;
-/* Formatted on 04/12/2013 11:35:21 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:25 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_11_UTILS_PKG" as
   procedure ajout_role (pnu_utils in number,
                         pva_role in varchar2) is
@@ -41393,7 +41321,7 @@ end sie_11_utils_pkg;
 /
 
 Prompt Package Body SIE_11_VERSN_PKG;
-/* Formatted on 04/12/2013 11:35:21 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:25 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_11_VERSN_PKG" is
   function obten_numr_versn (pnu_versn_niv_1 in number,
                              pnu_versn_niv_2 in number,
@@ -41703,7 +41631,7 @@ end;
 /
 
 Prompt Package Body SIE_12_ARBRE_PKG;
-/* Formatted on 04/12/2013 11:35:21 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:25 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_arbre_pkg as
   gnu_sesn                                number default sie_12_sesn_pkg.obten_sesn;
 
@@ -41936,7 +41864,7 @@ end sie_12_arbre_pkg;
 /
 
 Prompt Package Body SIE_12_AUDIT_STRUC_APLIC_PKG;
-/* Formatted on 04/12/2013 11:35:21 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:25 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_audit_struc_aplic_pkg as
   procedure inscr_audit_afich_page is
   begin
@@ -41978,7 +41906,7 @@ end sie_12_audit_struc_aplic_pkg;
 /
 
 Prompt Package Body SIE_12_AUTHE_APEX_PKG;
-/* Formatted on 04/12/2013 11:35:22 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:26 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_authe_apex_pkg is
   gbo_defnr_sesn                          boolean default false;
   gnu_mod_encry                  constant pls_integer
@@ -42828,7 +42756,7 @@ end sie_12_authe_apex_pkg;
 /
 
 Prompt Package Body SIE_12_CALND_PKG;
-/* Formatted on 04/12/2013 11:35:22 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:26 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_calnd_pkg as
   function obten_date (pnu_numr_apex_regn in number)
     return date is
@@ -42955,7 +42883,7 @@ end sie_12_calnd_pkg;
 /
 
 Prompt Package Body SIE_12_DIALG_IFRAM_PKG;
-/* Formatted on 04/12/2013 11:35:22 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:26 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_dialg_ifram_pkg is
   procedure ouvri_dialg (pnu_numr_apex_actio_dynmq in number,
                          pnu_numr_apex_aplic in number,
@@ -43041,7 +42969,7 @@ end sie_12_dialg_ifram_pkg;
 /
 
 Prompt Package Body SIE_12_DOMN_GROUP_UTILS_PKG;
-/* Formatted on 04/12/2013 11:35:22 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:26 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_domn_group_utils_pkg as
   procedure maj_ocurn_group_expos (pnu_domn in number) is
   begin
@@ -43080,7 +43008,7 @@ end sie_12_domn_group_utils_pkg;
 /
 
 Prompt Package Body SIE_12_DOMN_PKG;
-/* Formatted on 04/12/2013 11:35:22 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:27 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_domn_pkg is
   procedure ajout_domn (pva_code in varchar2,
                         pva_nom in varchar2,
@@ -43522,7 +43450,7 @@ end sie_12_domn_pkg;
 /
 
 Prompt Package Body SIE_12_FAVR_PKG;
-/* Formatted on 04/12/2013 11:35:22 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:27 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_favr_pkg as
   gnu_utils                               vd_sie_12_utils.seqnc%type default sie_12_utils_pkg.obten_usagr_conct ();
   gnu_struc_aplic                         number (10)
@@ -43671,7 +43599,7 @@ end sie_12_favr_pkg;
 /
 
 Prompt Package Body SIE_12_FONCT_PKG;
-/* Formatted on 04/12/2013 11:35:22 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:27 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_fonct_pkg as
   function verif_activ_fonct_domn (pnu_struc_aplic in number)
     return boolean is
@@ -43744,7 +43672,7 @@ end sie_12_fonct_pkg;
 /
 
 Prompt Package Body SIE_12_GROUP_STAT_PKG;
-/* Formatted on 04/12/2013 11:35:22 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:27 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_12_GROUP_STAT_PKG" as
   procedure creer_group_stat (pva_code in varchar2,
                               pva_nom in varchar2,
@@ -43797,7 +43725,7 @@ end sie_12_group_stat_pkg;
 /
 
 Prompt Package Body SIE_12_GROUP_UTILS_PKG;
-/* Formatted on 04/12/2013 11:35:23 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:27 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_12_GROUP_UTILS_PKG" as
   function obten_code (pnu_group_utils in number)
     return varchar2 is
@@ -43899,7 +43827,9 @@ create or replace package body "SIE_12_GROUP_UTILS_PKG" as
 
     vnu_group_utils                         vd_i_sie_12_group_utils.seqnc%type;
   begin
-    vnu_group_utils := sie_12_group_utils_seq.nextval;
+    select   sie_12_group_utils_seq.nextval
+      into   vnu_group_utils
+      from   dual;
 
     insert into   vd_i_sie_12_group_utils (seqnc, nom, descr, code, ref_domn)
       select   vnu_group_utils,
@@ -44098,7 +44028,7 @@ end sie_12_group_utils_pkg;
 /
 
 Prompt Package Body SIE_12_LDAP_PKG;
-/* Formatted on 04/12/2013 11:35:23 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:27 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_ldap_pkg as
   function obten_servr_ldap (pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn)
     return vd_sie_12_servr_ldap%rowtype is
@@ -44269,7 +44199,7 @@ end sie_12_ldap_pkg;
 /
 
 Prompt Package Body SIE_12_MEMBR_STRUC_PKG;
-/* Formatted on 04/12/2013 11:35:23 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:27 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_12_MEMBR_STRUC_PKG" as
   function obten_code_utils_de_seqnc (pnu_seqnc_membr_struc in number)
     return varchar2 is
@@ -44292,7 +44222,7 @@ end sie_12_membr_struc_pkg;
 /
 
 Prompt Package Body SIE_12_MENU_PKG;
-/* Formatted on 04/12/2013 11:35:23 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:27 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_menu_pkg as
   function obten_item_racn (pnu_menu in number)
     return number is
@@ -44322,7 +44252,7 @@ end sie_12_menu_pkg;
 /
 
 Prompt Package Body SIE_12_MOT_PASSE_PKG;
-/* Formatted on 04/12/2013 11:35:23 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:28 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_12_MOT_PASSE_PKG" is
   gnu_mod_encry                  constant pls_integer
     default dbms_crypto.encrypt_aes256 + dbms_crypto.chain_cbc + dbms_crypto.pad_pkcs5 ;
@@ -44492,9 +44422,9 @@ create or replace package body "SIE_12_MOT_PASSE_PKG" is
   begin
     /*
    Les règles appliquées concernant les mots de passe sont les suivantes :
-       •    Ne pas contenir des parties du nom complet de l’utilisateur comptant plus de deux caractères successifs;
-       •    Comporter au moins sept caractères;
-       •    Contenir des caractères provenant de trois des quatre catégories suivantes :
+       ¿    Ne pas contenir des parties du nom complet de l¿utilisateur comptant plus de deux caractères successifs;
+       ¿    Comporter au moins sept caractères;
+       ¿    Contenir des caractères provenant de trois des quatre catégories suivantes :
            o    Caractères majuscules anglais (A à Z)
            o    Caractères minuscules anglais (a à z)
            o    Chiffres en base 10 (0 à 9)
@@ -44632,7 +44562,7 @@ end sie_12_mot_passe_pkg;
 /
 
 Prompt Package Body SIE_12_REQT_INTER_UTILS_PKG;
-/* Formatted on 04/12/2013 11:35:23 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:28 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_reqt_inter_utils_pkg is
   --kva_prefx_scpi constant varchar2 (30) default 'REQT_';
   knu_duree_inter_vald           constant number default 1;
@@ -45354,7 +45284,7 @@ end sie_12_reqt_inter_utils_pkg;
 /
 
 Prompt Package Body SIE_12_SECRT_PKG;
-/* Formatted on 04/12/2013 11:35:24 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:29 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_12_SECRT_PKG" as
   gbo_super_utils                         boolean default null;
   gbo_admin_prodt                         boolean default null;
@@ -46196,7 +46126,7 @@ end sie_12_secrt_pkg;
 /
 
 Prompt Package Body SIE_12_SESN_PKG;
-/* Formatted on 04/12/2013 11:35:24 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:29 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_sesn_pkg is
   function obten_sesn
     return number is
@@ -46207,12 +46137,11 @@ end;
 /
 
 Prompt Package Body SIE_12_STAT_PKG;
-/* Formatted on 04/12/2013 11:35:24 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:29 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_12_STAT_PKG" as
   function obten_stat_group (pva_code_group in varchar2,
                              pva_code_stat in varchar2)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_seqnc                               number;
   begin
     select   s.seqnc
@@ -46230,8 +46159,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   function obten_stat (pva_code_struc_aplic in varchar2,
                        pva_code_stat in varchar2,
                        pva_code_prodt in varchar2 default null)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_seqnc                               number;
   begin
     select   seqnc
@@ -46255,8 +46183,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   function obten_stat_group_stat (pva_code_group_stat in varchar2,
                                   pva_code_stat in varchar2,
                                   pva_code_prodt in varchar2 default null)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_seqnc                               number;
   begin
     select   seqnc
@@ -46278,8 +46205,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   end obten_stat_group_stat;
 
   function obten_code_stat (pnu_seqnc_stat in number)
-    return varchar2
-    result_cache relies_on (sie_12_stat) is
+    return varchar2 is
     vva_code_stat                           varchar2 (20);
   begin
     select   code
@@ -46295,8 +46221,7 @@ create or replace package body "SIE_12_STAT_PKG" as
 
   function obten_stat_initl_struc_aplic (pva_code_struc_aplic in varchar2,
                                          pva_code_prodt in varchar2 default null)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_seqnc                               number (10);
   begin
     select   seqnc
@@ -46314,8 +46239,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   end obten_stat_initl_struc_aplic;
 
   function obten_stat_initl_struc_aplic (pnu_struc_aplic in number)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_seqnc                               number (10);
   begin
     select   seqnc
@@ -46328,8 +46252,7 @@ create or replace package body "SIE_12_STAT_PKG" as
 
   function obten_stat_initl_group_stat (pva_code_group_stat in varchar2,
                                         pva_code_prodt in varchar2 default null)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_seqnc                               number (10);
   begin
     select   seqnc
@@ -46347,8 +46270,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   end obten_stat_initl_group_stat;
 
   function obten_stat_initl_group_stat (pnu_group_stat in number)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_seqnc                               number (10);
   begin
     select   seqnc
@@ -46361,8 +46283,7 @@ create or replace package body "SIE_12_STAT_PKG" as
 
   function obten_code_stat_initl_struc_ap (pva_code_struc_aplic in varchar2,
                                            pva_code_prodt in varchar2 default null)
-    return varchar2
-    result_cache relies_on (sie_12_stat) is
+    return varchar2 is
     vva_seqnc                               varchar2 (23);
   begin
     select   code
@@ -46380,8 +46301,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   end obten_code_stat_initl_struc_ap;
 
   function obten_code_stat_initl_struc_ap (pnu_struc_aplic in number)
-    return varchar2
-    result_cache relies_on (sie_12_stat) is
+    return varchar2 is
     vva_seqnc                               varchar2 (23);
   begin
     select   code
@@ -46394,8 +46314,7 @@ create or replace package body "SIE_12_STAT_PKG" as
 
   function obten_code_stat_initl_group_st (pva_code_group_stat in varchar2,
                                            pva_code_prodt in varchar2 default null)
-    return varchar2
-    result_cache relies_on (sie_12_stat) is
+    return varchar2 is
     vva_seqnc                               varchar2 (23);
   begin
     select   code
@@ -46413,8 +46332,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   end obten_code_stat_initl_group_st;
 
   function obten_code_stat_initl_group_st (pnu_group_stat in number)
-    return varchar2
-    result_cache relies_on (sie_12_stat) is
+    return varchar2 is
     vva_seqnc                               varchar2 (23);
   begin
     select   code
@@ -46427,8 +46345,7 @@ create or replace package body "SIE_12_STAT_PKG" as
 
   function obten_stat_formt (pva_code_stat in varchar2,
                              pnu_prodt in number default sie_11_prodt_pkg.obten_prodt_sesn)
-    return varchar2
-    result_cache relies_on (sie_12_stat) is
+    return varchar2 is
     vva_stat                                vd_sie_12_stat.code%type;
   begin
     if pva_code_stat is not null then
@@ -46445,8 +46362,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   end obten_stat_formt;
 
   function obten_stat_formt (pnu_seqnc in number)
-    return varchar2
-    result_cache relies_on (sie_12_stat) is
+    return varchar2 is
     vva_stat                                vd_sie_12_stat.nom%type;
   begin
     if pnu_seqnc is not null then
@@ -46461,8 +46377,7 @@ create or replace package body "SIE_12_STAT_PKG" as
 
   function valdr_evolt_stat (pnu_stat_ancie in number,
                              pnu_stat_nouv in number)
-    return boolean
-    result_cache relies_on (sie_12_stat) is
+    return boolean is
     vnu_exist                               number;
   begin
     --Si la variable est settee, on valide a partir de la liste de disponibilite du code
@@ -46487,8 +46402,7 @@ create or replace package body "SIE_12_STAT_PKG" as
 
   function difrn_ordre (pnu_ref_stat_1 in number,
                         pnu_ref_stat_2 in number)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_diff                                number;
   begin
     -- Signification de la valeur retournee:
@@ -46510,8 +46424,7 @@ create or replace package body "SIE_12_STAT_PKG" as
 
   function obten_liste_formt (pnu_stat in number,
                               pva_code in varchar2)
-    return varchar2
-    result_cache relies_on (sie_12_stat) is
+    return varchar2 is
     vva_retr                                varchar2 (200);
 
     cursor cur_code is
@@ -46533,8 +46446,7 @@ create or replace package body "SIE_12_STAT_PKG" as
                               pva_code_stat_base in varchar2,
                               pva_code_stat_cible in varchar2,
                               pva_code_prodt in varchar2 default null)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_ordre_base                          number (10);
     vnu_ordre_cible                         number (10);
   begin
@@ -46564,8 +46476,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   function obten_postn_reltv (pva_struc_aplic in varchar2,
                               pnu_code_stat_base in number,
                               pnu_code_stat_cible in number)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_ordre_base                          number (10);
     vnu_ordre_cible                         number (10);
   begin
@@ -46589,8 +46500,7 @@ create or replace package body "SIE_12_STAT_PKG" as
                                          pva_code_stat_base in varchar2,
                                          pva_code_stat_cible in varchar2,
                                          pva_code_prodt in varchar2 default null)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_ordre_base                          number (10);
     vnu_ordre_cible                         number (10);
   begin
@@ -46620,8 +46530,7 @@ create or replace package body "SIE_12_STAT_PKG" as
   function obten_postn_reltv_group_stat (pva_group_stat in varchar2,
                                          pnu_code_stat_base in number,
                                          pnu_code_stat_cible in number)
-    return number
-    result_cache relies_on (sie_12_stat) is
+    return number is
     vnu_ordre_base                          number (10);
     vnu_ordre_cible                         number (10);
   begin
@@ -46701,7 +46610,7 @@ end sie_12_stat_pkg;
 /
 
 Prompt Package Body SIE_12_STRUC_APLIC_CU_PKG;
-/* Formatted on 04/12/2013 11:35:25 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:30 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_struc_aplic_cu_pkg as
   function exect_sql_reslt_elemn_varch (pva_sql in varchar2,
                                         pnu_cle_initl in number)
@@ -47017,7 +46926,7 @@ end sie_12_struc_aplic_cu_pkg;
 /
 
 Prompt Package Body SIE_12_STRUC_APLIC_PKG;
-/* Formatted on 04/12/2013 11:35:25 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:30 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_12_STRUC_APLIC_PKG" as
   function obten_struc_aplic_formt (pnu_seqnc_struc in number)
     return varchar2 is
@@ -47563,7 +47472,7 @@ end sie_12_struc_aplic_pkg;
 /
 
 Prompt Package Body SIE_12_UTILS_PKG;
-/* Formatted on 04/12/2013 11:35:25 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:30 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_12_utils_pkg as
   procedure init is
   begin
@@ -47958,9 +47867,9 @@ create or replace package body sie_12_utils_pkg as
                  'aeiouaeiouyaeiouaeiouycnaeiouaeiouyaeiouaeioucn');
     vva_code_utils :=
       sie_07_util_pkg.multi_replc (vva_code_utils,
-                                   'œ',
+                                   '¿',
                                    'oe',
-                                   'Œ',
+                                   '¿',
                                    'OE');
 
     -- mettre en majuscules
@@ -48031,8 +47940,7 @@ create or replace package body sie_12_utils_pkg as
   end obten_audit_usagr_conct;
 
   function obten_usagr_conct_sql (pva_code_utils in varchar2)
-    return number
-    result_cache relies_on (sie_12_utils) is
+    return number is
     vnu_seqnc_utils                         number (10);
   begin
     select   ut.seqnc
@@ -48172,7 +48080,7 @@ end sie_12_utils_pkg;
 /
 
 Prompt Package Body SIE_13_CONDT_PILTB_PKG;
-/* Formatted on 04/12/2013 11:35:26 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:31 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_CONDT_PILTB_PKG" as
   gva_en_modfc                            varchar2 (1);
   gva_en_creat                            varchar2 (1);
@@ -48412,7 +48320,7 @@ end sie_13_condt_piltb_pkg;
 /
 
 Prompt Package Body SIE_13_MENU_PKG;
-/* Formatted on 04/12/2013 11:35:26 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:31 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_13_menu_pkg as
   function obten_url_cible (pnu_item_menu in number /*,
                                                                              pnu_item_parnt in number default null*/
@@ -48839,7 +48747,7 @@ end sie_13_menu_pkg;
 /
 
 Prompt Package Body SIE_13_MIME_TYPE_PKG;
-/* Formatted on 04/12/2013 11:35:26 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:31 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_13_mime_type_pkg as
   function obten_icon (pnu_mime_type in number,
                        pva_indic_chemn_compl in varchar2 default 'O')
@@ -48932,7 +48840,7 @@ end sie_13_mime_type_pkg;
 /
 
 Prompt Package Body SIE_13_NAVGT_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:35:26 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:31 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_NAVGT_NOYAU_PKG" as
   cursor cur_item_rechr (pnu_ref_page in number,
                          pva_schem in varchar2,
@@ -49237,7 +49145,7 @@ end;
 /
 
 Prompt Package Body SIE_13_NAVGT_PKG;
-/* Formatted on 04/12/2013 11:35:27 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:32 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_NAVGT_PKG" as
   exc_err_extra                           exception;
   gva_indic_extra_total                   varchar2 (2);
@@ -50358,7 +50266,7 @@ end sie_13_navgt_pkg;
 /
 
 Prompt Package Body SIE_13_OPERT_PKG;
-/* Formatted on 04/12/2013 11:35:27 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:32 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_OPERT_PKG" as
   procedure creer_opert (pva_code_prodt in varchar2,
                          pva_code in varchar2,
@@ -50406,7 +50314,7 @@ end sie_13_opert_pkg;
 /
 
 Prompt Package Body SIE_13_PAGE_ITEM_PKG;
-/* Formatted on 04/12/2013 11:35:27 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:32 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_PAGE_ITEM_PKG" as
   function obten_tradc_libl (pnu_item_id number)
     return varchar2 is
@@ -50453,7 +50361,7 @@ end sie_13_page_item_pkg;
 /
 
 Prompt Package Body SIE_13_PAGE_PKG;
-/* Formatted on 04/12/2013 11:35:28 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:33 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_PAGE_PKG" as
   gva_sie_13_liste_navgt_excls            varchar2 (200);
   gbo_list_afich                          boolean default true;
@@ -51975,7 +51883,7 @@ end sie_13_page_pkg;
 /
 
 Prompt Package Body SIE_13_PAGE_PREFR_NAVGT_PKG;
-/* Formatted on 04/12/2013 11:35:28 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:34 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_PAGE_PREFR_NAVGT_PKG" as
   procedure ajout_prefr_navgt (pnu_page in number,
                                pnu_page_ir in number) is
@@ -51994,7 +51902,7 @@ end sie_13_page_prefr_navgt_pkg;
 /
 
 Prompt Package Body SIE_13_PREFR_PKG;
-/* Formatted on 04/12/2013 11:35:28 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:34 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_PREFR_PKG" as
   procedure sauvg_prefr (pnu_ref_prefr in number,
                          pva_valr in varchar2) is
@@ -52249,7 +52157,7 @@ end sie_13_prefr_pkg;
 /
 
 Prompt Package Body SIE_13_RAPRT_INTER_CU_PKG;
-/* Formatted on 04/12/2013 11:35:28 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:34 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_13_raprt_inter_cu_pkg is
   gnu_page_apex                           number (10);
   gva_code_ir                             varchar2 (23);
@@ -52357,7 +52265,7 @@ end sie_13_raprt_inter_cu_pkg;
 /
 
 Prompt Package Body SIE_13_RAPRT_INTER_PKG;
-/* Formatted on 04/12/2013 11:35:28 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:34 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_RAPRT_INTER_PKG" is
   function obten_ir_page (pnu_numr_page number default null,
                           pva_code in varchar2 default null,
@@ -52906,7 +52814,7 @@ end sie_13_raprt_inter_pkg;
 /
 
 Prompt Package Body SIE_13_REGN_PILTB_PKG;
-/* Formatted on 04/12/2013 11:35:29 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:34 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_13_REGN_PILTB_PKG" as
   function obten_contn_page_courn (pva_code in varchar2,
                                    pva_code_lang in varchar2 default null,
@@ -53010,7 +52918,7 @@ end sie_13_regn_piltb_pkg;
 /
 
 Prompt Package Body SIE_13_RESRC_PKG;
-/* Formatted on 04/12/2013 11:35:29 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:34 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_13_resrc_pkg as
   function obten_chemn_resrc (pva_propr in varchar2,
                               pva_code_resrc in varchar2,
@@ -53063,7 +52971,7 @@ end sie_13_resrc_pkg;
 /
 
 Prompt Package Body SIE_14_DOMN_VALR_CU_PKG;
-/* Formatted on 04/12/2013 11:35:29 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:34 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_14_domn_valr_cu_pkg as
   function obten_valr (pva_code_domn in varchar2,
                        pva_code_valr in varchar2,
@@ -53115,11 +53023,10 @@ end sie_14_domn_valr_cu_pkg;
 /
 
 Prompt Package Body SIE_14_DOMN_VALR_PKG;
-/* Formatted on 04/12/2013 11:35:29 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:35 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_14_DOMN_VALR_PKG" as
   function obten_valr (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache relies_on (sie_14_detl_domn_valr) is
+    return varchar2 is
     vva_valr                                vd_i_sie_14_detl_domn_valr.valr%type;
   begin
     select   ddv.valr
@@ -53134,8 +53041,7 @@ create or replace package body "SIE_14_DOMN_VALR_PKG" as
   end obten_valr;
 
   function obten_valr_court (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache relies_on (sie_14_detl_domn_valr) is
+    return varchar2 is
     vva_valr_court                          vd_i_sie_14_detl_domn_valr.valr_court%type;
   begin
     select   ddv.valr_court
@@ -53150,8 +53056,7 @@ create or replace package body "SIE_14_DOMN_VALR_PKG" as
   end obten_valr_court;
 
   function obten_code (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache relies_on (sie_14_detl_domn_valr) is
+    return varchar2 is
     vva_code_valr                           vd_sie_14_detl_domn_valr.code_valr%type;
   begin
     select   ddv.code_valr
@@ -53166,8 +53071,7 @@ create or replace package body "SIE_14_DOMN_VALR_PKG" as
   end obten_code;
 
   function obten_code_parnt (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache relies_on (sie_14_detl_domn_valr) is
+    return varchar2 is
     vva_code_valr_parnt                     vd_sie_14_detl_domn_valr.ref_code_domn_valr_formt%type;
   begin
     select   ref_code_domn_valr_formt
@@ -53251,8 +53155,7 @@ create or replace package body "SIE_14_DOMN_VALR_PKG" as
   end obten_valr;
 
   function obten_valr_organ (pnu_seqnc_valr in number)
-    return varchar2
-    result_cache relies_on (sie_14_detl_domn_valr) is
+    return varchar2 is
     vva_valr_organ                          vd_i_sie_14_detl_domn_valr.valr_organ%type;
   begin
     select   ddv.valr_organ
@@ -53297,7 +53200,9 @@ create or replace package body "SIE_14_DOMN_VALR_PKG" as
              and ref_prodt = pnu_prodt_destn;
       exception
         when no_data_found then
-          vnu_nouv_type := sie_14_type_domn_valr_seq.nextval;
+          select   sie_14_type_domn_valr_seq.nextval
+            into   vnu_nouv_type
+            from   dual;
 
           insert into   vd_i_sie_14_type_domn_valr (seqnc, code, nom, descr, ref_prodt, dnr_ref_prodt)
             select   vnu_nouv_type,
@@ -53322,7 +53227,9 @@ create or replace package body "SIE_14_DOMN_VALR_PKG" as
              and ref_prodt = pnu_prodt_sourc;
       exception
         when no_data_found then
-          vnu_nouv_formt := sie_14_formt_seq.nextval;
+          select   sie_14_formt_seq.nextval
+            into   vnu_nouv_formt
+            from   dual;
 
           insert into   vd_i_sie_14_formt (seqnc,
                                            libl,
@@ -53343,7 +53250,9 @@ create or replace package body "SIE_14_DOMN_VALR_PKG" as
       end;
     end if;
 
-    vnu_nouv_domn_valr := sie_14_domn_valr_seq.nextval;
+    select   sie_14_domn_valr_seq.nextval
+      into   vnu_nouv_domn_valr
+      from   dual;
 
     insert into   vd_i_sie_14_domn_valr (seqnc,
                                          code,
@@ -53466,7 +53375,7 @@ end sie_14_domn_valr_pkg;
 /
 
 Prompt Package Body SIE_14_FORMT_PKG;
-/* Formatted on 04/12/2013 11:35:29 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:35 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_14_FORMT_PKG" as
   gva_seprt_decml                         varchar2 (1) default ',';
 
@@ -54018,7 +53927,7 @@ end sie_14_formt_pkg;
 /
 
 Prompt Package Body SIE_15_AJAX_PKG;
-/* Formatted on 04/12/2013 11:35:29 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:35 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_15_AJAX_PKG" as
   procedure obten_json_sql (pva_sql in varchar2) is
   begin
@@ -54031,7 +53940,7 @@ end sie_15_ajax_pkg;
 /
 
 Prompt Package Body SIE_15_FTP_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:35:32 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:38 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_15_ftp_noyau_pkg as
   /*
      * VERSION HISTORY
@@ -58442,7 +58351,7 @@ end sie_15_ftp_noyau_pkg;
 /
 
 Prompt Package Body SIE_15_FTP_PKG;
-/* Formatted on 04/12/2013 11:35:33 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:39 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_15_ftp_pkg is
   --
   -- CHANGE HISTORY
@@ -60076,7 +59985,7 @@ end sie_15_ftp_pkg;
 /
 
 Prompt Package Body SIE_15_HTP_PKG;
-/* Formatted on 04/12/2013 11:35:33 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:40 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_15_HTP_PKG" as
   gar_tampn                               owa.vc_arr;
   gbo_ecrit_difr                          boolean default false;
@@ -60295,16 +60204,16 @@ create or replace package body "SIE_15_HTP_PKG" as
     return pva_echap;
   end;
 
-  procedure echap (pva_texte in varchar2                     /*,
-                              pva_rempl_retr_br   in varchar2 default 'N'*/
+  procedure echap (pva_texte in varchar2 /*,
+          pva_rempl_retr_br   in varchar2 default 'N'*/
                                         ) is
   begin
     ecrir (echap (pva_texte                                                                      /*, pva_rempl_retr_br*/
                            ));
   end;
 
-  procedure echap                                                 /*(
-                                                    pva_rempl_retr_br   in varchar2 default 'N')*/
+  procedure echap /*(
+    pva_rempl_retr_br   in varchar2 default 'N')*/
                  is
   begin
     for i in gar_tampn.first () .. gar_tampn.last () loop
@@ -60782,7 +60691,7 @@ end sie_15_htp_pkg;
 /
 
 Prompt Package Body SIE_16_LOV_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:35:33 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:40 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_16_LOV_NOYAU_PKG" as
   function obten_lov_item (pnu_seqnc_item in number)
     return varchar2 is
@@ -60803,7 +60712,7 @@ end;
 /
 
 Prompt Package Body SIE_16_LOV_PKG;
-/* Formatted on 04/12/2013 11:35:33 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:40 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_16_LOV_PKG" as
   function obten_valr_rechr
     return varchar2
@@ -61016,7 +60925,7 @@ end;
 /
 
 Prompt Package Body SIE_16_VUE_PARMT_PKG;
-/* Formatted on 04/12/2013 11:35:33 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:40 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_16_VUE_PARMT_PKG" is
   gva_droit_acces                         varchar2 (1);
   gva_droit_creat                         varchar2 (1);
@@ -61115,7 +61024,7 @@ end sie_16_vue_parmt_pkg;
 /
 
 Prompt Package Body SIE_17_ENVOI_COURL_PKG;
-/* Formatted on 04/12/2013 11:35:34 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:41 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_17_ENVOI_COURL_PKG" as
   kva_crlf                       constant varchar2 (2) default chr (13) || chr (10);
 
@@ -61474,11 +61383,14 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
       vva_a                                   varchar2 (32000);
       vva_cc                                  varchar2 (32000);
       vva_cci                                 varchar2 (32000);
+      vva_mesg                                varchar2 (32767);
       vva_delmt                               varchar2 (30) default 'a1b2c3d4e3f2g1';
 
       procedure ecrir (pva_contn in varchar2) is
         vra_contn                               raw (32767) default utl_raw.cast_to_raw (pva_contn);
       begin
+        vva_mesg := vva_mesg || pva_contn;
+
         if pbo_envoi_difr then
           dbms_lob.writeappend (vbl_corps,
                                 utl_raw.length (vra_contn),
@@ -61543,22 +61455,11 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
         utl_tcp.close_all_connections;
 
         -- Ouvrir la connexion et débuter l'envoi
-        if gar_courl (vco_courl).ssl then /*
-           $if dbms_db_version.ver_le_11
-               and not dbms_db_version.ver_le_11_1 $then*/
+        if gar_courl (vco_courl).ssl then
           vcn_conct :=
             utl_smtp.open_connection (host                       => gar_courl (vco_courl).servr,
                                       port                       => gar_courl (vco_courl).port,
-                                      tx_timeout                 => 10,
-                                      wallet_path                => 'file:' || gar_courl (vco_courl).empla_walt,
-                                      wallet_password            => gar_courl (vco_courl).mot_passe_walt,
-                                      secure_connection_before_smtp => true);
-        /* $else
-           vcn_conct      :=
-             utl_smtp.open_connection (host        => gar_courl (vco_courl).servr,
-                                       port        => gar_courl (vco_courl).port,
-                                       tx_timeout  => 10);
-         $end*/
+                                      tx_timeout                 => 10);
         else
           vcn_conct :=
             utl_smtp.open_connection (gar_courl (vco_courl).servr,
@@ -61594,6 +61495,7 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
             for i in gar_courl (vco_courl).destn.first () .. gar_courl (vco_courl).destn.last () loop
               if gar_courl (vco_courl).destn (i).type != kva_destn_uniq then
                 if gar_courl (vco_courl).destn (i).type = kva_destn_a then
+                  --ete ('Ajout destinataire');
                   utl_smtp.rcpt (vcn_conct,
                                  gar_courl (vco_courl).destn (i).adres);
 
@@ -61684,25 +61586,18 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
       entet ('Subject',
              formt_entet_encd (gar_courl (vco_courl).sujet));
 
-      ecrir ('Content-Type: multipart/mixed; boundary=' || 'mix' || vva_delmt || kva_crlf || kva_crlf);
+      ecrir ('Content-Type: multipart/alternative; boundary="' || vva_delmt || '"' || kva_crlf);
 
-      ecrir ('--' || 'mix' || vva_delmt || kva_crlf);
-
-      ecrir ('Content-Type: multipart/alternative; boundary=' || 'alt' || vva_delmt || kva_crlf || kva_crlf);
-
-      ecrir ('--' || 'alt' || vva_delmt || kva_crlf);
-
-      ecrir ('content-Type: text/plain; charset=ISO-8859-1');
+      ecrir ('--' || vva_delmt || kva_crlf);
+      ecrir ('content-type: text/plain; charset=ISO-8859-1');
       ecrir (kva_crlf || kva_crlf);
 
       -- Écrire le corps
       ecrir (obten_mesg_courl_html_uniqm);
-
       ecrir (kva_crlf || kva_crlf);
-      ecrir ('--' || 'alt' || vva_delmt || kva_crlf);
-
+      ecrir ('--' || vva_delmt || kva_crlf);
       -- else
-      ecrir ('content-Type: text/html; charset=ISO-8859-1');
+      ecrir ('content-type: text/html; charset=ISO-8859-1');
       ecrir (kva_crlf || kva_crlf);
 
       -- Écrire le corps
@@ -61714,13 +61609,12 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
         ecrir (kva_crlf || kva_crlf);
       end if;
 
-      ecrir ('--' || 'alt' || vva_delmt || '--' || kva_crlf);
-
       --gérer les pièces jointes
       if gar_courl (vco_courl).piece_joint.count () != 0 then
         for i in gar_courl (vco_courl).piece_joint.first () .. gar_courl (vco_courl).piece_joint.last () loop
-          ecrir ('--' || 'mix' || vva_delmt || kva_crlf);
-          ecrir ('Content-Type: ' || gar_courl (vco_courl).piece_joint (i).mime_type || ';');
+          ecrir ('--' || vva_delmt);
+          ecrir (kva_crlf || kva_crlf);
+          ecrir ('Content-Type: ' || gar_courl (vco_courl).piece_joint (i).mime_type);
           ecrir (kva_crlf);
           ecrir ('Content-Disposition: attachment;');
           ecrir (kva_crlf);
@@ -61749,11 +61643,7 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
         end loop;
       end if;
 
-      if gar_courl (vco_courl).piece_joint.count () != 0 then
-        ecrir ('--' || 'mix' || vva_delmt || kva_crlf);
-      end if;
-
-      ecrir ('--' || 'mix' || vva_delmt || '--' || kva_crlf);
+      ecrir ('--' || vva_delmt || '--');
 
       if not pbo_envoi_difr then
         -- Terminer l'envoi et la connexion
@@ -61769,6 +61659,7 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
             null;
         end;
 
+        ete ();
         raise;
     end;
   begin
@@ -61841,31 +61732,30 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
     gar_courl (gco_courn).servr := null;                                                -- Seulement pour créer l'entrée
 
     begin
-      select     servr,
-                 port,
-                 domn,
-                 nom_envoy,
-                 adres_envoy,
-                 sujet,
-                 indic_formt_html,
-                 authe_methd,
-                 authe_usagr,
-                 authe_mdp,
-                 corps
-          into   gar_courl (gco_courn).servr,
-                 gar_courl (gco_courn).port,
-                 gar_courl (gco_courn).domn,
-                 gar_courl (gco_courn).nom_envoy,
-                 gar_courl (gco_courn).adres_envoy,
-                 gar_courl (gco_courn).sujet,
-                 vva_indic_formt_html,
-                 gar_courl (gco_courn).authe_methd,
-                 gar_courl (gco_courn).authe_usagr,
-                 gar_courl (gco_courn).authe_mdp,
-                 vcl_corps
-          from   sie_17_courl
-         where   seqnc = pfa_fil_atent
-      order by   date_creat;
+      select   servr,
+               port,
+               domn,
+               nom_envoy,
+               adres_envoy,
+               sujet,
+               indic_formt_html,
+               authe_methd,
+               authe_usagr,
+               authe_mdp,
+               corps
+        into   gar_courl (gco_courn).servr,
+               gar_courl (gco_courn).port,
+               gar_courl (gco_courn).domn,
+               gar_courl (gco_courn).nom_envoy,
+               gar_courl (gco_courn).adres_envoy,
+               gar_courl (gco_courn).sujet,
+               vva_indic_formt_html,
+               gar_courl (gco_courn).authe_methd,
+               gar_courl (gco_courn).authe_usagr,
+               gar_courl (gco_courn).authe_mdp,
+               vcl_corps
+        from   sie_17_courl
+       where   seqnc = pfa_fil_atent;
 
       gar_courl (gco_courn).formt_html := (vva_indic_formt_html = 'O');
 
@@ -61948,7 +61838,7 @@ create or replace package body "SIE_17_ENVOI_COURL_PKG" as
   exception
     when others then
       ete ();
-  end envoy_toute_fil_atent;
+  end;
 begin
   select   value
     into   gva_nls_chars
@@ -61958,7 +61848,7 @@ end sie_17_envoi_courl_pkg;
 /
 
 Prompt Package Body SIE_17_ENVOI_TELCP_AXIAT_PKG;
-/* Formatted on 04/12/2013 11:35:34 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:41 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_17_envoi_telcp_axiat_pkg as
   cursor cur_compt (pva_code_compt_axiat in varchar2,
                     pnu_domn in number) is
@@ -62175,7 +62065,7 @@ end sie_17_envoi_telcp_axiat_pkg;
 /
 
 Prompt Package Body SIE_17_NOTFC_SMS_TWILIO_PKG;
-/* Formatted on 04/12/2013 11:35:34 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:41 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_17_notfc_sms_twilio_pkg as
   gxm_repns_servr                         xmltype;
   gva_acoun_id                            varchar2 (100);
@@ -62663,7 +62553,7 @@ end sie_17_notfc_sms_twilio_pkg;
 /
 
 Prompt Package Body SIE_17_PROFL_COURL_PKG;
-/* Formatted on 04/12/2013 11:35:34 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_17_PROFL_COURL_PKG" as
   function obten_code (pnu_profl_courl in number)
     return varchar2 is
@@ -62743,7 +62633,7 @@ end sie_17_profl_courl_pkg;
 /
 
 Prompt Package Body SIE_17_TRAVL_PKG;
-/* Formatted on 04/12/2013 11:35:34 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_17_travl_pkg as
   procedure obten_semph (pva_natr_envo in varchar2) is
   begin
@@ -62802,7 +62692,7 @@ end sie_17_travl_pkg;
 /
 
 Prompt Package Body SIE_18_ITF_PKG;
-/* Formatted on 04/12/2013 11:35:34 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_18_ITF_PKG" is
   procedure desct_forml_tablr is
   begin
@@ -62823,7 +62713,7 @@ create or replace package body "SIE_18_ITF_PKG" is
         champ.className = "sax_desct";
     }
   }
-  
+
   var champ_input = document.getElementsByTagName("select");
   var champ       = null;
 
@@ -62837,7 +62727,7 @@ create or replace package body "SIE_18_ITF_PKG" is
         champ.className = "sax_desct";
     }
   }
-  
+
   var champ_input = document.getElementsByTagName("textarea");
   var champ       = null;
 
@@ -62891,7 +62781,7 @@ end sie_18_itf_pkg;
 /
 
 Prompt Package Body SIE_18_TABLR_FORM_PKG;
-/* Formatted on 04/12/2013 11:35:34 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_18_TABLR_FORM_PKG" is
   function genr_html_color_pickr
     return varchar2 is
@@ -62931,7 +62821,7 @@ create or replace package body "SIE_18_TABLR_FORM_PKG" is
                                              and  arc.region_id = ar.id
                                              and  ar.flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic
                                              and  ar.page_id = sie_13_page_pkg.obten_numr_apex_page
-                                             and  ar.plug_source_type = ''UPDATABLE_SQL_QUERY''                                                 
+                                             and  ar.plug_source_type = ''UPDATABLE_SQL_QUERY''
                                        order by 1'
     );
   end obten_json_item_depsm;
@@ -62963,7 +62853,7 @@ end sie_18_tablr_form_pkg;
 /
 
 Prompt Package Body SIE_19_BOUTN_PKG;
-/* Formatted on 04/12/2013 11:35:35 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_19_BOUTN_PKG" as
   knu_sidf                                number (10) default sie_07_util_pkg.nv ('SIDF');
   knu_app_id                              number default sie_07_util_pkg.nv ('APP_ID');
@@ -63067,7 +62957,7 @@ end sie_19_boutn_pkg;
 /
 
 Prompt Package Body SIE_19_CLE_PKG;
-/* Formatted on 04/12/2013 11:35:35 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_19_CLE_PKG" as
   type typ_tab_cle is table of varchar2 (10)
                         index by pls_integer;
@@ -63142,7 +63032,7 @@ end sie_19_cle_pkg;
 /
 
 Prompt Package Body SIE_19_FONCT_PKG;
-/* Formatted on 04/12/2013 11:35:35 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_19_FONCT_PKG" as
   knu_sidf                                number (10) default sie_07_util_pkg.nv ('SIDF');
   knu_app_id                              number default sie_07_util_pkg.nv ('APP_ID');
@@ -63399,7 +63289,7 @@ end sie_19_fonct_pkg;
 /
 
 Prompt Package Body SIE_19_JAVSC_PKG;
-/* Formatted on 04/12/2013 11:35:35 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_19_JAVSC_PKG" as
   knu_sidf                                number (10) default sie_07_util_pkg.nv ('SIDF');
   knu_app_id                              number default sie_07_util_pkg.nv ('APP_ID');
@@ -63611,7 +63501,7 @@ end sie_19_javsc_pkg;
 /
 
 Prompt Package Body SIE_20_DOCMN_PKG;
-/* Formatted on 04/12/2013 11:35:35 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:42 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_20_docmn_pkg as
   function obten_sect_simpl_docmn (pva_code_struc_aplic in varchar2,
                                    pnu_seqnc_struc_aplic in number,
@@ -63748,7 +63638,7 @@ end sie_20_docmn_pkg;
 /
 
 Prompt Package Body SIE_20_MODL_PKG;
-/* Formatted on 04/12/2013 11:35:35 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:43 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_20_modl_pkg as
   function obten_indic (pva_valr in varchar2)
     return varchar2 is
@@ -64216,7 +64106,7 @@ end sie_20_modl_pkg;
 /
 
 Prompt Package Body SIE_21_ACTIO_DYNMQ_PKG;
-/* Formatted on 04/12/2013 11:35:37 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:44 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_actio_dynmq_pkg is
   function valdr_prise_charg (pva_code_plugn in varchar2)
     return boolean is
@@ -65505,14 +65395,14 @@ create or replace package body sie_21_actio_dynmq_pkg is
          vnu_cle_primr_2 number default :p2;
        begin
          dbms_lob.createtemporary(vcl_contn, true);
-         
+
          select  %COLN%
             into  vcl_contn
            from  %TABLE%
          where  %COLN% is not null and %COLN_CLE_PRIMR_1% = vnu_cle_primr_1%ENONC_CLE_PRIMR_2%;
-         
+
          sie_15_htp_pkg.ecrir_clob(vcl_contn);
-         
+
        exception
          when no_data_found then
            null;
@@ -66430,7 +66320,7 @@ end sie_21_actio_dynmq_pkg;
 /
 
 Prompt Package Body SIE_21_AUTHE_PKG;
-/* Formatted on 04/12/2013 11:35:37 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:44 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_authe_pkg is
   function sentn (p_authentication in apex_plugin.t_authentication,
                   p_plugin in apex_plugin.t_plugin,
@@ -66486,7 +66376,7 @@ end sie_21_authe_pkg;
 /
 
 Prompt Package Body SIE_21_AUTOR_PKG;
-/* Formatted on 04/12/2013 11:35:37 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:45 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_autor_pkg is
   function genr_autor_acces_page (p_authorization in apex_plugin.t_authorization,
                                   p_plugin in apex_plugin.t_plugin)
@@ -66612,7 +66502,7 @@ end sie_21_autor_pkg;
 /
 
 Prompt Package Body SIE_21_ITEM_PKG;
-/* Formatted on 04/12/2013 11:35:38 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:46 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_item_pkg is
   function valdr_prise_charg (pva_code_plugn in varchar2)
     return boolean is
@@ -67981,7 +67871,7 @@ end sie_21_item_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_ARBRE_PKG;
-/* Formatted on 04/12/2013 11:35:39 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:47 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_arbre_pkg as
   gva_progm_a_lancr                       varchar2 (4000)
     default 'declare
@@ -67989,7 +67879,7 @@ create or replace package body sie_21_plugn_arbre_pkg as
        begin
          vre_glisr_elemn.vva_glisr_elemn             := :p1;
          vre_glisr_elemn.vva_depsr_elemn             := :p2;
-         
+
          %PROCD_PERSN%(vre_glisr_elemn);
          sie_21_plugn_arbre_pkg.gre_glisr_elemn := vre_glisr_elemn;
        end;';
@@ -68497,7 +68387,7 @@ create or replace package body sie_21_plugn_arbre_pkg as
              0
            when level <= '
         || pty_rec_confg_plugn.obten_json_arbre_nombr_niv
-        || ' then 
+        || ' then
              1
            else
              -1
@@ -69540,7 +69430,7 @@ end sie_21_plugn_arbre_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_BLOB_PKG;
-/* Formatted on 04/12/2013 11:35:39 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:47 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_blob_pkg is
   function obten_nom_colct
     return varchar2 is
@@ -69587,14 +69477,14 @@ end sie_21_plugn_blob_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_CALND_COULR_PKG;
-/* Formatted on 04/12/2013 11:35:39 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:47 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_calnd_coulr_pkg as
   function obten_image_aperc_coulr (pnu_ordre_presn in number,
                                     pva_libl in varchar2 default null,
                                     pva_titre in varchar2 default null)
     return varchar2 is
     vva_img                                 varchar2 (500)
-      default '<img align="absmiddle" style="background: none repeat scroll 0% 0% %coulr%;" alt="" class="colorpreview" 
+      default '<img align="absmiddle" style="background: none repeat scroll 0% 0% %coulr%;" alt="" class="colorpreview"
          src="/i/1px_trans.gif" title="%titre%">';
     vva_coulr                               varchar2 (7);
     vva_titre                               varchar2 (30) default null;
@@ -69652,7 +69542,7 @@ end sie_21_plugn_calnd_coulr_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_CALND_PKG;
-/* Formatted on 04/12/2013 11:35:39 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:48 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_calnd_pkg as
   function obten_enreg_config_plugn (pnu_numr_apex_regn in number)
     return typ_rec_config_plugn is
@@ -70549,14 +70439,14 @@ end sie_21_plugn_calnd_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_CALND_TYPE_PKG;
-/* Formatted on 04/12/2013 11:35:39 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:48 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_calnd_type_pkg as
   function obten_image_aperc_coulr (pnu_type_afich in number,
                                     pva_titre in varchar2 default null,
                                     pva_id_distn in varchar2 default null)
     return varchar2 is
     vva_img                                 varchar2 (500)
-      default '<img align="absmiddle" style="background: none repeat scroll 0% 0% %coulr%;" alt="" class="colorpreview" 
+      default '<img align="absmiddle" style="background: none repeat scroll 0% 0% %coulr%;" alt="" class="colorpreview"
          id="P%num_page%_PRN_BORDER_COLOR_PREVIEW%id%" src="/i/1px_trans.gif" title="%titre%">';
     vva_coulr                               varchar2 (7);
   begin
@@ -70584,7 +70474,7 @@ end sie_21_plugn_calnd_type_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_CONFR_SAUVG_PKG;
-/* Formatted on 04/12/2013 11:35:39 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:48 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_confr_sauvg_pkg is
   function obten_mesg_confr
     return varchar2 is
@@ -70650,7 +70540,7 @@ create or replace package body sie_21_plugn_confr_sauvg_pkg is
                                              and  p.seqnc = pi.ref_page
                                              and  pi.type_item = ''BOUTN''
                                              and  pi.indic_confr_sauvg = ''N''
-                                     union all  
+                                     union all
                                      select aip.source nom_apex
                                      from   apex_item_page aip,
                                             vd_sie_13_page_item pi,
@@ -70675,7 +70565,7 @@ end sie_21_plugn_confr_sauvg_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_DIALG_IFRAM_PKG;
-/* Formatted on 04/12/2013 11:35:39 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:48 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_dialg_ifram_pkg is
   gbo_mode_debug                          boolean default false;
 
@@ -70744,7 +70634,7 @@ end sie_21_plugn_dialg_ifram_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_MENU_PKG;
-/* Formatted on 04/12/2013 11:35:40 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:48 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_menu_pkg as
   function obten_enreg_confg_plugn (pnu_numr_apex_regn in number)
     return typ_rec_confg_plugn is
@@ -71105,7 +70995,7 @@ end sie_21_plugn_menu_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_NAVGT_ENREG_PKG;
-/* Formatted on 04/12/2013 11:35:40 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:48 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_navgt_enreg_pkg as
   --mode possible: PAGE | DIALG
 
@@ -71234,7 +71124,7 @@ end sie_21_plugn_navgt_enreg_pkg;
 /
 
 Prompt Package Body SIE_21_PLUGN_SELCT_2_PKG;
-/* Formatted on 04/12/2013 11:35:40 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:48 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_plugn_selct_2_pkg is
   knu_minm_lov_colmn             constant number (1) default 2;
   knu_maxm_lov_colmn             constant number (1) default 3;
@@ -71500,7 +71390,7 @@ end sie_21_plugn_selct_2_pkg;
 /
 
 Prompt Package Body SIE_21_PROCS_PKG;
-/* Formatted on 04/12/2013 11:35:40 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:49 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_procs_pkg is
   function inser_trace (p_process in apex_plugin.t_process,
                         p_plugin in apex_plugin.t_plugin)
@@ -71631,7 +71521,7 @@ create or replace package body sie_21_procs_pkg is
          vva_nom_colct varchar2(255) default ''%NOM_COLCT_CLOB%'';
          %DECLR_ITEM%
        begin
-         update  %TABLE% 
+         update  %TABLE%
          set %DEFNR_COLN%
          where  %COLN_CLE_PRIMR_1% = vnu_cle_primr_1%ENONC_CLE_PRIMR_2%;
        end;';
@@ -71825,7 +71715,7 @@ end sie_21_procs_pkg;
 /
 
 Prompt Package Body SIE_21_REGN_PKG;
-/* Formatted on 04/12/2013 11:35:41 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:50 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_regn_pkg is
   function valdr_prise_charg (pva_code_plugn in varchar2)
     return boolean is
@@ -73767,7 +73657,7 @@ end sie_21_regn_pkg;
 /
 
 Prompt Package Body SIE_21_UTIL_PKG;
-/* Formatted on 04/12/2013 11:35:42 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:50 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_21_util_pkg is
   gva_compteur                            number := 0;
   kva_exten_javsc                constant varchar2 (3) default '.js';
@@ -74219,7 +74109,7 @@ end sie_21_util_pkg;
 /
 
 Prompt Package Body SIE_23_RECHR_PKG;
-/* Formatted on 04/12/2013 11:35:42 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:51 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_23_RECHR_PKG" as
   type typ_rec_mot is record
   (
@@ -74767,7 +74657,9 @@ create or replace package body "SIE_23_RECHR_PKG" as
     vnu_seqnc                               vd_sie_23_modl_rechr.seqnc%type;
     vnu_seqnc_aplic                         vd_sie_23_aplic_modl_rechr.seqnc%type;
   begin
-    vnu_seqnc := sie_23_modl_rechr_seq.nextval;
+    select   sie_23_modl_rechr_seq.nextval
+      into   vnu_seqnc
+      from   dual;
 
     insert into   vd_sie_23_modl_rechr (seqnc, code, ref_domn, nom, descr, ref_prodt, dnr_ref_prodt)
       select   vnu_seqnc,
@@ -74781,7 +74673,9 @@ create or replace package body "SIE_23_RECHR_PKG" as
        where   seqnc = pnu_modl_rechr_sourc;
 
     for rec_amr in cur_aplic_modl_rechr loop
-      vnu_seqnc_aplic := sie_23_aplic_modl_rechr_seq.nextval;
+      select   sie_23_aplic_modl_rechr_seq.nextval
+        into   vnu_seqnc_aplic
+        from   dual;
 
       insert into   vd_sie_23_aplic_modl_rechr (seqnc,
                                                 ref_modl_rechr,
@@ -74818,7 +74712,7 @@ end sie_23_rechr_pkg;
 /
 
 Prompt Package Body SIE_24_NAVBR_PKG;
-/* Formatted on 04/12/2013 11:35:42 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:51 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_24_navbr_pkg as
   function obten_enreg_confg_plugn (pnu_numr_apex_regn in number)
     return typ_rec_confg_plugn is
@@ -75166,7 +75060,7 @@ end sie_24_navbr_pkg;
 /
 
 Prompt Package Body SIE_25_APPEL_RAPRT_APEX_PKG;
-/* Formatted on 04/12/2013 11:35:42 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:51 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_25_APPEL_RAPRT_APEX_PKG" as
   --NOTE: Ajouter parametres pour serveur et port de telechargement du rapport
   --      puisque l'appel depuis le client et le serveur BD peuvent etre differents
@@ -75425,7 +75319,7 @@ end sie_25_appel_raprt_apex_pkg;
 /
 
 Prompt Package Body SIE_25_DOMN_TYPE_PUBLC_PKG;
-/* Formatted on 04/12/2013 11:35:42 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:51 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_25_domn_type_publc_pkg is
   procedure ajout_domn_type_publc (pnu_domn in number,
                                    pnu_type in number) is
@@ -75466,7 +75360,7 @@ end sie_25_domn_type_publc_pkg;
 /
 
 Prompt Package Body SIE_25_FORMT_IR_PKG;
-/* Formatted on 04/12/2013 11:35:42 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:51 AM (QP5 v5.185.11230.41888) */
 create or replace package body sie_25_formt_ir_pkg is
   function obten_bals_formt (pva_porte in varchar2,
                              pva_gras in varchar2,
@@ -75556,7 +75450,7 @@ end sie_25_formt_ir_pkg;
 /
 
 Prompt Package Body SIE_25_FUSN_PDF_PKG;
-/* Formatted on 04/12/2013 11:35:42 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:51 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_25_FUSN_PDF_PKG" as
   procedure ajout_valr_champ_fusn (pnu_champ in number,
                                    pnu_publc_travl in number,
@@ -75591,7 +75485,7 @@ end sie_25_fusn_pdf_pkg;
 /
 
 Prompt Package Body SIE_25_JAVSC_PKG;
-/* Formatted on 04/12/2013 11:35:42 PM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:51 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_25_JAVSC_PKG" as
   procedure ajout_scrip_charg is
     vva_script                              varchar2 (4000);
@@ -75635,5989 +75529,7 @@ end sie_25_javsc_pkg;
 /
 
 Prompt Package Body SIE_25_PLPDF_EXPOR_IR_PKG;
-/* Formatted on 04/12/2013 11:35:44 PM (QP5 v5.185.11230.41888) */
-create or replace package body "SIE_25_PLPDF_EXPOR_IR_PKG" as
-  knu_marge_gauch                constant number default 0.5;
-  knu_marge_droit                constant number default 0.5;
-  kva_apex_expr                  constant varchar2 (30) default '#APXWS_EXPR#';
-  kva_apex_expr2                 constant varchar2 (30) default '#APXWS_EXPR2#';
-  kva_apex_hl_id                 constant varchar2 (30) default '#APXWS_HL_ID#';
-  kva_apex_cc_expr               constant varchar2 (30) default '#APXWS_CC_EXPR#';
-  kva_varbl_cc                   constant varchar2 (30) default 'APXWS_CC%';
-
-  type typ_rec_page is record
-  (
-    nu_largr                                number default 0,
-    nu_dernr_coln                           binary_integer default 0
-  );
-
-  type typ_arr_page is table of typ_rec_page
-                         index by binary_integer;
-
-  type typ_rec_surlg is record
-  (
-    vva_indic_afich                         varchar2 (1) default 'N',
-    vva_type_surlg                          varchar2 (23),
-    vva_coulr_polc_ligne                    apex_ir_condt.row_font_color%type,
-    vva_coulr_backg_ligne                   apex_ir_condt.row_bg_color%type,
-    vva_coulr_polc_cel                      apex_ir_condt.column_font_color%type,
-    vva_coulr_backg_cel                     apex_ir_condt.column_bg_color%type,
-    vva_condt_surlg                         apex_ir_condt.condition_sql%type,
-    vva_nom_coln                            apex_ir_condt.column_name%type,
-    vva_opert                               apex_ir_condt.operator%type,
-    vva_expr                                apex_ir_condt.expr%type,
-    vva_expr2                               apex_ir_condt.expr2%type,
-    vnu_seqnc                               apex_ir_condt.highlight_sequence%type,
-    vnu_max_seqnc                           apex_ir_condt.highlight_sequence%type,
-    vva_expr_type                           apex_ir_condt.expr_type%type
-  );
-
-  type typ_tab_surlg is table of typ_rec_surlg
-                          index by pls_integer;
-
-  type typ_rec_coln_surlg is record
-  (
-    vva_type_surlg                          varchar2 (30) default 'LIGNE',
-    vre_coulr_backg                         plpdf_type.t_color,
-    vre_coulr_polc                          plpdf_type.t_color
-  );
-
-  type typ_tab_coln_surlg is table of typ_rec_coln_surlg
-                               index by varchar2 (30);
-
-  type typ_rec_ligne_surlg is record
-  (
-    vre_coulr_backg                         plpdf_type.t_color,
-    vre_coulr_polc                          plpdf_type.t_color,
-    vta_coln_surlg                          typ_tab_coln_surlg
-  );
-
-  type typ_rec_group_entet is record
-  (
-    vva_group                               apex_ir_rpts.break_on%type,
-    vva_group_sur                           apex_ir_rpts.break_enabled_on%type,
-    vva_coln_somme                          apex_ir_rpts.sum_columns_on_break%type,
-    vva_coln_moyen                          apex_ir_rpts.avg_columns_on_break%type,
-    vva_coln_max                            apex_ir_rpts.max_columns_on_break%type,
-    vva_coln_min                            apex_ir_rpts.min_columns_on_break%type,
-    vva_coln_medn                           apex_ir_rpts.median_columns_on_break%type,
-    vva_coln_mode                           apex_ir_rpts.mode_columns_on_break%type,
-    vva_coln_compt                          apex_ir_rpts.count_columns_on_break%type,
-    vva_coln_compt_distn                    apex_ir_rpts.count_distnt_col_on_break%type
-  );
-
-  type typ_tab_compt_distn is table of pls_integer
-                                index by varchar2 (4000);
-
-  type typ_tab_medn is table of number;
-
-  type typ_rec_parmt_group_coln is record
-  (
-    vva_indic_afich                         varchar2 (1),
-    vva_nom_coln                            varchar2 (30),
-    vnu_numr_group                          pls_integer,
-    vva_indic_somme                         varchar2 (1),
-    vnu_somme                               number,
-    vva_indic_moyen                         varchar2 (1),
-    vnu_moyen                               number,
-    vva_indic_max                           varchar2 (1),
-    vnu_max                                 number,
-    vva_indic_min                           varchar2 (1),
-    vnu_min                                 number,
-    vva_indic_medn                          varchar2 (1),
-    vnu_medn                                number,
-    vta_tabl_medn                           typ_tab_medn,
-    vva_indic_mode                          varchar2 (1),
-    --Prévoir donnée (probablement un type) pour gérer le mode
-    vva_indic_compt                         varchar2 (1),
-    vnu_compt                               number,
-    vva_indic_compt_distn                   varchar2 (1),
-    vnu_compt_distn                         number,
-    vta_tabl_compt                          typ_tab_compt_distn
-  );
-
-  type typ_tab_parmt_group_coln is table of typ_rec_parmt_group_coln
-                                     index by pls_integer;
-
-  type typ_rec_parmt_group is record
-  (
-    vva_nom_coln_1                          varchar2 (30),
-    vva_nom_coln_2                          varchar2 (30),
-    vva_nom_coln_3                          varchar2 (30),
-    vva_nom_coln_4                          varchar2 (30),
-    vva_nom_coln_5                          varchar2 (30),
-    vva_nom_coln_6                          varchar2 (30),
-    vva_valr_coln_1                         varchar2 (4000),
-    vva_valr_coln_2                         varchar2 (4000),
-    vva_valr_coln_3                         varchar2 (4000),
-    vva_valr_coln_4                         varchar2 (4000),
-    vva_valr_coln_5                         varchar2 (4000),
-    vva_valr_coln_6                         varchar2 (4000),
-    vva_libl_coln_1                         varchar2 (4000),
-    vva_libl_coln_2                         varchar2 (4000),
-    vva_libl_coln_3                         varchar2 (4000),
-    vva_libl_coln_4                         varchar2 (4000),
-    vva_libl_coln_5                         varchar2 (4000),
-    vva_libl_coln_6                         varchar2 (4000)
-  );
-
-  type typ_rec_parmt_group_plugn is record
-  (
-    vva_ligne_1                             varchar2 (4000),
-    vva_ligne_2                             varchar2 (4000),
-    vva_ligne_3                             varchar2 (4000),
-    vva_trans_libl                          varchar2 (4000),
-    vva_indic_ventl                         varchar2 (1),
-    vnu_nombr_coln_ventl                    number default 1
-  );
-
-  type typ_rec_coln_plugn is record
-  (
-    vva_valr                                varchar2 (4000),
-    vnu_colsp                               number,
-    vnu_rowsp                               number,
-    vva_indic_ventl                         varchar2 (1)
-  );
-
-  type typ_tab_coln_plugn is table of typ_rec_coln_plugn
-                               index by pls_integer;
-
-  type typ_tab_trans_libl is table of varchar2 (4000)
-                               index by varchar2 (100);
-
-  gar_tail_papr                           sie_07_sql_pkg.typ_arr_ndx_vc30;
-  --Gestion du highlight
-  gre_ligne_a_surlg                       typ_rec_ligne_surlg;
-  gnu_max_seqnc                           number;
-  gre_style_ligne                         sie_25_formt_ir_pkg.typ_formt;
-  --Gestion des groupes
-  gre_group                               typ_rec_parmt_group;
-  --Gestion des fonctions
-  gta_fonct_coln                          typ_tab_parmt_group_coln;
-  --Gestion des groupements d'entêtes (plugin)
-  gre_parmt_group_plugn                   typ_rec_parmt_group_plugn;
-  gta_trans_libl                          typ_tab_trans_libl;
-
-  gva_valr_nul                            varchar2 (4000);
-  gbo_presn_group                         boolean default false;
-
-  function formt_chain_br (pva_elemn in varchar2)
-    return varchar2 is
-    vva_elemn                               varchar2 (4000);
-  begin
-    vva_elemn :=
-      sie_07_sql_pkg.rempl_br (pva_elemn,
-                               chr (10) || chr (13));
-    return replace (vva_elemn,
-                    '&nbsp;',
-                    ' ');
-  end formt_chain_br;
-
-  function formt_nom_fichr (pva_nom in varchar2)
-    return varchar2 is
-    vva_nom                                 varchar2 (1000) default lower (pva_nom);
-  begin
-    vva_nom :=
-      sie_07_sql_pkg.rempl_br (vva_nom,
-                               '_');
-
-    vva_nom :=
-      replace (vva_nom,
-               chr (10) || chr (13),
-               '_');
-    vva_nom :=
-      replace (vva_nom,
-               chr (10),
-               '_');
-    vva_nom :=
-      substr (translate (vva_nom,
-                         'çàâéèêöùû /\?',
-                         'caaeeeouu____'),
-              1,
-              120);
-
-    while instr (vva_nom,
-                 '__') > 0 loop
-      vva_nom :=
-        replace (vva_nom,
-                 '__',
-                 '_');
-    end loop;
-
-    vva_nom :=
-      replace (vva_nom,
-               '_.',
-               '.');
-
-    return vva_nom;
-  end;
-
-  function formt_date (pda_date in date default sysdate)
-    return varchar2 is
-  begin
-    return    'Le '
-           || trim (to_char (pda_date,
-                             'day'))
-           || ' '
-           || extract (day from pda_date)
-           || ' '
-           || trim (to_char (pda_date,
-                             'month'))
-           || ' '
-           || extract (year from pda_date);
-  end;
-
-  function convr_parmt_align (pva_parmt in varchar2,
-                              pva_deft in varchar2)
-    return varchar2 is
-  begin
-    return case upper (pva_parmt) when 'LEFT' then 'L' when 'RIGHT' then 'R' when 'CENTER' then 'C' else pva_deft end;
-  end;
-
-  function convr_parmt_faml (pva_parmt in varchar2)
-    return varchar2 is
-  begin
-    return case lower (pva_parmt) when 'times' then 'Times new roman' when 'courier' then 'Courier' else 'Arial' -- Défaut
-                                                                                                                end;
-  end;
-
-  function convr_parmt_poids (pva_parmt in varchar2,
-                              pva_deft in varchar2)
-    return varchar2 is
-  begin
-    return case lower (pva_parmt) when 'bold' then 'B' when 'normal' then null else pva_deft end;
-  end;
-
-  procedure init_hautr_cel (pva_faml_polc in varchar2 default 'Arial') is
-  begin
-    case pva_faml_polc
-      when 'Arial' then
-        gta_hautr_cel ('Arial').vta_hautr_minml ('5') :=
-          plpdf_toolkit.conv (3.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('5.5') :=
-          plpdf_toolkit.conv (3.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('6') :=
-          plpdf_toolkit.conv (3.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('6.5') :=
-          plpdf_toolkit.conv (4,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('7') :=
-          plpdf_toolkit.conv (4,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('7.5') :=
-          plpdf_toolkit.conv (4.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('8') :=
-          plpdf_toolkit.conv (4.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('8.5') :=
-          plpdf_toolkit.conv (4.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('9') :=
-          plpdf_toolkit.conv (5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('9.5') :=
-          plpdf_toolkit.conv (5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('10') :=
-          plpdf_toolkit.conv (5.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('10.5') :=
-          plpdf_toolkit.conv (5.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('11') :=
-          plpdf_toolkit.conv (5.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('11.5') :=
-          plpdf_toolkit.conv (6,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('12') :=
-          plpdf_toolkit.conv (6.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('12.5') :=
-          plpdf_toolkit.conv (6.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('13') :=
-          plpdf_toolkit.conv (6.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('13.5') :=
-          plpdf_toolkit.conv (6.5,
-                              'mm');
-        gta_hautr_cel ('Arial').vta_hautr_minml ('14') :=
-          plpdf_toolkit.conv (7,
-                              'mm');
-      else
-        null;
-    end case;
-  end init_hautr_cel;
-
-  function obten_hautr_cel (pva_faml_polc in varchar2 default 'Arial',
-                            pnu_tail_polc in number default 8)
-    return number is
-    vva_tail_polc                           varchar2 (4000)
-                                              default replace (pnu_tail_polc,
-                                                               ',',
-                                                               '.');
-  begin
-    --if gta_hautr_cel.exists (/*case pva_faml_polc when 'Helvetica' then 'Arial' else */pva_faml_polc /*end*/) then
-    if gta_hautr_cel ('Arial').vta_hautr_minml.exists (vva_tail_polc) then
-      return gta_hautr_cel ('Arial').vta_hautr_minml (vva_tail_polc);
-    end if;
-
-    --end if;
-
-    return plpdf_toolkit.conv (7,
-                               'mm');
-  end obten_hautr_cel;
-
-  function obten_parmt_impre_raprt (pnu_ref_ir in number)
-    return typ_rec_parmt_impre is
-    vpi_deft                                typ_rec_parmt_impre;
-    gpi_parmt_impr                          typ_rec_parmt_impre;
-  begin
-    begin
-      select   'O',
-               reg.prn_content_disposition,
-               reg.prn_paper_size,
-               reg.prn_orientation,
-               reg.prn_units,
-               reg.prn_width,
-               reg.prn_height,
-               reg.prn_border_width,
-               reg.prn_border_color,
-               reg.prn_page_header_font_family,
-               reg.prn_page_header_font_weight,
-               reg.prn_page_header_font_size,
-               reg.prn_page_header_font_color,
-               reg.prn_page_header_alignment,
-               reg.prn_page_header,
-               reg.prn_header_font_family,
-               reg.prn_header_font_weight,
-               reg.prn_header_font_size,
-               reg.prn_header_font_color,
-               reg.prn_header_bg_color,
-               reg.prn_body_font_family,
-               reg.prn_body_font_weight,
-               reg.prn_body_font_size,
-               reg.prn_body_font_color,
-               reg.prn_body_bg_color,
-               reg.prn_page_footer_font_family,
-               reg.prn_page_footer_font_weight,
-               reg.prn_page_footer_font_size,
-               reg.prn_page_footer_font_color,
-               reg.prn_page_footer_alignment,
-               reg.prn_page_footer
-        into   gpi_parmt_impr
-        from   vd_sie_13_page_ir pir,
-               apex_ir air,
-               apex_regn reg
-       where   pir.seqnc = pnu_ref_ir and air.id = pir.id_apex and reg.id = air.region_id;
-    exception
-      when no_data_found then
-        gpi_parmt_impr.va_indic_trouv := 'N';
-    end;
-
-    return gpi_parmt_impr;
-  end;
-
-  function detrm_type_surlg (pva_coulr_polc_ligne apex_ir_condt.row_font_color%type,
-                             pva_coulr_backg_ligne apex_ir_condt.row_bg_color%type)
-    return varchar2 is
-    vva_type_surlg                          varchar2 (23);
-  begin
-    if pva_coulr_polc_ligne is not null
-    or pva_coulr_backg_ligne is not null then
-      vva_type_surlg := 'LIGNE';
-    else
-      vva_type_surlg := 'CEL';
-    end if;
-
-    return vva_type_surlg;
-  end detrm_type_surlg;
-
-  function obten_parmt_surlg_raprt (pnu_rpts_id in number)
-    return typ_tab_surlg is
-    vta_parmt_surlg                         typ_tab_surlg;
-    vre_parmt_surlg                         typ_rec_surlg;
-    vnu_compt                               pls_integer default 1;
-
-    cursor cur_surlg is
-      select     'O' indic_afich,
-                 detrm_type_surlg (airc.row_font_color,
-                                   airc.row_bg_color)
-                   type_surlg,
-                 row_font_color coulr_polc_ligne,
-                 row_bg_color coulr_backg_ligne,
-                 column_font_color coulr_polc_cel,
-                 column_bg_color coulr_backg_cel,
-                 condition_sql condt_surlg,
-                 column_name nom_coln,
-                 expr expr,
-                 expr2 expr2,
-                 operator opert,
-                 highlight_sequence seqnc,
-                 expr_type expr_type
-          from   apex_ir_rpts airr,
-                 apex_ir_condt airc
-         where   airr.id = pnu_rpts_id
-             and airr.id = airc.report_id
-             and airc.condition_type = 'HIGHLIGHT'
-             and airc.enabled = 'Y'
-      order by   airc.highlight_sequence;
-  begin
-    for rec_surlg in cur_surlg loop
-      vre_parmt_surlg.vva_indic_afich := rec_surlg.indic_afich;
-      vre_parmt_surlg.vva_type_surlg := rec_surlg.type_surlg;
-      vre_parmt_surlg.vva_coulr_polc_ligne := rec_surlg.coulr_polc_ligne;
-      vre_parmt_surlg.vva_coulr_backg_ligne := rec_surlg.coulr_backg_ligne;
-      vre_parmt_surlg.vva_coulr_polc_cel := rec_surlg.coulr_polc_cel;
-      vre_parmt_surlg.vva_coulr_backg_cel := rec_surlg.coulr_backg_cel;
-      vre_parmt_surlg.vva_condt_surlg := rec_surlg.condt_surlg;
-      vre_parmt_surlg.vva_nom_coln := rec_surlg.nom_coln;
-      vre_parmt_surlg.vva_expr := rec_surlg.expr;
-      vre_parmt_surlg.vva_expr2 := rec_surlg.expr2;
-      vre_parmt_surlg.vva_opert := rec_surlg.opert;
-      vre_parmt_surlg.vnu_seqnc := rec_surlg.seqnc;
-      vre_parmt_surlg.vva_expr_type := rec_surlg.expr_type;
-
-      vta_parmt_surlg (vnu_compt) := vre_parmt_surlg;
-      vnu_compt := vnu_compt + 1;
-    end loop;
-
-    return vta_parmt_surlg;
-  end obten_parmt_surlg_raprt;
-
-  function obten_parmt_group_raprt (pnu_rpts_id in number)
-    return typ_rec_group_entet is
-    vre_parmt_group                         typ_rec_group_entet;
-  begin
-    select   break_on,
-             break_enabled_on,
-             sum_columns_on_break,
-             avg_columns_on_break,
-             max_columns_on_break,
-             min_columns_on_break,
-             median_columns_on_break,
-             mode_columns_on_break,
-             count_columns_on_break,
-             count_distnt_col_on_break
-      into   vre_parmt_group
-      from   apex_ir_rpts airr
-     where   airr.id = pnu_rpts_id;
-
-    return vre_parmt_group;
-  end obten_parmt_group_raprt;
-
-  function obten_parmt_group_plugn (pnu_reprt_id in number)
-    return typ_rec_parmt_group_plugn is
-    vre_parmt_group_plugn                   typ_rec_parmt_group_plugn;
-  begin
-    select   apex_application.do_substitutions (attribute_01),
-             apex_application.do_substitutions (attribute_02),
-             apex_application.do_substitutions (attribute_03),
-             apex_application.do_substitutions (attribute_04),
-             attribute_05,
-             attribute_10
-      into   vre_parmt_group_plugn
-      from   apex_actio_dynmq_actio
-     where   affected_elements_type = 'REGION'
-         and affected_region_id = pnu_reprt_id
-         and action = 'PLUGIN_CA_SIESOLUTIONS_SIE21_GROUP_ENTET_RAPRT'
-         and rownum <= 1;
-
-    return vre_parmt_group_plugn;
-  exception
-    when no_data_found then
-      return null;
-  end obten_parmt_group_plugn;
-
-  procedure defnr_coulr_pdf (pva_nom_procd in varchar2) is
-    vva_progr_a_lancr                       varchar2 (4000)
-      default    'begin '
-              || '  sie_25_plpdf_expor_ir_pkg.gre_coulr_pdf := %PROCD_PERSN%; '
-              || '  exception when others then 
-                        ete();'
-              || 'end;';
-    vre_coulr_deft                          typ_rec_coulr_pdf;
-  begin
-    vva_progr_a_lancr :=
-      replace (vva_progr_a_lancr,
-               '%PROCD_PERSN%',
-               pva_nom_procd);
-
-    execute immediate vva_progr_a_lancr;
-  exception
-    when others then
-      gre_coulr_pdf.vva_coulr_polc_entet := '#FFFFFF';
-      gre_coulr_pdf.vva_coulr_backg_entet := '#E0E0E0';
-  end defnr_coulr_pdf;
-
-  function obten_coulr_a_partr_hex (pva_valr_hex in varchar2)
-    return plpdf_type.t_color is
-    vre_coulr                               plpdf_type.t_color;
-    vre_coulr_deft                          plpdf_type.t_color;
-
-    function obten_rgb_de_hex (pva_part_hex in varchar2)
-      return number is
-    begin
-      return plpdf_util.to_dec (pva_part_hex);
-    end obten_rgb_de_hex;
-  begin
-    --Vérifier si la longueur du hex est bien de 7 (# + 6 * {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F})
-    if length (pva_valr_hex) = 7 and pva_valr_hex is not null then
-      vre_coulr.r :=
-        obten_rgb_de_hex (substr (pva_valr_hex,
-                                  2,
-                                  2));
-      vre_coulr.g :=
-        obten_rgb_de_hex (substr (pva_valr_hex,
-                                  4,
-                                  2));
-      vre_coulr.b :=
-        obten_rgb_de_hex (substr (pva_valr_hex,
-                                  6,
-                                  2));
-
-      return vre_coulr;
-    end if;
-
-    vre_coulr_deft.r := 255;
-    vre_coulr_deft.g := 255;
-    vre_coulr_deft.b := 255;
-
-    return vre_coulr_deft;
-  end obten_coulr_a_partr_hex;
-
-  procedure init_surlg_ligne is
-  begin
-    gnu_max_seqnc := 0;
-    gre_ligne_a_surlg.vre_coulr_polc := null;
-    gre_ligne_a_surlg.vre_coulr_backg := null;
-  end init_surlg_ligne;
-
-  procedure init_surlg_coln (pva_nom_coln in varchar2) is
-  begin
-    gre_ligne_a_surlg.vta_coln_surlg (pva_nom_coln).vva_type_surlg := null;
-    gre_ligne_a_surlg.vta_coln_surlg (pva_nom_coln).vre_coulr_polc := null;
-    gre_ligne_a_surlg.vta_coln_surlg (pva_nom_coln).vre_coulr_backg := null;
-  end init_surlg_coln;
-
-  procedure gerer_surlg (pta_parmt_surlg in typ_tab_surlg,
-                         pva_valr_a_compr in out varchar2,
-                         pva_nom_coln in varchar2,
-                         pva_type_coln in varchar2,
-                         pva_formt_coln in varchar2) is
-    vva_condt_sql                           apex_ir_condt.condition_sql%type;
-    vbo_presn_expr                          boolean;
-    vbo_presn_expr2                         boolean;
-    vva_valr_retr                           varchar2 (1);
-    vre_coulr_polc                          plpdf_type.t_color;
-    vre_coulr_fond                          plpdf_type.t_color;
-  begin
-    if pta_parmt_surlg.exists (1) then
-      for i in pta_parmt_surlg.first () .. pta_parmt_surlg.last () loop
-        --Valider si le nom de la colonne est présente dans la condition ou verifier si c'est un champ calculé
-        if instr (pta_parmt_surlg (i).vva_condt_surlg,
-                  '"' || pva_nom_coln || '"') > 0
-        or (pva_nom_coln like kva_varbl_cc
-        and instr (pta_parmt_surlg (i).vva_condt_surlg,
-                   kva_apex_cc_expr) > 0) then
-          vva_condt_sql :=
-            replace (pta_parmt_surlg (i).vva_condt_surlg,
-                     '"' || pta_parmt_surlg (i).vva_nom_coln || '"',
-                     kva_apex_cc_expr);
-
-          --Dans un cas où la valeur a comparer est égale à la valeur nullable du IR, ikl faut la remplacer par null
-          if pva_valr_a_compr = formt_chain_br (gva_valr_nul) then
-            vva_condt_sql :=
-              replace (vva_condt_sql,
-                       kva_apex_cc_expr,
-                       'null');
-          else
-            --Remplace le nom de colonne et expr
-            case pva_type_coln
-              when 'VARCH' then
-                vva_condt_sql :=
-                  replace (vva_condt_sql,
-                           kva_apex_cc_expr,
-                              ''''
-                           || replace (pva_valr_a_compr,
-                                       '''',
-                                       '''''')
-                           || '''');
-              when 'NUMBR' then
-                vva_condt_sql :=
-                  replace (vva_condt_sql,
-                           kva_apex_cc_expr,
-                           replace (to_number (pva_valr_a_compr,
-                                               pva_formt_coln),
-                                    ',',
-                                    '.'));
-              when 'DATE' then
-                vva_condt_sql :=
-                  replace (vva_condt_sql,
-                           kva_apex_cc_expr,
-                           to_date (pva_valr_a_compr,
-                                    pva_formt_coln));
-              when 'TIMST' then
-                vva_condt_sql :=
-                  replace (vva_condt_sql,
-                           kva_apex_cc_expr,
-                           to_timestamp (pva_valr_a_compr,
-                                         pva_formt_coln));
-              else
-                vva_condt_sql :=
-                  replace (vva_condt_sql,
-                           kva_apex_cc_expr,
-                              ''''
-                           || replace (pva_valr_a_compr,
-                                       '''',
-                                       '''''')
-                           || '''');
-            end case;
-          end if;
-
-          vva_condt_sql :=
-            replace (vva_condt_sql,
-                     kva_apex_hl_id,
-                     '''O''');
-
-          if instr (vva_condt_sql,
-                    kva_apex_expr) > 0 then
-            vbo_presn_expr := true;
-            vva_condt_sql :=
-              replace (vva_condt_sql,
-                       kva_apex_expr,
-                       ':valr_expr');
-          else
-            vbo_presn_expr := false;
-          end if;
-
-          if instr (vva_condt_sql,
-                    kva_apex_expr2) > 0 then
-            vbo_presn_expr2 := true;
-            vva_condt_sql :=
-              replace (vva_condt_sql,
-                       kva_apex_expr2,
-                       ':valr_expr2');
-          else
-            vbo_presn_expr2 := false;
-          end if;
-
-          --Valider si la condition pour le surlignage est respectée
-          --Afficher ensuite la couleur selon le type
-          if vbo_presn_expr2 then
-            execute immediate 'select ' || vva_condt_sql || ' from dual'
-                                                  into   vva_valr_retr
-              using pta_parmt_surlg (i).vva_expr,
-                    pta_parmt_surlg (i).vva_expr2;
-          elsif vbo_presn_expr then
-            execute immediate 'select ' || vva_condt_sql || ' from dual'
-                                                  into   vva_valr_retr
-              using pta_parmt_surlg (i).vva_expr;
-          else
-            execute immediate 'select ' || vva_condt_sql || ' from dual'
-                                                  into   vva_valr_retr;
-          end if;
-
-          --Il faut ajouter les paramètres de highlight à la colonne courante
-          if vva_valr_retr is not null then
-            if pta_parmt_surlg (i).vva_type_surlg = 'LIGNE' and pta_parmt_surlg (i).vnu_seqnc >= gnu_max_seqnc then
-              gnu_max_seqnc := pta_parmt_surlg (i).vnu_seqnc;
-              gre_ligne_a_surlg.vre_coulr_backg := obten_coulr_a_partr_hex (pta_parmt_surlg (i).vva_coulr_backg_ligne);
-              gre_ligne_a_surlg.vre_coulr_polc := obten_coulr_a_partr_hex (pta_parmt_surlg (i).vva_coulr_polc_ligne);
-            end if;
-
-            if pta_parmt_surlg (i).vva_type_surlg <> 'LIGNE' then
-              gre_ligne_a_surlg.vta_coln_surlg (pva_nom_coln).vva_type_surlg := 'COL';
-              gre_ligne_a_surlg.vta_coln_surlg (pva_nom_coln).vre_coulr_backg :=
-                obten_coulr_a_partr_hex (
-                  nvl (pta_parmt_surlg (i).vva_coulr_backg_cel, pta_parmt_surlg (i).vva_coulr_backg_ligne)
-                );
-              gre_ligne_a_surlg.vta_coln_surlg (pva_nom_coln).vre_coulr_polc :=
-                obten_coulr_a_partr_hex (
-                  nvl (pta_parmt_surlg (i).vva_coulr_polc_cel, pta_parmt_surlg (i).vva_coulr_polc_ligne)
-                );
-            end if;
-          end if;
-        end if;
-      end loop;
-    end if;
-  end gerer_surlg;
-
-  procedure afich_pdf (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
-                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID')) is
-    vta_parmt_surlg                         typ_tab_surlg;
-    vre_parmt_group                         typ_rec_group_entet;
-    vre_parmt_group_plugn                   typ_rec_parmt_group_plugn;
-    vnu_ref_ir                              number;
-    vva_nom_raprt                           varchar2 (4000);
-    vva_mesg_aucun_don                      varchar2 (32767);
-    vnu_largr_deft                          number;
-    vnu_id_plugn                            number;
-    vva_procd_coulr                         varchar2 (200);
-    vva_procd_entet                         varchar2 (200);
-    vva_procd_pied_page                     varchar2 (200);
-    vbo_presn_fonct                         boolean default false;
-    vva_indic_forcr_ajust_page              varchar2 (1);
-    --vnu_unite_mesr_largr_deft number(10);
-
-    vva_selct                               varchar2 (32767);
-    vnu_cursr                               number;
-    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
-    vnu_largr_dispo                         number;
-    var_pages                               typ_arr_page;
-    vnu_index_page                          binary_integer;
-    vnu_somme_largr                         number;
-    vnu_dernr_coln_ajout                    number;
-    vnu_rpts_id                             number;
-    vnu_hautr_ligne                         number;
-    --variable pour afficher fonctions
-    vnu_tail_group                          pls_integer default 0;
-    -- variables plpdf
-    vnu_elmnt_lign                          number := 0;
-    vnu_elmnt_tabl                          number := 0;
-    vnu_elmnt_restn                         number := 0;
-    vnu_tail_polc_ent                       number := 0;
-    vnu_tail_polc_corps                     number := 0;
-    vnu_tail_polc_pied                      number := 0;
-    vnu_largr_restn                         number := 0;
-    vva_elmnt                               varchar2 (300);
-    vbo_type_indtr                          boolean := false;
-    v_blob                                  blob;
-    --variable des paramètres du tableau
-    v_bordr_cell                            plpdf_type.t_row_borders;
-    v_data_cell                             plpdf_type.t_row_datas;
-    v_data_row_ent                          plpdf_type.t_row_datas;
-    v_tail_cell                             plpdf_type.t_row_widths;
-    v_tail_intr_cell                        plpdf_type.t_row_widths;
-    v_algnm_cell                            plpdf_type.t_row_aligns;
-    v_algnm_entet                           plpdf_type.t_row_aligns;
-    v_style_cell                            plpdf_type.t_row_styles;
-    v_lign_max                              plpdf_type.t_row_maxlines;
-    v_coulr_cell                            plpdf_type.t_row_filles;
-
-    procedure init_pdf is
-      vva_progr_a_lancr                       varchar2 (4000)
-        default 'begin ' || '  %PROCD_PERSN%(:a); ' || '  exception when others then ete();' || 'end;';
-    begin
-      --compter le nombre d'éléments
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' and gta_fonct_coln (i).vva_indic_afich = 'O' then
-          vnu_elmnt_lign := vnu_elmnt_lign + 1;
-        end if;
-      end loop;
-
-      --initialiser le pdf
-      if gpi_parmt_impr.va_orien_papr = 'VERTICAL' then
-        plpdf_pkg.init1 (
-          'P',
-          plpdf_const.point,
-          case gpi_parmt_impr.va_formt_papr
-            when 'LEGAL' then plpdf_const.legal
-            when 'LETTER' then plpdf_const.letter
-            when 'A3' then plpdf_const.a3
-            when 'A4' then plpdf_const.a4
-            else plpdf_const.letter
-          end
-        );
-      else
-        plpdf_pkg.init1 (
-          'L',
-          plpdf_const.point,
-          case gpi_parmt_impr.va_formt_papr
-            when 'LEGAL' then plpdf_const.legal
-            when 'LETTER' then plpdf_const.letter
-            when 'A3' then plpdf_const.a3
-            when 'A4' then plpdf_const.a4
-            else plpdf_const.letter
-          end
-        );
-      end if;
-
-      plpdf_pkg.nopalias;
-      plpdf_pkg.setdoctitle (formt_nom_fichr (vva_nom_raprt) || '.pdf');
-      plpdf_pkg.setallmargin (plpdf_toolkit.conv (knu_marge_droit,
-                                                  'in'),
-                              plpdf_toolkit.conv (0.5,
-                                                  'in'),
-                              plpdf_toolkit.conv (knu_marge_gauch,
-                                                  'in'));
-      plpdf_pkg.newpage;
-      plpdf_pkg.setcellmargin (knu_marge_cel);
-
-      if not gta_hautr_cel.exists (convr_parmt_faml (gpi_parmt_impr.va_entet_polc_faml)) then
-        init_hautr_cel (convr_parmt_faml (gpi_parmt_impr.va_entet_polc_faml));
-      end if;
-
-      if not gta_hautr_cel.exists (convr_parmt_faml (gpi_parmt_impr.va_coln_polc_faml)) then
-        init_hautr_cel (convr_parmt_faml (gpi_parmt_impr.va_coln_polc_faml));
-      end if;
-
-      if not gta_hautr_cel.exists (convr_parmt_faml (gpi_parmt_impr.va_corps_polc_faml)) then
-        init_hautr_cel (convr_parmt_faml (gpi_parmt_impr.va_corps_polc_faml));
-      end if;
-
-      if not gta_hautr_cel.exists (convr_parmt_faml (gpi_parmt_impr.va_pied_polc_faml)) then
-        init_hautr_cel (convr_parmt_faml (gpi_parmt_impr.va_pied_polc_faml));
-      end if;
-
-      if vva_procd_entet is not null then
-        vva_progr_a_lancr :=
-          replace (vva_progr_a_lancr,
-                   '%PROCD_PERSN%',
-                   vva_procd_entet);
-
-        execute immediate vva_progr_a_lancr using vva_nom_raprt;
-      else
-        plpdf_pkg.setprintfont (convr_parmt_faml (gpi_parmt_impr.va_entet_polc_faml),
-                                convr_parmt_poids (gpi_parmt_impr.va_entet_polc_poids,
-                                                   'B'),
-                                gpi_parmt_impr.nu_entet_polc_tail);
-        plpdf_pkg.printcell (0,
-                             obten_hautr_cel (gpi_parmt_impr.va_entet_polc_faml,
-                                              gpi_parmt_impr.nu_entet_polc_tail),
-                             vva_nom_raprt,
-                             0,
-                             0,
-                             convr_parmt_align (gpi_parmt_impr.va_entet_align,
-                                                'C'));
-        plpdf_pkg.linebreak (plpdf_toolkit.conv (20,
-                                                 'mm'));
-      end if;
-    end init_pdf;
-
-    procedure calcl_largr_raprt is
-      vnu_total_reltf                         number default 0;
-      vbo_activ_fit_to_page                   boolean default false;
-      vnu_largr_total_reel                    number default 0;
-    begin
-      -- Créer les différents set d'entêtes (tableau)
-      vnu_dernr_coln_ajout := 0;
-      vnu_largr_restn := plpdf_pkg.getpageavailablewidth;
-      vnu_elmnt_restn := vnu_elmnt_lign;
-
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' and gta_fonct_coln (i).vva_indic_afich = 'O' then
-          case var_infor_coln (i).va_type_largr
-            when 'POUCE' then
-              vnu_largr_restn :=
-                vnu_largr_restn -
-                plpdf_toolkit.conv (var_infor_coln (i).nu_largr,
-                                    'in');
-            when 'INDET' then
-              var_infor_coln (i).nu_largr := vnu_largr_deft;
-              vnu_largr_restn :=
-                vnu_largr_restn -
-                plpdf_toolkit.conv (var_infor_coln (i).nu_largr,
-                                    'in');
-            when 'RELTF' then
-              vnu_total_reltf := vnu_total_reltf + var_infor_coln (i).nu_largr;
-            else
-              --Ne devrait pas arriver
-              null;
-          end case;
-
-          if var_infor_coln (i).va_type_largr in ('POUCE', 'INDET') then
-            vnu_largr_total_reel :=
-              vnu_largr_total_reel +
-              plpdf_toolkit.conv (var_infor_coln (i).nu_largr,
-                                  'in');
-          end if;
-        end if;
-      end loop;
-
-      if vnu_largr_restn <= 0
-      or vnu_total_reltf = 0
-     and vnu_largr_total_reel < plpdf_pkg.getpageavailablewidth
-     and vva_indic_forcr_ajust_page = 'O' then
-        vbo_activ_fit_to_page := true;
-      end if;
-
-      for j in var_pages.first () .. var_pages.last () loop
-        for i in vnu_dernr_coln_ajout + 1 .. var_pages (j).nu_dernr_coln loop
-          if vbo_activ_fit_to_page and var_infor_coln (i).va_type_largr = 'RELTF' then
-            var_infor_coln (i).va_indic_expor := 'N';
-            gta_fonct_coln (i).vva_indic_afich := 'N';
-          end if;
-
-          if var_infor_coln (i).va_indic_expor = 'O' and gta_fonct_coln (i).vva_indic_afich = 'O' then
-            --Taille selon la largeur du champ
-            case var_infor_coln (i).va_type_largr
-              when 'RELTF' then
-                var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr / vnu_total_reltf;
-                v_tail_intr_cell (i) := vnu_largr_restn * var_infor_coln (i).nu_largr_reltv;
-              else
-                if not vbo_activ_fit_to_page then
-                  v_tail_intr_cell (i) :=
-                    plpdf_toolkit.conv (var_infor_coln (i).nu_largr,
-                                        'in');
-                else
-                  v_tail_intr_cell (i) :=
-                    plpdf_pkg.getpageavailablewidth *
-                    (plpdf_toolkit.conv (var_infor_coln (i).nu_largr,
-                                         'in') /
-                     vnu_largr_total_reel);
-                end if;
-            end case;
-
-            vnu_elmnt_tabl := vnu_elmnt_tabl + 1;
-
-            if gta_trans_libl.exists (var_infor_coln (i).va_nom) then
-              vva_elmnt := gta_trans_libl (var_infor_coln (i).va_nom);
-            else
-              vva_elmnt := var_infor_coln (i).va_libl;
-            end if;
-
-            vva_elmnt := formt_chain_br (vva_elmnt);
-
-            v_bordr_cell (vnu_elmnt_tabl) := '1';
-            v_tail_cell (vnu_elmnt_tabl) := v_tail_intr_cell (i);
-
-            vnu_elmnt_restn := vnu_elmnt_lign - vnu_elmnt_tabl;
-
-            v_algnm_entet (vnu_elmnt_tabl) :=
-              convr_parmt_align (var_infor_coln (i).va_align_entet,
-                                 'C');
-            v_data_row_ent (vnu_elmnt_tabl) := vva_elmnt;
-            vbo_type_indtr := false;
-          end if;
-        end loop;
-
-        vnu_dernr_coln_ajout := var_pages (j).nu_dernr_coln;
-      end loop;
-
-      vnu_elmnt_tabl := 0;
-    end calcl_largr_raprt;
-
-    procedure impri_entet is
-    begin
-      if gpi_parmt_impr.nu_coln_polc_tail is not null then
-        vnu_tail_polc_ent := gpi_parmt_impr.nu_coln_polc_tail;
-      else
-        vnu_tail_polc_ent := 11;
-      end if;
-
-      plpdf_pkg.setcolor4filling (obten_coulr_a_partr_hex (gre_coulr_pdf.vva_coulr_backg_entet));
-      plpdf_pkg.setprintfont (convr_parmt_faml (gpi_parmt_impr.va_coln_polc_faml),
-                              convr_parmt_poids (gpi_parmt_impr.va_coln_polc_poids,
-                                                 'B'),
-                              vnu_tail_polc_ent);
-
-      plpdf_pkg.row_print2 (v_data_row_ent,
-                            v_bordr_cell,
-                            v_tail_cell,
-                            v_algnm_entet,
-                            v_style_cell,
-                            v_lign_max,
-                            obten_hautr_cel (gpi_parmt_impr.va_coln_polc_faml,
-                                             vnu_tail_polc_ent),
-                            1,
-                            0,
-                            0);
-    end impri_entet;
-
-    procedure impri_corps is
-    begin
-      if gpi_parmt_impr.nu_corps_polc_tail is not null then
-        vnu_tail_polc_corps := gpi_parmt_impr.nu_corps_polc_tail;
-      else
-        vnu_tail_polc_corps := 8;
-      end if;
-
-      plpdf_pkg.setprintfont (convr_parmt_faml (gpi_parmt_impr.va_corps_polc_faml),
-                              convr_parmt_poids (gpi_parmt_impr.va_corps_polc_poids,
-                                                 null),
-                              vnu_tail_polc_corps);
-
-      plpdf_pkg.row_print2 (v_data_cell,
-                            v_bordr_cell,
-                            v_tail_cell,
-                            v_algnm_cell,
-                            v_style_cell,
-                            v_lign_max,
-                            obten_hautr_cel (gpi_parmt_impr.va_corps_polc_faml,
-                                             vnu_tail_polc_corps),
-                            v_coulr_cell);
-      vnu_elmnt_tabl := 0;
-    end impri_corps;
-
-    procedure defnr_ligne is
-      vbo_presn_ligne_bold                    boolean default false;
-    begin
-      gre_style_ligne.indic_ligne := false;
-      gre_style_ligne.indic_gras := false;
-
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          if gta_fonct_coln (i).vva_indic_afich = 'O' then
-            vnu_elmnt_tabl := vnu_elmnt_tabl + 1;
-
-            v_bordr_cell (vnu_elmnt_tabl) := '1';
-
-            v_tail_cell (vnu_elmnt_tabl) := v_tail_intr_cell (i);
-
-            --Aligner selon le type de données
-            case var_infor_coln (i).va_type_valr
-              when 'VARCH' then
-                vva_elmnt := var_infor_coln (i).va_valr_varch;
-
-                if vva_elmnt is null then
-                  vva_elmnt := gva_valr_nul;
-                end if;
-              when 'NUMBR' then
-                if var_infor_coln (i).nu_valr_numbr is null then
-                  vva_elmnt := gva_valr_nul;
-                else
-                  if var_infor_coln (i).va_formt is null then
-                    vva_elmnt := to_char (var_infor_coln (i).nu_valr_numbr);
-                  else
-                    vva_elmnt :=
-                      (ltrim (to_char (var_infor_coln (i).nu_valr_numbr,
-                                       var_infor_coln (i).va_formt)));
-                  end if;
-                end if;
-              when 'DATE' then
-                if var_infor_coln (i).da_valr_date is null then
-                  vva_elmnt := gva_valr_nul;
-                else
-                  if var_infor_coln (i).va_formt is null then
-                    vva_elmnt := to_char (var_infor_coln (i).da_valr_date);
-                  else
-                    vva_elmnt :=
-                      (to_char (var_infor_coln (i).da_valr_date,
-                                var_infor_coln (i).va_formt));
-                  end if;
-                end if;
-              when 'TIMST' then
-                if var_infor_coln (i).ts_valr_timst is null then
-                  vva_elmnt := gva_valr_nul;
-                else
-                  if var_infor_coln (i).va_formt is null then
-                    vva_elmnt := to_char (var_infor_coln (i).ts_valr_timst);
-                  else
-                    vva_elmnt :=
-                      (to_char (var_infor_coln (i).ts_valr_timst,
-                                var_infor_coln (i).va_formt));
-                  end if;
-                end if;
-              else
-                vva_elmnt := var_infor_coln (i).va_valr_varch;
-            end case;
-
-            vva_elmnt := apex_application.do_substitutions (vva_elmnt);
-
-            if vva_elmnt like '<span style="%"></span>%' then
-              declare
-                vnu_postn                               number;
-              begin
-                vnu_postn :=
-                  instr (vva_elmnt,
-                         '</span>') +
-                  length ('</span>') -
-                  1;
-                gre_style_ligne :=
-                  sie_25_formt_ir_pkg.digr_bals_formt (substr (vva_elmnt,
-                                                               1,
-                                                               vnu_postn));
-                vva_elmnt :=
-                  substr (vva_elmnt,
-                          vnu_postn + 1);
-
-                if gre_style_ligne.indic_ligne and gre_style_ligne.indic_gras then
-                  vbo_presn_ligne_bold := true;
-                end if;
-              end;
-            end if;
-
-            v_style_cell (vnu_elmnt_tabl) := null;
-            vva_elmnt := formt_chain_br (vva_elmnt);
-            v_algnm_cell (vnu_elmnt_tabl) :=
-              convr_parmt_align (var_infor_coln (i).va_align_coln,
-                                 'C');
-            v_data_cell (vnu_elmnt_tabl) := vva_elmnt;
-          end if;
-
-          --Alimenter le highlight pour les colonnes
-          init_surlg_coln (var_infor_coln (i).va_nom);
-          gerer_surlg (vta_parmt_surlg,
-                       vva_elmnt,
-                       var_infor_coln (i).va_nom,
-                       var_infor_coln (i).va_type_valr,
-                       var_infor_coln (i).va_formt);
-        end if;
-      end loop;
-
-      if vbo_presn_ligne_bold then
-        for c in v_style_cell.first () .. v_style_cell.last () loop
-          if v_style_cell (c) not like '%B%'
-          or v_style_cell (c) is null then
-            v_style_cell (c) := v_style_cell (c) || 'B';
-          end if;
-        end loop;
-      end if;
-
-      vnu_elmnt_tabl := 0;
-    end defnr_ligne;
-
-    procedure impri_pied_page is
-      vva_progr_a_lancr                       varchar2 (4000)
-        default 'begin ' || '  %PROCD_PERSN%; ' || '  exception when others then ete();' || 'end;';
-    begin
-      if vva_procd_pied_page is not null then
-        vva_progr_a_lancr :=
-          replace (vva_progr_a_lancr,
-                   '%PROCD_PERSN%',
-                   vva_procd_pied_page);
-
-        execute immediate vva_progr_a_lancr;
-      else
-        if gpi_parmt_impr.nu_pied_polc_tail is not null then
-          vnu_tail_polc_pied := gpi_parmt_impr.nu_pied_polc_tail;
-        else
-          vnu_tail_polc_pied := 8;
-        end if;
-
-        plpdf_pkg.setcurrenty (round (plpdf_pkg.getpageavailableheight +
-                                      plpdf_toolkit.conv (5,
-                                                          'mm'),
-                                      0));
-        plpdf_pkg.setprintfont (convr_parmt_faml (gpi_parmt_impr.va_pied_polc_faml),
-                                convr_parmt_poids (gpi_parmt_impr.va_pied_polc_poids,
-                                                   null),
-                                vnu_tail_polc_pied);
-
-        if gpi_parmt_impr.va_pied_texte is not null then
-          plpdf_pkg.printcell (0,
-                               obten_hautr_cel (gpi_parmt_impr.va_pied_polc_faml,
-                                                vnu_tail_polc_pied),
-                               apex_application.do_substitutions (gpi_parmt_impr.va_pied_texte),
-                               0,
-                               0,
-                               'C');
-        end if;
-
-        plpdf_pkg.printcell (0,
-                             obten_hautr_cel (gpi_parmt_impr.va_pied_polc_faml,
-                                              vnu_tail_polc_pied),
-                             to_char (plpdf_pkg.currentpagenumber),
-                             0,
-                             0,
-                             'C');
-      end if;
-    end impri_pied_page;
-
-    --Gestion du surlignement
-    procedure defnr_surlg is
-    begin
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          if gta_fonct_coln (i).vva_indic_afich = 'O' then
-            vnu_elmnt_tabl := vnu_elmnt_tabl + 1;
-
-            v_coulr_cell (vnu_elmnt_tabl) := gre_ligne_a_surlg.vre_coulr_backg;
-
-            if gre_ligne_a_surlg.vta_coln_surlg (var_infor_coln (i).va_nom).vva_type_surlg <> 'LIGNE' then
-              v_coulr_cell (vnu_elmnt_tabl) :=
-                gre_ligne_a_surlg.vta_coln_surlg (var_infor_coln (i).va_nom).vre_coulr_backg;
-            end if;
-          end if;
-        end if;
-      end loop;
-    end defnr_surlg;
-
-    --Gestion des regroupements
-    function obten_valr_fonct (pva_nom_coln in varchar2,
-                               pva_fonct in varchar2 default 'SOMME')
-      return number is
-      vnu_fonct                               number;
-    begin
-      case pva_fonct
-        when 'SOMME' then
-          vnu_fonct :=
-            instr (vre_parmt_group.vva_coln_somme,
-                   pva_nom_coln);
-        when 'MOYEN' then
-          vnu_fonct :=
-            instr (vre_parmt_group.vva_coln_moyen,
-                   pva_nom_coln);
-        when 'MAX' then
-          vnu_fonct :=
-            instr (vre_parmt_group.vva_coln_max,
-                   pva_nom_coln);
-        when 'MIN' then
-          vnu_fonct :=
-            instr (vre_parmt_group.vva_coln_min,
-                   pva_nom_coln);
-        when 'MEDN' then
-          vnu_fonct :=
-            instr (vre_parmt_group.vva_coln_medn,
-                   pva_nom_coln);
-        when 'MODE' then
-          vnu_fonct :=
-            instr (vre_parmt_group.vva_coln_mode,
-                   pva_nom_coln);
-        when 'COMPT' then
-          vnu_fonct :=
-            instr (vre_parmt_group.vva_coln_compt,
-                   pva_nom_coln);
-        when 'DISTN' then
-          vnu_fonct :=
-            instr (vre_parmt_group.vva_coln_compt_distn,
-                   pva_nom_coln);
-        else
-          null;
-      end case;
-
-      return vnu_fonct;
-    end obten_valr_fonct;
-
-    function afich_fonct (pnu_valr in number,
-                          pva_formt in varchar2,
-                          pva_fonct in varchar2 default 'SOMME')
-      return varchar2 is
-      vva_fonct                               varchar2 (4000);
-    begin
-      case pva_fonct
-        when 'SOMME' then
-          vva_fonct := null;
-        when 'MOYEN' then
-          vva_fonct := 'Moyenne';
-        when 'MAX' then
-          vva_fonct := 'Maximum';
-        when 'MIN' then
-          vva_fonct := 'Minimum';
-        when 'MEDN' then
-          vva_fonct := 'Médiane';
-        when 'MODE' then
-          vva_fonct := 'Mode';
-        when 'COMPT' then
-          vva_fonct := 'Calculer';
-        when 'DISTN' then
-          vva_fonct := 'Nombre de valeurs distinctes';
-        else
-          null;
-      end case;
-
-      if pva_fonct <> 'SOMME' then
-        vva_fonct := vva_fonct || ': ';
-      end if;
-
-      if pva_fonct in ('COMPT', 'DISTN') then
-        return vva_fonct || to_char (pnu_valr);
-      else
-        return    vva_fonct
-               || to_char (pnu_valr,
-                           pva_formt);
-      end if;
-    end afich_fonct;
-
-    function obten_group_actif (pva_nom_coln in varchar2)
-      return boolean is
-    begin
-      return instr (':' || vre_parmt_group.vva_group_sur || ':',
-                    ':' || pva_nom_coln || ':') > 0;
-    end obten_group_actif;
-
-    function obten_fonct_activ (pva_nom_coln in varchar2,
-                                pva_mode in varchar2 default 'SOMME')
-      return boolean is
-      vbo_activ                               boolean default false;
-    begin
-      case pva_mode
-        when 'SOMME' then
-          vbo_activ :=
-            instr (':' || vre_parmt_group.vva_coln_somme || ':',
-                   ':' || pva_nom_coln || ':') > 0;
-        when 'MOYEN' then
-          vbo_activ :=
-            instr (':' || vre_parmt_group.vva_coln_moyen || ':',
-                   ':' || pva_nom_coln || ':') > 0;
-        when 'MAX' then
-          vbo_activ :=
-            instr (':' || vre_parmt_group.vva_coln_max || ':',
-                   ':' || pva_nom_coln || ':') > 0;
-        when 'MIN' then
-          vbo_activ :=
-            instr (':' || vre_parmt_group.vva_coln_min || ':',
-                   ':' || pva_nom_coln || ':') > 0;
-        when 'MEDN' then
-          vbo_activ :=
-            instr (':' || vre_parmt_group.vva_coln_medn || ':',
-                   ':' || pva_nom_coln || ':') > 0;
-        when 'MODE' then
-          vbo_activ :=
-            instr (vre_parmt_group.vva_coln_mode || ':',
-                   ':' || pva_nom_coln || ':') > 0;
-        when 'COMPT' then
-          vbo_activ :=
-            instr (':' || vre_parmt_group.vva_coln_compt || ':',
-                   ':' || pva_nom_coln || ':') > 0;
-        when 'DISTN' then
-          vbo_activ :=
-            instr (':' || vre_parmt_group.vva_coln_compt_distn || ':',
-                   ':' || pva_nom_coln || ':') > 0;
-        else
-          null;
-      end case;
-
-      return vbo_activ;
-    end obten_fonct_activ;
-
-    /*Création des métadonnées*/
-    procedure init_group_entet is
-      vbo_presn_group                         boolean default false;
-      vnu_compt                               pls_integer default 0;
-      vnu_compt_group                         pls_integer default 0;
-      vbo_presn_fonct                         boolean default false;
-
-      function detrm_postn_coln_group (pva_nom_coln in varchar2,
-                                       pva_break_on in varchar2)
-        return pls_integer is
-        vva_chain                               varchar2 (4000);
-        vnu_postn                               pls_integer default 0;
-      begin
-        vva_chain :=
-          substr (pva_break_on,
-                  1,
-                  instr (pva_break_on,
-                         pva_nom_coln));
-
-        select   length (vva_chain) -
-                 length (replace (vva_chain,
-                                  ':',
-                                  '')) +
-                 1
-          into   vnu_postn
-          from   dual;
-
-        return vnu_postn;
-      end detrm_postn_coln_group;
-    begin
-      --Déterminer les colonnes qui font partie du break ainsi que les fonctions par colonnes,
-      --les ajouter au tableau des groupes globaux
-      --Ne pas oublier le format number pour la colonne
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          if obten_group_actif (var_infor_coln (i).va_nom) then
-            vbo_presn_group := true;
-            gbo_presn_group := vbo_presn_group;
-            vnu_compt_group :=
-              detrm_postn_coln_group (var_infor_coln (i).va_nom,
-                                      vre_parmt_group.vva_group);
-
-            --Alimenter les colonnes qui font parties du groupe
-            case vnu_compt_group
-              when 1 then
-                gre_group.vva_nom_coln_1 := var_infor_coln (i).va_nom;
-              when 2 then
-                gre_group.vva_nom_coln_2 := var_infor_coln (i).va_nom;
-              when 3 then
-                gre_group.vva_nom_coln_3 := var_infor_coln (i).va_nom;
-              when 4 then
-                gre_group.vva_nom_coln_4 := var_infor_coln (i).va_nom;
-              when 5 then
-                gre_group.vva_nom_coln_5 := var_infor_coln (i).va_nom;
-              when 6 then
-                gre_group.vva_nom_coln_6 := var_infor_coln (i).va_nom;
-              else
-                null;
-            end case;
-
-            gta_fonct_coln (i).vnu_numr_group := vnu_compt_group;
-          end if;
-
-          gta_fonct_coln (i).vva_nom_coln := var_infor_coln (i).va_nom;
-
-          if vbo_presn_group then
-            gta_fonct_coln (i).vva_indic_afich := 'N';
-          else
-            gta_fonct_coln (i).vva_indic_afich := 'O';
-
-
-            if obten_fonct_activ (var_infor_coln (i).va_nom,
-                                  'SOMME') then
-              gta_fonct_coln (i).vva_indic_somme := 'O';
-            end if;
-
-            if obten_fonct_activ (var_infor_coln (i).va_nom,
-                                  'MOYEN') then
-              gta_fonct_coln (i).vva_indic_moyen := 'O';
-            end if;
-
-            if obten_fonct_activ (var_infor_coln (i).va_nom,
-                                  'MAX') then
-              gta_fonct_coln (i).vva_indic_max := 'O';
-            end if;
-
-            if obten_fonct_activ (var_infor_coln (i).va_nom,
-                                  'MIN') then
-              gta_fonct_coln (i).vva_indic_min := 'O';
-            end if;
-
-            if obten_fonct_activ (var_infor_coln (i).va_nom,
-                                  'MEDN') then
-              gta_fonct_coln (i).vva_indic_medn := 'O';
-            end if;
-
-            if obten_fonct_activ (var_infor_coln (i).va_nom,
-                                  'MODE') then
-              gta_fonct_coln (i).vva_indic_mode := 'O';
-            end if;
-
-            if obten_fonct_activ (var_infor_coln (i).va_nom,
-                                  'COMPT') then
-              gta_fonct_coln (i).vva_indic_compt := 'O';
-            end if;
-
-            if obten_fonct_activ (var_infor_coln (i).va_nom,
-                                  'DISTN') then
-              gta_fonct_coln (i).vva_indic_compt_distn := 'O';
-            end if;
-          end if;
-
-          vbo_presn_group := false;
-        end if;
-      end loop;
-
-      vnu_elmnt_tabl := 0;
-    end init_group_entet;
-
-    function verfr_chang_group
-      return boolean is
-      vbo_chang                               boolean default false;
-      vva_elemn                               varchar2 (32767);
-    begin
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' and gta_fonct_coln (i).vva_indic_afich = 'N' then
-          --Déterminer s'il y a eu changement de groupe
-          case var_infor_coln (i).va_type_valr
-            when 'VARCH' then
-              vva_elemn := var_infor_coln (i).va_valr_varch;
-            when 'NUMBR' then
-              vva_elemn :=
-                (ltrim (to_char (var_infor_coln (i).nu_valr_numbr,
-                                 var_infor_coln (i).va_formt)));
-            when 'DATE' then
-              vva_elemn :=
-                (to_char (var_infor_coln (i).da_valr_date,
-                          var_infor_coln (i).va_formt));
-            when 'TIMST' then
-              vva_elemn :=
-                (to_char (var_infor_coln (i).ts_valr_timst,
-                          var_infor_coln (i).va_formt));
-            else
-              vva_elemn := var_infor_coln (i).va_valr_varch;
-          end case;
-
-          case gta_fonct_coln (i).vnu_numr_group
-            when 1 then
-              vbo_chang :=
-                gre_group.vva_valr_coln_1 <> vva_elemn
-             or gre_group.vva_valr_coln_1 is null;
-            when 2 then
-              vbo_chang :=
-                gre_group.vva_valr_coln_2 <> vva_elemn
-             or gre_group.vva_valr_coln_2 is null;
-            when 3 then
-              vbo_chang :=
-                gre_group.vva_valr_coln_3 <> vva_elemn
-             or gre_group.vva_valr_coln_3 is null;
-            when 4 then
-              vbo_chang :=
-                gre_group.vva_valr_coln_4 <> vva_elemn
-             or gre_group.vva_valr_coln_4 is null;
-            when 5 then
-              vbo_chang :=
-                gre_group.vva_valr_coln_5 <> vva_elemn
-             or gre_group.vva_valr_coln_5 is null;
-            when 6 then
-              vbo_chang :=
-                gre_group.vva_valr_coln_6 <> vva_elemn
-             or gre_group.vva_valr_coln_6 is null;
-            else
-              null;
-          end case;
-        end if;
-
-        if vbo_chang then
-          exit;
-        end if;
-      end loop;
-
-      return vbo_chang;
-    end verfr_chang_group;
-
-    /*Print à chaque groupe*/
-    procedure gerer_group_entet is
-      vbo_presn_entet                         boolean default false;
-      vva_elemn                               varchar2 (4000);
-      vva_valr_coln                           varchar2 (200);
-    begin
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' and gta_fonct_coln (i).vva_indic_afich = 'N' then
-          --Construire la cellule à imprimer
-          vbo_presn_entet := true;
-
-          case var_infor_coln (i).va_type_valr
-            when 'VARCH' then
-              vva_valr_coln := var_infor_coln (i).va_valr_varch;
-            when 'NUMBR' then
-              vva_valr_coln :=
-                (ltrim (to_char (var_infor_coln (i).nu_valr_numbr,
-                                 var_infor_coln (i).va_formt)));
-            when 'DATE' then
-              vva_valr_coln :=
-                (to_char (var_infor_coln (i).da_valr_date,
-                          var_infor_coln (i).va_formt));
-            when 'TIMST' then
-              vva_valr_coln :=
-                (to_char (var_infor_coln (i).ts_valr_timst,
-                          var_infor_coln (i).va_formt));
-            else
-              vva_valr_coln := var_infor_coln (i).va_valr_varch;
-          end case;
-
-          case gta_fonct_coln (i).vnu_numr_group
-            when 1 then
-              gre_group.vva_libl_coln_1 := var_infor_coln (i).va_libl;
-              gre_group.vva_valr_coln_1 := vva_valr_coln;
-            when 2 then
-              gre_group.vva_libl_coln_2 := var_infor_coln (i).va_libl;
-              gre_group.vva_valr_coln_2 := vva_valr_coln;
-            when 3 then
-              gre_group.vva_libl_coln_3 := var_infor_coln (i).va_libl;
-              gre_group.vva_valr_coln_3 := vva_valr_coln;
-            when 4 then
-              gre_group.vva_libl_coln_4 := var_infor_coln (i).va_libl;
-              gre_group.vva_valr_coln_4 := vva_valr_coln;
-            when 5 then
-              gre_group.vva_libl_coln_5 := var_infor_coln (i).va_libl;
-              gre_group.vva_valr_coln_5 := vva_valr_coln;
-            when 6 then
-              gre_group.vva_libl_coln_6 := var_infor_coln (i).va_libl;
-              gre_group.vva_valr_coln_6 := vva_valr_coln;
-            else
-              null;
-          end case;
-        end if;
-      end loop;
-
-      if gre_group.vva_nom_coln_1 is not null then
-        vva_elemn := vva_elemn || ', ' || gre_group.vva_libl_coln_1 || ' : ' || gre_group.vva_valr_coln_1;
-      end if;
-
-      if gre_group.vva_nom_coln_2 is not null then
-        vva_elemn := vva_elemn || ', ' || gre_group.vva_libl_coln_2 || ' : ' || gre_group.vva_valr_coln_2;
-      end if;
-
-      if gre_group.vva_nom_coln_3 is not null then
-        vva_elemn := vva_elemn || ', ' || gre_group.vva_libl_coln_3 || ' : ' || gre_group.vva_valr_coln_3;
-      end if;
-
-      if gre_group.vva_nom_coln_4 is not null then
-        vva_elemn := vva_elemn || ', ' || gre_group.vva_libl_coln_4 || ' : ' || gre_group.vva_valr_coln_4;
-      end if;
-
-      if gre_group.vva_nom_coln_5 is not null then
-        vva_elemn := vva_elemn || ', ' || gre_group.vva_libl_coln_5 || ' : ' || gre_group.vva_valr_coln_5;
-      end if;
-
-      if gre_group.vva_nom_coln_6 is not null then
-        vva_elemn := vva_elemn || ', ' || gre_group.vva_libl_coln_6 || ' : ' || gre_group.vva_valr_coln_6;
-      end if;
-
-      if vbo_presn_entet then
-        if gpi_parmt_impr.nu_coln_polc_tail is not null then
-          vnu_tail_polc_ent := gpi_parmt_impr.nu_coln_polc_tail;
-        else
-          vnu_tail_polc_ent := 11;
-        end if;
-
-        plpdf_pkg.setcolor4filling (obten_coulr_a_partr_hex (gre_coulr_pdf.vva_coulr_backg_entet));
-        plpdf_pkg.setprintfont (convr_parmt_faml (gpi_parmt_impr.va_coln_polc_faml),
-                                convr_parmt_poids (gpi_parmt_impr.va_coln_polc_poids,
-                                                   'B'),
-                                vnu_tail_polc_ent);
-
-        plpdf_pkg.printmultilinecell (0,
-                                      obten_hautr_cel (gpi_parmt_impr.va_coln_polc_faml,
-                                                       vnu_tail_polc_ent),
-                                      substr (vva_elemn,
-                                              3),
-                                      '1',
-                                      'L',
-                                      1,
-                                      p_ln                       => 1);
-      end if;
-    end gerer_group_entet;
-
-    /* Fin print à chaque groupe*/
-    procedure termn_group_entet is
-      vva_elemn                               varchar2 (4000);
-      vnu_compt_termn                         pls_integer default 0;
-      v_data_row_fonct                        plpdf_type.t_row_datas;
-      v_algnm_fonct                           plpdf_type.t_row_aligns;
-      vbo_retrn                               boolean default false;
-
-      function obten_medn
-        return number is
-        vta_medn                                typ_tab_medn;
-      begin /*
-       select cast(multiset(
-                 select * from table(gta_fonct_coln(c).vta_tabl_medn)
-                 order by 1) as typ_tab_medn)
-   into vta_medn from dual;
-
- --Médianne est la valeur
- if mod (vta_medn.count(), 2) = 1 then
-   null;
- else --Sinon, il faut calculer la position avant et après
-   null;
- end if;*/
-        return null;
-      end obten_medn;
-
-      function nouvl_ligne
-        return varchar2 is
-      begin
-        return chr (13) || chr (10);
-      end nouvl_ligne;
-    begin
-      for c in gta_fonct_coln.first () .. gta_fonct_coln.last () loop
-        if gta_fonct_coln (c).vva_indic_afich = 'O' then
-          vnu_compt_termn := vnu_compt_termn + 1;
-
-          if gta_fonct_coln (c).vva_indic_somme = 'O' then
-            vbo_retrn := true;
-            vva_elemn :=
-              afich_fonct (gta_fonct_coln (c).vnu_somme,
-                           var_infor_coln (c).va_formt,
-                           'SOMME');
-          end if;
-
-          if gta_fonct_coln (c).vva_indic_moyen = 'O' then
-            if vbo_retrn then
-              vva_elemn := vva_elemn || nouvl_ligne;
-            end if;
-
-            vbo_retrn := true;
-            vva_elemn :=
-                 vva_elemn
-              || afich_fonct ( (gta_fonct_coln (c).vnu_moyen / gta_fonct_coln (c).vnu_compt),
-                              nvl (var_infor_coln (c).va_formt, kva_formt_nombr),
-                              'MOYEN');
-          end if;
-
-          if gta_fonct_coln (c).vva_indic_max = 'O' then
-            if vbo_retrn then
-              vva_elemn := vva_elemn || nouvl_ligne;
-            end if;
-
-            vbo_retrn := true;
-            vva_elemn :=
-                 vva_elemn
-              || afich_fonct (gta_fonct_coln (c).vnu_max,
-                              var_infor_coln (c).va_formt,
-                              'MAX');
-          end if;
-
-          if gta_fonct_coln (c).vva_indic_min = 'O' then
-            if vbo_retrn then
-              vva_elemn := vva_elemn || nouvl_ligne;
-            end if;
-
-            vbo_retrn := true;
-            vva_elemn :=
-                 vva_elemn
-              || afich_fonct (gta_fonct_coln (c).vnu_min,
-                              var_infor_coln (c).va_formt,
-                              'MIN');
-          end if;
-
-          /*
-                               if gta_fonct_coln (c).vva_indic_medn = 'O' then
-                                if vbo_retrn then
-                                  vva_elemn := vva_elemn || nouvl_ligne;
-                                end if;
-                                vbo_retrn := true;
-                              vva_elemn := vva_elemn || afich_fonct(obten_medn, var_infor_coln(c).va_formt, 'MEDN');
-                    end if;
-          */
-
-          if gta_fonct_coln (c).vva_indic_compt = 'O' then
-            if vbo_retrn then
-              vva_elemn := vva_elemn || nouvl_ligne;
-            end if;
-
-            vbo_retrn := true;
-            vva_elemn :=
-                 vva_elemn
-              || afich_fonct (gta_fonct_coln (c).vnu_compt,
-                              null,
-                              'COMPT');
-          end if;
-
-          if gta_fonct_coln (c).vva_indic_compt_distn = 'O' then
-            if vbo_retrn then
-              vva_elemn := vva_elemn || nouvl_ligne;
-            end if;
-
-            vbo_retrn := true;
-            vva_elemn :=
-                 vva_elemn
-              || afich_fonct (gta_fonct_coln (c).vnu_compt_distn,
-                              null,
-                              'DISTN');
-          end if;
-
-          v_algnm_fonct (vnu_compt_termn) := 'R';
-          v_data_row_fonct (vnu_compt_termn) := vva_elemn;
-          vva_elemn := null;
-          vbo_retrn := false;
-        end if;
-      end loop;
-
-      if gpi_parmt_impr.nu_coln_polc_tail is not null then
-        vnu_tail_polc_ent := gpi_parmt_impr.nu_coln_polc_tail;
-      else
-        vnu_tail_polc_ent := 11;
-      end if;
-
-      plpdf_pkg.setcolor4filling (obten_coulr_a_partr_hex (gre_coulr_pdf.vva_coulr_backg_entet));
-      plpdf_pkg.setprintfont (convr_parmt_faml (gpi_parmt_impr.va_coln_polc_faml),
-                              convr_parmt_poids (gpi_parmt_impr.va_coln_polc_poids,
-                                                 'B'),
-                              vnu_tail_polc_ent);
-
-      plpdf_pkg.row_print2 (v_data_row_fonct,
-                            v_bordr_cell,
-                            v_tail_cell,
-                            v_algnm_fonct,
-                            v_style_cell,
-                            v_lign_max,
-                            obten_hautr_cel (gpi_parmt_impr.va_coln_polc_faml,
-                                             vnu_tail_polc_ent),
-                            1);
-    end termn_group_entet;
-
-    procedure init_calcl_fonct is
-    begin
-      vnu_tail_group := 0;
-
-      for i in gta_fonct_coln.first () .. gta_fonct_coln.last () loop
-        if gta_fonct_coln (i).vva_indic_afich = 'O' then
-          if gta_fonct_coln (i).vva_indic_somme = 'O' then
-            vbo_presn_fonct := true;
-            gta_fonct_coln (i).vnu_somme := 0;
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_min = 'O' then
-            vbo_presn_fonct := true;
-            gta_fonct_coln (i).vnu_min := null;
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_max = 'O' then
-            vbo_presn_fonct := true;
-            gta_fonct_coln (i).vnu_max := null;
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_moyen = 'O' then
-            vbo_presn_fonct := true;
-            gta_fonct_coln (i).vnu_moyen := 0;
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_compt = 'O'
-          or gta_fonct_coln (i).vva_indic_moyen = 'O' then
-            vbo_presn_fonct := true;
-            gta_fonct_coln (i).vnu_compt := 0;
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_compt_distn = 'O' then
-            vbo_presn_fonct := true;
-            gta_fonct_coln (i).vnu_compt_distn := 0;
-            gta_fonct_coln (i).vta_tabl_compt.delete ();
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_medn = 'O' then
-            vbo_presn_fonct := true;
-            gta_fonct_coln (i).vnu_medn := 0;
-          --gta_fonct_coln (i).vta_tabl_medn.delete ();
-          end if;
-        end if;
-      end loop;
-    end init_calcl_fonct;
-
-    procedure calcl_fonct is
-      vbo_elemn_exist                         boolean default false;
-      i                                       pls_integer;
-    begin
-      vnu_tail_group := vnu_tail_group + 1;
-
-      for i in gta_fonct_coln.first () .. gta_fonct_coln.last () loop
-        if gta_fonct_coln (i).vva_indic_afich = 'O' then
-          if gta_fonct_coln (i).vva_indic_somme = 'O' then
-            gta_fonct_coln (i).vnu_somme := gta_fonct_coln (i).vnu_somme + nvl (var_infor_coln (i).nu_valr_numbr, 0);
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_min = 'O'
-         and (gta_fonct_coln (i).vnu_min is null
-           or gta_fonct_coln (i).vnu_min > var_infor_coln (i).nu_valr_numbr) then
-            gta_fonct_coln (i).vnu_min := var_infor_coln (i).nu_valr_numbr;
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_max = 'O'
-         and (gta_fonct_coln (i).vnu_max is null
-           or gta_fonct_coln (i).vnu_max < var_infor_coln (i).nu_valr_numbr) then
-            gta_fonct_coln (i).vnu_max := var_infor_coln (i).nu_valr_numbr;
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_moyen = 'O' then
-            gta_fonct_coln (i).vnu_moyen := gta_fonct_coln (i).vnu_moyen + nvl (var_infor_coln (i).nu_valr_numbr, 0);
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_compt = 'O'
-          or gta_fonct_coln (i).vva_indic_moyen = 'O' then
-            if var_infor_coln (i).nu_valr_numbr is not null
-            or var_infor_coln (i).va_valr_varch is not null
-            or var_infor_coln (i).da_valr_date is not null
-            or var_infor_coln (i).ts_valr_timst is not null then
-              gta_fonct_coln (i).vnu_compt := gta_fonct_coln (i).vnu_compt + 1;
-            end if;
-          end if;
-
-          if gta_fonct_coln (i).vva_indic_compt_distn = 'O' then
-            case var_infor_coln (i).va_type_valr
-              when 'VARCH' then
-                if not gta_fonct_coln (i).vta_tabl_compt.exists (var_infor_coln (i).va_valr_varch) then
-                  gta_fonct_coln (i).vta_tabl_compt (var_infor_coln (i).va_valr_varch) := 1;
-                  gta_fonct_coln (i).vnu_compt_distn := gta_fonct_coln (i).vnu_compt_distn + 1;
-                end if;
-              when 'NUMBR' then
-                if not gta_fonct_coln (i).vta_tabl_compt.exists (to_char (var_infor_coln (i).nu_valr_numbr)) then
-                  gta_fonct_coln (i).vta_tabl_compt (to_char (var_infor_coln (i).nu_valr_numbr)) := 1;
-                  gta_fonct_coln (i).vnu_compt_distn := gta_fonct_coln (i).vnu_compt_distn + 1;
-                end if;
-              when 'DATE' then
-                if not gta_fonct_coln (i).vta_tabl_compt.exists (to_char (var_infor_coln (i).da_valr_date)) then
-                  gta_fonct_coln (i).vta_tabl_compt (to_char (var_infor_coln (i).da_valr_date)) := 1;
-                  gta_fonct_coln (i).vnu_compt_distn := gta_fonct_coln (i).vnu_compt_distn + 1;
-                end if;
-              when 'TIMST' then
-                if not gta_fonct_coln (i).vta_tabl_compt.exists (to_char (var_infor_coln (i).ts_valr_timst)) then
-                  gta_fonct_coln (i).vta_tabl_compt (to_char (var_infor_coln (i).ts_valr_timst)) := 1;
-                  gta_fonct_coln (i).vnu_compt_distn := gta_fonct_coln (i).vnu_compt_distn + 1;
-                end if;
-              else
-                if not gta_fonct_coln (i).vta_tabl_compt.exists (var_infor_coln (i).va_valr_varch) then
-                  gta_fonct_coln (i).vta_tabl_compt (var_infor_coln (i).va_valr_varch) := 1;
-                  gta_fonct_coln (i).vnu_compt_distn := gta_fonct_coln (i).vnu_compt_distn + 1;
-                end if;
-            end case;
-          end if;
-        /*
-                  if gta_fonct_coln (i).vva_indic_medn = 'O' then
-          if var_infor_coln (i).nu_valr_numbr is not null then
-            gta_fonct_coln (i).vta_tabl_medn(vnu_tail_group) := var_infor_coln (i).nu_valr_numbr;
-          end if;
-        end if;*/
-        end if;
-      end loop;
-    end calcl_fonct;
-
-    procedure trans_libl is
-      vva_tabl_javsc                          varchar2 (4000);
-      vvc_liste_a_trans                       apex_application_global.vc_arr2;
-      vvc_liste_coupl                         apex_application_global.vc_arr2;
-    begin
-      vvc_liste_a_trans :=
-        sie_07_util_pkg.string_to_table (vre_parmt_group_plugn.vva_trans_libl,
-                                         ',');
-
-      if vvc_liste_a_trans.count > 0 then
-        for v in vvc_liste_a_trans.first .. vvc_liste_a_trans.last loop
-          vvc_liste_coupl :=
-            sie_07_util_pkg.string_to_table (vvc_liste_a_trans (v),
-                                             ';');
-
-          gta_trans_libl (vvc_liste_coupl (1)) := vvc_liste_coupl (2);
-        end loop;
-      end if;
-    end trans_libl;
-
-    procedure impri_entet_plugn is
-      vta_ligne_1                             typ_tab_coln_plugn;
-      vta_ligne_2                             typ_tab_coln_plugn;
-      vta_ligne_3                             typ_tab_coln_plugn;
-
-      function analz_ligne_entet (pva_ligne in varchar2)
-        return typ_tab_coln_plugn is
-        vta_coln_plugn                          typ_tab_coln_plugn;
-        vvc_liste_group                         apex_application_global.vc_arr2;
-        vvc_liste_sous_group                    apex_application_global.vc_arr2;
-        vnu_compt                               pls_integer default 0;
-      begin
-        vvc_liste_group :=
-          sie_07_util_pkg.string_to_table (pva_ligne,
-                                           ',');
-
-        if vvc_liste_group.count > 0 then
-          for v in vvc_liste_group.first .. vvc_liste_group.last loop
-            vnu_compt := vnu_compt + 1;
-            vvc_liste_sous_group :=
-              sie_07_util_pkg.string_to_table (vvc_liste_group (v),
-                                               ';');
-            vta_coln_plugn (vnu_compt).vva_valr := trim (vvc_liste_sous_group (1));
-            vta_coln_plugn (vnu_compt).vnu_colsp := vvc_liste_sous_group (2);
-            vta_coln_plugn (vnu_compt).vnu_rowsp := vvc_liste_sous_group (3);
-          end loop;
-        end if;
-
-        return vta_coln_plugn;
-      end analz_ligne_entet;
-
-      procedure impri_ligne (pta_ligne in typ_tab_coln_plugn) is
-        v_data_row_plugn                        plpdf_type.t_row_datas;
-        v_algnm_plugn                           plpdf_type.t_row_aligns;
-        v_tail_plugn                            plpdf_type.t_row_widths;
-        vnu_compt                               pls_integer default 0;
-        vnu_tail_ventl                          pls_integer default 0;
-        vnu_coln_courn                          pls_integer default 1;
-        vnu_coln_max                            pls_integer default 0;
-      begin
-        if pta_ligne.count > 0 then
-          for v in pta_ligne.first () .. pta_ligne.last () loop
-            vnu_compt := vnu_compt + 1;
-            v_data_row_plugn (vnu_compt) := formt_chain_br (pta_ligne (v).vva_valr);
-
-            if v = pta_ligne.first () and vre_parmt_group_plugn.vva_indic_ventl = 'Y' then
-              for c in v .. vre_parmt_group_plugn.vnu_nombr_coln_ventl loop
-                vnu_tail_ventl := vnu_tail_ventl + v_tail_cell (c);
-              end loop;
-
-              v_tail_plugn (vnu_compt) := vnu_tail_ventl;
-              vnu_coln_courn := vnu_coln_courn + vre_parmt_group_plugn.vnu_nombr_coln_ventl - 1;
-            else
-              vnu_coln_max := vnu_coln_courn + pta_ligne (v).vnu_colsp - 1;
-              v_tail_plugn (vnu_compt) := 0;
-
-              for b in vnu_coln_courn .. vnu_coln_max loop
-                v_tail_plugn (vnu_compt) := v_tail_plugn (vnu_compt) + v_tail_cell (b);
-              end loop;
-
-              vnu_coln_courn := vnu_coln_max;
-            end if;
-
-            vnu_coln_courn := vnu_coln_courn + 1;
-            v_algnm_plugn (vnu_compt) := 'C';
-          end loop;
-
-          plpdf_pkg.row_print2 (v_data_row_plugn,
-                                v_bordr_cell,
-                                v_tail_plugn,
-                                v_algnm_plugn,
-                                v_style_cell,
-                                v_lign_max,
-                                obten_hautr_cel (gpi_parmt_impr.va_coln_polc_faml,
-                                                 vnu_tail_polc_ent),
-                                1);
-        end if;
-      end impri_ligne;
-    begin
-      vta_ligne_1 := analz_ligne_entet (vre_parmt_group_plugn.vva_ligne_1);
-      vta_ligne_2 := analz_ligne_entet (vre_parmt_group_plugn.vva_ligne_2);
-      vta_ligne_3 := analz_ligne_entet (vre_parmt_group_plugn.vva_ligne_3);
-
-
-      if gpi_parmt_impr.nu_coln_polc_tail is not null then
-        vnu_tail_polc_ent := gpi_parmt_impr.nu_coln_polc_tail;
-      else
-        vnu_tail_polc_ent := 11;
-      end if;
-
-      plpdf_pkg.setcolor4filling (obten_coulr_a_partr_hex (gre_coulr_pdf.vva_coulr_backg_entet));
-      plpdf_pkg.setprintfont (convr_parmt_faml (gpi_parmt_impr.va_coln_polc_faml),
-                              convr_parmt_poids (gpi_parmt_impr.va_coln_polc_poids,
-                                                 'B'),
-                              vnu_tail_polc_ent);
-
-      impri_ligne (vta_ligne_1);
-      impri_ligne (vta_ligne_2);
-      impri_ligne (vta_ligne_3);
-    end impri_entet_plugn;
-  begin
-    begin
-      -- Chercher le rapport interactif sur la page
-      select   apex_application.do_substitutions (pir.libl_regn),
-               air.region_id id_plug,
-               air.no_data_found_message,
-               pir.seqnc,
-               pir.largr_deft,
-               apex_application.do_substitutions (air.show_nulls_as)
-        --pir.unite_mesr_largr_deft
-        into   vva_nom_raprt,
-               vnu_id_plugn,
-               vva_mesg_aucun_don,
-               vnu_ref_ir,
-               vnu_largr_deft,
-               gva_valr_nul
-        --vnu_unite_mesr_largr_deft
-        from   vd_sie_13_page_ir pir,
-               apex_ir air
-       where   pir.app_id_formt = pnu_aplic and pir.app_page_id_formt = pnu_page and air.id = pir.id_apex;
-
-      -- Récupérer le select
-      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
-      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
-    exception
-      when no_data_found then
-        vva_selct := null;
-    end;
-
-    if vva_selct is null then
-      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
-                                               pva_code_prodt             => 'AFW');
-    end if;
-
-    vnu_largr_deft := nvl (vnu_largr_deft, 0);
-
-    if vnu_largr_deft <= 0 then
-      vnu_largr_deft := 1.5;
-    end if;
-
-    -- Récupérer les paramètres du raport
-    gpi_parmt_impr := obten_parmt_impre_raprt (vnu_ref_ir);
-    -- Obtenir les paramètres pour le surlignement
-    vta_parmt_surlg := obten_parmt_surlg_raprt (vnu_rpts_id);
-    vre_parmt_group := obten_parmt_group_raprt (vnu_rpts_id);
-    vre_parmt_group_plugn := obten_parmt_group_plugn (vnu_id_plugn);
-
-    vva_nom_raprt :=
-      nvl (replace (gpi_parmt_impr.va_entet_texte,
-                    '#TITLE#',
-                    vva_nom_raprt),
-           vva_nom_raprt);
-    vva_nom_raprt := apex_application.do_substitutions (vva_nom_raprt);
-    vva_nom_raprt := formt_chain_br (vva_nom_raprt);
-
-    --Obtenir la procédure de couleur
-    vva_procd_coulr :=
-      sie_11_prodt_pkg.obten_procd_coulr_plpdf (
-        sie_11_aplic_pkg.obten_prodt (sie_11_aplic_pkg.obten_aplic (pnu_aplic))
-      );
-
-    if vva_procd_coulr is not null then
-      defnr_coulr_pdf (vva_procd_coulr);
-    end if;
-
-    vva_procd_entet :=
-      sie_11_prodt_pkg.obten_procd_entet_plpdf (
-        sie_11_aplic_pkg.obten_prodt (sie_11_aplic_pkg.obten_aplic (pnu_aplic))
-      );
-    vva_procd_pied_page :=
-      sie_11_prodt_pkg.obten_procd_pied_page_plpdf (
-        sie_11_aplic_pkg.obten_prodt (sie_11_aplic_pkg.obten_aplic (pnu_aplic))
-      );
-
-    vnu_cursr :=
-      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
-                                  vnu_rpts_id,
-                                  apex_application.do_substitutions (vva_selct),
-                                  var_infor_coln,
-                                  chr (10) || chr (13));
-
-    declare
-      vbo_aucun_afich                         boolean default true;
-    begin
-      if var_infor_coln.first () is not null then
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            vbo_aucun_afich := false;
-            exit;
-          end if;
-        end loop;
-      end if;
-
-      if vbo_aucun_afich then
-        var_infor_coln.delete ();
-      end if;
-    end;
-
-    if var_infor_coln.first () is not null then
-      -- vnu_largr_dispo                            := obten_largr_dispo_page (gpi_parmt_impr);
-
-      -- Transformer toutes les valeurs en pouces
-      vnu_index_page := 1;
-      -- Créer la premiere page
-      var_pages (vnu_index_page).nu_dernr_coln := 0;
-
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          -- La page sera créée si elle n'existe pas
-          var_pages (vnu_index_page).nu_dernr_coln := i;
-          var_pages (vnu_index_page).nu_largr := var_pages (vnu_index_page).nu_largr + var_infor_coln (i).nu_largr_reltv;
-        end if;
-      end loop;
-
-      begin
-        init_group_entet;
-        init_calcl_fonct;
-
-        init_pdf;
-
-        trans_libl;
-        calcl_largr_raprt;
-
-        impri_entet_plugn;
-
-        if not gbo_presn_group then
-          impri_entet;
-        end if;
-
-        -- Écrire les données
-        while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
-                                               var_infor_coln) loop
-          --Créer une nouvelle entête de tableau sur une nouvelle page s'il reste des données
-          if round ( (plpdf_pkg.getpageavailableheight -
-                      plpdf_toolkit.conv (12,
-                                          'mm')),
-                    0) < round (plpdf_pkg.getcurrenty,
-                                0) then
-            impri_pied_page;
-            plpdf_pkg.newpage;
-            gerer_group_entet;
-            impri_entet;
-          end if;
-
-          if verfr_chang_group then
-            if vnu_tail_group <> 0 and vbo_presn_fonct then
-              termn_group_entet;
-              init_calcl_fonct;
-            end if;
-
-            if round ( (plpdf_pkg.getpageavailableheight -
-                        plpdf_toolkit.conv (12,
-                                            'mm')),
-                      0) < round (plpdf_pkg.getcurrenty,
-                                  0) then
-              impri_pied_page;
-              plpdf_pkg.newpage;
-              gerer_group_entet;
-              impri_entet;
-            end if;
-
-            gerer_group_entet;
-            impri_entet;
-          end if;
-
-          init_surlg_ligne;
-          calcl_fonct;
-
-          --Remplir le tableau
-          defnr_ligne;
-
-          --Définir le highlight pour la ligne courante.
-          defnr_surlg;
-
-          if round ( (plpdf_pkg.getpageavailableheight -
-                      plpdf_toolkit.conv (12,
-                                          'mm')),
-                    0) < round (plpdf_pkg.getcurrenty,
-                                0) then
-            impri_pied_page;
-            plpdf_pkg.newpage;
-            gerer_group_entet;
-            impri_entet;
-          end if;
-
-          --imprimer la ligne
-          impri_corps;
-        end loop;
-
-        --pied de page
-        if vbo_presn_fonct then
-          termn_group_entet;
-        end if;
-
-        impri_pied_page;
-
-        --Envoyer les données au fichier blob
-        plpdf_pkg.senddoc (v_blob);
-      end;
-
-      --téléverser pdf
-      owa_util.mime_header ('application/pdf',
-                            false);
-      htp.p ('Content-length: ' || dbms_lob.getlength (v_blob));
-      htp.p (   'Content-Disposition: attachment; filename="'
-             || replace (formt_nom_fichr (vva_nom_raprt) || '.pdf',
-                         chr (13),
-                         '_'));
-      owa_util.http_header_close ();
-      wpg_docload.download_file (v_blob);
-    else
-      null;
-      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
-      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
-    end if;
-
-    -- Fermer le curseur
-    sie_07_sql_pkg.fermr_selct (vnu_cursr);
-
-    -- Arrêter tous les autres traitements d'APEX
-    sie_07_util_pkg.aret_trait_page_apex;
-  exception
-    when others then
-      ete ();
-  end;
-
-  procedure afich_csv (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
-                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID'),
-                       pva_seprt_coln in varchar2 default kva_seprt_coln) is
-    vbo_dirct                               boolean default false;
-    vnu_ref_ir                              number;
-    vva_nom_raprt                           varchar2 (200);
-    vva_mesg_aucun_don                      varchar2 (32767);
-    vnu_largr_deft                          number;
-    --vnu_unite_mesr_largr_deft number(10);
-
-    vva_selct                               varchar2 (32767);
-    vnu_cursr                               number;
-    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
-    vcl_corps                               clob;
-    vva_seprt_coln                          varchar2 (1);
-    vnu_compt_ligne                         number;
-    vnu_rpts_id                             number;
-
-    procedure ajouter (pva_pre in varchar2,
-                       pva_chaine in varchar2) is
-    begin
-      if pva_pre is not null
-      or pva_chaine is not null then
-        if vbo_dirct then
-          --htp.putraw (utl_raw.cast_to_raw(pva_pre || pva_chaine));
-          htp.prn (pva_pre || pva_chaine);
-        --dbms_output.put (pva_pre || pva_chaine);
-        else
-          dbms_lob.writeappend (vcl_corps,
-                                length (pva_pre || pva_chaine),
-                                pva_pre || pva_chaine);
-        end if;
-      end if;
-    end;
-
-    procedure ajouter_chaine (pva_pre in varchar2,
-                              pva_chaine in varchar2) is
-    begin
-      ajouter (pva_pre,
-                  '"'
-               || replace (pva_chaine,
-                           '"',
-                           '""')
-               || '"');
-    end;
-  begin
-    begin
-      -- Chercher le rapport interactif sur la page
-      select   pir.libl_regn,
-               air.no_data_found_message,
-               pir.seqnc,
-               pir.largr_deft
-        --pir.unite_mesr_largr_deft
-        into   vva_nom_raprt,
-               vva_mesg_aucun_don,
-               vnu_ref_ir,
-               vnu_largr_deft
-        --vnu_unite_mesr_largr_deft
-        from   vd_sie_13_page pag,
-               vd_sie_13_page_ir pir,
-               apex_ir air
-       where   pag.ref_aplic = sie_11_aplic_pkg.obten_aplic_numr_apex (pnu_aplic)
-           and pag.numr_apex = pnu_page
-           and pir.ref_page = pag.seqnc
-           and air.id = pir.id_apex;
-
-      -- Récupérer le select
-      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
-      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
-    exception
-      when no_data_found then
-        vva_selct := null;
-    end;
-
-    if vva_selct is null then
-      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
-                                               pva_code_prodt             => 'AFW');
-    end if;
-
-    vnu_cursr :=
-      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
-                                  vnu_rpts_id,
-                                  vva_selct,
-                                  var_infor_coln,
-                                  chr (10));
-
-    declare
-      vbo_aucun_afich                         boolean default true;
-    begin
-      if var_infor_coln.first () is not null then
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            vbo_aucun_afich := false;
-            exit;
-          end if;
-        end loop;
-      end if;
-
-      if vbo_aucun_afich then
-        var_infor_coln.delete ();
-      end if;
-    end;
-
-    if var_infor_coln.first () is not null then
-      if vbo_dirct then
-        owa_util.mime_header ('text/csv',
-                              false);
-        htp.p ('Content-Disposition: attachment; filename="' || formt_nom_fichr (vva_nom_raprt) || '.csv' || '"');
-        --dbms_output.put_line ('HTTP/1.x 200 OK');
-        --dbms_output.put_line ('Content-Type: text/csv; charset=UTF-8');
-        --dbms_output.put_line ('Content-Disposition: attachment; filename="' || formt_nom_fichr(vva_nom_raprt) || '.csv' || '"');
-        owa_util.http_header_close;
-      --dbms_output.put_line (null);
-      else
-        dbms_lob.createtemporary (vcl_corps,
-                                  true);
-      end if;
-
-      -- Créer la ligne d'entête
-      vva_seprt_coln := null;
-
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          ajouter_chaine (vva_seprt_coln,
-                          var_infor_coln (i).va_libl);
-          vva_seprt_coln := pva_seprt_coln;
-        end if;
-      end loop;
-
-      -- Saut de ligne
-      ajouter (null,
-               chr (10));
-
-      -- Écrire les données
-      vnu_compt_ligne := 0;
-
-      while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
-                                             var_infor_coln) loop
-        vnu_compt_ligne := vnu_compt_ligne + 1;
-
-        vva_seprt_coln := null;
-
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            case var_infor_coln (i).va_type_valr
-              when 'VARCH' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).va_valr_varch);
-              when 'NUMBR' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).nu_valr_numbr);
-              when 'DATE' then
-                ajouter_chaine (vva_seprt_coln,
-                                to_char (var_infor_coln (i).da_valr_date,
-                                         'YYYY-MM-DD'));
-              when 'TIMST' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).ts_valr_timst);
-              else
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).va_valr_varch);
-            end case;
-
-            vva_seprt_coln := pva_seprt_coln;
-          end if;
-        end loop;
-
-        -- Saut de ligne
-        ajouter (null,
-                 chr (10));
-      end loop;
-
-      if vnu_compt_ligne = 0 then
-        ajouter_chaine (null,
-                        vva_mesg_aucun_don);
-        ajouter (null,
-                 chr (10));
-      end if;
-
-      if vbo_dirct then
-        null;
-      else
-        sie_11_prodt_pkg.telvs_fichr (vcl_corps,
-                                      formt_nom_fichr (vva_nom_raprt) || '.csv',
-                                      true,
-                                      'texte/csv');
-
-        dbms_lob.freetemporary (vcl_corps);
-      end if;
-    else
-      null;
-      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
-      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
-    end if;
-
-    -- Fermer le curseur
-    sie_07_sql_pkg.fermr_selct (vnu_cursr);
-
-    -- Arrêter tous les autres traitements d'APEX
-    sie_07_util_pkg.aret_trait_page_apex;
-  /*exception
-                                                                                                                                                                                                                                                                                    when others then
-    htp.p (sqlerrm);*/
-  end;
-end;
-/
-
-Prompt Package Body SIE_25_PUBLC_IMEDT_PKG;
-/* Formatted on 04/12/2013 11:35:44 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_25_publc_imedt_pkg as
-  gnu_travl                               number (10);
-
-  function obten_nouv_travl (pva_nom_raprt in varchar2)
-    return number is
-  begin
-    gnu_travl :=
-      sie_25_publc_noyau_pkg.initl_travl (pva_nom_raprt,
-                                          'O');
-    return gnu_travl;
-  end obten_nouv_travl;
-
-  function ajout_publc (pnu_travl in number,
-                        pva_nom_fichr_sort in varchar2,
-                        pva_code_type_publc in varchar2)
-    return number is
-  begin
-    return sie_25_publc_noyau_pkg.ajout_publc_travl (pva_nom_fichr_sort,
-                                                     pva_code_type_publc,
-                                                     pnu_travl);
-  end ajout_publc;
-
-  function ajout_parmt (pva_code_parmt in varchar2,
-                        pda_valr_parmt in date,
-                        pnu_publc_travl in number)
-    return number is
-    pnu_parmt_seqnc                         number (10);
-  begin
-    pnu_parmt_seqnc :=
-      sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                          null,
-                                          null,
-                                          pda_valr_parmt,
-                                          pnu_publc_travl);
-    return pnu_parmt_seqnc;
-  end ajout_parmt;
-
-  procedure ajout_parmt (pva_code_parmt in varchar2,
-                         pva_valr_parmt in varchar2,
-                         pnu_publc_travl in number) is
-  begin
-    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                        pva_valr_parmt,
-                                        null,
-                                        null,
-                                        pnu_publc_travl);
-  end ajout_parmt;
-
-  function ajout_parmt (pva_code_parmt in varchar2,
-                        pnu_valr_parmt in number,
-                        pnu_publc_travl in number)
-    return number is
-    pnu_parmt_seqnc                         number (10);
-  begin
-    pnu_parmt_seqnc :=
-      sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                          null,
-                                          pnu_valr_parmt,
-                                          null,
-                                          pnu_publc_travl);
-    return pnu_parmt_seqnc;
-  end ajout_parmt;
-
-  procedure ajout_parmt (pva_code_parmt in varchar2,
-                         pnu_valr_parmt in number,
-                         pnu_publc_travl in number) is
-  begin
-    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                        null,
-                                        pnu_valr_parmt,
-                                        null,
-                                        pnu_publc_travl);
-  end ajout_parmt;
-
-  procedure ajout_parmt (pva_code_parmt in varchar2,
-                         pda_valr_parmt in date,
-                         pnu_publc_travl in number) is
-  begin
-    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                        null,
-                                        null,
-                                        pda_valr_parmt,
-                                        pnu_publc_travl);
-  end ajout_parmt;
-
-  procedure lancr_raprt is
-  begin
-    sie_25_publc_noyau_pkg.lancr_travl ('PDF',
-                                        gnu_travl);
-  end lancr_raprt;
-
-  procedure lancr_raprt (pva_nom_raprt in varchar2,
-                         pva_type_publc in varchar2,
-                         pva_code_parmt in varchar2,
-                         pnu_valr_parmt in number,
-                         pbo_redrg_web_reslt in boolean default true,
-                         pnu_domn in number default null,
-                         pnu_utils in number default null) is
-    pragma autonomous_transaction;
-    vnu_publc_travl                         number (10);
-  begin
-    gnu_travl :=
-      sie_25_publc_noyau_pkg.initl_travl (pva_nom_raprt,
-                                          'O');
-
-    vnu_publc_travl :=
-      sie_25_publc_noyau_pkg.ajout_publc_travl (pva_nom_raprt,
-                                                pva_type_publc,
-                                                gnu_travl,
-                                                null);
-
-    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                        null,
-                                        pnu_valr_parmt,
-                                        null,
-                                        vnu_publc_travl);
-    commit;
-    sie_25_publc_noyau_pkg.lancr_travl ('PDF',
-                                        gnu_travl,
-                                        pbo_redrg_web_reslt);
-    commit;
-  end lancr_raprt;
-end sie_25_publc_imedt_pkg;
-/
-
-Prompt Package Body SIE_25_PUBLC_NOYAU_PKG;
-/* Formatted on 04/12/2013 11:35:44 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_25_publc_noyau_pkg is
-  function obten_travl_courn (pbo_imedt in boolean default true,
-                              pnu_type_travl in number default null,
-                              pbo_mesgr in boolean default false,
-                              pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn,
-                              pnu_utils in number default sie_12_utils_pkg.obten_usagr_conct)
-    return number is
-    vnu_stat_initl                          number (10)
-                                              default sie_12_stat_pkg.obten_stat_initl_struc_aplic ('TRAVL',
-                                                                                                    'AFW');
-    vnu_travl                               number (10);
-    vva_imedt                               varchar2 (1);
-    vnu_type_travl                          number (10);
-  begin
-    if not pbo_mesgr then
-      if pbo_imedt then
-        vva_imedt := 'O';
-      else
-        vva_imedt := 'N';
-      end if;
-
-      if pnu_type_travl is null then
-        select   seqnc
-          into   vnu_type_travl
-          from   vd_sie_25_type_travl
-         where   seqnc = sie_12_domn_pkg.obten_type_travl_deft (pnu_domn);
-      else
-        vnu_type_travl := pnu_type_travl;
-      end if;
-
-      select   min (seqnc)
-        into   vnu_travl
-        from   vd_i_sie_25_travl t
-       where   t.ref_stat = vnu_stat_initl
-           and ref_utils = pnu_utils
-           and indic_imedt = vva_imedt
-           and ref_type_travl = vnu_type_travl;
-    end if;
-
-    return vnu_travl;
-  exception
-    when others then
-      raise;
-  end obten_travl_courn;
-
-  function initl_travl (pva_nom_fichr_sort in varchar2,
-                        pva_indic_imedt in varchar2,
-                        pnu_type_travl in number default null,
-                        pbo_mesgr in boolean default false,
-                        pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn,
-                        pnu_utils in number default sie_12_utils_pkg.obten_usagr_conct)
-    return number is
-    vnu_travl_courn                         number (10)
-                                              default obten_travl_courn (pva_indic_imedt = 'O',
-                                                                         pnu_type_travl,
-                                                                         pbo_mesgr,
-                                                                         pnu_domn                   => pnu_domn,
-                                                                         pnu_utils                  => pnu_utils);
-  begin
-    if vnu_travl_courn is null then
-      insert into   vd_i_sie_25_travl (ref_utils, indic_imedt, nom, ref_domn, ref_type_travl)
-           values   (pnu_utils,
-                     pva_indic_imedt,
-                     pva_nom_fichr_sort,
-                     pnu_domn,
-                     pnu_type_travl)
-        returning   seqnc
-             into   vnu_travl_courn;
-    end if;
-
-    return vnu_travl_courn;
-  exception
-    when others then
-      raise;
-  end initl_travl;
-
-  function ajout_publc_travl (pva_nom_fichr_sort in varchar2,
-                              pva_code_type_publc in varchar2,
-                              pnu_travl in number,
-                              pva_code_publc in varchar2 default null,
-                              pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn)
-    return number is
-    vnu_type_publc                          number (10);
-    vnu_publc                               number (10);
-    vnu_publc_travl                         number (10);
-    vnu_versn_publc                         number (10);
-  begin
-    select   seqnc
-      into   vnu_type_publc
-      from   vd_i_sie_25_type_publc tp
-     where   tp.code = pva_code_type_publc;
-
-    if pva_code_publc is not null then
-      --Si on a un code de publication, prendre cette publication
-      select   seqnc
-        into   vnu_publc
-        from   vd_i_sie_25_publc
-       where   code = pva_code_publc and ref_type_publc = vnu_type_publc;
-    else
-      --Prendre la publication par defaut pour le domaine
-      select   ref_publc
-        into   vnu_publc
-        from   vd_i_sie_25_domn_type_publc
-       where   ref_domn = pnu_domn and ref_type_publc = vnu_type_publc;
-    end if;
-
-
-    declare
-      vva_nom_publc                           varchar2 (60);
-    begin
-      select   seqnc
-        into   vnu_versn_publc
-        from   vd_i_sie_25_versn_publc
-       where   (select   sysdate
-                  from   dual) between date_debut_efect
-                                   and nvl (date_fin_efect,
-                                            (select   sysdate + 10
-                                               from   dual))
-           and ref_publc = vnu_publc;
-    exception
-      when no_data_found then
-        if (vnu_publc is not null) then
-          select   nom
-            into   vva_nom_publc
-            from   vd_sie_25_publc
-           where   seqnc = vnu_publc;
-        else
-          vva_nom_publc := 'ce rapport';
-        end if;
-
-        sie_01_err_apex_pkg.lever_err_apex_code ('RAP.000005',
-                                                 vva_nom_publc,
-                                                 pva_code_prodt             => 'SEM');
-    end;
-
-    insert into   vd_i_sie_25_publc_travl pt (nom, ref_versn_publc, ref_travl)
-         values   (pva_nom_fichr_sort,
-                   vnu_versn_publc,
-                   pnu_travl)
-      returning   seqnc
-           into   vnu_publc_travl;
-
-    return vnu_publc_travl;
-  end ajout_publc_travl;
-
-  procedure ajout_publc_travl (pva_nom_fichr_sort in varchar2,
-                               pva_code_type_publc in varchar2,
-                               pnu_travl in number,
-                               pva_code_publc in varchar2 default null,
-                               pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn) is
-    vnu_publc_travl                         number (10);
-  begin
-    vnu_publc_travl :=
-      ajout_publc_travl (pva_nom_fichr_sort,
-                         pva_code_type_publc,
-                         pnu_travl,
-                         pva_code_publc);
-  end ajout_publc_travl;
-
-  function obten_type_publc (pnu_publc_travl in number)
-    return number is
-    vnu_type_publc                          number (10);
-  begin
-    select   p.ref_type_publc
-      into   vnu_type_publc
-      from   vd_i_sie_25_publc_travl pt,
-             vd_i_sie_25_publc p,
-             vd_i_sie_25_versn_publc vp
-     where   vp.seqnc = pt.ref_versn_publc and vp.ref_publc = p.seqnc and pt.seqnc = pnu_publc_travl;
-
-    return vnu_type_publc;
-  end obten_type_publc;
-
-  procedure ajout_parmt (pva_code_parmt in varchar2,
-                         pva_valr_varch in varchar2,
-                         pnu_valr_numbr in number,
-                         pda_valr_date date,
-                         pnu_publc_travl in number) is
-    vnu_seqnc_parmt                         number (10);
-    vnu_type_publc                          number (10);
-  begin
-    vnu_type_publc := obten_type_publc (pnu_publc_travl);
-
-    select   seqnc
-      into   vnu_seqnc_parmt
-      from   vd_i_sie_25_parmt_type_publc
-     where   ref_type_publc = vnu_type_publc and upper (code) = upper (pva_code_parmt);
-
-    insert
-      into   vd_i_sie_25_parmt_publc_travl (ref_publc_travl, ref_parmt_type_publc, valr_varch, valr_date, valr_numbr)
-    values   (pnu_publc_travl,
-              vnu_seqnc_parmt,
-              pva_valr_varch,
-              pda_valr_date,
-              pnu_valr_numbr);
-  end ajout_parmt;
-
-  function ajout_parmt (pva_code_parmt in varchar2,
-                        pva_valr_varch in varchar2,
-                        pnu_valr_numbr in number,
-                        pda_valr_date date,
-                        pnu_publc_travl in number)
-    return number is
-    vnu_seqnc_parmt                         number (10);
-    vnu_type_publc                          number (10);
-    vnu_seqnc                               number (10);
-  begin
-    vnu_type_publc := obten_type_publc (pnu_publc_travl);
-
-    select   seqnc
-      into   vnu_seqnc_parmt
-      from   vd_i_sie_25_parmt_type_publc
-     where   ref_type_publc = vnu_type_publc and upper (code) = upper (pva_code_parmt);
-
-    insert
-         into   vd_i_sie_25_parmt_publc_travl (ref_publc_travl, ref_parmt_type_publc, valr_varch, valr_date, valr_numbr)
-       values   (pnu_publc_travl,
-                 vnu_seqnc_parmt,
-                 pva_valr_varch,
-                 pda_valr_date,
-                 pnu_valr_numbr)
-    returning   seqnc
-         into   vnu_seqnc;
-
-    return vnu_seqnc;
-  end ajout_parmt;
-
-  procedure lancr_travl (pva_formt in varchar2,
-                         pnu_travl in number,
-                         pbo_redrg_web_reslt in boolean default true) is
-  begin
-    sie_25_travl_publc_pkg.lancr_travl (pnu_travl,
-                                        pva_formt,
-                                        pbo_redrg_web_reslt);
-  end lancr_travl;
-
-  function obten_nombr_ocurn_exect_courn
-    return number is
-  begin
-    return 0;
-  end obten_nombr_ocurn_exect_courn;
-end sie_25_publc_noyau_pkg;
-/
-
-Prompt Package Body SIE_25_PUBLC_PKG;
-/* Formatted on 04/12/2013 11:35:45 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_25_publc_pkg is
-  function obten_travl_courn (pva_imedt in varchar2)
-    return number is
-  begin
-    if (pva_imedt = 'YES'
-     or pva_imedt = 'TRUE') then
-      return sie_25_publc_noyau_pkg.obten_travl_courn (true);
-    else
-      return sie_25_publc_noyau_pkg.obten_travl_courn (false);
-    end if;
-  end obten_travl_courn;
-
-  function obten_travl_courn (pbo_imedt in boolean default true)
-    return number is
-  begin
-    return sie_25_publc_noyau_pkg.obten_travl_courn (pbo_imedt);
-  end obten_travl_courn;
-
-  function obten_nouv_travl (pva_nom_raprt in varchar2,
-                             pnu_type_travl in number default null,
-                             pbo_mesgr in boolean default false)
-    return number is
-  begin
-    return sie_25_publc_noyau_pkg.initl_travl (pva_nom_raprt,
-                                               'N',
-                                               pnu_type_travl,
-                                               pbo_mesgr);
-  end obten_nouv_travl;
-
-  function obten_nombr_publc_travl (pnu_travl in number default null)
-    return number is
-    vnu_travl                               number (10) default nvl (pnu_travl, obten_travl_courn ());
-    vnu_count                               pls_integer;
-  begin
-    select   count (1)
-      into   vnu_count
-      from   vd_sie_25_publc_travl pt
-     where   pt.ref_travl = vnu_travl;
-
-    return vnu_count;
-  end obten_nombr_publc_travl;
-
-  procedure ajout_publc_travl (pva_nom in varchar2,
-                               pva_type_publc in varchar2,
-                               pva_code_parmt in varchar2,
-                               pnu_valr_parmt in number,
-                               pnu_travl in number default null,
-                               pnu_type_travl in number default null,
-                               pbo_mesgr in boolean default false) is
-    vnu_travl                               number (10);
-  begin
-    vnu_travl :=
-      ajout_publc_travl (pva_nom,
-                         pva_type_publc,
-                         pva_code_parmt,
-                         pnu_valr_parmt,
-                         pnu_travl,
-                         pnu_type_travl,
-                         pbo_mesgr);
-  end ajout_publc_travl;
-
-  function ajout_publc_travl (pva_nom in varchar2,
-                              pva_type_publc in varchar2,
-                              pva_code_parmt in varchar2,
-                              pnu_valr_parmt in number,
-                              pnu_travl in number default null,
-                              pnu_type_travl in number default null,
-                              pbo_mesgr in boolean default false)
-    return number is
-    vnu_travl                               number (10);
-    vnu_publc_travl                         number (10);
-  begin
-    vnu_travl :=
-      nvl (pnu_travl,
-           sie_25_publc_noyau_pkg.initl_travl (null,
-                                               'N',
-                                               pnu_type_travl,
-                                               pbo_mesgr));
-
-    vnu_publc_travl :=
-      sie_25_publc_noyau_pkg.ajout_publc_travl (pva_nom,
-                                                pva_type_publc,
-                                                vnu_travl,
-                                                null);
-
-    ajout_parmt (pva_code_parmt,
-                 pnu_valr_parmt,
-                 vnu_publc_travl);
-
-    return vnu_publc_travl;
-  end ajout_publc_travl;
-
-  function initl_travl (pnu_travl in number,
-                        pva_nom_fichr_sort in varchar2,
-                        pva_indic_imedt in varchar2,
-                        pnu_type_travl in number default null)
-    return number is
-    vnu_travl                               number (10);
-  begin
-    vnu_travl :=
-      nvl (pnu_travl,
-           sie_25_publc_noyau_pkg.initl_travl (null,
-                                               'N',
-                                               pnu_type_travl));
-
-    return vnu_travl;
-  end initl_travl;
-
-  procedure ajout_parmt (pva_code_parmt in varchar2,
-                         pva_valr_parmt in varchar2,
-                         pnu_travl_publc in number) is
-  begin
-    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                        pva_valr_parmt,
-                                        null,
-                                        null,
-                                        pnu_travl_publc);
-  end ajout_parmt;
-
-  procedure ajout_parmt (pva_code_parmt in varchar2,
-                         pnu_valr_parmt in number,
-                         pnu_travl_publc in number) is
-  begin
-    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                        null,
-                                        pnu_valr_parmt,
-                                        null,
-                                        pnu_travl_publc);
-  end ajout_parmt;
-
-  procedure ajout_parmt (pva_code_parmt in varchar2,
-                         pda_valr_parmt in date,
-                         pnu_travl_publc in number) is
-  begin
-    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
-                                        null,
-                                        null,
-                                        pda_valr_parmt,
-                                        pnu_travl_publc);
-  end ajout_parmt;
-
-  procedure copie_publc_travl (pnu_sorc_travl in number,
-                               pnu_destn_travl in number,
-                               pnu_publc_travl in number default null) is
-    vnu_nouv_publc_travl                    number (10);
-    vnu_nouv_parmt_publc_travl              number (10);
-
-    cursor cur_publc_travl is
-      select   seqnc,
-               ref_versn_publc,
-               ref_stat,
-               nom,
-               indic_parmt_alimn
-        from   vd_i_sie_25_publc_travl
-       where   (ref_travl = pnu_sorc_travl
-             or pnu_sorc_travl is null)
-           and (seqnc = pnu_publc_travl
-             or pnu_publc_travl is null)
-           and (pnu_sorc_travl is not null
-             or pnu_publc_travl is not null);
-
-    cursor cur_parmt_publc_travl (pnu_publc_travl_seqnc in number) is
-      select   seqnc,
-               ref_parmt_type_publc,
-               valr_varch,
-               valr_date,
-               valr_numbr
-        from   vd_i_sie_25_parmt_publc_travl
-       where   ref_publc_travl = pnu_publc_travl_seqnc;
-
-    cursor cur_ocurn_parmt_publc (pnu_parmt_publc_seqnc in number) is
-      select   seqnc,
-               valr_date,
-               valr_numbr,
-               valr_varch
-        from   vd_i_sie_25_ocurn_parmt_publc
-       where   ref_parmt_publc_travl = pnu_parmt_publc_seqnc;
-  begin
-    for rec_publc_travl in cur_publc_travl loop
-      -- Copie de chaque publc_travl de la job à merger
-      insert into   vd_i_sie_25_publc_travl (ref_versn_publc, ref_travl, ref_stat, nom, indic_parmt_alimn)
-           values   (rec_publc_travl.ref_versn_publc,
-                     pnu_destn_travl,
-                     rec_publc_travl.ref_stat,
-                     rec_publc_travl.nom,
-                     'N')
-        returning   seqnc
-             into   vnu_nouv_publc_travl;
-
-      -- copie de chaque parmt_publc_travl associé au publc_travl
-      for rec_parmt_publc_travl in cur_parmt_publc_travl (rec_publc_travl.seqnc) loop
-        insert
-             into   vd_i_sie_25_parmt_publc_travl (ref_publc_travl, ref_parmt_type_publc, valr_varch, valr_date, valr_numbr)
-           values   (vnu_nouv_publc_travl,
-                     rec_parmt_publc_travl.ref_parmt_type_publc,
-                     rec_parmt_publc_travl.valr_varch,
-                     rec_parmt_publc_travl.valr_date,
-                     rec_parmt_publc_travl.valr_numbr)
-        returning   seqnc
-             into   vnu_nouv_parmt_publc_travl;
-
-        --copie de chaque ocurn_parmt_publc_travl asocié au parmt_publc_travl
-        for rec_ocurn_parmt_publc in cur_ocurn_parmt_publc (rec_parmt_publc_travl.seqnc) loop
-          insert into   vd_i_sie_25_ocurn_parmt_publc (valr_date, valr_numbr, valr_varch, ref_parmt_publc_travl)
-               values   (rec_ocurn_parmt_publc.valr_date,
-                         rec_ocurn_parmt_publc.valr_numbr,
-                         rec_ocurn_parmt_publc.valr_varch,
-                         vnu_nouv_parmt_publc_travl);
-        end loop;
-      end loop;
-    end loop;
-  end copie_publc_travl;
-
-  procedure ajout_travl_courn (pnu_travl in number default null,
-                               pnu_publc_travl in number default null) is
-    vnu_travl_courn                         number (10) default 0;
-  begin
-    vnu_travl_courn := nvl (obten_travl_courn (false), obten_nouv_travl (null));
-    copie_publc_travl (pnu_travl,
-                       vnu_travl_courn,
-                       pnu_publc_travl);
-  end ajout_travl_courn;
-
-  procedure defnr_stat_publc_travl (pnu_seqnc in number,
-                                    pva_code_stat in varchar2) is
-    vnu_stat_seqnc                          number (10);
-  begin
-    vnu_stat_seqnc :=
-      sie_12_stat_pkg.obten_stat ('PUBLC_TRAVL',
-                                  pva_code_stat,
-                                  'AFW');
-
-    update   vd_sie_25_publc_travl
-       set   ref_stat = vnu_stat_seqnc
-     where   seqnc = pnu_seqnc;
-
-    commit;
-  end defnr_stat_publc_travl;
-/*
-          procedure lancr_raprt is
-  begin
-    sie_25_publc_noyau_pkg.lancr_travl ('PDF');
-  end lancr_raprt;
-  procedure lancr_raprt (pva_nom_raprt in varchar2,
-                         pva_type_raprt in varchar2,
-                         pva_code_parmt in varchar2,
-                         pnu_valr_parmt in number) is
-    pragma autonomous_transaction;
-  begin
-    initl_exect_raprt (pva_nom_raprt,
-                       pva_type_raprt);
-    ajout_parmt (pva_code_parmt,
-                 pnu_valr_parmt);
-    commit;
-    lancr_raprt ();
-    commit;
-  end lancr_raprt;*/
-
-end sie_25_publc_pkg;
-/
-
-Prompt Package Body SIE_25_RAPRT_INTER_EXPOR_PKG;
-/* Formatted on 04/12/2013 11:35:45 PM (QP5 v5.185.11230.41888) */
-create or replace package body "SIE_25_RAPRT_INTER_EXPOR_PKG" as
-  knu_marge_gauch                constant number default 0.5;
-  knu_marge_droit                constant number default 0.5;
-
-  type typ_rec_parmt_impre is record
-  (
-    va_indic_trouv                          varchar2 (1) default 'N',
-    va_contn_disps                          apex_regn.prn_content_disposition%type default 'ATTACHMENT',
-    va_formt_papr                           apex_regn.prn_paper_size%type default 'LETTER',
-    va_orien_papr                           apex_regn.prn_orientation%type default 'VERTICAL',
-    va_unite_mesr                           apex_regn.prn_units%type default 'INCHES',
-    nu_largr_papr                           apex_regn.prn_width%type default 8.5,
-    nu_hautr_papr                           apex_regn.prn_height%type default 11,
-    nu_bordr_tail                           apex_regn.prn_border_width%type default 0.5,
-    va_bordr_coulr                          apex_regn.prn_border_color%type,
-    va_entet_polc_faml                      apex_regn.prn_page_header_font_family%type default 'Helvetica',
-    va_entet_polc_poids                     apex_regn.prn_page_header_font_weight%type default 'normal',
-    nu_entet_polc_tail                      apex_regn.prn_page_header_font_size%type default 12,
-    va_entet_polc_coulr                     apex_regn.prn_page_header_font_color%type,
-    va_entet_align                          apex_regn.prn_page_header_alignment%type default 'LEFT',
-    va_entet_texte                          apex_regn.prn_page_header%type,
-    va_coln_polc_faml                       apex_regn.prn_header_font_family%type default 'Helvetica',
-    va_coln_polc_poids                      apex_regn.prn_header_font_weight%type default 'bold',
-    nu_coln_polc_tail                       apex_regn.prn_header_font_size%type default 8,
-    va_coln_polc_coulr                      apex_regn.prn_header_font_color%type,
-    va_coln_fond_coulr                      apex_regn.prn_header_bg_color%type default '#e0e0e0',
-    va_corps_polc_faml                      apex_regn.prn_body_font_family%type default 'Helvetica',
-    va_corps_polc_poids                     apex_regn.prn_body_font_weight%type default 'normal',
-    nu_corps_polc_tail                      apex_regn.prn_body_font_size%type default 8,
-    va_corps_polc_coulr                     apex_regn.prn_body_font_color%type,
-    va_corps_fond_coulr                     apex_regn.prn_body_bg_color%type default '#f5f5f5',
-    va_pied_polc_faml                       apex_regn.prn_page_footer_font_family%type default 'Helvetica',
-    va_pied_polc_poids                      apex_regn.prn_page_footer_font_weight%type default 'normal',
-    nu_pied_polc_tail                       apex_regn.prn_page_footer_font_size%type default 8,
-    va_pied_polc_coulr                      apex_regn.prn_page_footer_font_color%type,
-    va_pied_align                           apex_regn.prn_page_footer_alignment%type default 'LEFT',
-    va_pied_texte                           apex_regn.prn_page_footer%type
-  );
-
-  type typ_rec_page is record
-  (
-    nu_largr                                number default 0,
-    nu_dernr_coln                           binary_integer default 0
-  );
-
-  type typ_arr_page is table of typ_rec_page
-                         index by binary_integer;
-
-  gar_tail_papr                           sie_07_sql_pkg.typ_arr_ndx_vc30;
-
-  function formt_nom_fichr (pva_nom in varchar2)
-    return varchar2 is
-    vva_nom                                 varchar2 (1000) default lower (pva_nom);
-  begin
-    vva_nom :=
-      sie_07_sql_pkg.rempl_br (vva_nom,
-                               '_');
-
-    return substr (translate (vva_nom,
-                              'çàâéèêöùû /\?',
-                              'caaeeeouu____'),
-                   1,
-                   120);
-  end;
-
-  function formt_date (pda_date in date default sysdate)
-    return varchar2 is
-  begin
-    return    'Le '
-           || trim (to_char (pda_date,
-                             'day'))
-           || ' '
-           || extract (day from pda_date)
-           || ' '
-           || trim (to_char (pda_date,
-                             'month'))
-           || ' '
-           || extract (year from pda_date);
-  end;
-
-  function convr_parmt_align (pva_parmt in varchar2,
-                              pva_deft in varchar2)
-    return varchar2 is
-  begin
-    return case upper (pva_parmt) when 'LEFT' then 'L' when 'RIGHT' then 'R' when 'CENTER' then 'C' else pva_deft end;
-  end;
-
-  function convr_parmt_faml (pva_parmt in varchar2)
-    return varchar2 is
-  begin
-    return case lower (pva_parmt) when 'times' then 'Times new roman' when 'courier' then 'Courier' else 'Arial' -- Défaut
-                                                                                                                end;
-  end;
-
-  function convr_parmt_poids (pva_parmt in varchar2,
-                              pva_deft in varchar2)
-    return varchar2 is
-  begin
-    return case lower (pva_parmt) when 'bold' then 'B' when 'normal' then null else pva_deft end;
-  end;
-
-  function obten_parmt_impre_raprt (pnu_ref_ir in number)
-    return typ_rec_parmt_impre is
-    vpi_deft                                typ_rec_parmt_impre;
-    vpi_parmt_impr                          typ_rec_parmt_impre;
-  begin
-    begin
-      select   'O',
-               reg.prn_content_disposition,
-               reg.prn_paper_size,
-               reg.prn_orientation,
-               reg.prn_units,
-               reg.prn_width,
-               reg.prn_height,
-               reg.prn_border_width,
-               reg.prn_border_color,
-               reg.prn_page_header_font_family,
-               reg.prn_page_header_font_weight,
-               reg.prn_page_header_font_size,
-               reg.prn_page_header_font_color,
-               reg.prn_page_header_alignment,
-               reg.prn_page_header,
-               reg.prn_header_font_family,
-               reg.prn_header_font_weight,
-               reg.prn_header_font_size,
-               reg.prn_header_font_color,
-               reg.prn_header_bg_color,
-               reg.prn_body_font_family,
-               reg.prn_body_font_weight,
-               reg.prn_body_font_size,
-               reg.prn_body_font_color,
-               reg.prn_body_bg_color,
-               reg.prn_page_footer_font_family,
-               reg.prn_page_footer_font_weight,
-               reg.prn_page_footer_font_size,
-               reg.prn_page_footer_font_color,
-               reg.prn_page_footer_alignment,
-               reg.prn_page_footer
-        into   vpi_parmt_impr
-        from   vd_sie_13_page_ir pir,
-               apex_ir air,
-               apex_regn reg
-       where   pir.seqnc = pnu_ref_ir and air.id = pir.id_apex and reg.id = air.region_id;
-    exception
-      when no_data_found then
-        vpi_parmt_impr.va_indic_trouv := 'N';
-    end;
-
-    return vpi_parmt_impr;
-  end;
-
-
-  procedure afich_pdf (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
-                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID')) is
-    vpi_parmt_impr                          typ_rec_parmt_impre;
-
-    vnu_ref_ir                              number;
-    vva_nom_raprt                           varchar2 (200);
-    vva_mesg_aucun_don                      varchar2 (32767);
-    vnu_largr_deft                          number;
-    --vnu_unite_mesr_largr_deft number(10);
-
-    vva_selct                               varchar2 (32767);
-    vnu_cursr                               number;
-    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
-    vnu_largr_dispo                         number;
-    vnu_compt_ligne                         number;
-
-    var_pages                               typ_arr_page;
-    vnu_index_page                          binary_integer;
-    vnu_somme_largr                         number;
-    vnu_dernr_coln_ajout                    number;
-    vnu_rpts_id                             number;
-
-    -- variables plpdf
-    vnu_elmnt_lign                          number := 0;
-    vnu_elmnt_tabl                          number := 0;
-    vnu_elmnt_restn                         number := 0;
-    vnu_tail_polc_ent                       number := 0;
-    vnu_tail_polc_corps                     number := 0;
-    vnu_tail_polc_pied                      number := 0;
-    vnu_largr_restn                         number := 0;
-    vva_elmnt                               varchar2 (300);
-    vbo_type_indtr                          boolean := false;
-    v_blob                                  blob;
-
-    --variable des paramètres du tableau
-    v_bordr_cell                            plpdf.plpdf_type.t_row_borders;
-    v_data_cell                             plpdf.plpdf_type.t_row_datas;
-    v_data_row_ent                          plpdf.plpdf_type.t_row_datas;
-    v_tail_cell                             plpdf.plpdf_type.t_row_widths;
-    v_tail_intr_cell                        plpdf.plpdf_type.t_row_widths;
-    v_algnm_cell                            plpdf.plpdf_type.t_row_aligns;
-    v_algnm_entet                           plpdf.plpdf_type.t_row_aligns;
-    v_style_cell                            plpdf.plpdf_type.t_row_styles;
-    v_lign_max                              plpdf.plpdf_type.t_row_maxlines;
-  begin
-    begin
-      -- Chercher le rapport interactif sur la page
-      select                                                                                           /*pir.libl_regn*/
-             ( select   plug_name
-                 from   apex_regn reg
-                where   reg.id = air.region_id),
-               air.no_data_found_message,
-               pir.seqnc,
-               pir.largr_deft
-        --pir.unite_mesr_largr_deft
-        into   vva_nom_raprt,
-               vva_mesg_aucun_don,
-               vnu_ref_ir,
-               vnu_largr_deft
-        --vnu_unite_mesr_largr_deft
-        from   vd_sie_13_page pag,
-               vd_sie_13_page_ir pir,
-               apex_ir air
-       where   pag.ref_aplic = sie_11_aplic_pkg.obten_aplic_numr_apex (pnu_aplic)
-           and pag.numr_apex = pnu_page
-           and pir.ref_page = pag.seqnc
-           and air.id = pir.id_apex;
-
-      -- Récupérer le select
-      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
-      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
-    exception
-      when no_data_found then
-        vva_selct := null;
-    end;
-
-    vva_nom_raprt := aa.do_substitutions (vva_nom_raprt);
-
-    if vva_selct is null then
-      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
-                                               pva_code_prodt             => 'AFW');
-    end if;
-
-    vnu_largr_deft := nvl (vnu_largr_deft, 0);
-
-    if vnu_largr_deft <= 0 then
-      vnu_largr_deft := 1.5;
-    end if;
-
-    -- Récupérer les paramètres du raport
-    vpi_parmt_impr := obten_parmt_impre_raprt (vnu_ref_ir);
-
-    vnu_cursr :=
-      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
-                                  vnu_rpts_id,
-                                  vva_selct,
-                                  var_infor_coln,
-                                  '\n');
-
-    declare
-      vbo_aucun_afich                         boolean default true;
-    begin
-      if var_infor_coln.first () is not null then
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            vbo_aucun_afich := false;
-            exit;
-          end if;
-        end loop;
-      end if;
-
-      if vbo_aucun_afich then
-        var_infor_coln.delete ();
-      end if;
-    end;
-
-    if var_infor_coln.first () is not null then
-      -- vnu_largr_dispo                            := obten_largr_dispo_page (vpi_parmt_impr);
-
-      -- Transformer toutes les valeurs en pouces
-      vnu_index_page := 1;
-      -- Créer la premiere page
-      var_pages (vnu_index_page).nu_dernr_coln := 0;
-
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          -- La page sera créée si elle n'existe pas
-          var_pages (vnu_index_page).nu_dernr_coln := i;
-          var_pages (vnu_index_page).nu_largr := var_pages (vnu_index_page).nu_largr + var_infor_coln (i).nu_largr_reltv;
-        end if;
-      end loop;
-
-
-      -- Instancier le titre du rapport
-      declare
-        vva_titre_raprt                         varchar2 (1000);
-      begin
-        vva_titre_raprt := apex_application.do_substitutions (vpi_parmt_impr.va_entet_texte);
-        vva_titre_raprt :=
-          sie_07_sql_pkg.rempl_br (vva_titre_raprt,
-                                   ' ');
-
-        vva_titre_raprt :=
-          nvl (replace (vva_titre_raprt,
-                        '#TITLE#',
-                        vva_nom_raprt),
-               vva_nom_raprt);
-        vva_titre_raprt :=
-          sie_07_sql_pkg.rempl_br (vva_titre_raprt,
-                                   chr (10));
-      end;
-
-      begin
-        --compter le nombre d'éléments
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            vnu_elmnt_lign := vnu_elmnt_lign + 1;
-          end if;
-        end loop;
-
-        --initialiser le pdf
-        if vnu_elmnt_lign > 4 then
-          plpdf.plpdf.init ('L');
-          plpdf.plpdf.nopalias;
-          plpdf.plpdf.setdoctitle (formt_nom_fichr (vva_nom_raprt) || '.pdf');
-          plpdf.plpdf.setallmargin (plpdf.plpdf_toolkit.conv (knu_marge_droit,
-                                                              'cm'),
-                                    plpdf.plpdf_toolkit.conv (0.5,
-                                                              'cm'),
-                                    plpdf.plpdf_toolkit.conv (knu_marge_gauch,
-                                                              'cm'));
-          plpdf.plpdf.newpage;
-          plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_entet_polc_faml),
-                                    convr_parmt_poids (vpi_parmt_impr.va_entet_polc_poids,
-                                                       'B'),
-                                    14);
-          plpdf.plpdf.printcell (0,
-                                 10,
-                                 vva_nom_raprt,
-                                 0,
-                                 0,
-                                 'C');
-          plpdf.plpdf.linebreak (20);
-        else
-          plpdf.plpdf.init;
-          plpdf.plpdf.nopalias;
-          plpdf.plpdf.setdoctitle (formt_nom_fichr (vva_nom_raprt) || '.pdf');
-          plpdf.plpdf.setallmargin (plpdf.plpdf_toolkit.conv (knu_marge_droit,
-                                                              'cm'),
-                                    plpdf.plpdf_toolkit.conv (0.5,
-                                                              'cm'),
-                                    plpdf.plpdf_toolkit.conv (knu_marge_gauch,
-                                                              'cm'));
-          plpdf.plpdf.newpage;
-          plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_entet_polc_faml),
-                                    convr_parmt_poids (vpi_parmt_impr.va_entet_polc_poids,
-                                                       'B'),
-                                    14);
-          plpdf.plpdf.printcell (0,
-                                 10,
-                                 vva_nom_raprt,
-                                 0,
-                                 0,
-                                 convr_parmt_align (vpi_parmt_impr.va_entet_align,
-                                                    'C'));
-          plpdf.plpdf.linebreak (20);
-        end if;
-
-        -- Créer les différents set d'entêtes (tableau)
-        vnu_dernr_coln_ajout := 0;
-        vnu_largr_restn := (plpdf.plpdf.getpageavailablewidth);
-        vnu_elmnt_restn := vnu_elmnt_lign;
-
-        for j in var_pages.first () .. var_pages.last () loop
-          for i in vnu_dernr_coln_ajout + 1 .. var_pages (j).nu_dernr_coln loop
-            if var_infor_coln (i).va_indic_expor = 'O' then
-              --Taille selon la largeur du champ
-              case var_infor_coln (i).va_type_largr
-                when 'POUCE' then
-                  var_infor_coln (i).nu_largr_reltv :=
-                    plpdf.plpdf_toolkit.conv (var_infor_coln (i).nu_largr,
-                                              'in');
-                  v_tail_intr_cell (i) := (var_infor_coln (i).nu_largr_reltv / plpdf.plpdf.getpageavailablewidth) * 100;
-                when 'POURC' then
-                  var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr / 100;
-                  v_tail_intr_cell (i) := plpdf.plpdf.getpageavailablewidth * var_infor_coln (i).nu_largr_reltv;
-                when 'POINT' then
-                  var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr;
-                  v_tail_intr_cell (i) := var_infor_coln (i).nu_largr_reltv;
-                else
-                  v_tail_intr_cell (i) := vnu_largr_restn / vnu_elmnt_restn;
-              end case;
-
-              vnu_elmnt_tabl := vnu_elmnt_tabl + 1;
-
-              vva_elmnt := var_infor_coln (i).va_libl;
-
-              v_bordr_cell (vnu_elmnt_tabl) := '1';
-              v_tail_cell (vnu_elmnt_tabl) := v_tail_intr_cell (i);
-
-              if var_infor_coln (i).va_type_largr != 'INDET' then
-                vnu_largr_restn := vnu_largr_restn - v_tail_cell (vnu_elmnt_tabl);
-                vnu_elmnt_restn := vnu_elmnt_lign - vnu_elmnt_tabl;
-              else
-                --Vérifier s'il y d'autre type que 'indeterminé' et calculer la largeur restante
-                for k in i .. var_pages (j).nu_dernr_coln loop
-                  if k != var_pages (j).nu_dernr_coln and var_infor_coln (k).va_type_largr != 'INDET' then
-                    vbo_type_indtr := true;
-                  end if;
-                end loop;
-
-                if vbo_type_indtr then
-                  vnu_largr_restn := vnu_largr_restn - v_tail_cell (vnu_elmnt_tabl);
-                  vnu_elmnt_restn := vnu_elmnt_lign - vnu_elmnt_tabl;
-                end if;
-              end if;
-
-              v_algnm_entet (vnu_elmnt_tabl) :=
-                convr_parmt_align (var_infor_coln (i).va_align_entet,
-                                   'C');
-              v_data_cell (vnu_elmnt_tabl) := vva_elmnt;
-              vbo_type_indtr := false;
-            end if;
-          end loop;
-
-          vnu_dernr_coln_ajout := var_pages (j).nu_dernr_coln;
-        end loop;
-
-        vnu_elmnt_tabl := 0;
-
-        if vpi_parmt_impr.nu_coln_polc_tail is not null then
-          vnu_tail_polc_ent := vpi_parmt_impr.nu_coln_polc_tail;
-        else
-          vnu_tail_polc_ent := 11;
-        end if;
-
-        plpdf.plpdf.setcolor4filling (224,
-                                      224,
-                                      224);
-        plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_coln_polc_faml),
-                                  convr_parmt_poids (vpi_parmt_impr.va_coln_polc_poids,
-                                                     'B'),
-                                  vnu_tail_polc_ent);
-        v_data_row_ent := v_data_cell;
-        plpdf.plpdf.row_print2 (v_data_cell,
-                                v_bordr_cell,
-                                v_tail_cell,
-                                v_algnm_entet,
-                                v_style_cell,
-                                v_lign_max,
-                                10,
-                                1);
-
-        -- Écrire les données
-        vnu_compt_ligne := 0;
-
-        while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
-                                               var_infor_coln) loop
-          vnu_compt_ligne := vnu_compt_ligne + 1;
-
-          --Instancier les couleurs de fond des lignes paires et impaires
-          if mod (vnu_compt_ligne,
-                  2) = 0 then
-            plpdf.plpdf.setcolor4filling (245,
-                                          245,
-                                          245);
-          else
-            plpdf.plpdf.setcolor4filling (255,
-                                          255,
-                                          255);
-          end if;
-
-          --Remplir le tableau
-          for i in var_infor_coln.first () .. var_infor_coln.last () loop
-            if var_infor_coln (i).va_indic_expor = 'O' then
-              vnu_elmnt_tabl := vnu_elmnt_tabl + 1;
-
-              v_bordr_cell (vnu_elmnt_tabl) := '1';
-
-              v_tail_cell (vnu_elmnt_tabl) := v_tail_intr_cell (i);
-
-              --Aligner selon le type de données
-              case var_infor_coln (i).va_type_valr
-                when 'VARCH' then
-                  vva_elmnt := var_infor_coln (i).va_valr_varch;
-
-                  if vva_elmnt is null then
-                    vva_elmnt := '-';
-                  end if;
-                when 'NUMBR' then
-                  if var_infor_coln (i).va_formt is null then
-                    vva_elmnt := '-';
-                  else
-                    vva_elmnt :=
-                      (ltrim (to_char (var_infor_coln (i).nu_valr_numbr,
-                                       var_infor_coln (i).va_formt)));
-                  end if;
-                when 'DATE' then
-                  if to_char (var_infor_coln (i).da_valr_date,
-                              var_infor_coln (i).va_formt)
-                       is null then
-                    vva_elmnt := '-';
-                  else
-                    vva_elmnt :=
-                      (to_char (var_infor_coln (i).da_valr_date,
-                                var_infor_coln (i).va_formt));
-                  end if;
-                when 'TIMST' then
-                  if var_infor_coln (i).va_formt is null then
-                    vva_elmnt := '-';
-                  else
-                    vva_elmnt :=
-                      (to_char (var_infor_coln (i).ts_valr_timst,
-                                var_infor_coln (i).va_formt));
-                  end if;
-                else
-                  vva_elmnt := var_infor_coln (i).va_valr_varch;
-              end case;
-
-              v_algnm_cell (vnu_elmnt_tabl) :=
-                convr_parmt_align (var_infor_coln (i).va_align_coln,
-                                   'C');
-              v_data_cell (vnu_elmnt_tabl) := vva_elmnt;
-            end if;
-          end loop;
-
-          vnu_elmnt_tabl := 0;
-
-          if vpi_parmt_impr.nu_corps_polc_tail is not null then
-            vnu_tail_polc_corps := vpi_parmt_impr.nu_corps_polc_tail;
-          else
-            vnu_tail_polc_corps := 8;
-          end if;
-
-          plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_corps_polc_faml),
-                                    convr_parmt_poids (vpi_parmt_impr.va_corps_polc_poids,
-                                                       null),
-                                    vnu_tail_polc_corps);
-          plpdf.plpdf.row_print2 (v_data_cell,
-                                  v_bordr_cell,
-                                  v_tail_cell,
-                                  v_algnm_cell,
-                                  v_style_cell,
-                                  v_lign_max,
-                                  5,
-                                  1);
-
-          if vpi_parmt_impr.nu_pied_polc_tail is not null then
-            vnu_tail_polc_pied := vpi_parmt_impr.nu_pied_polc_tail;
-          else
-            vnu_tail_polc_pied := 8;
-          end if;
-
-          --pied de page
-          if round ( (plpdf.plpdf.getpageavailableheight - 20),
-                    0) < round (plpdf.plpdf.getcurrenty,
-                                0) then
-            plpdf.plpdf.setcurrenty (round (plpdf.plpdf.getpageavailableheight - 6,
-                                            0));
-            plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_pied_polc_faml),
-                                      convr_parmt_poids (vpi_parmt_impr.va_pied_polc_poids,
-                                                         null),
-                                      vnu_tail_polc_pied);
-
-            if vpi_parmt_impr.va_pied_texte is not null then
-              plpdf.plpdf.printcell (0,
-                                     10,
-                                     apex_application.do_substitutions (vpi_parmt_impr.va_pied_texte),
-                                     0,
-                                     0,
-                                     'C');
-            end if;
-
-            plpdf.plpdf.printcell (0,
-                                   10,
-                                   to_char (plpdf.plpdf.currentpagenumber),
-                                   0,
-                                   0,
-                                   'C');
-
-            --Créer une nouvelle entête de tableau sur une nouvelle page s'il reste des données
-            if sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
-                                                var_infor_coln) = true then
-              plpdf.plpdf.newpage;
-              plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_coln_polc_faml),
-                                        convr_parmt_poids (vpi_parmt_impr.va_coln_polc_poids,
-                                                           null),
-                                        vnu_tail_polc_ent);
-              plpdf.plpdf.setcolor4filling (224,
-                                            224,
-                                            224);
-              plpdf.plpdf.row_print2 (v_data_row_ent,
-                                      v_bordr_cell,
-                                      v_tail_cell,
-                                      v_algnm_entet,
-                                      v_style_cell,
-                                      v_lign_max,
-                                      10,
-                                      1);
-            end if;
-          end if;
-        end loop;
-
-        --pied de page
-        plpdf.plpdf.setcurrenty (round (plpdf.plpdf.getpageavailableheight - 6,
-                                        0));
-        plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_pied_polc_faml),
-                                  convr_parmt_poids (vpi_parmt_impr.va_pied_polc_poids,
-                                                     null),
-                                  vnu_tail_polc_pied);
-
-        if vpi_parmt_impr.va_pied_texte is not null then
-          plpdf.plpdf.printcell (0,
-                                 10,
-                                 apex_application.do_substitutions (vpi_parmt_impr.va_pied_texte),
-                                 0,
-                                 0,
-                                 'C');
-        end if;
-
-        plpdf.plpdf.printcell (0,
-                               10,
-                               to_char (plpdf.plpdf.currentpagenumber),
-                               0,
-                               0,
-                               'C');
-
-        --Envoyer les données au fichier blob
-        plpdf.plpdf.senddoc (v_blob);
-      end;
-
-      --téléverser pdf
-      owa_util.mime_header ('application/pdf',
-                            false);
-      htp.p ('Content-length: ' || dbms_lob.getlength (v_blob));
-      htp.p ('Content-Disposition: attachment; filename="' || formt_nom_fichr (vva_nom_raprt) || '.pdf');
-      owa_util.http_header_close ();
-      wpg_docload.download_file (v_blob);
-    else
-      null;
-      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
-      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
-    end if;
-
-    -- Fermer le curseur
-    sie_07_sql_pkg.fermr_selct (vnu_cursr);
-
-    -- Arrêter tous les autres traitements d'APEX
-    sie_07_util_pkg.aret_trait_page_apex;
-  end;
-
-  procedure afich_csv (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
-                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID'),
-                       pva_seprt_coln in varchar2 default kva_seprt_coln) is
-    vbo_dirct                               boolean default false;
-    vnu_ref_ir                              number;
-    vva_nom_raprt                           varchar2 (200);
-    vva_mesg_aucun_don                      varchar2 (32767);
-    vnu_largr_deft                          number;
-    --vnu_unite_mesr_largr_deft number(10);
-
-    vva_selct                               varchar2 (32767);
-    vnu_cursr                               number;
-    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
-
-    vcl_corps                               clob;
-    vva_seprt_coln                          varchar2 (1);
-
-    vnu_compt_ligne                         number;
-    vnu_rpts_id                             number;
-
-    procedure ajouter (pva_pre in varchar2,
-                       pva_chaine in varchar2) is
-    begin
-      if pva_pre is not null
-      or pva_chaine is not null then
-        if vbo_dirct then
-          --htp.putraw (utl_raw.cast_to_raw(pva_pre || pva_chaine));
-          htp.prn (pva_pre || pva_chaine);
-        --dbms_output.put (pva_pre || pva_chaine);
-        else
-          dbms_lob.writeappend (vcl_corps,
-                                length (pva_pre || pva_chaine),
-                                pva_pre || pva_chaine);
-        end if;
-      end if;
-    end;
-
-    procedure ajouter_chaine (pva_pre in varchar2,
-                              pva_chaine in varchar2) is
-    begin
-      ajouter (pva_pre,
-                  '"'
-               || replace (pva_chaine,
-                           '"',
-                           '""')
-               || '"');
-    end;
-  begin
-    begin
-      -- Chercher le rapport interactif sur la page
-      select   pir.libl_regn,
-               air.no_data_found_message,
-               pir.seqnc,
-               pir.largr_deft
-        --pir.unite_mesr_largr_deft
-        into   vva_nom_raprt,
-               vva_mesg_aucun_don,
-               vnu_ref_ir,
-               vnu_largr_deft
-        --vnu_unite_mesr_largr_deft
-        from   vd_sie_13_page pag,
-               vd_sie_13_page_ir pir,
-               apex_ir air
-       where   pag.ref_aplic = sie_11_aplic_pkg.obten_aplic_numr_apex (pnu_aplic)
-           and pag.numr_apex = pnu_page
-           and pir.ref_page = pag.seqnc
-           and air.id = pir.id_apex;
-
-      -- Récupérer le select
-      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
-      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
-    exception
-      when no_data_found then
-        vva_selct := null;
-    end;
-
-    if vva_selct is null then
-      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
-                                               pva_code_prodt             => 'AFW');
-    end if;
-
-    vnu_cursr :=
-      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
-                                  vnu_rpts_id,
-                                  vva_selct,
-                                  var_infor_coln,
-                                  chr (10));
-
-    declare
-      vbo_aucun_afich                         boolean default true;
-    begin
-      if var_infor_coln.first () is not null then
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            vbo_aucun_afich := false;
-            exit;
-          end if;
-        end loop;
-      end if;
-
-      if vbo_aucun_afich then
-        var_infor_coln.delete ();
-      end if;
-    end;
-
-    if var_infor_coln.first () is not null then
-      if vbo_dirct then
-        owa_util.mime_header ('text/csv',
-                              false);
-        htp.p ('Content-Disposition: attachment; filename="' || formt_nom_fichr (vva_nom_raprt) || '.csv' || '"');
-        --dbms_output.put_line ('HTTP/1.x 200 OK');
-        --dbms_output.put_line ('Content-Type: text/csv; charset=UTF-8');
-        --dbms_output.put_line ('Content-Disposition: attachment; filename="' || formt_nom_fichr(vva_nom_raprt) || '.csv' || '"');
-        owa_util.http_header_close;
-      --dbms_output.put_line (null);
-      else
-        dbms_lob.createtemporary (vcl_corps,
-                                  true);
-      end if;
-
-      -- Créer la ligne d'entête
-      vva_seprt_coln := null;
-
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          ajouter_chaine (vva_seprt_coln,
-                          var_infor_coln (i).va_libl);
-          vva_seprt_coln := pva_seprt_coln;
-        end if;
-      end loop;
-
-      -- Saut de ligne
-      ajouter (null,
-               chr (10));
-
-      -- Écrire les données
-      vnu_compt_ligne := 0;
-
-      while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
-                                             var_infor_coln) loop
-        vnu_compt_ligne := vnu_compt_ligne + 1;
-
-        vva_seprt_coln := null;
-
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            case var_infor_coln (i).va_type_valr
-              when 'VARCH' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).va_valr_varch);
-              when 'NUMBR' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).nu_valr_numbr);
-              when 'DATE' then
-                ajouter_chaine (vva_seprt_coln,
-                                to_char (var_infor_coln (i).da_valr_date,
-                                         'YYYY-MM-DD'));
-              when 'TIMST' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).ts_valr_timst);
-              else
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).va_valr_varch);
-            end case;
-
-            vva_seprt_coln := pva_seprt_coln;
-          end if;
-        end loop;
-
-        -- Saut de ligne
-        ajouter (null,
-                 chr (10));
-      end loop;
-
-      if vnu_compt_ligne = 0 then
-        ajouter_chaine (null,
-                        vva_mesg_aucun_don);
-        ajouter (null,
-                 chr (10));
-      end if;
-
-      if vbo_dirct then
-        null;
-      else
-        sie_11_prodt_pkg.telvs_fichr (vcl_corps,
-                                      formt_nom_fichr (vva_nom_raprt) || '.csv',
-                                      true,
-                                      'texte/csv, charset=UTF-8');
-
-        dbms_lob.freetemporary (vcl_corps);
-      end if;
-    else
-      null;
-      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
-      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
-    end if;
-
-    -- Fermer le curseur
-    sie_07_sql_pkg.fermr_selct (vnu_cursr);
-
-    -- Arrêter tous les autres traitements d'APEX
-    sie_07_util_pkg.aret_trait_page_apex;
-  /*exception
-  when others then
-    htp.p (sqlerrm);*/
-  end;
-end;
-/
-
-Prompt Package Body SIE_25_SPX_EXPOR_IR_PKG;
-/* Formatted on 04/12/2013 11:35:46 PM (QP5 v5.185.11230.41888) */
-create or replace package body "SIE_25_SPX_EXPOR_IR_PKG" as
-  knu_marge_gauch                constant number default 0.5;
-  knu_marge_droit                constant number default 0.5;
-
-  type typ_rec_parmt_impre is record
-  (
-    va_indic_trouv                          varchar2 (1) default 'N',
-    va_contn_disps                          apex_regn.prn_content_disposition%type default 'ATTACHMENT',
-    va_formt_papr                           apex_regn.prn_paper_size%type default 'LETTER',
-    va_orien_papr                           apex_regn.prn_orientation%type default 'VERTICAL',
-    va_unite_mesr                           apex_regn.prn_units%type default 'INCHES',
-    nu_largr_papr                           apex_regn.prn_width%type default 8.5,
-    nu_hautr_papr                           apex_regn.prn_height%type default 11,
-    nu_bordr_tail                           apex_regn.prn_border_width%type default 0.5,
-    va_bordr_coulr                          apex_regn.prn_border_color%type,
-    va_entet_polc_faml                      apex_regn.prn_page_header_font_family%type default 'Helvetica',
-    va_entet_polc_poids                     apex_regn.prn_page_header_font_weight%type default 'normal',
-    nu_entet_polc_tail                      apex_regn.prn_page_header_font_size%type default 12,
-    va_entet_polc_coulr                     apex_regn.prn_page_header_font_color%type,
-    va_entet_align                          apex_regn.prn_page_header_alignment%type default 'LEFT',
-    va_entet_texte                          apex_regn.prn_page_header%type,
-    va_coln_polc_faml                       apex_regn.prn_header_font_family%type default 'Helvetica',
-    va_coln_polc_poids                      apex_regn.prn_header_font_weight%type default 'bold',
-    nu_coln_polc_tail                       apex_regn.prn_header_font_size%type default 8,
-    va_coln_polc_coulr                      apex_regn.prn_header_font_color%type,
-    va_coln_fond_coulr                      apex_regn.prn_header_bg_color%type default '#e0e0e0',
-    va_corps_polc_faml                      apex_regn.prn_body_font_family%type default 'Helvetica',
-    va_corps_polc_poids                     apex_regn.prn_body_font_weight%type default 'normal',
-    nu_corps_polc_tail                      apex_regn.prn_body_font_size%type default 8,
-    va_corps_polc_coulr                     apex_regn.prn_body_font_color%type,
-    va_corps_fond_coulr                     apex_regn.prn_body_bg_color%type default '#f5f5f5',
-    va_pied_polc_faml                       apex_regn.prn_page_footer_font_family%type default 'Helvetica',
-    va_pied_polc_poids                      apex_regn.prn_page_footer_font_weight%type default 'normal',
-    nu_pied_polc_tail                       apex_regn.prn_page_footer_font_size%type default 8,
-    va_pied_polc_coulr                      apex_regn.prn_page_footer_font_color%type,
-    va_pied_align                           apex_regn.prn_page_footer_alignment%type default 'LEFT',
-    va_pied_texte                           apex_regn.prn_page_footer%type
-  );
-
-  type typ_rec_page is record
-  (
-    nu_largr                                number default 0,
-    nu_dernr_coln                           binary_integer default 0
-  );
-
-  type typ_arr_page is table of typ_rec_page
-                         index by binary_integer;
-
-  gar_tail_papr                           sie_07_sql_pkg.typ_arr_ndx_vc30;
-
-  function formt_nom_fichr (pva_nom in varchar2)
-    return varchar2 is
-    vva_nom                                 varchar2 (1000) default lower (pva_nom);
-  begin
-    vva_nom :=
-      sie_07_sql_pkg.rempl_br (vva_nom,
-                               '_');
-
-    return substr (translate (vva_nom,
-                              'çàâéèêöùû /\?',
-                              'caaeeeouu____'),
-                   1,
-                   120);
-  end;
-
-  function formt_date (pda_date in date default sysdate)
-    return varchar2 is
-  begin
-    return    'Le '
-           || trim (to_char (pda_date,
-                             'day'))
-           || ' '
-           || extract (day from pda_date)
-           || ' '
-           || trim (to_char (pda_date,
-                             'month'))
-           || ' '
-           || extract (year from pda_date);
-  end;
-
-  procedure alimn_tail_papr (ppi_parmt in typ_rec_parmt_impre) is
-    vnu_factr_conv                          number;
-  begin
-    gar_tail_papr ('LETTER-L') := 8.5;
-    gar_tail_papr ('LETTER-H') := 11;
-
-    gar_tail_papr ('LEGAL-L') := 8.5;
-    gar_tail_papr ('LEGAL-H') := 14;
-
-    gar_tail_papr ('A4-L') := 8.26;
-    gar_tail_papr ('A4-H') := 11.69;
-
-    gar_tail_papr ('A3-L') := 11.69;
-    gar_tail_papr ('A3-H') := 16.53;
-
-    gar_tail_papr ('TABLOID-L') := 17;
-    gar_tail_papr ('TABLOID-H') := 11;
-
-    if nvl (ppi_parmt.nu_largr_papr, 0) = 0
-    or nvl (ppi_parmt.nu_hautr_papr, 0) = 0 then
-      gar_tail_papr ('CUSTOM-L') := gar_tail_papr ('LETTER-L');
-      gar_tail_papr ('CUSTOM-H') := gar_tail_papr ('LETTER-H');
-    else
-      vnu_factr_conv :=
-        case upper (nvl (ppi_parmt.va_unite_mesr, 'INCHES'))
-          when 'POINTS' then 72
-          when 'MILLIMETERS' then 25.4
-          when 'CENTIMETERS' then 2.54
-          else 1                                                                                        --Défaut: INCHES
-        end;
-      gar_tail_papr ('CUSTOM-L') :=
-        round (ppi_parmt.nu_largr_papr / vnu_factr_conv,
-               2);
-      gar_tail_papr ('CUSTOM-H') :=
-        round (ppi_parmt.nu_hautr_papr / vnu_factr_conv,
-               2);
-    end if;
-  end;
-
-  function convr_parmt_largr_papr (ppi_parmt in typ_rec_parmt_impre)
-    return number is
-    vva_axe                                 varchar2 (1);
-    vva_index                               varchar2 (30);
-  begin
-    if nvl (ppi_parmt.va_orien_papr, 'VERTICAL') = 'VERTICAL' then
-      vva_axe := 'L';
-    else
-      vva_axe := 'H';
-    end if;
-
-    vva_index := ppi_parmt.va_formt_papr || '-' || vva_axe;
-
-    if not gar_tail_papr.exists (vva_index) then
-      vva_index := 'LETTER-' || vva_axe;
-    end if;
-
-    return gar_tail_papr (vva_index);
-  end;
-
-  function convr_parmt_hautr_papr (ppi_parmt in typ_rec_parmt_impre)
-    return number is
-    vva_axe                                 varchar2 (1);
-    vva_index                               varchar2 (30);
-  begin
-    if nvl (ppi_parmt.va_orien_papr, 'VERTICAL') = 'VERTICAL' then
-      vva_axe := 'H';
-    else
-      vva_axe := 'L';
-    end if;
-
-    vva_index := ppi_parmt.va_formt_papr || '-' || vva_axe;
-
-    if not gar_tail_papr.exists (vva_index) then
-      vva_index := 'LETTER-' || vva_axe;
-    end if;
-
-    return gar_tail_papr (vva_index);
-  end;
-
-  function convr_parmt_align (pva_parmt in varchar2,
-                              pva_deft in varchar2)
-    return varchar2 is
-  begin
-    return case upper (pva_parmt)
-             when 'LEFT' then 'gauche'
-             when 'RIGHT' then 'droite'
-             when 'CENTER' then 'centre'
-             else pva_deft
-           end;
-  end;
-
-  function convr_parmt_faml (pva_parmt in varchar2)
-    return varchar2 is
-  begin
-    return case lower (pva_parmt)
-             when 'times' then 'times new roman'
-             when 'courier' then 'courier'
-             else 'helvetica'                                                                                  -- Défaut
-           end;
-  end;
-
-  function convr_parmt_poids (pva_parmt in varchar2,
-                              pva_deft in varchar2)
-    return varchar2 is
-  begin
-    return case lower (pva_parmt) when 'bold' then 'gras' when 'normal' then 'normal' else pva_deft end;
-  end;
-
-  procedure ecrir_feuil_style (ppi_parmt in typ_rec_parmt_impre) is
-  begin
-    spx_xml_pkg.creer_sectn_feuil_style ();
-
-    -- Marges gauches et droites sont communes
-    spx_xml_pkg.creer_sectn_style ();
-    spx_xml_pkg.creer_elemn_cible_style ('entete');
-    spx_xml_pkg.creer_elemn_cible_style ('pied-page');
-    spx_xml_pkg.creer_elemn_cible_style ('section');
-    spx_xml_pkg.creer_elemn_atrib_numrq ('marge-gauche',
-                                         knu_marge_gauch);
-    spx_xml_pkg.creer_elemn_atrib_numrq ('marge-droite',
-                                         knu_marge_droit);
-    spx_xml_pkg.fermr_sectn ('style');
-
-    spx_xml_pkg.creer_sectn_style ('entete');
-    spx_xml_pkg.creer_elemn_atrib_numrq ('marge-haut',
-                                         0.5);
-    spx_xml_pkg.creer_elemn_atrib ('police-famille',
-                                   convr_parmt_faml (ppi_parmt.va_entet_polc_faml));
-    spx_xml_pkg.creer_elemn_atrib ('police-poids',
-                                   convr_parmt_poids (ppi_parmt.va_entet_polc_poids,
-                                                      'gras'));
-    spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
-                                         nvl (ppi_parmt.nu_entet_polc_tail, 10));
-
-    if ppi_parmt.va_entet_polc_coulr like '#%' then
-      spx_xml_pkg.creer_elemn_atrib ('police-couleur',
-                                     ppi_parmt.va_entet_polc_coulr);
-    end if;
-
-    spx_xml_pkg.creer_elemn_atrib ('alignement-h',
-                                   convr_parmt_align (ppi_parmt.va_entet_align,
-                                                      'gauche'));
-    spx_xml_pkg.fermr_sectn ('style');
-
-    begin
-      spx_xml_pkg.creer_sectn_style ('pied-page');
-
-      begin
-        spx_xml_pkg.creer_sectn_style ('texte',
-                                       'pied-texte');
-        spx_xml_pkg.creer_elemn_atrib_numrq ('espacement-bas',
-                                             0.04);
-        spx_xml_pkg.fermr_sectn ('style');
-      end;
-
-      begin
-        spx_xml_pkg.creer_sectn_style ('tableau');
-        spx_xml_pkg.creer_elemn_atrib_numrq ('bordure-haut-taille',
-                                             1);
-
-        --spx_xml_pkg.creer_elemn_atrib_rgb ('bordure-haut-couleur', 224, 224, 224);
-        if ppi_parmt.va_pied_polc_coulr like '#%' then
-          spx_xml_pkg.creer_elemn_atrib ('bordure-haut-couleur',
-                                         ppi_parmt.va_pied_polc_coulr);
-        end if;
-
-        spx_xml_pkg.fermr_sectn ('style');
-      end;
-
-      spx_xml_pkg.creer_elemn_atrib_numrq ('marge-bas',
-                                           0.5);
-
-      spx_xml_pkg.creer_elemn_atrib ('police-famille',
-                                     convr_parmt_faml (ppi_parmt.va_pied_polc_faml));
-      spx_xml_pkg.creer_elemn_atrib ('police-poids',
-                                     convr_parmt_poids (ppi_parmt.va_pied_polc_poids,
-                                                        'normal'));
-      spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
-                                           nvl (ppi_parmt.nu_pied_polc_tail, 8));
-
-      if ppi_parmt.va_pied_polc_coulr like '#%' then
-        spx_xml_pkg.creer_elemn_atrib ('police-couleur',
-                                       ppi_parmt.va_pied_polc_coulr);
-      end if;
-
-      spx_xml_pkg.creer_elemn_atrib ('alignement-h',
-                                     convr_parmt_align (ppi_parmt.va_pied_align,
-                                                        'centre'));
-
-      begin
-        spx_xml_pkg.creer_sectn_style (null,
-                                       'usager');
-        spx_xml_pkg.creer_elemn_atrib ('alignement-h',
-                                       'gauche');
-        spx_xml_pkg.fermr_sectn ('style');
-
-        spx_xml_pkg.creer_sectn_style (null,
-                                       'date');
-        spx_xml_pkg.creer_elemn_atrib ('alignement-h',
-                                       'centre');
-        spx_xml_pkg.fermr_sectn ('style');
-
-        spx_xml_pkg.creer_sectn_style (null,
-                                       'page-x-de-y');
-        spx_xml_pkg.creer_elemn_atrib ('alignement-h',
-                                       'droite');
-        spx_xml_pkg.fermr_sectn ('style');
-      end;
-
-      spx_xml_pkg.fermr_sectn ('style');
-    end;
-
-    begin
-      spx_xml_pkg.creer_sectn_style ('section');
-      spx_xml_pkg.creer_elemn_atrib_numrq ('largeur',
-                                           convr_parmt_largr_papr (ppi_parmt));
-      spx_xml_pkg.creer_elemn_atrib_numrq ('hauteur',
-                                           convr_parmt_hautr_papr (ppi_parmt));
-      spx_xml_pkg.creer_elemn_atrib_numrq ('marge-haut',
-                                           0.125);
-      spx_xml_pkg.creer_elemn_atrib_numrq ('marge-bas',
-                                           0.125);
-
-      spx_xml_pkg.creer_elemn_atrib ('police-famille',
-                                     convr_parmt_faml (ppi_parmt.va_corps_polc_faml));
-      spx_xml_pkg.creer_elemn_atrib ('police-poids',
-                                     convr_parmt_poids (ppi_parmt.va_corps_polc_poids,
-                                                        'normal'));
-      spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
-                                           nvl (ppi_parmt.nu_corps_polc_tail, 8));
-
-      if ppi_parmt.va_corps_polc_coulr like '#%' then
-        spx_xml_pkg.creer_elemn_atrib ('police-couleur',
-                                       ppi_parmt.va_corps_polc_coulr);
-      end if;
-
-      begin
-        spx_xml_pkg.creer_sectn_style ('ligne',
-                                       'pair');
-
-        spx_xml_pkg.creer_sectn_style ('cellule');
-
-        if ppi_parmt.va_corps_fond_coulr like '#%' then
-          spx_xml_pkg.creer_elemn_atrib ('fond-couleur',
-                                         ppi_parmt.va_corps_fond_coulr);
-        else
-          spx_xml_pkg.creer_elemn_atrib_rgb ('fond-couleur',
-                                             245,
-                                             245,
-                                             245);
-        end if;
-
-        spx_xml_pkg.fermr_sectn ('style');
-
-        spx_xml_pkg.fermr_sectn ('style');
-      end;
-
-      begin
-        spx_xml_pkg.creer_sectn_style ('ligne',
-                                       'impair');
-        -- Aucun style particulier pour les lignes impaires
-        spx_xml_pkg.fermr_sectn ('style');
-      end;
-
-      begin
-        spx_xml_pkg.creer_sectn_style ('entete-tableau');
-        spx_xml_pkg.creer_elemn_atrib ('police-famille',
-                                       convr_parmt_faml (ppi_parmt.va_coln_polc_faml));
-        spx_xml_pkg.creer_elemn_atrib ('police-poids',
-                                       convr_parmt_poids (ppi_parmt.va_coln_polc_poids,
-                                                          'gras'));
-        spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
-                                             nvl (ppi_parmt.nu_coln_polc_tail, 8));
-
-        if ppi_parmt.va_coln_polc_coulr like '#%' then
-          spx_xml_pkg.creer_elemn_atrib ('police-couleur',
-                                         ppi_parmt.va_coln_polc_coulr);
-        end if;
-
-        if ppi_parmt.va_coln_fond_coulr like '#%' then
-          spx_xml_pkg.creer_elemn_atrib ('fond-couleur',
-                                         ppi_parmt.va_coln_fond_coulr);
-        else
-          spx_xml_pkg.creer_elemn_atrib_rgb ('fond-couleur',
-                                             245,
-                                             245,
-                                             245);
-        end if;
-
-        spx_xml_pkg.fermr_sectn ('style');
-
-        spx_xml_pkg.creer_sectn_style ('colonne');
-
-        spx_xml_pkg.creer_elemn_atrib_rgb ('bordure-couleur',
-                                           20,
-                                           20,
-                                           20);
-
-        spx_xml_pkg.creer_elemn_atrib_numrq ('bordure-taille',
-                                             0.01);
-        spx_xml_pkg.fermr_sectn ('style');
-      end;
-
-      spx_xml_pkg.fermr_sectn ('style');
-    end;
-
-    spx_xml_pkg.creer_sectn_style (null,
-                                   'gauche');
-    spx_xml_pkg.creer_elemn_atrib ('alignement-h',
-                                   'gauche');
-    spx_xml_pkg.fermr_sectn ('style');
-
-    spx_xml_pkg.creer_sectn_style (null,
-                                   'centre');
-    spx_xml_pkg.creer_elemn_atrib ('alignement-h',
-                                   'centre');
-    spx_xml_pkg.fermr_sectn ('style');
-
-    spx_xml_pkg.creer_sectn_style (null,
-                                   'droite');
-    spx_xml_pkg.creer_elemn_atrib ('alignement-h',
-                                   'droite');
-    spx_xml_pkg.fermr_sectn ('style');
-
-    spx_xml_pkg.creer_sectn_style (null,
-                                   'gras');
-    spx_xml_pkg.creer_elemn_atrib ('police-poids',
-                                   'gras');
-    spx_xml_pkg.fermr_sectn ('style');
-
-    --Style utilisé pour aligner vert. texte
-    spx_xml_pkg.creer_sectn_style (null,
-                                   'align_vertc');
-    spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
-                                         1);
-    spx_xml_pkg.fermr_sectn ('style');
-
-    spx_xml_pkg.fermr_sectn ('feuil_style');
-  end;
-
-  function obten_parmt_impre_raprt (pnu_ref_ir in number)
-    return typ_rec_parmt_impre is
-    vpi_deft                                typ_rec_parmt_impre;
-    vpi_parmt_impr                          typ_rec_parmt_impre;
-  begin
-    begin
-      select   'O',
-               reg.prn_content_disposition,
-               reg.prn_paper_size,
-               reg.prn_orientation,
-               reg.prn_units,
-               reg.prn_width,
-               reg.prn_height,
-               reg.prn_border_width,
-               reg.prn_border_color,
-               reg.prn_page_header_font_family,
-               reg.prn_page_header_font_weight,
-               reg.prn_page_header_font_size,
-               reg.prn_page_header_font_color,
-               reg.prn_page_header_alignment,
-               reg.prn_page_header,
-               reg.prn_header_font_family,
-               reg.prn_header_font_weight,
-               reg.prn_header_font_size,
-               reg.prn_header_font_color,
-               reg.prn_header_bg_color,
-               reg.prn_body_font_family,
-               reg.prn_body_font_weight,
-               reg.prn_body_font_size,
-               reg.prn_body_font_color,
-               reg.prn_body_bg_color,
-               reg.prn_page_footer_font_family,
-               reg.prn_page_footer_font_weight,
-               reg.prn_page_footer_font_size,
-               reg.prn_page_footer_font_color,
-               reg.prn_page_footer_alignment,
-               reg.prn_page_footer
-        into   vpi_parmt_impr
-        from   vd_sie_13_page_ir pir,
-               apex_ir air,
-               apex_regn reg
-       where   pir.seqnc = pnu_ref_ir and air.id = pir.id_apex and reg.id = air.region_id;
-    exception
-      when no_data_found then
-        vpi_parmt_impr.va_indic_trouv := 'N';
-    end;
-
-    alimn_tail_papr (vpi_parmt_impr);
-
-    return vpi_parmt_impr;
-  end;
-
-  function obten_largr_dispo_page (ppi_parmt in typ_rec_parmt_impre)
-    return number is
-    vnu_largr_page                          number;
-  begin
-    vnu_largr_page := convr_parmt_largr_papr (ppi_parmt);
-
-    return vnu_largr_page - knu_marge_gauch - knu_marge_droit;
-  end;
-
-  procedure afich_pdf (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
-                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID')) is
-    vpi_parmt_impr                          typ_rec_parmt_impre;
-    vnu_ref_ir                              number;
-    vva_nom_raprt                           varchar2 (200);
-    vva_mesg_aucun_don                      varchar2 (32767);
-    vnu_largr_deft                          number;
-    --vnu_unite_mesr_largr_deft number(10);
-
-    vva_selct                               varchar2 (32767);
-    vnu_cursr                               number;
-    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
-    vnu_largr_dispo                         number;
-    vnu_compt_ligne                         number;
-    var_pages                               typ_arr_page;
-    vnu_index_page                          binary_integer;
-    vnu_somme_largr                         number;
-    vnu_dernr_coln_ajout                    number;
-    vnu_rpts_id                             number;
-  begin
-    begin
-      -- Chercher le rapport interactif sur la page
-      select                                                                                           /*pir.libl_regn*/
-             ( select   plug_name
-                 from   apex_regn reg
-                where   reg.id = air.region_id),
-               air.no_data_found_message,
-               pir.seqnc,
-               pir.largr_deft
-        --pir.unite_mesr_largr_deft
-        into   vva_nom_raprt,
-               vva_mesg_aucun_don,
-               vnu_ref_ir,
-               vnu_largr_deft
-        --vnu_unite_mesr_largr_deft
-        from   vd_sie_13_page pag,
-               vd_sie_13_page_ir pir,
-               apex_ir air
-       where   pag.ref_aplic = (select   pro.seqnc
-                                  from   vd_sie_11_aplic pro
-                                 where   pro.numr_aplic_apex = pnu_aplic)
-           and pag.numr_apex = pnu_page
-           and pir.ref_page = pag.seqnc
-           and air.id = pir.id_apex;
-
-      -- Récupérer le select
-      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
-      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
-    exception
-      when no_data_found then
-        vva_selct := null;
-    end;
-
-    vva_nom_raprt := aa.do_substitutions (vva_nom_raprt);
-
-    if vva_selct is null then
-      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
-                                               pva_code_prodt             => 'SDP');
-    end if;
-
-    vnu_largr_deft := nvl (vnu_largr_deft, 0);
-
-    if vnu_largr_deft <= 0 then
-      vnu_largr_deft := 1.5;
-    end if;
-
-    -- Récupérer les paramètres du raport
-    vpi_parmt_impr := obten_parmt_impre_raprt (vnu_ref_ir);
-
-    vnu_cursr :=
-      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
-                                  vnu_rpts_id,
-                                  vva_selct,
-                                  var_infor_coln,
-                                  '\n');
-
-    declare
-      vbo_aucun_afich                         boolean default true;
-    begin
-      if var_infor_coln.first () is not null then
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            vbo_aucun_afich := false;
-            exit;
-          end if;
-        end loop;
-      end if;
-
-      if vbo_aucun_afich then
-        var_infor_coln.delete ();
-      end if;
-    end;
-
-    if var_infor_coln.first () is not null then
-      vnu_largr_dispo := obten_largr_dispo_page (vpi_parmt_impr);
-
-      -- Transformer toutes les valeurs en pouces
-      vnu_index_page := 1;
-      -- Créer la premiere page
-      var_pages (vnu_index_page).nu_dernr_coln := 0;
-
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        case var_infor_coln (i).va_type_largr
-          when 'POUCE' then
-            var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr;
-          when 'POURC' then
-            var_infor_coln (i).nu_largr_reltv := (var_infor_coln (i).nu_largr / 100) * vnu_largr_dispo;
-          when 'RELTF' then
-            var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr * vnu_largr_deft;
-          when 'POINT' then
-            var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr / 72;
-          else
-            var_infor_coln (i).nu_largr_reltv := vnu_largr_deft;
-        end case;
-
-        -- Assurer une largeur minimale
-        if nvl (var_infor_coln (i).nu_largr_reltv, 0) < 0.25 then
-          var_infor_coln (i).nu_largr_reltv := 0.25;
-        end if;
-
-        -- Assurer une largeur maximale
-        if nvl (var_infor_coln (i).nu_largr_reltv, 0) > vnu_largr_dispo then
-          var_infor_coln (i).nu_largr_reltv := vnu_largr_dispo;
-        end if;
-
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          -- Changer de page si ca ne rentre pas
-          if var_pages (vnu_index_page).nu_largr + var_infor_coln (i).nu_largr_reltv > vnu_largr_dispo then
-            vnu_index_page := vnu_index_page + 1;
-          end if;
-
-          -- La page sera créée si elle n'existe pas
-          var_pages (vnu_index_page).nu_dernr_coln := i;
-          var_pages (vnu_index_page).nu_largr := var_pages (vnu_index_page).nu_largr + var_infor_coln (i).nu_largr_reltv;
-        end if;
-      end loop;
-
-      spx_util_pkg.debtr_docmn (formt_nom_fichr (vva_nom_raprt) || '.pdf',
-                                true);
-
-      -- Écrire la feuille de style
-      ecrir_feuil_style (vpi_parmt_impr);
-
-      -- Écrire l'entête
-      declare
-        vva_titre_raprt                         varchar2 (1000);
-      begin
-        vva_titre_raprt := apex_application.do_substitutions (vpi_parmt_impr.va_entet_texte);
-        vva_titre_raprt :=
-          sie_07_sql_pkg.rempl_br (vva_titre_raprt,
-                                   ' ');
-
-        vva_titre_raprt :=
-          nvl (replace (vva_titre_raprt,
-                        '#TITLE#',
-                        vva_nom_raprt),
-               vva_nom_raprt);
-        vva_titre_raprt :=
-          sie_07_sql_pkg.rempl_br (vva_titre_raprt,
-                                   chr (10));
-
-        spx_xml_pkg.creer_sectn_entet ();
-
-        if gbl_logo is not null then
-          declare
-            vnu_largr_table                         number;
-          begin
-            if nvl (gnu_largr_logo, 0) = 0 then
-              vnu_largr_table := 100;
-            else
-              vnu_largr_table :=
-                (gnu_largr_logo * 100) / (convr_parmt_largr_papr (vpi_parmt_impr) - knu_marge_gauch - knu_marge_droit);
-            end if;
-
-            spx_xml_pkg.creer_sectn_tabl ();
-            spx_xml_pkg.creer_sectn_entet_tabl (false);
-            spx_xml_pkg.creer_elemn_coln_tabl (null,
-                                               round (vnu_largr_table));
-            spx_xml_pkg.creer_elemn_coln_tabl (null,
-                                               5);
-            spx_xml_pkg.creer_elemn_coln_tabl (null,
-                                               95 - round (vnu_largr_table));
-            spx_xml_pkg.fermr_sectn ('entet_tabl');
-            spx_xml_pkg.creer_sectn_ligne ();
-            spx_xml_pkg.creer_sectn_cell ();
-            spx_xml_pkg.creer_elemn_image ('logo',
-                                           gbl_logo);
-            spx_xml_pkg.fermr_sectn ('cell');
-            spx_xml_pkg.creer_sectn_cell ();
-            spx_xml_pkg.fermr_sectn ('cell');
-            spx_xml_pkg.creer_sectn_cell ();
-            spx_xml_pkg.creer_elemn_ligne_texte (vva_titre_raprt);
-            spx_xml_pkg.fermr_sectn ('cell');
-            spx_xml_pkg.fermr_sectn ('ligne');
-            spx_xml_pkg.fermr_sectn ('tabl');
-          end;
-        else
-          spx_xml_pkg.creer_elemn_ligne_texte (vva_titre_raprt);
-        end if;
-
-        spx_xml_pkg.fermr_sectn ('entet');
-      end;
-
-      -- Écrire le pied de page
-      begin
-        spx_xml_pkg.creer_sectn_pied_page ();
-
-        if vpi_parmt_impr.va_pied_texte is not null then
-          spx_xml_pkg.creer_elemn_ligne_texte (apex_application.do_substitutions (vpi_parmt_impr.va_pied_texte),
-                                               'pied-texte');
-        end if;
-
-        begin
-          spx_xml_pkg.creer_sectn_tabl ();
-
-          begin
-            spx_xml_pkg.creer_sectn_entet_tabl (false);
-            spx_xml_pkg.creer_elemn_coln_tabl (null,
-                                               1,
-                                               'usager');
-            spx_xml_pkg.creer_elemn_coln_tabl (null,
-                                               1,
-                                               'date');
-            spx_xml_pkg.creer_elemn_coln_tabl (null,
-                                               1,
-                                               'page-x-de-y');
-            spx_xml_pkg.fermr_sectn ('entet_tabl');
-          end;
-
-          begin
-            spx_xml_pkg.creer_sectn_ligne ();
-
-            spx_xml_pkg.creer_sectn_cell ();
-            spx_xml_pkg.creer_elemn_ligne_texte (
-              'Demandé par: ' || sie_12_utils_pkg.obten_nom_formt_de_code_utils (sie_07_util_pkg.v ('APP_USER'))
-            );
-            spx_xml_pkg.fermr_sectn ('cell');
-
-            spx_xml_pkg.creer_sectn_cell ();
-            spx_xml_pkg.creer_elemn_ligne_texte (formt_date ());
-            spx_xml_pkg.fermr_sectn ('cell');
-
-            spx_xml_pkg.creer_sectn_cell ();
-            spx_xml_pkg.creer_elemn_ligne_texte (
-              'Page ' || spx_xml_pkg.obten_champ_numr_page () || ' de ' || spx_xml_pkg.obten_champ_nombr_pages ()
-            );
-            spx_xml_pkg.fermr_sectn ('cell');
-
-            spx_xml_pkg.fermr_sectn ('ligne');
-          end;
-
-          spx_xml_pkg.fermr_sectn ('tabl');
-        end;
-
-        spx_xml_pkg.fermr_sectn ('pied_page');
-      end;
-
-      -- Créer le corps du rapport
-      begin
-        spx_xml_pkg.creer_sectn_sectn (null,
-                                       null,
-                                       'aucun',
-                                       false);
-
-        -- Créer le tableau qui affichera les données
-        spx_xml_pkg.creer_sectn_tabl ();
-
-        -- Créer les différents set d'entêtes (pages)
-        vnu_dernr_coln_ajout := 0;
-
-        for j in var_pages.first () .. var_pages.last () loop
-          spx_xml_pkg.creer_sectn_entet_tabl ();
-          spx_xml_pkg.ajout_atrib ('largeur',
-                                      round ( (var_pages (j).nu_largr / vnu_largr_dispo) * 100,
-                                             0)
-                                   || '%');
-
-          for i in vnu_dernr_coln_ajout + 1 .. var_pages (j).nu_dernr_coln loop
-            if var_infor_coln (i).va_indic_expor = 'O' then
-              spx_xml_pkg.creer_elemn_coln_tabl (var_infor_coln (i).va_libl,
-                                                 var_infor_coln (i).nu_largr_reltv,
-                                                 convr_parmt_align (var_infor_coln (i).va_align_entet,
-                                                                    'gauche'));
-            end if;
-          end loop;
-
-          vnu_dernr_coln_ajout := var_pages (j).nu_dernr_coln;
-
-          spx_xml_pkg.fermr_sectn ('entet_tabl');
-        end loop;
-
-        -- Écrire les données
-        vnu_compt_ligne := 0;
-
-        while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
-                                               var_infor_coln) loop
-          vnu_compt_ligne := vnu_compt_ligne + 1;
-
-          spx_xml_pkg.creer_sectn_ligne ();
-
-          if instr (var_infor_coln (1).va_valr_varch,
-                    'indic_surlg_ligne_raprt') != 0 then
-            spx_xml_pkg.ajout_atrib ('classe',
-                                     'gras');
-            var_infor_coln (1).va_valr_varch :=
-              substr (var_infor_coln (1).va_valr_varch,
-                      instr (var_infor_coln (1).va_valr_varch,
-                             '</span>') +
-                      7);
-          end if;
-
-          /*if mod (vnu_compt_ligne,
-                  2) = 0 then
-            spx_xml_pkg.ajout_atrib ('classe',
-                                     'pair');
-          else
-            spx_xml_pkg.ajout_atrib ('classe',
-                                     'impair');
-          end if;*/
-
-          for i in var_infor_coln.first () .. var_infor_coln.last () loop
-            if var_infor_coln (i).va_indic_expor = 'O' then
-              spx_xml_pkg.creer_sectn_cell ();
-              spx_xml_pkg.ajout_atrib ('classe',
-                                       convr_parmt_align (var_infor_coln (i).va_align_coln,
-                                                          'gauche'));
-
-              case var_infor_coln (i).va_type_valr
-                when 'VARCH' then
-                  spx_xml_pkg.creer_elemn_bloc_texte (var_infor_coln (i).va_valr_varch);
-                when 'NUMBR' then
-                  if var_infor_coln (i).va_formt is null then
-                    spx_xml_pkg.creer_elemn_ligne_texte (var_infor_coln (i).nu_valr_numbr);
-                  else
-                    spx_xml_pkg.creer_elemn_ligne_texte (ltrim (to_char (var_infor_coln (i).nu_valr_numbr,
-                                                                         var_infor_coln (i).va_formt)));
-                  end if;
-                when 'DATE' then
-                  if var_infor_coln (i).va_formt is null then
-                    spx_xml_pkg.creer_elemn_ligne_texte (var_infor_coln (i).da_valr_date);
-                  else
-                    spx_xml_pkg.creer_elemn_ligne_texte (to_char (var_infor_coln (i).da_valr_date,
-                                                                  var_infor_coln (i).va_formt));
-                  end if;
-                when 'TIMST' then
-                  if var_infor_coln (i).va_formt is null then
-                    spx_xml_pkg.creer_elemn_ligne_texte (var_infor_coln (i).ts_valr_timst);
-                  else
-                    spx_xml_pkg.creer_elemn_ligne_texte (to_char (var_infor_coln (i).ts_valr_timst,
-                                                                  var_infor_coln (i).va_formt));
-                  end if;
-                else
-                  spx_xml_pkg.creer_elemn_bloc_texte (var_infor_coln (i).va_valr_varch);
-              end case;
-
-              spx_xml_pkg.creer_elemn_ligne_texte (' ',
-                                                   'align_vertc');
-              spx_xml_pkg.fermr_sectn ('cell');
-            end if;
-          end loop;
-
-          spx_xml_pkg.fermr_sectn ('ligne');
-        end loop;
-
-        spx_xml_pkg.fermr_sectn ('tabl');
-
-        if vnu_compt_ligne = 0 then
-          spx_xml_pkg.creer_elemn_ligne_texte (aa.do_substitutions (vva_mesg_aucun_don));
-        end if;
-
-        spx_xml_pkg.fermr_sectn ('sectn');
-      end;
-
-      spx_util_pkg.afich_pdf ( (nvl (vpi_parmt_impr.va_contn_disps, 'ATTACHMENT') = 'ATTACHMENT'),
-                              true);
-    /*sie_02_fichr_pkg.telvs_fichr (
-      spx_xml_pkg.obten_xml(),
-      formt_nom_fichr(vva_nom_raprt) || '.xml',
-      true,
-      'texte/xml'
-    );*/
-
-    else
-      null;
-      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
-      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
-    end if;
-
-    -- Fermer le curseur
-    sie_07_sql_pkg.fermr_selct (vnu_cursr);
-
-    -- Arrêter tous les autres traitements d'APEX
-    sie_07_util_pkg.aret_trait_page_apex;
-  end;
-
-  procedure afich_csv (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
-                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID'),
-                       pva_seprt_coln in varchar2 default kva_seprt_coln) is
-    vbo_dirct                               boolean default false;
-    vnu_ref_ir                              number;
-    vva_nom_raprt                           varchar2 (200);
-    vva_mesg_aucun_don                      varchar2 (32767);
-    vnu_largr_deft                          number;
-    --vnu_unite_mesr_largr_deft number(10);
-
-    vva_selct                               varchar2 (32767);
-    vnu_cursr                               number;
-    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
-    vcl_corps                               clob;
-    vva_seprt_coln                          varchar2 (1);
-    vnu_compt_ligne                         number;
-    vnu_rpts_id                             number;
-
-    procedure ajouter (pva_pre in varchar2,
-                       pva_chaine in varchar2) is
-    begin
-      if pva_pre is not null
-      or pva_chaine is not null then
-        if vbo_dirct then
-          --htp.putraw (utl_raw.cast_to_raw(pva_pre || pva_chaine));
-          htp.prn (pva_pre || pva_chaine);
-        --dbms_output.put (pva_pre || pva_chaine);
-        else
-          dbms_lob.writeappend (vcl_corps,
-                                length (pva_pre || pva_chaine),
-                                pva_pre || pva_chaine);
-        end if;
-      end if;
-    end;
-
-    procedure ajouter_chaine (pva_pre in varchar2,
-                              pva_chaine in varchar2) is
-    begin
-      ajouter (pva_pre,
-                  '"'
-               || replace (pva_chaine,
-                           '"',
-                           '""')
-               || '"');
-    end;
-  begin
-    begin
-      -- Chercher le rapport interactif sur la page
-      select   pir.libl_regn,
-               air.no_data_found_message,
-               pir.seqnc,
-               pir.largr_deft
-        --pir.unite_mesr_largr_deft
-        into   vva_nom_raprt,
-               vva_mesg_aucun_don,
-               vnu_ref_ir,
-               vnu_largr_deft
-        --vnu_unite_mesr_largr_deft
-        from   vd_sie_13_page pag,
-               vd_sie_13_page_ir pir,
-               apex_ir air
-       where   pag.ref_aplic = (select   pro.seqnc
-                                  from   vd_sie_11_aplic pro
-                                 where   pro.numr_aplic_apex = pnu_aplic)
-           and pag.numr_apex = pnu_page
-           and pir.ref_page = pag.seqnc
-           and air.id = pir.id_apex;
-
-      -- Récupérer le select
-      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
-      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
-    exception
-      when no_data_found then
-        vva_selct := null;
-    end;
-
-    if vva_selct is null then
-      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
-                                               pva_code_prodt             => 'AFW');
-    end if;
-
-    vnu_cursr :=
-      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
-                                  vnu_rpts_id,
-                                  vva_selct,
-                                  var_infor_coln,
-                                  chr (10));
-
-    declare
-      vbo_aucun_afich                         boolean default true;
-    begin
-      if var_infor_coln.first () is not null then
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            vbo_aucun_afich := false;
-            exit;
-          end if;
-        end loop;
-      end if;
-
-      if vbo_aucun_afich then
-        var_infor_coln.delete ();
-      end if;
-    end;
-
-    if var_infor_coln.first () is not null then
-      if vbo_dirct then
-        owa_util.mime_header ('text/csv',
-                              false);
-        htp.p ('Content-Disposition: attachment; filename="' || formt_nom_fichr (vva_nom_raprt) || '.csv' || '"');
-        --dbms_output.put_line ('HTTP/1.x 200 OK');
-        --dbms_output.put_line ('Content-Type: text/csv; charset=UTF-8');
-        --dbms_output.put_line ('Content-Disposition: attachment; filename="' || formt_nom_fichr(vva_nom_raprt) || '.csv' || '"');
-        owa_util.http_header_close;
-      --dbms_output.put_line (null);
-      else
-        dbms_lob.createtemporary (vcl_corps,
-                                  true);
-      end if;
-
-      -- Créer la ligne d'entête
-      vva_seprt_coln := null;
-
-      for i in var_infor_coln.first () .. var_infor_coln.last () loop
-        if var_infor_coln (i).va_indic_expor = 'O' then
-          ajouter_chaine (vva_seprt_coln,
-                          var_infor_coln (i).va_libl);
-          vva_seprt_coln := pva_seprt_coln;
-        end if;
-      end loop;
-
-      -- Saut de ligne
-      ajouter (null,
-               chr (10));
-
-      -- Écrire les données
-      vnu_compt_ligne := 0;
-
-      while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
-                                             var_infor_coln) loop
-        vnu_compt_ligne := vnu_compt_ligne + 1;
-
-        vva_seprt_coln := null;
-
-        for i in var_infor_coln.first () .. var_infor_coln.last () loop
-          if var_infor_coln (i).va_indic_expor = 'O' then
-            case var_infor_coln (i).va_type_valr
-              when 'VARCH' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).va_valr_varch);
-              when 'NUMBR' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).nu_valr_numbr);
-              when 'DATE' then
-                ajouter_chaine (vva_seprt_coln,
-                                to_char (var_infor_coln (i).da_valr_date,
-                                         'YYYY-MM-DD'));
-              when 'TIMST' then
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).ts_valr_timst);
-              else
-                ajouter_chaine (vva_seprt_coln,
-                                var_infor_coln (i).va_valr_varch);
-            end case;
-
-            vva_seprt_coln := pva_seprt_coln;
-          end if;
-        end loop;
-
-        -- Saut de ligne
-        ajouter (null,
-                 chr (10));
-      end loop;
-
-      if vnu_compt_ligne = 0 then
-        ajouter_chaine (null,
-                        vva_mesg_aucun_don);
-        ajouter (null,
-                 chr (10));
-      end if;
-
-      if vbo_dirct then
-        null;
-      else
-        sie_11_prodt_pkg.telvs_fichr (vcl_corps,
-                                      formt_nom_fichr (vva_nom_raprt) || '.csv',
-                                      true,
-                                      'texte/csv');
-
-        dbms_lob.freetemporary (vcl_corps);
-      end if;
-    else
-      null;
-      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
-      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
-    end if;
-
-    -- Fermer le curseur
-    sie_07_sql_pkg.fermr_selct (vnu_cursr);
-
-    -- Arrêter tous les autres traitements d'APEX
-    sie_07_util_pkg.aret_trait_page_apex;
-  /*exception
-          when others then
-    htp.p (sqlerrm);*/
-  end;
-end;
-/
-
-Prompt Package Body SIE_25_TRAVL_PUBLC_CU_PKG;
-/* Formatted on 04/12/2013 11:35:46 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_25_travl_publc_cu_pkg is
-  function obten_pdf (pnu_travl in number,
-                      pnu_publc_travl in number,
-                      pva_iden_procd in varchar2)
-    return blob is
-    vbl_pdf                                 blob;
-  begin
-    execute immediate 'select ' || pva_iden_procd || '(:1, :2) from dual'
-                                          into   vbl_pdf
-      using pnu_travl,
-            pnu_publc_travl;
-
-    update   vd_i_sie_25_travl
-       set   ref_stat =
-               sie_12_stat_pkg.obten_stat ('TRAVL',
-                                           'TERMN',
-                                           'AFW')
-     where   seqnc = pnu_travl;
-
-    return vbl_pdf;
-  exception
-    when others then
-      ete ();
-      raise;
-  end obten_pdf;
-end sie_25_travl_publc_cu_pkg;
-/
-
-Prompt Package Body SIE_25_TRAVL_PUBLC_PKG;
-/* Formatted on 04/12/2013 11:35:46 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_25_travl_publc_pkg as
-  gnu_travl                               number (10);
-  gnu_publc_travl                         number (10);
-  gbl_travl_termn                         blob;
-  gva_mime_type_travl                     varchar2 (100);
-  gnu_tail_fichr                          pls_integer;
-  gva_nom_fichr                           varchar2 (200);
-
-  procedure maj_stat_travl (pnu_travl in number,
-                            pnu_stat in number) is
-    pragma autonomous_transaction;
-  begin
-    update   vd_i_sie_25_travl
-       set   ref_stat = pnu_stat
-     where   seqnc = pnu_travl;
-
-    commit;
-  end maj_stat_travl;
-
-  function exect_raprt (pva_indic_secrs varchar2,
-                        pva_servr varchar2,
-                        pva_parmt varchar2,
-                        pnu_travl in number)
-    return varchar2 is
-    vva_prefx_url                           varchar2 (2000);
-    vva_url                                 varchar2 (2000);
-    vnu_pos                                 number;
-    vnu_id_raprt                            number;
-    vnu_code_stat                           number default 1;
-
-    vre_reqt                                utl_http.req;
-    vre_repns                               utl_http.resp;
-    vva_ligne                               varchar2 (2000);
-    vnu_compt                               number;
-  begin
-    -- Etape 1. Construire l'URL pour commander l'execution
-    vva_prefx_url := 'http' || case when pva_indic_secrs = 'O' then 's' else null end || '://' || pva_servr;
-
-    vva_url := vva_prefx_url || '?background=yes&statusformat=xml&' || pva_parmt;
-
-    -- Etape 2. Demarrer l'execution
-    begin
-      begin
-        vre_reqt := utl_http.begin_request (vva_url);
-      exception
-        when others then
-          ete ('Erreur',
-               utl_http.get_detailed_sqlerrm);
-      end;
-
-      utl_http.set_header (vre_reqt,
-                           'User-Agent',
-                           'Oracle UTL_HTTP');
-
-      vre_repns := utl_http.get_response (vre_reqt);
-
-      loop
-        utl_http.read_line (vre_repns,
-                            vva_ligne,
-                            true);
-        vnu_pos :=
-          instr (vva_ligne,
-                 '<job id="');
-
-        if vnu_pos > 0 then
-          vnu_id_raprt :=
-            substr (vva_ligne,
-                    vnu_pos + 9,
-                    instr (vva_ligne,
-                           '"',
-                           1,
-                           2) -
-                    (vnu_pos + 9));
-        end if;
-      end loop;
-
-      utl_http.end_response (vre_repns);
-    exception
-      when utl_http.end_of_body then
-        utl_http.end_response (vre_repns);
-    end;
-
-    if vnu_id_raprt is null then
-      maj_stat_travl (pnu_travl,
-                      sie_12_stat_pkg.obten_stat ('TRAVL',
-                                                  'EREUR',
-                                                  'AFW'));
-      raise_application_error (-20501,
-                               'Erreur au demarrage du rapport');
-    end if;
-
-    -- Etape 3. Verifier le statut de l'execution
-    vva_url := vva_prefx_url || '/showjobid' || vnu_id_raprt || '?statusformat=xml';
-    vnu_compt := 0;
-
-    while vnu_code_stat > 0 and vnu_code_stat < 4 loop
-      dbms_lock.sleep (1);                                                                   -- Pause de 1/10 de seconde
-
-      begin
-        vre_reqt := utl_http.begin_request (vva_url);
-        utl_http.set_header (vre_reqt,
-                             'User-Agent',
-                             'Oracle UTL_HTTP');
-
-        vre_repns := utl_http.get_response (vre_reqt);
-        vnu_code_stat := 0;
-
-        loop
-          utl_http.read_line (vre_repns,
-                              vva_ligne,
-                              true);
-
-          vnu_pos :=
-            instr (vva_ligne,
-                   '<status code="');
-
-          if vnu_pos > 0 then
-            vnu_code_stat :=
-              substr (vva_ligne,
-                      vnu_pos + 14,
-                      instr (vva_ligne,
-                             '"',
-                             1,
-                             2) -
-                      (vnu_pos + 14));
-          end if;
-        end loop;
-
-        utl_http.end_response (vre_repns);
-      exception
-        when utl_http.end_of_body then
-          utl_http.end_response (vre_repns);
-      end;
-
-      vnu_compt := vnu_compt + 1;
-    end loop;
-
-    if vnu_code_stat = 4 then
-      -- Etape 4. Transmettre l'adresse du rapport produit
-      maj_stat_travl (pnu_travl,
-                      sie_12_stat_pkg.obten_stat ('TRAVL',
-                                                  'TERMN',
-                                                  'AFW'));
-
-      vva_url := vva_prefx_url || '/getjobid' || vnu_id_raprt;
-
-      return vva_url;
-    elsif vnu_code_stat = 5 then
-      maj_stat_travl (pnu_travl,
-                      sie_12_stat_pkg.obten_stat ('TRAVL',
-                                                  'EREUR',
-                                                  'AFW'));
-      raise_application_error (-20502,
-                               'Le rapport a termine en echec.');
-    else
-      maj_stat_travl (pnu_travl,
-                      sie_12_stat_pkg.obten_stat ('TRAVL',
-                                                  'EREUR',
-                                                  'AFW'));
-      raise_application_error (-20503,
-                               'Erreur a la verification du statut du rapport: ' || vnu_code_stat);
-    end if;
-  end exect_raprt;
-
-  procedure lancr_travl (pnu_travl in number,
-                         pnu_publc_travl in number,
-                         pnu_formt in varchar,
-                         pbo_redrg_web_reslt in boolean default true) is
-    vva_url_inter                           varchar2 (256);
-    vva_url_exter                           varchar2 (256);
-    vnu_engin                               number (10);
-    vnu_travl_publc                         number (10);
-    vbo_pdf                                 blob;
-    vbo_pdf_travl                           blob;
-    vva_url                                 varchar2 (300);
-    vva_imedt                               varchar2 (1);
-    vva_parmt                               varchar2 (4000);
-    vva_nom_raprt                           varchar2 (60);
-    vva_nom_fichr_sort                      varchar2 (200);
-    vnu_publc                               number (10);
-    vbo_premr_exect                         boolean default true;
-
-    cursor cur_parmt (pnu_publc_travl in number) is
-      select   ppt.ref_code_parmt_tp_formt,
-               coalesce (valr_varch,
-                         to_char (valr_numbr),
-                         to_char (valr_date))
-                 valr
-        from   vd_sie_25_parmt_publc_travl ppt
-       where   (ppt.ref_publc_travl = pnu_publc_travl) and indic_presn_appel = 'O';
-
-    cursor cur_parmt_engin (pnu_engin in number) is
-      select   code,
-               valr_deft valr
-        from   vd_i_sie_25_parmt_type_publc
-       where   ref_engin = pnu_engin and indic_presn_appel = 'O';
-
-    cursor cur_publc_distn is
-      select   distinct ref_versn_publc
-        from   vd_i_sie_25_publc_travl pt
-       where   pt.ref_travl = pnu_travl
-           and (pt.seqnc = pnu_publc_travl
-             or pnu_publc_travl is null);
-  begin
-    select   t.indic_imedt
-      into   vva_imedt
-      from   vd_i_sie_25_travl t
-     where   t.seqnc = pnu_travl;
-
-    if pnu_formt = 'PDF' then
-      select   e.seqnc,
-               url_servl,
-               e.url_servl url_servl_exter
-        into   vnu_engin,
-               vva_url_inter,
-               vva_url_exter
-        from   vd_i_sie_25_engin e
-       where   e.code = 'ORACL_REPRT';
-
-      for rec_publc_distn in cur_publc_distn loop
-        --Obtenir le nom du fichier reports à lancer
-        select   iden_acces
-          into   vva_nom_raprt
-          from   vd_i_sie_25_engin_versn_publc evp
-         where   evp.ref_versn_publc = rec_publc_distn.ref_versn_publc                 /*and evp.ref_engin = vnu_engin*/
-                                                                      ;
-
-        if lower (vva_nom_raprt) like '%rep' then
-          for rec_parmt in cur_parmt_engin (vnu_engin) loop
-            if rec_parmt.code = 'PNU_TRAVL' then
-              vva_parmt :=
-                   vva_parmt
-                || '&'
-                || rec_parmt.code
-                || '='
-                || replace (rec_parmt.valr,
-                            '#SEQNC#',
-                            pnu_travl);
-            elsif rec_parmt.code = 'PNU_PUBLC_TRAVL' then
-              vva_parmt :=
-                   vva_parmt
-                || '&'
-                || rec_parmt.code
-                || '='
-                || replace (rec_parmt.valr,
-                            '#SEQNC_PUBLC_TRAVL#',
-                            pnu_publc_travl);
-            elsif rec_parmt.code = 'report' then
-              vva_parmt := vva_parmt || '&' || rec_parmt.code || '=' || rec_parmt.valr || vva_nom_raprt;
-            else
-              vva_parmt := vva_parmt || '&' || rec_parmt.code || '=' || rec_parmt.valr;
-            end if;
-          end loop;
-
-          if substr (vva_parmt,
-                     1,
-                     1) = '&' then
-            vva_parmt :=
-              substr (vva_parmt,
-                      2);
-          end if;
-
-          for rec_parmt in cur_parmt (vnu_travl_publc) loop
-            vva_parmt := vva_parmt || '&' || rec_parmt.ref_code_parmt_tp_formt || '=' || rec_parmt.valr;
-          end loop;
-
-          if substr (vva_parmt,
-                     1,
-                     1) = '&' then
-            vva_parmt :=
-              substr (vva_parmt,
-                      2);
-          end if;
-
-          vva_url :=
-            exect_raprt (pva_indic_secrs            => 'N',
-                         pva_servr                  => vva_url_inter,
-                         pva_parmt                  => vva_parmt,
-                         pnu_travl                  => pnu_travl);
-          sie_08_url_pkg.obten_pdf_de_url (vva_url,
-                                           vbo_pdf);
-        else
-          vbo_pdf :=
-            sie_25_travl_publc_cu_pkg.obten_pdf (pnu_travl,
-                                                 pnu_publc_travl,
-                                                 vva_nom_raprt);
-        end if;
-
-        --merger les pdf
-        if vbo_premr_exect then
-          vbo_premr_exect := false;
-          vbo_pdf_travl := vbo_pdf;
-        else
-          vbo_pdf_travl :=
-            plpdf_toolkit.merge (vbo_pdf_travl,
-                                 vbo_pdf);
-        end if;
-      end loop;
-
-      if pnu_publc_travl is null then
-        select   nom
-          into   vva_nom_fichr_sort
-          from   vd_i_sie_25_travl t
-         where   t.seqnc = pnu_travl;
-
-        if vva_nom_fichr_sort is null then
-          vva_nom_fichr_sort :=
-               'Lot d''impression généré le '
-            || to_char (sysdate,
-                        'yyyy-mm-dd hh24:mi:ss')
-            || '.pdf';
-        end if;
-      else
-        select   nom
-          into   vva_nom_fichr_sort
-          from   vd_sie_25_publc_travl pt
-         where   pt.seqnc = pnu_publc_travl;
-      end if;
-
-      if pbo_redrg_web_reslt then
-        sie_11_prodt_pkg.telvs_fichr (vbo_pdf_travl,
-                                      vva_nom_fichr_sort,
-                                      'application/pdf',
-                                      true,
-                                      true);
-      else
-        gbl_travl_termn := vbo_pdf_travl;
-        gva_mime_type_travl := 'application/pdf';
-        gnu_tail_fichr := dbms_lob.getlength (vbo_pdf_travl);
-        gva_nom_fichr := vva_nom_fichr_sort;
-      end if;
-    end if;
-  exception
-    when others then
-      ete ();
-      raise;
-  end lancr_travl;
-
-  procedure lancr_publc_travl (pnu_publc_travl in number,
-                               pnu_formt in varchar,
-                               pbo_redrg_web_reslt in boolean default true) is
-    vnu_travl                               number (10);
-  begin
-    select   ref_travl
-      into   vnu_travl
-      from   vd_i_sie_25_publc_travl pt
-     where   pt.seqnc = pnu_publc_travl;
-
-    lancr_travl (vnu_travl,
-                 pnu_publc_travl,
-                 pnu_formt,
-                 pbo_redrg_web_reslt);
-  end lancr_publc_travl;
-
-  procedure lancr_travl (pnu_travl in number,
-                         pnu_formt in varchar,
-                         pbo_redrg_web_reslt in boolean default true) is
-  begin
-    lancr_travl (pnu_travl,
-                 null,
-                 pnu_formt,
-                 pbo_redrg_web_reslt);
-  end lancr_travl;
-
-  procedure defnr_contx_exect_raprt (pnu_travl in number,
-                                     pnu_travl_publc in number,
-                                     pva_type_publc in varchar2,
-                                     pva_code_publc in varchar2) is
-    vva_varch                               varchar2 (256);
-    vda_date                                date;
-    vnu_numbr                               number;
-    vva_parmt_alimn                         varchar2 (1);
-    pragma autonomous_transaction;
-
-    cursor cur_travl_publc is
-      select   seqnc
-        from   vd_sie_25_publc_travl pt
-       where   pt.ref_travl = pnu_travl
-           and pt.ref_code_type_publc = pva_type_publc
-           and ref_code_publc = pva_code_publc
-           and pt.ref_stat <> sie_12_stat_pkg.obten_stat ('PUBLC_TRAVL',
-                                                          'ANUL',
-                                                          'AFW');
-
-    cursor cur_parmt (pnu_publc_travl in number) is
-      select     valr_varch,
-                 valr_date,
-                 valr_numbr
-          from   vd_sie_25_parmt_publc_travl
-         where   ref_publc_travl = pnu_publc_travl and indic_presn_appel = 'N'
-      order by   ordre_presn asc;
-
-    vnu_numr_elemn                          pls_integer;
-
-    procedure trans_ajout_parmt_table_ts (pnu_numr_elemn in number,
-                                          pnu_travl_publc in number,
-                                          pva_valr in varchar2,
-                                          pva_numbr in number,
-                                          pva_date in date) is
-      vva_enonc_updat                         varchar2 (500)
-        default 'update vd_i_sie_25_par_pub_tra_exect set  valr_numbr% = :1, valr_varch% = :2, valr_date% = :3 where ref_travl_publc = :4 and ref_travl = :5';
-    begin
-      if pnu_numr_elemn = 1 then
-        insert into   vd_i_sie_25_par_pub_tra_exect (ref_travl, ref_travl_publc, valr_numbr1, valr_varch1, valr_date1)
-             values   (gnu_travl,
-                       pnu_travl_publc,
-                       pva_numbr,
-                       pva_valr,
-                       pva_date);
-      else
-        vva_enonc_updat :=
-          replace (vva_enonc_updat,
-                   '%',
-                   pnu_numr_elemn);
-
-        execute immediate vva_enonc_updat
-          using pva_numbr,
-                pva_valr,
-                pva_date,
-                pnu_travl_publc,
-                gnu_travl;
-      end if;
-    end trans_ajout_parmt_table_ts;
-  begin
-    select   indic_parmt_alimn
-      into   vva_parmt_alimn
-      from   vd_sie_25_publc_travl pt
-     where   ref_code_publc = pva_code_publc and ref_travl = pnu_travl and rownum = 1;
-
-    gnu_travl := pnu_travl;
-    gnu_publc_travl := pnu_travl_publc;
-
-    if vva_parmt_alimn = 'N' then
-      --Alimenter la table temporaire des paramètres
-      for rec_travl_publc in cur_travl_publc loop
-        vnu_numr_elemn := 0;
-
-        for rec_parmt in cur_parmt (rec_travl_publc.seqnc) loop
-          vnu_numr_elemn := vnu_numr_elemn + 1;
-          trans_ajout_parmt_table_ts (vnu_numr_elemn,
-                                      rec_travl_publc.seqnc,
-                                      rec_parmt.valr_varch,
-                                      rec_parmt.valr_numbr,
-                                      rec_parmt.valr_date);
-        end loop;
-      end loop;
-
-      update   vd_sie_25_publc_travl pt
-         set   indic_parmt_alimn = 'O'
-       where   ref_code_publc = pva_code_publc and ref_travl = pnu_travl;
-    end if;
-
-    commit;
-  exception
-    when others then
-      raise;
-  end defnr_contx_exect_raprt;
-
-  function obten_domn_contx_exect
-    return number is
-    vnu_domn                                number (10);
-  begin
-    select   ref_domn
-      into   vnu_domn
-      from   vd_i_sie_25_travl t
-     where   t.seqnc = gnu_travl;
-
-    return vnu_domn;
-  exception
-    when no_data_found then
-      return null;
-  end obten_domn_contx_exect;
-
-  function obten_travl_exect
-    return number is
-  begin
-    return gnu_travl;
-  end obten_travl_exect;
-
-  function obten_publc_travl_exect
-    return number is
-  begin
-    return gnu_publc_travl;
-  end obten_publc_travl_exect;
-
-  function obten_utils_contx_exect
-    return number is
-    vnu_utils                               number (10);
-  begin
-    select   ref_utils
-      into   vnu_utils
-      from   vd_i_sie_25_travl t
-     where   t.seqnc = gnu_travl;
-
-    return vnu_utils;
-  exception
-    when no_data_found then
-      return null;
-  end obten_utils_contx_exect;
-
-  procedure vider_cache is
-  begin
-    gbl_travl_termn := null;
-    gva_mime_type_travl := null;
-    gnu_tail_fichr := null;
-    gva_nom_fichr := null;
-  end vider_cache;
-
-  procedure obten_fichr_sort (pbl_travl_termn   out nocopy blob,
-                              pva_mime_type_travl   out varchar2,
-                              pnu_tail_fichr   out pls_integer,
-                              pva_nom_fichr   out varchar2,
-                              pbo_suprm_fichr_cache in boolean default true) is
-  begin
-    pbl_travl_termn := gbl_travl_termn;
-    pva_mime_type_travl := gva_mime_type_travl;
-    pnu_tail_fichr := gnu_tail_fichr;
-    pva_nom_fichr := gva_nom_fichr;
-
-    if pbo_suprm_fichr_cache then
-      vider_cache ();
-    end if;
-  end obten_fichr_sort;
-
-  function obten_stat_publc_travl (pnu_publc_travl in number)
-    return number is
-    vnu_stat                                number (10);
-  begin
-    select   ref_stat
-      into   vnu_stat
-      from   vd_i_sie_25_publc_travl
-     where   seqnc = pnu_publc_travl;
-
-    return vnu_stat;
-  end obten_stat_publc_travl;
-
-  function obten_versn_publc_courn (pnu_publc in number)
-    return number is
-    vnu_versn_publc                         number (10);
-  begin
-    select   seqnc
-      into   vnu_versn_publc
-      from   vd_sie_25_versn_publc
-     where   date_debut_efect <= (select   sysdate
-                                    from   dual)
-         and (date_fin_efect is null
-           or date_fin_efect >= (select   sysdate
-                                   from   dual))
-         and ref_publc = pnu_publc;
-
-    return vnu_versn_publc;
-  end obten_versn_publc_courn;
-end sie_25_travl_publc_pkg;
-/
-
-Prompt Package Body SIE_25_TRI_ALTER_PKG;
-/* Formatted on 04/12/2013 11:35:46 PM (QP5 v5.185.11230.41888) */
-create or replace package body "SIE_25_TRI_ALTER_PKG" as
-  kva_chemn_image_tri_asc                 varchar2 (100) := '/i/ws/dup.gif';
-  kva_chemn_image_tri_desc                varchar2 (100) := '/i/ws/ddown.gif';
-
-  procedure afich_info_tri_alter is
-    vnu_rpts_id                             number;
-
-    cursor cur_tri_alter is
-      select   s.nom,
-               nvl (upper (t.dirct), 'ASC') dirct,
-               t.ordre
-        from   (select   sort_column_1 nom,
-                         sort_direction_1 dirct,
-                         1 ordre
-                  from   apex_ir_rpts
-                 where   id = vnu_rpts_id
-                union all
-                select   sort_column_2 nom,
-                         sort_direction_2 dirct,
-                         2 ordre
-                  from   apex_ir_rpts
-                 where   id = vnu_rpts_id
-                union all
-                select   sort_column_3 nom,
-                         sort_direction_3 dirct,
-                         3 ordre
-                  from   apex_ir_rpts
-                 where   id = vnu_rpts_id
-                union all
-                select   sort_column_4 nom,
-                         sort_direction_4 dirct,
-                         4 ordre
-                  from   apex_ir_rpts
-                 where   id = vnu_rpts_id
-                union all
-                select   sort_column_5 nom,
-                         sort_direction_5 dirct,
-                         5 ordre
-                  from   apex_ir_rpts
-                 where   id = vnu_rpts_id
-                union all
-                select   sort_column_6 nom,
-                         sort_direction_6 dirct,
-                         6 ordre
-                  from   apex_ir_rpts
-                 where   id = vnu_rpts_id) t,
-               (select   cs.column_value nom
-                  from   apex_ir_rpts r,
-                         table (sie_07_util_pkg.strin_to_table_va (r.report_columns)) cs
-                 where   r.id = vnu_rpts_id) s
-       where   t.nom like '%$TRI'
-           and s.nom =    substr (t.nom,
-                                  1,
-                                  length (t.nom) - 4)
-                       || '$AFF';
-
-    vva_chemn_image_tri                     varchar2 (100);
-    vnu_nb_coln                             number default 0;
-  begin
-    -- Construire un objet du type: [{coln:'COLONNE$AFF',img:'<img src="/..." />'},{}]
-    -- OU
-    -- Générer du JS: $('#apexir_COLONNE$AFF').append('<img src="/..." />');
-    vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
-
-    htp.prn ('[');
-
-    for rec_tri_alter in cur_tri_alter loop
-      vnu_nb_coln := vnu_nb_coln + 1;
-
-      if vnu_nb_coln <> 1 then
-        htp.prn (',');
-      end if;
-
-      if rec_tri_alter.dirct = 'ASC' then
-        vva_chemn_image_tri := kva_chemn_image_tri_asc;
-      else
-        vva_chemn_image_tri := kva_chemn_image_tri_desc;
-      end if;
-
-      htp.prn (
-           '{nom:'''
-        || rec_tri_alter.nom
-        || ''','
-        || 'img:''<img align="absmiddle" alt="" src="'
-        || vva_chemn_image_tri
-        || '" />'','
-        || 'ordre:'
-        || rec_tri_alter.ordre
-        || '}'
-      );
-    end loop;
-
-    htp.prn (']');
-  end afich_info_tri_alter;
-end sie_25_tri_alter_pkg;
-/
-
-Prompt Package Body SIE_25_TYPE_PUBLC_PKG;
-/* Formatted on 04/12/2013 11:35:46 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_25_type_publc_pkg is
-  procedure alimn_domn_type_publc (pnu_seqnc in number) is
-    cseqnc                                  vd_i_sie_12_domn.seqnc%type;
-
-    cursor c_domn is
-      select   seqnc
-        from   vd_i_sie_12_domn;
-  begin
-    open c_domn;
-
-    loop
-      fetch c_domn
-      into cseqnc;
-
-      exit when c_domn%notfound;
-
-      if c_domn%found then
-        sie_25_domn_type_publc_pkg.ajout_domn_type_publc (cseqnc,
-                                                          pnu_seqnc);
-      end if;
-    end loop;
-
-    close c_domn;
-  end alimn_domn_type_publc;
-end sie_25_type_publc_pkg;
-/
-
-Prompt Package Body SIE_25_TYPE_TRAVL_PKG;
-/* Formatted on 04/12/2013 11:35:46 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_25_type_travl_pkg is
-  function obten_seqnc (pnu_domn in number,
-                        pva_code in varchar2)
-    return vd_sie_25_type_publc.seqnc%type is
-    vnu_seqnc                               vd_sie_25_type_publc.seqnc%type;
-  begin
-    select   seqnc
-      into   vnu_seqnc
-      from   vd_sie_25_type_travl
-     where   ref_domn = pnu_domn and code = pva_code;
-
-    return vnu_seqnc;
-  exception
-    when no_data_found then
-      return null;
-  end obten_seqnc;
-end sie_25_type_travl_pkg;
-/
-
-Prompt Package Body SIE_29_ASURN_QUALT_CORCT_PKG;
-/* Formatted on 04/12/2013 11:35:46 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_29_asurn_qualt_corct_pkg as
-  procedure corgr_item_hidn (pnu_aplic number) is
-    vnu_id                                  number;
-    vnu_compt                               number (1);
-    vnu_numr_aplic_apex                     number;
-
-    cursor cur_item is
-      select   id,
-               flow_id
-        from   apex_item_page aip
-       where   display_as like '%HIDDEN%'
-           and item_plug_id != (select   id
-                                  from   apex_regn ar
-                                 where   page_id = 0 and plug_name = 'Items cachés' and ar.flow_id = aip.flow_id)
-           and flow_id = (select   numr_aplic_apex
-                            from   vd_i_sie_11_aplic p
-                           where   p.seqnc = pnu_aplic);
-  begin
-    select   numr_aplic_apex
-      into   vnu_numr_aplic_apex
-      from   vd_i_sie_11_aplic p
-     where   p.seqnc = pnu_aplic;
-
-
-    select   count (1)
-      into   vnu_compt
-      from   apex_regn
-     where   page_id = 0 and plug_name = 'Items cachés' and flow_id = vnu_numr_aplic_apex;
-
-    if (vnu_compt != 0) then
-      select   id
-        into   vnu_id
-        from   apex_regn
-       where   page_id = 0 and plug_name = 'Items cachés' and flow_id = vnu_numr_aplic_apex;
-
-      for rec_item in cur_item loop
-        update   apex_item_page aia
-           set   item_plug_id = vnu_id
-         where   aia.id = rec_item.id;
-      end loop;
-    end if;
-  end corgr_item_hidn;
-
-  procedure corgr_ir_aucun_don_trouv (pnu_aplic number) is
-  begin
-    update   apex_ir
-       set   no_data_found_message = '&A_SIE_13_MESG_AUCUN_DON_TROUV.'
-     where   flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic (pnu_aplic)
-         and no_data_found_message != '&A_SIE_13_MESG_AUCUN_DON_TROUV.';
-  end corgr_ir_aucun_don_trouv;
-
-  procedure corgr_ir_trop_don_trouv (pnu_aplic number) is
-  begin
-    update   apex_ir
-       set   max_row_count_message = '&A_SIE_13_MESG_TROP_DON_TROUV.'
-     where   flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic (pnu_aplic)
-         and max_row_count_message != '&A_SIE_13_MESG_TROP_DON_TROUV.';
-  end corgr_ir_trop_don_trouv;
-
-  procedure corgr_regn_trop_don_trouv (pnu_aplic number) is
-  begin
-    update   apex_regn
-       set   plug_query_more_data = '&A_SIE_13_MESG_TROP_DON_TROUV.'
-     where   flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic (pnu_aplic)
-         and (plug_query_more_data != '&A_SIE_13_MESG_TROP_DON_TROUV.'
-           or plug_query_more_data is null)
-         and plug_source_type like '%SQL_QUERY%';
-  end corgr_regn_trop_don_trouv;
-
-  procedure corgr_regn_aucun_don_trouv (pnu_aplic number) is
-  begin
-    update   apex_regn
-       set   plug_query_no_data_found = '&A_SIE_13_MESG_AUCUN_DON_TROUV.'
-     where   flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic (pnu_aplic)
-         and (plug_query_no_data_found != '&A_SIE_13_MESG_AUCUN_DON_TROUV.'
-           or plug_query_no_data_found is null)
-         and plug_source_type like '%SQL_QUERY%';
-  end corgr_regn_aucun_don_trouv;
-end sie_29_asurn_qualt_corct_pkg;
-/
-
-Prompt Package Body SIE_29_ASURN_QUALT_PKG;
-/* Formatted on 04/12/2013 11:35:46 PM (QP5 v5.185.11230.41888) */
-create or replace package body sie_29_asurn_qualt_pkg as
-  procedure exect_reqt (pva_liste_contrl in varchar2,
-                        pnu_page in number default null) is
-    cursor cur_contr is
-      select   c.seqnc,
-               c.nom_struc_acces,
-               c.niv_gravt
-        from   vd_sie_29_contr c
-       where   instr (':' || pva_liste_contrl || ':',
-                      ':' || to_char (c.seqnc) || ':') > 0;
-
-    vva_where                               varchar2 (1000);
-  begin
-    vva_where := 'where flow_id not between 4000 and 4999';
-
-    if pnu_page is not null then
-      vva_where := vva_where || ' and page_id = ' || pnu_page;
-
-      delete   vd_i_sie_29_reslt_requt_aq
-       where   page_id = pnu_page
-           and instr (':' || pva_liste_contrl || ':',
-                      ':' || to_char (ref_contr) || ':') > 0;
-    else
-      delete   vd_i_sie_29_reslt_requt_aq
-       where   instr (':' || pva_liste_contrl || ':',
-                      ':' || to_char (ref_contr) || ':') > 0;
-    end if;
-
-    for rec_contr in cur_contr loop
-      execute immediate
-           'insert into vd_i_sie_29_reslt_requt_aq(ref_contr,id,flow_id,page_id,nom_comps,natr,niv_gravt) 
-        select :ref_contr, sa.id, sa.flow_id, sa.page_id, sa.nom_comps, sa.natr, :niv_gravt
-          from '
-        || rec_contr.nom_struc_acces
-        || ' sa '
-        || vva_where
-        using rec_contr.seqnc,
-              rec_contr.niv_gravt;
-    end loop;
-  exception
-    when others then
-      raise;
-  end exect_reqt;
-end sie_29_asurn_qualt_pkg;
-/
-
-CREATE OR REPLACE package "SIE_25_PLPDF_EXPOR_IR_PKG"
-  authid current_user as
-  --En point
-  knu_marge_cel                  constant number default 0.6;
-  kva_formt_nombr                constant varchar2 (30) default 'FM9G999G999G990D00';
-
-  type typ_rec_coulr_pdf is record
-  (
-    vva_coulr_polc_entet                    varchar2 (7),
-    vva_coulr_backg_entet                   varchar2 (7)
-  );
-
-  type typ_rec_parmt_impre is record
-  (
-    va_indic_trouv                          varchar2 (1) default 'N',
-    va_contn_disps                          apex_regn.prn_content_disposition%type default 'ATTACHMENT',
-    va_formt_papr                           apex_regn.prn_paper_size%type default 'LETTER',
-    va_orien_papr                           apex_regn.prn_orientation%type default 'VERTICAL',
-    va_unite_mesr                           apex_regn.prn_units%type default 'INCHES',
-    nu_largr_papr                           apex_regn.prn_width%type default 8.5,
-    nu_hautr_papr                           apex_regn.prn_height%type default 11,
-    nu_bordr_tail                           apex_regn.prn_border_width%type default 0.5,
-    va_bordr_coulr                          apex_regn.prn_border_color%type,
-    va_entet_polc_faml                      apex_regn.prn_page_header_font_family%type default 'Helvetica',
-    va_entet_polc_poids                     apex_regn.prn_page_header_font_weight%type default 'normal',
-    nu_entet_polc_tail                      apex_regn.prn_page_header_font_size%type default 12,
-    va_entet_polc_coulr                     apex_regn.prn_page_header_font_color%type,
-    va_entet_align                          apex_regn.prn_page_header_alignment%type default 'LEFT',
-    va_entet_texte                          apex_regn.prn_page_header%type,
-    va_coln_polc_faml                       apex_regn.prn_header_font_family%type default 'Helvetica',
-    va_coln_polc_poids                      apex_regn.prn_header_font_weight%type default 'bold',
-    nu_coln_polc_tail                       apex_regn.prn_header_font_size%type default 8,
-    va_coln_polc_coulr                      apex_regn.prn_header_font_color%type,
-    va_coln_fond_coulr                      apex_regn.prn_header_bg_color%type default '#e0e0e0',
-    va_corps_polc_faml                      apex_regn.prn_body_font_family%type default 'Helvetica',
-    va_corps_polc_poids                     apex_regn.prn_body_font_weight%type default 'normal',
-    nu_corps_polc_tail                      apex_regn.prn_body_font_size%type default 8,
-    va_corps_polc_coulr                     apex_regn.prn_body_font_color%type,
-    va_corps_fond_coulr                     apex_regn.prn_body_bg_color%type default '#f5f5f5',
-    va_pied_polc_faml                       apex_regn.prn_page_footer_font_family%type default 'Helvetica',
-    va_pied_polc_poids                      apex_regn.prn_page_footer_font_weight%type default 'normal',
-    nu_pied_polc_tail                       apex_regn.prn_page_footer_font_size%type default 8,
-    va_pied_polc_coulr                      apex_regn.prn_page_footer_font_color%type,
-    va_pied_align                           apex_regn.prn_page_footer_alignment%type default 'LEFT',
-    va_pied_texte                           apex_regn.prn_page_footer%type
-  );
-
-  type typ_tab_hautr_minml is table of number
-                                index by varchar2 (5);
-
-  type typ_rec_hautr_faml_polc is record (vta_hautr_minml typ_tab_hautr_minml);
-
-  type typ_tab_hautr_faml_polc is table of typ_rec_hautr_faml_polc
-                                    index by varchar2 (4000);
-
-  kva_seprt_coln                 constant varchar2 (1) default ',';
-  gnu_largr_logo                          number;
-  gbl_logo                                blob;
-  gre_coulr_pdf                           typ_rec_coulr_pdf;
-  gpi_parmt_impr                          typ_rec_parmt_impre;
-  gta_hautr_cel                           typ_tab_hautr_faml_polc;
-
-  procedure afich_pdf (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
-                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID'));
-
-  procedure afich_csv (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
-                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID'),
-                       pva_seprt_coln in varchar2 default kva_seprt_coln);
-
-  function detrm_type_surlg (pva_coulr_polc_ligne apex_ir_condt.row_font_color%type,
-                             pva_coulr_backg_ligne apex_ir_condt.row_bg_color%type)
-    return varchar2;
-
-  function convr_parmt_align (pva_parmt in varchar2,
-                              pva_deft in varchar2)
-    return varchar2;
-
-  function convr_parmt_faml (pva_parmt in varchar2)
-    return varchar2;
-
-  function convr_parmt_poids (pva_parmt in varchar2,
-                              pva_deft in varchar2)
-    return varchar2;
-
-  procedure init_hautr_cel (pva_faml_polc in varchar2 default 'Arial');
-
-  function obten_hautr_cel (pva_faml_polc in varchar2 default 'Arial',
-                            pnu_tail_polc in number default 8)
-    return number;
-end;
-/
-
-/* Formatted on 10/12/2013 11:56:21 AM (QP5 v5.185.11230.41888) */
+/* Formatted on 19/12/2013 11:24:53 AM (QP5 v5.185.11230.41888) */
 create or replace package body "SIE_25_PLPDF_EXPOR_IR_PKG" as
   knu_marge_gauch                constant number default 0.5;
   knu_marge_droit                constant number default 0.5;
@@ -82082,7 +75994,7 @@ create or replace package body "SIE_25_PLPDF_EXPOR_IR_PKG" as
     vva_progr_a_lancr                       varchar2 (4000)
       default    'begin '
               || '  sie_25_plpdf_expor_ir_pkg.gre_coulr_pdf := %PROCD_PERSN%; '
-              || '  exception when others then 
+              || '  exception when others then
                         ete();'
               || 'end;';
     vre_coulr_deft                          typ_rec_coulr_pdf;
@@ -83999,1570 +77911,3446 @@ create or replace package body "SIE_25_PLPDF_EXPOR_IR_PKG" as
 end;
 /
 
-SET DEFINE OFF;
-Prompt Package SIE_11_PRODT_PKG;
-/* Formatted on 18/12/2013 11:31:09 AM (QP5 v5.185.11230.41888) */
-create or replace package "SIE_11_PRODT_PKG" is
-  gva_base_url                            varchar2 (1000);
+Prompt Package Body SIE_25_PUBLC_IMEDT_PKG;
+/* Formatted on 19/12/2013 11:24:53 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_25_publc_imedt_pkg as
+  gnu_travl                               number (10);
 
-  /*
-    &api: afw
-  */
-
-  /*
-        &nom: obten_prodt_sesn
-    &descr: Retourne la sequence du produit (vd_sie_11_prodt.seqnc)
-    &param:
-  */
-  function obten_prodt_sesn
-    return number;
-
-  /*
-        &nom: obten_prodt
-    &descr: Retourne la sequence du produit (vd_sie_11_prodt.seqnc)
-    &param: pva_code_prodt in varchar2
-  */
-  function obten_prodt (pva_code_prodt in varchar2)
-    return number;
-
-  function obten_code_prodt (pnu_seqnc in number default null)
-    return varchar2;
-
-  function obten_aplic_acuei (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return vd_i_sie_11_prodt.ref_aplic_acuei%type;
-
-  function obten_numr_apex_aplic_acuei (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return number;
-
-  function obten_page_acuei (pnu_prodt in number default null)
-    return number;
-
-  function obten_numr_apex_page_acuei (pnu_prodt in number default null)
-    return number;
-
-  function obten_aplic_comnt_bogue (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return vd_i_sie_11_prodt.ref_aplic_comnt_bogue%type;
-
-  function obten_numr_apex_aplic_cb (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return number;
-
-  function obten_page_comnt_bogue (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return vd_i_sie_11_prodt.ref_page_comnt_bogue%type;
-
-  function obten_numr_apex_page_cb (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return number;
-
-  function obten_numr_versn (pnu_versn_niv_1 in number,
-                             pnu_versn_niv_2 in number,
-                             pnu_versn_niv_3 in number,
-                             pnu_versn_niv_4 in number)
-    return number
-    deterministic;
-
-  function obten_versn (pnu_versn_niv_1 in number,
-                        pnu_versn_niv_2 in number,
-                        pnu_versn_niv_3 in number,
-                        pnu_versn_niv_4 in number)
-    return varchar2
-    deterministic;
-
-  function obten_versn
-    return varchar2;
-
-  /*
-    function obten_schem (pnu_seqnc in number default null)
-      return varchar2;
-  */
-  function obten_schem_afw
-    return varchar2;
-
-  function obten_dosr_fichr_prodt (pnu_seqnc in number default null)
-    return varchar2;
-
-  procedure inser_prodt (pva_code in varchar2,
-                         pva_nom in varchar2,
-                         pnu_numr_versn_1 in number,
-                         pnu_numr_versn_2 in number,
-                         pnu_numr_versn_3 in number,
-                         pnu_numr_versn_4 in number);
-
-  function maj_prodt (pva_code in varchar2,
-                      pva_nom in varchar2,
-                      pva_procd_expor_metdn in varchar2,
-                      pnu_tail_tabl_extra in number,
-                      pva_indic_extra_tout in varchar2,
-                      pnu_ref_versn_courn in number default null)
-    return number;
-
-  procedure telvs_fichr (pcl_fichr in clob,
-                         pva_nom_fichr in varchar2,
-                         pbo_atach in boolean default true,
-                         pva_contn_type in varchar2 default 'text/plain',
-                         pbo_arret_engin_apex in boolean default false,
-                         pnu_chars_id in number default 0);
-
-  procedure telvs_fichr (pbl_fichr in out nocopy blob,
-                         pva_nom_fichr in varchar2,
-                         pva_contn_type in varchar2,
-                         pbo_atach in  boolean default true,
-                         pbo_arret_engin_apex in boolean default false,
-                         pnu_chars_id in number default 0);
-
-  function obten_lang (pva_code in varchar2)
-    return number;
-
-  function obten_lang_sesn (pva_code_deft in varchar2 default null)
-    return number;
-
-  function obten_code_lang_sesn (pva_code_deft in varchar2 default null)
-    return varchar2;
-
-  function obten_ident_envir (pnu_prodt in number default sie_11_prodt_pkg.obten_prodt_sesn)
-    return varchar2;
-
-  function obten_versn_courn (pnu_prodt in number)
-    return number;
-
-  function obten_jquer_ui_css_scope (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_mesg_tout_droit_resrv (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_url_acuei (pnu_prodt in number default obten_prodt_sesn)
-    return varchar2;
-
-  function obten_url_authe_cible_sesn
-    return varchar2;
-
-  procedure defnr_item_aplic_apex;
-
-  function obten_page_inexs_maj_refrn (pnu_prodt in vd_i_sie_11_prodt.seqnc%type)
-    return boolean;
-
-  function obten_mesg_sucs_prodt (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_mesg_echec_prodt (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_mesg_fetch_prodt (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_mesg_suprm_prodt (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_mesg_modf_prodt (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_mesg_inser_prodt (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_mesg_aucun_don_prodt (pnu_prodt in number default null)
-    return varchar2;
-
-  function obten_mesg_trop_don_prodt (pnu_prodt in number default null)
-    return varchar2;
-
-  procedure deplr_formt_resrc_prodt (pnu_prodt in number);
-
-  function obten_dosr_fichr_afw (pnu_prodt in number default null)
-    return varchar2
-    result_cache;
-
-  function obten_base_url (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return varchar2;
-
-  function obten_procd_entet_plpdf (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return vd_i_sie_11_prodt.procd_impre_entet_pdf_ir%type;
-
-  function obten_procd_pied_page_plpdf (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return vd_i_sie_11_prodt.procd_impre_pied_page_pdf_ir%type;
-
-  function obten_procd_coulr_plpdf (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return vd_i_sie_11_prodt.procd_plpdf_coulr%type;
-
-  function obten_numr_versn_prodt (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return varchar2;
-
-  function obten_numr_versn_prodt_afw
-    return varchar2;
-
-  function obten_nom (pnu_seqnc in number)
-    return varchar2;
-
-  procedure creer_mesg_base_prodt (pnu_prodt in vd_i_sie_11_prodt.seqnc%type,
-                                   pnu_lang in vd_i_sie_01_lang.seqnc%type default null);
---OBSOLETE::CARLO
-/*procedure defnr_prodt_safp (pnu_prodt in number);*/
-
---OBSOLETE::CARLO
-/*procedure chang_prodt_safp (pnu_prodt in number);*/
-
-end sie_11_prodt_pkg;
-/
-SET DEFINE OFF;
-Prompt Package Body SIE_11_PRODT_PKG;
-/* Formatted on 18/12/2013 11:31:10 AM (QP5 v5.185.11230.41888) */
-create or replace package body "SIE_11_PRODT_PKG" is
-  gda_const_date                 constant date
-    default to_date ('1' || '9' || '8' || '7' || '-' || '0' || '7' || '-' || '0' || '9',
-                     'yyyy-mm-dd') ;
-  gnu_versn_niv_1                         number default 2;
-  gnu_versn_niv_2                         number default 3;
-  gnu_versn_niv_3                         number default 0;
-  gnu_versn_niv_4                         number default 0;
-
-  function obten_prodt_sesn
+  function obten_nouv_travl (pva_nom_raprt in varchar2)
     return number is
-    vnu_seqnc_prodt                         vd_i_sie_11_prodt.seqnc%type;
   begin
-    select   pr.seqnc
-      into   vnu_seqnc_prodt
-      from   vd_i_sie_11_prodt pr,
-             vd_i_sie_11_aplic ap
-     where   pr.seqnc = ap.ref_prodt and ap.seqnc = sie_11_aplic_pkg.obten_aplic_sesn ();
+    gnu_travl :=
+      sie_25_publc_noyau_pkg.initl_travl (pva_nom_raprt,
+                                          'O');
+    return gnu_travl;
+  end obten_nouv_travl;
 
-    return vnu_seqnc_prodt;
-  exception
-    when no_data_found then
-      raise;
-  end obten_prodt_sesn;
-
-  function obten_prodt (pva_code_prodt in varchar2)
+  function ajout_publc (pnu_travl in number,
+                        pva_nom_fichr_sort in varchar2,
+                        pva_code_type_publc in varchar2)
     return number is
-    vnu_prodt                               sie_11_prodt.seqnc%type;
+  begin
+    return sie_25_publc_noyau_pkg.ajout_publc_travl (pva_nom_fichr_sort,
+                                                     pva_code_type_publc,
+                                                     pnu_travl);
+  end ajout_publc;
+
+  function ajout_parmt (pva_code_parmt in varchar2,
+                        pda_valr_parmt in date,
+                        pnu_publc_travl in number)
+    return number is
+    pnu_parmt_seqnc                         number (10);
+  begin
+    pnu_parmt_seqnc :=
+      sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                          null,
+                                          null,
+                                          pda_valr_parmt,
+                                          pnu_publc_travl);
+    return pnu_parmt_seqnc;
+  end ajout_parmt;
+
+  procedure ajout_parmt (pva_code_parmt in varchar2,
+                         pva_valr_parmt in varchar2,
+                         pnu_publc_travl in number) is
+  begin
+    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                        pva_valr_parmt,
+                                        null,
+                                        null,
+                                        pnu_publc_travl);
+  end ajout_parmt;
+
+  function ajout_parmt (pva_code_parmt in varchar2,
+                        pnu_valr_parmt in number,
+                        pnu_publc_travl in number)
+    return number is
+    pnu_parmt_seqnc                         number (10);
+  begin
+    pnu_parmt_seqnc :=
+      sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                          null,
+                                          pnu_valr_parmt,
+                                          null,
+                                          pnu_publc_travl);
+    return pnu_parmt_seqnc;
+  end ajout_parmt;
+
+  procedure ajout_parmt (pva_code_parmt in varchar2,
+                         pnu_valr_parmt in number,
+                         pnu_publc_travl in number) is
+  begin
+    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                        null,
+                                        pnu_valr_parmt,
+                                        null,
+                                        pnu_publc_travl);
+  end ajout_parmt;
+
+  procedure ajout_parmt (pva_code_parmt in varchar2,
+                         pda_valr_parmt in date,
+                         pnu_publc_travl in number) is
+  begin
+    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                        null,
+                                        null,
+                                        pda_valr_parmt,
+                                        pnu_publc_travl);
+  end ajout_parmt;
+
+  procedure lancr_raprt is
+  begin
+    sie_25_publc_noyau_pkg.lancr_travl ('PDF',
+                                        gnu_travl);
+  end lancr_raprt;
+
+  procedure lancr_raprt (pva_nom_raprt in varchar2,
+                         pva_type_publc in varchar2,
+                         pva_code_parmt in varchar2,
+                         pnu_valr_parmt in number,
+                         pbo_redrg_web_reslt in boolean default true,
+                         pnu_domn in number default null,
+                         pnu_utils in number default null) is
+    pragma autonomous_transaction;
+    vnu_publc_travl                         number (10);
+  begin
+    gnu_travl :=
+      sie_25_publc_noyau_pkg.initl_travl (pva_nom_raprt,
+                                          'O');
+
+    vnu_publc_travl :=
+      sie_25_publc_noyau_pkg.ajout_publc_travl (pva_nom_raprt,
+                                                pva_type_publc,
+                                                gnu_travl,
+                                                null);
+
+    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                        null,
+                                        pnu_valr_parmt,
+                                        null,
+                                        vnu_publc_travl);
+    commit;
+    sie_25_publc_noyau_pkg.lancr_travl ('PDF',
+                                        gnu_travl,
+                                        pbo_redrg_web_reslt);
+    commit;
+  end lancr_raprt;
+end sie_25_publc_imedt_pkg;
+/
+
+Prompt Package Body SIE_25_PUBLC_NOYAU_PKG;
+/* Formatted on 19/12/2013 11:24:54 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_25_publc_noyau_pkg is
+  function obten_travl_courn (pbo_imedt in boolean default true,
+                              pnu_type_travl in number default null,
+                              pbo_mesgr in boolean default false,
+                              pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn,
+                              pnu_utils in number default sie_12_utils_pkg.obten_usagr_conct)
+    return number is
+    vnu_stat_initl                          number (10)
+                                              default sie_12_stat_pkg.obten_stat_initl_struc_aplic ('TRAVL',
+                                                                                                    'AFW');
+    vnu_travl                               number (10);
+    vva_imedt                               varchar2 (1);
+    vnu_type_travl                          number (10);
+  begin
+    if not pbo_mesgr then
+      if pbo_imedt then
+        vva_imedt := 'O';
+      else
+        vva_imedt := 'N';
+      end if;
+
+      if pnu_type_travl is null then
+        select   seqnc
+          into   vnu_type_travl
+          from   vd_sie_25_type_travl
+         where   seqnc = sie_12_domn_pkg.obten_type_travl_deft (pnu_domn);
+      else
+        vnu_type_travl := pnu_type_travl;
+      end if;
+
+      select   min (seqnc)
+        into   vnu_travl
+        from   vd_i_sie_25_travl t
+       where   t.ref_stat = vnu_stat_initl
+           and ref_utils = pnu_utils
+           and indic_imedt = vva_imedt
+           and ref_type_travl = vnu_type_travl;
+    end if;
+
+    return vnu_travl;
+  exception
+    when others then
+      raise;
+  end obten_travl_courn;
+
+  function initl_travl (pva_nom_fichr_sort in varchar2,
+                        pva_indic_imedt in varchar2,
+                        pnu_type_travl in number default null,
+                        pbo_mesgr in boolean default false,
+                        pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn,
+                        pnu_utils in number default sie_12_utils_pkg.obten_usagr_conct)
+    return number is
+    vnu_travl_courn                         number (10)
+                                              default obten_travl_courn (pva_indic_imedt = 'O',
+                                                                         pnu_type_travl,
+                                                                         pbo_mesgr,
+                                                                         pnu_domn                   => pnu_domn,
+                                                                         pnu_utils                  => pnu_utils);
+  begin
+    if vnu_travl_courn is null then
+      insert into   vd_i_sie_25_travl (ref_utils, indic_imedt, nom, ref_domn, ref_type_travl)
+           values   (pnu_utils,
+                     pva_indic_imedt,
+                     pva_nom_fichr_sort,
+                     pnu_domn,
+                     pnu_type_travl)
+        returning   seqnc
+             into   vnu_travl_courn;
+    end if;
+
+    return vnu_travl_courn;
+  exception
+    when others then
+      raise;
+  end initl_travl;
+
+  function ajout_publc_travl (pva_nom_fichr_sort in varchar2,
+                              pva_code_type_publc in varchar2,
+                              pnu_travl in number,
+                              pva_code_publc in varchar2 default null,
+                              pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn)
+    return number is
+    vnu_type_publc                          number (10);
+    vnu_publc                               number (10);
+    vnu_publc_travl                         number (10);
+    vnu_versn_publc                         number (10);
   begin
     select   seqnc
-      into   vnu_prodt
-      from   vd_i_sie_11_prodt
-     where   code = pva_code_prodt;
+      into   vnu_type_publc
+      from   vd_i_sie_25_type_publc tp
+     where   tp.code = pva_code_type_publc;
 
-    return vnu_prodt;
-  exception
-    when no_data_found then
-      return null;
-  end obten_prodt;
-
-  function obten_code_prodt (pnu_seqnc in number default null)
-    return varchar2 is
-    vva_code                                sie_11_prodt.code%type;
-  begin
-    select   code
-      into   vva_code
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_seqnc, obten_prodt_sesn);
-
-    return vva_code;
-  end obten_code_prodt;
-
-  function obten_aplic_acuei (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return vd_i_sie_11_prodt.ref_aplic_acuei%type is
-    vnu_aplic                               vd_i_sie_11_aplic.seqnc%type;
-  begin
-    select   p.ref_aplic_acuei
-      into   vnu_aplic
-      from   vd_i_sie_11_prodt p
-     where   p.seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vnu_aplic;
-  end obten_aplic_acuei;
-
-  function obten_numr_apex_aplic_acuei (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return number is
-    vnu_aplic_acuei                         vd_sie_11_prodt.ref_numr_aplic_acuei%type;
-  begin
-    select   p.ref_numr_aplic_acuei
-      into   vnu_aplic_acuei
-      from   vd_sie_11_prodt p
-     where   p.seqnc = nvl (pnu_prodt, obten_prodt_sesn);
+    if pva_code_publc is not null then
+      --Si on a un code de publication, prendre cette publication
+      select   seqnc
+        into   vnu_publc
+        from   vd_i_sie_25_publc
+       where   code = pva_code_publc and ref_type_publc = vnu_type_publc;
+    else
+      --Prendre la publication par defaut pour le domaine
+      select   ref_publc
+        into   vnu_publc
+        from   vd_i_sie_25_domn_type_publc
+       where   ref_domn = pnu_domn and ref_type_publc = vnu_type_publc;
+    end if;
 
 
-    return vnu_aplic_acuei;
-  end obten_numr_apex_aplic_acuei;
-
-  function obten_page_acuei (pnu_prodt in number default null)
-    return number is
-    vnu_page                                vd_i_sie_13_page.seqnc%type;
-  begin
-    select   p.ref_page_acuei
-      into   vnu_page
-      from   vd_sie_11_prodt p
-     where   p.seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vnu_page;
-  end obten_page_acuei;
-
-  function obten_numr_apex_page_acuei (pnu_prodt in number default null)
-    return number is
-    vnu_page_acuei                          vd_sie_11_prodt.ref_numr_page_acuei%type;
-  begin
-    select   p.ref_numr_page_acuei
-      into   vnu_page_acuei
-      from   vd_sie_11_prodt p
-     where   p.seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vnu_page_acuei;
-  end obten_numr_apex_page_acuei;
-
-  function obten_aplic_comnt_bogue (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return vd_i_sie_11_prodt.ref_aplic_comnt_bogue%type is
-    vnu_aplic_comnt_bogue                   vd_sie_11_prodt.ref_aplic_comnt_bogue%type;
-  begin
-    select   p.ref_aplic_comnt_bogue
-      into   vnu_aplic_comnt_bogue
-      from   vd_sie_11_prodt p
-     where   p.seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vnu_aplic_comnt_bogue;
-  end obten_aplic_comnt_bogue;
-
-  function obten_numr_apex_aplic_cb (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return number is
-    vnu_aplic_comnt_bogue                   vd_sie_11_prodt.ref_numr_aplic_comnt_bogue%type;
-  begin
-    select   p.ref_numr_aplic_comnt_bogue
-      into   vnu_aplic_comnt_bogue
-      from   vd_sie_11_prodt p
-     where   p.seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vnu_aplic_comnt_bogue;
-  end obten_numr_apex_aplic_cb;
-
-  function obten_page_comnt_bogue (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return vd_i_sie_11_prodt.ref_page_comnt_bogue%type is
-    vnu_page_comnt_bogue                    vd_sie_11_prodt.ref_page_comnt_bogue%type;
-  begin
-    select   p.ref_page_comnt_bogue
-      into   vnu_page_comnt_bogue
-      from   vd_sie_11_prodt p
-     where   p.seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vnu_page_comnt_bogue;
-  end obten_page_comnt_bogue;
-
-  function obten_numr_apex_page_cb (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default null)
-    return number is
-    vnu_page_comnt_bogue                    vd_sie_11_prodt.ref_numr_page_comnt_bogue%type;
-  begin
-    select   p.ref_numr_page_comnt_bogue
-      into   vnu_page_comnt_bogue
-      from   vd_sie_11_prodt p
-     where   p.seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vnu_page_comnt_bogue;
-  end obten_numr_apex_page_cb;
-
-  /*
-      OBSOLETE: il faut utiliser SIE_11_VERSN_PKG.OBTEN_NUMR_VERSN
-  */
-  function obten_numr_versn (pnu_versn_niv_1 in number,
-                             pnu_versn_niv_2 in number,
-                             pnu_versn_niv_3 in number,
-                             pnu_versn_niv_4 in number)
-    return number
-    deterministic is
-  begin
-    return sie_11_versn_pkg.obten_numr_versn (pnu_versn_niv_1,
-                                              pnu_versn_niv_2,
-                                              pnu_versn_niv_3,
-                                              pnu_versn_niv_4);
-  end obten_numr_versn;
-
-  --CONAL :: Ne devrait plus etre utilise
-  /*
-          function obten_numr_versn_aplic (pnu_numr_aplic in number default null)
-      return number is
-      vnu_versn_formt   number;
-    begin
-      --TODO revoir cette partie lorsqu'on remplacera le repartiteur
-      if pnu_numr_aplic is null then
-        return obten_numr_versn (gnu_versn_niv_1,
-                                 gnu_versn_niv_2,
-                                 gnu_versn_niv_3,
-                                 gnu_versn_niv_4);
-      else
-        select (select obten_numr_versn (v.numr_versn_1,
-                                                          v.numr_versn_2,
-                                                          v.numr_versn_3,
-                                                          v.numr_versn_4)
-                  from vd_i_sie_11_versn v
-                 where v.ref_prodt = p.seqnc)
-          into vnu_versn_formt
-          from vd_sie_11_prodt p
-         where p.numr_aplic_apex = pnu_numr_aplic;
-        return vnu_versn_formt;
-      end if;
-    end obten_numr_versn_aplic;
-  */
-
-  --OBSOLETE: il faut utiliser SIE_11_VERSN_PKG.OBTEN_VERSN
-  function obten_versn (pnu_versn_niv_1 in number,
-                        pnu_versn_niv_2 in number,
-                        pnu_versn_niv_3 in number,
-                        pnu_versn_niv_4 in number)
-    return varchar2
-    deterministic is
-  begin
-    return sie_11_versn_pkg.obten_versn (pnu_versn_niv_1,
-                                         pnu_versn_niv_2,
-                                         pnu_versn_niv_3,
-                                         pnu_versn_niv_4);
-  end obten_versn;
-
-  function obten_versn
-    return varchar2 is
-    vva_nom                                 varchar2 (200);
-  begin
-    select      p.nom
-             || ' '
-             || (select   obten_versn (v.numr_versn_1,
-                                       v.numr_versn_2,
-                                       v.numr_versn_3,
-                                       v.numr_versn_4)
-                   from   vd_i_sie_11_versn v
-                  where   v.seqnc = p.ref_versn)
-      into   vva_nom
-      from   vd_i_sie_11_prodt p
-     where   p.seqnc = obten_prodt_sesn;
-
-    return vva_nom;
-  end obten_versn;
-
-  --CONAL, il faut trouver une facon d'obtenir le schema d'un produit
-  /*
-        function obten_schem (pnu_seqnc in number default null )
-      return varchar2 is
-      vva_schem                               varchar2 (60);
-    begin
-      if pnu_seqnc is null then
-        select   a.owner
-          into   vva_schem
-          from   apex_aplic a
-         where   a.id = sie_07_util_pkg.nv ('APP_ID');
-      else
-        select   a.owner
-          into   vva_schem
-          from   apex_aplic a,
-                 vd_i_sie_11_prodt p
-         where   a.id = p.numr_aplic_apex and p.seqnc = pnu_seqnc;
-      end if;
-      return vva_schem;
-    end obten_schem;
-  */
-  --Temporairement, j'en ai besoin pour la migration CONAL
-  function obten_schem_afw
-    return varchar2 is
-    vnu_seqnc_safp                          vd_i_sie_11_aplic.seqnc%type default sie_11_aplic_pkg.obten_aplic ('SAFP');
-  begin
-    return sie_11_aplic_pkg.obten_schem (vnu_seqnc_safp);
-  end obten_schem_afw;
-
-  function obten_dosr_fichr_prodt (pnu_seqnc in number default null)
-    return varchar2 is
-    vva_dosr_fichr                          vd_sie_11_prodt.dosr_fichr%type;
-  begin
-    select   dosr_fichr
-      into   vva_dosr_fichr
-      from   vd_sie_11_prodt
-     where   seqnc = nvl (pnu_seqnc, obten_prodt_sesn);
-
-    return vva_dosr_fichr;
-  end obten_dosr_fichr_prodt;
-
-  procedure inser_prodt (pva_code in varchar2,
-                         pva_nom in varchar2,
-                         pnu_numr_versn_1 in number,
-                         pnu_numr_versn_2 in number,
-                         pnu_numr_versn_3 in number,
-                         pnu_numr_versn_4 in number) is
-    vnu_prodt                               vd_i_sie_11_prodt.seqnc%type;
-    vnu_versn                               vd_i_sie_11_versn.seqnc%type;
-  begin
-    insert into   vd_i_sie_11_prodt (code, nom)
-         values   (pva_code,
-                   pva_nom)
-      returning   seqnc
-           into   vnu_prodt;
-
-    insert into   vd_i_sie_11_versn (ref_prodt, numr_versn_1, numr_versn_2, numr_versn_3, numr_versn_4, dnr_ref_prodt)
-         values   (vnu_prodt,
-                   pnu_numr_versn_1,
-                   pnu_numr_versn_2,
-                   pnu_numr_versn_3,
-                   pnu_numr_versn_4,
-                   vnu_prodt)
-      returning   seqnc
-           into   vnu_versn;
-
-    update   vd_i_sie_11_prodt
-       set   ref_versn = vnu_versn
-     where   seqnc = vnu_prodt;
-  exception
-    when others then
-      raise_application_error (-20001,
-                               'Erreur - sie_11_prodt_pkg.inser_prodt - ' || sqlerrm);
-  end inser_prodt;
-
-  function maj_prodt (pva_code in varchar2,
-                      pva_nom in varchar2,
-                      pva_procd_expor_metdn in varchar2,
-                      pnu_tail_tabl_extra in number,
-                      pva_indic_extra_tout in varchar2,
-                      pnu_ref_versn_courn in number default null)
-    return number is
-    vnu_seqnc                               number;
-  begin
+    declare
+      vva_nom_publc                           varchar2 (60);
     begin
       select   seqnc
-        into   vnu_seqnc
-        from   vd_i_sie_11_prodt
-       where   code = upper (pva_code);
-
-      update   vd_i_sie_11_prodt
-         set   nom = pva_nom,
-               procd_expor_metdn = pva_procd_expor_metdn,
-               tail_tabl_extra = pnu_tail_tabl_extra,
-               indic_extra_tout = pva_indic_extra_tout,
-               ref_versn = pnu_ref_versn_courn
-       where   seqnc = vnu_seqnc;
+        into   vnu_versn_publc
+        from   vd_i_sie_25_versn_publc
+       where   (select   sysdate
+                  from   dual) between date_debut_efect
+                                   and nvl (date_fin_efect,
+                                            (select   sysdate + 10
+                                               from   dual))
+           and ref_publc = vnu_publc;
     exception
       when no_data_found then
-        null;
+        if (vnu_publc is not null) then
+          select   nom
+            into   vva_nom_publc
+            from   vd_sie_25_publc
+           where   seqnc = vnu_publc;
+        else
+          vva_nom_publc := 'ce rapport';
+        end if;
 
-        insert into   vd_i_sie_11_prodt (code, nom, procd_expor_metdn, tail_tabl_extra, indic_extra_tout, ident_envir)
-             values   (pva_code,
-                       pva_nom,
-                       pva_procd_expor_metdn,
-                       pnu_tail_tabl_extra,
-                       pva_indic_extra_tout,
-                       'ACC')
-          returning   seqnc
-               into   vnu_seqnc;
+        sie_01_err_apex_pkg.lever_err_apex_code ('RAP.000005',
+                                                 vva_nom_publc,
+                                                 pva_code_prodt             => 'SEM');
     end;
 
-    return vnu_seqnc;
-  exception
-    when others then
-      --TODO: revoir la gestion des erreurs selon CADRE SIE
-      raise_application_error (-20001,
-                               'Erreur - sie_11_prodt_pkg.maj_prodt - ' || sqlerrm);
-  end maj_prodt;
+    insert into   vd_i_sie_25_publc_travl pt (nom, ref_versn_publc, ref_travl)
+         values   (pva_nom_fichr_sort,
+                   vnu_versn_publc,
+                   pnu_travl)
+      returning   seqnc
+           into   vnu_publc_travl;
 
-  procedure telvs_fichr (pcl_fichr in clob,
-                         pva_nom_fichr in varchar2,
-                         pbo_atach in boolean default true,
-                         pva_contn_type in varchar2 default 'text/plain',
-                         pbo_arret_engin_apex in boolean default false,
-                         pnu_chars_id in number default 0) is
-    vlb                                     blob;
-    vnu_off_sourc                           pls_integer default 1;
-    vnu_off_dest                            pls_integer default 1;
-    vnu_lang                                pls_integer default 0;
-    vnu_warng                               pls_integer;
+    return vnu_publc_travl;
+  end ajout_publc_travl;
+
+  procedure ajout_publc_travl (pva_nom_fichr_sort in varchar2,
+                               pva_code_type_publc in varchar2,
+                               pnu_travl in number,
+                               pva_code_publc in varchar2 default null,
+                               pnu_domn in number default sie_12_domn_pkg.obten_domn_sesn) is
+    vnu_publc_travl                         number (10);
   begin
-    if pbo_arret_engin_apex then
-      aa.g_page_text_generated := true;
-      aa.g_unrecoverable_error := true;
-    --sie_07_util_pkg.aret_trait_page_apex;
-    end if;
+    vnu_publc_travl :=
+      ajout_publc_travl (pva_nom_fichr_sort,
+                         pva_code_type_publc,
+                         pnu_travl,
+                         pva_code_publc);
+  end ajout_publc_travl;
 
-    dbms_lob.createtemporary (vlb,
-                              true);
-    dbms_lob.converttoblob (vlb,
-                            pcl_fichr,
-                            dbms_lob.lobmaxsize,                                  --dbms_lob.getlength (pcl_fichr), /**/
-                            vnu_off_dest,
-                            vnu_off_sourc,
-                            pnu_chars_id,
-                            vnu_lang,
-                            vnu_warng);
-    owa_util.mime_header (ccontent_type              => nvl (pva_contn_type, 'application/octet'),
-                          bclose_header              => false);
-
-    htp.p ('Content-length: ' || dbms_lob.getlength (vlb));
-
-    if pbo_atach then
-      htp.p ('Content-Disposition: attachment; filename="' || pva_nom_fichr || '"');
-    else
-      htp.p ('Content-Disposition: filename="' || pva_nom_fichr || '"');
-    end if;
-
-    owa_util.http_header_close;
-    wpg_docload.download_file (vlb);
-  end;
-
-  procedure telvs_fichr (pbl_fichr in out nocopy blob,
-                         pva_nom_fichr in varchar2,
-                         pva_contn_type in varchar2,
-                         pbo_atach in  boolean default true,
-                         pbo_arret_engin_apex in boolean default false,
-                         pnu_chars_id in number default 0) is
-  begin
-    if pbo_arret_engin_apex then
-      aa.g_page_text_generated := true;
-      sie_07_util_pkg.aret_trait_page_apex;
-    end if;
-
-    owa_util.mime_header (ccontent_type              => nvl (pva_contn_type, 'application/octet'),
-                          bclose_header              => false);
-
-    htp.p ('Content-length: ' || dbms_lob.getlength (pbl_fichr));
-
-    if pbo_atach then
-      htp.p ('Content-Disposition: attachment; filename="' || pva_nom_fichr || '"');
-    else
-      htp.p ('Content-Disposition: filename="' || pva_nom_fichr || '"');
-    end if;
-
-    owa_util.http_header_close;
-    wpg_docload.download_file (pbl_fichr);
-  end;
-
-  function obten_lang (pva_code in varchar2)
+  function obten_type_publc (pnu_publc_travl in number)
     return number is
+    vnu_type_publc                          number (10);
+  begin
+    select   p.ref_type_publc
+      into   vnu_type_publc
+      from   vd_i_sie_25_publc_travl pt,
+             vd_i_sie_25_publc p,
+             vd_i_sie_25_versn_publc vp
+     where   vp.seqnc = pt.ref_versn_publc and vp.ref_publc = p.seqnc and pt.seqnc = pnu_publc_travl;
+
+    return vnu_type_publc;
+  end obten_type_publc;
+
+  procedure ajout_parmt (pva_code_parmt in varchar2,
+                         pva_valr_varch in varchar2,
+                         pnu_valr_numbr in number,
+                         pda_valr_date date,
+                         pnu_publc_travl in number) is
+    vnu_seqnc_parmt                         number (10);
+    vnu_type_publc                          number (10);
+  begin
+    vnu_type_publc := obten_type_publc (pnu_publc_travl);
+
+    select   seqnc
+      into   vnu_seqnc_parmt
+      from   vd_i_sie_25_parmt_type_publc
+     where   ref_type_publc = vnu_type_publc and upper (code) = upper (pva_code_parmt);
+
+    insert
+      into   vd_i_sie_25_parmt_publc_travl (ref_publc_travl, ref_parmt_type_publc, valr_varch, valr_date, valr_numbr)
+    values   (pnu_publc_travl,
+              vnu_seqnc_parmt,
+              pva_valr_varch,
+              pda_valr_date,
+              pnu_valr_numbr);
+  end ajout_parmt;
+
+  function ajout_parmt (pva_code_parmt in varchar2,
+                        pva_valr_varch in varchar2,
+                        pnu_valr_numbr in number,
+                        pda_valr_date date,
+                        pnu_publc_travl in number)
+    return number is
+    vnu_seqnc_parmt                         number (10);
+    vnu_type_publc                          number (10);
     vnu_seqnc                               number (10);
   begin
-    /*select   l.seqnc
-                                                                                                      into   vnu_seqnc
-      from   vd_sie_11_prodt p,
-             vd_sie_01_lang l
-     where   p.seqnc = obten_prodt_sesn () and l.seqnc = p.ref_lang and l.code = upper (pva_code)
-    union*/
-    select   l.seqnc
-      into   vnu_seqnc
-      from   vd_sie_11_prodt_lang pl,
-             vd_sie_01_lang l
-     where   pl.ref_prodt = obten_prodt_sesn () and l.seqnc = pl.ref_lang and l.code = upper (pva_code);
+    vnu_type_publc := obten_type_publc (pnu_publc_travl);
+
+    select   seqnc
+      into   vnu_seqnc_parmt
+      from   vd_i_sie_25_parmt_type_publc
+     where   ref_type_publc = vnu_type_publc and upper (code) = upper (pva_code_parmt);
+
+    insert
+         into   vd_i_sie_25_parmt_publc_travl (ref_publc_travl, ref_parmt_type_publc, valr_varch, valr_date, valr_numbr)
+       values   (pnu_publc_travl,
+                 vnu_seqnc_parmt,
+                 pva_valr_varch,
+                 pda_valr_date,
+                 pnu_valr_numbr)
+    returning   seqnc
+         into   vnu_seqnc;
 
     return vnu_seqnc;
-  exception
-    when others then
-      return null;
-  end obten_lang;
+  end ajout_parmt;
 
-  function obten_lang_sesn (pva_code_deft in varchar2 default null)
+  procedure lancr_travl (pva_formt in varchar2,
+                         pnu_travl in number,
+                         pbo_redrg_web_reslt in boolean default true) is
+  begin
+    sie_25_travl_publc_pkg.lancr_travl (pnu_travl,
+                                        pva_formt,
+                                        pbo_redrg_web_reslt);
+  end lancr_travl;
+
+  function obten_nombr_ocurn_exect_courn
     return number is
-    vnu_seqnc_lang                          number (10);
-    vva_code_lang                           varchar2 (10) default sie_07_util_pkg.obten_lang_furtr ();
   begin
-    -- Determiner si la langue du browser existe pour l'application
-    vnu_seqnc_lang := obten_lang (vva_code_lang);
+    return 0;
+  end obten_nombr_ocurn_exect_courn;
+end sie_25_publc_noyau_pkg;
+/
 
-    -- Si la langue du browser n'existe pas pour l'application
-    -- Determiner si la langue du browser sans territoire existe pour l'application
-    if vnu_seqnc_lang is null
-   and instr (vva_code_lang,
-              '-') > 0 then
-      vnu_seqnc_lang :=
-        obten_lang (substr (vva_code_lang,
-                            1,
-                            instr (vva_code_lang,
-                                   '-') -
-                            1));
-    end if;
-
-    -- Si la langue du browser sans territoire n'existe pas pour l'application
-    -- Utiliser la langue par defaut
-    if vnu_seqnc_lang is null and pva_code_deft is not null then
-      vnu_seqnc_lang := obten_lang (pva_code_deft);
-    end if;
-
-    --Prendre l'application primaire de l'application
-    if vnu_seqnc_lang is null then
-      vnu_seqnc_lang := obten_lang (sie_07_util_pkg.obten_lang_aplic_deft ());
-    end if;
-
-    return vnu_seqnc_lang;
-  end obten_lang_sesn;
-
-  function obten_code_lang_sesn (pva_code_deft in varchar2 default null)
-    return varchar2 is
-    vva_code                                vd_i_sie_01_lang.code%type;
-  begin
-    select   code
-      into   vva_code
-      from   vd_i_sie_01_lang l
-     where   l.seqnc = obten_lang_sesn (pva_code_deft);
-
-    return vva_code;
-  end obten_code_lang_sesn;
-
-  function obten_versn_plugn_formt (pnu_no_versn in number)
-    return varchar2 is
-  begin
-    return null;
-  end obten_versn_plugn_formt;
-
-  function obten_ident_envir (pnu_prodt in number default sie_11_prodt_pkg.obten_prodt_sesn)
-    return varchar2 is
-    vva_ident_envir                         varchar2 (60);
-  begin
-    select   ident_envir
-      into   vva_ident_envir
-      from   vd_i_sie_11_prodt
-     where   seqnc = pnu_prodt;
-
-    return vva_ident_envir;
-  end obten_ident_envir;
-
-  function obten_versn_courn (pnu_prodt in number)
+Prompt Package Body SIE_25_PUBLC_PKG;
+/* Formatted on 19/12/2013 11:24:54 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_25_publc_pkg is
+  function obten_travl_courn (pva_imedt in varchar2)
     return number is
-    vnu_versn                               number (10);
   begin
-    select   ref_versn
-      into   vnu_versn
-      from   vd_i_sie_11_prodt
-     where   seqnc = pnu_prodt;
+    if (pva_imedt = 'YES'
+     or pva_imedt = 'TRUE') then
+      return sie_25_publc_noyau_pkg.obten_travl_courn (true);
+    else
+      return sie_25_publc_noyau_pkg.obten_travl_courn (false);
+    end if;
+  end obten_travl_courn;
 
-    return vnu_versn;
-  end obten_versn_courn;
+  function obten_travl_courn (pbo_imedt in boolean default true)
+    return number is
+  begin
+    return sie_25_publc_noyau_pkg.obten_travl_courn (pbo_imedt);
+  end obten_travl_courn;
 
-  function obten_jquer_ui_css_scope (pnu_prodt in number default null)
+  function obten_nouv_travl (pva_nom_raprt in varchar2,
+                             pnu_type_travl in number default null,
+                             pbo_mesgr in boolean default false)
+    return number is
+  begin
+    return sie_25_publc_noyau_pkg.initl_travl (pva_nom_raprt,
+                                               'N',
+                                               pnu_type_travl,
+                                               pbo_mesgr);
+  end obten_nouv_travl;
+
+  function obten_nombr_publc_travl (pnu_travl in number default null)
+    return number is
+    vnu_travl                               number (10) default nvl (pnu_travl, obten_travl_courn ());
+    vnu_count                               pls_integer;
+  begin
+    select   count (1)
+      into   vnu_count
+      from   vd_sie_25_publc_travl pt
+     where   pt.ref_travl = vnu_travl;
+
+    return vnu_count;
+  end obten_nombr_publc_travl;
+
+  procedure ajout_publc_travl (pva_nom in varchar2,
+                               pva_type_publc in varchar2,
+                               pva_code_parmt in varchar2,
+                               pnu_valr_parmt in number,
+                               pnu_travl in number default null,
+                               pnu_type_travl in number default null,
+                               pbo_mesgr in boolean default false) is
+    vnu_travl                               number (10);
+  begin
+    vnu_travl :=
+      ajout_publc_travl (pva_nom,
+                         pva_type_publc,
+                         pva_code_parmt,
+                         pnu_valr_parmt,
+                         pnu_travl,
+                         pnu_type_travl,
+                         pbo_mesgr);
+  end ajout_publc_travl;
+
+  function ajout_publc_travl (pva_nom in varchar2,
+                              pva_type_publc in varchar2,
+                              pva_code_parmt in varchar2,
+                              pnu_valr_parmt in number,
+                              pnu_travl in number default null,
+                              pnu_type_travl in number default null,
+                              pbo_mesgr in boolean default false)
+    return number is
+    vnu_travl                               number (10);
+    vnu_publc_travl                         number (10);
+  begin
+    vnu_travl :=
+      nvl (pnu_travl,
+           sie_25_publc_noyau_pkg.initl_travl (null,
+                                               'N',
+                                               pnu_type_travl,
+                                               pbo_mesgr));
+
+    vnu_publc_travl :=
+      sie_25_publc_noyau_pkg.ajout_publc_travl (pva_nom,
+                                                pva_type_publc,
+                                                vnu_travl,
+                                                null);
+
+    ajout_parmt (pva_code_parmt,
+                 pnu_valr_parmt,
+                 vnu_publc_travl);
+
+    return vnu_publc_travl;
+  end ajout_publc_travl;
+
+  function initl_travl (pnu_travl in number,
+                        pva_nom_fichr_sort in varchar2,
+                        pva_indic_imedt in varchar2,
+                        pnu_type_travl in number default null)
+    return number is
+    vnu_travl                               number (10);
+  begin
+    vnu_travl :=
+      nvl (pnu_travl,
+           sie_25_publc_noyau_pkg.initl_travl (null,
+                                               'N',
+                                               pnu_type_travl));
+
+    return vnu_travl;
+  end initl_travl;
+
+  procedure ajout_parmt (pva_code_parmt in varchar2,
+                         pva_valr_parmt in varchar2,
+                         pnu_travl_publc in number) is
+  begin
+    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                        pva_valr_parmt,
+                                        null,
+                                        null,
+                                        pnu_travl_publc);
+  end ajout_parmt;
+
+  procedure ajout_parmt (pva_code_parmt in varchar2,
+                         pnu_valr_parmt in number,
+                         pnu_travl_publc in number) is
+  begin
+    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                        null,
+                                        pnu_valr_parmt,
+                                        null,
+                                        pnu_travl_publc);
+  end ajout_parmt;
+
+  procedure ajout_parmt (pva_code_parmt in varchar2,
+                         pda_valr_parmt in date,
+                         pnu_travl_publc in number) is
+  begin
+    sie_25_publc_noyau_pkg.ajout_parmt (pva_code_parmt,
+                                        null,
+                                        null,
+                                        pda_valr_parmt,
+                                        pnu_travl_publc);
+  end ajout_parmt;
+
+  procedure copie_publc_travl (pnu_sorc_travl in number,
+                               pnu_destn_travl in number,
+                               pnu_publc_travl in number default null) is
+    vnu_nouv_publc_travl                    number (10);
+    vnu_nouv_parmt_publc_travl              number (10);
+
+    cursor cur_publc_travl is
+      select   seqnc,
+               ref_versn_publc,
+               ref_stat,
+               nom,
+               indic_parmt_alimn
+        from   vd_i_sie_25_publc_travl
+       where   (ref_travl = pnu_sorc_travl
+             or pnu_sorc_travl is null)
+           and (seqnc = pnu_publc_travl
+             or pnu_publc_travl is null)
+           and (pnu_sorc_travl is not null
+             or pnu_publc_travl is not null);
+
+    cursor cur_parmt_publc_travl (pnu_publc_travl_seqnc in number) is
+      select   seqnc,
+               ref_parmt_type_publc,
+               valr_varch,
+               valr_date,
+               valr_numbr
+        from   vd_i_sie_25_parmt_publc_travl
+       where   ref_publc_travl = pnu_publc_travl_seqnc;
+
+    cursor cur_ocurn_parmt_publc (pnu_parmt_publc_seqnc in number) is
+      select   seqnc,
+               valr_date,
+               valr_numbr,
+               valr_varch
+        from   vd_i_sie_25_ocurn_parmt_publc
+       where   ref_parmt_publc_travl = pnu_parmt_publc_seqnc;
+  begin
+    for rec_publc_travl in cur_publc_travl loop
+      -- Copie de chaque publc_travl de la job à merger
+      insert into   vd_i_sie_25_publc_travl (ref_versn_publc, ref_travl, ref_stat, nom, indic_parmt_alimn)
+           values   (rec_publc_travl.ref_versn_publc,
+                     pnu_destn_travl,
+                     rec_publc_travl.ref_stat,
+                     rec_publc_travl.nom,
+                     'N')
+        returning   seqnc
+             into   vnu_nouv_publc_travl;
+
+      -- copie de chaque parmt_publc_travl associé au publc_travl
+      for rec_parmt_publc_travl in cur_parmt_publc_travl (rec_publc_travl.seqnc) loop
+        insert
+             into   vd_i_sie_25_parmt_publc_travl (ref_publc_travl, ref_parmt_type_publc, valr_varch, valr_date, valr_numbr)
+           values   (vnu_nouv_publc_travl,
+                     rec_parmt_publc_travl.ref_parmt_type_publc,
+                     rec_parmt_publc_travl.valr_varch,
+                     rec_parmt_publc_travl.valr_date,
+                     rec_parmt_publc_travl.valr_numbr)
+        returning   seqnc
+             into   vnu_nouv_parmt_publc_travl;
+
+        --copie de chaque ocurn_parmt_publc_travl asocié au parmt_publc_travl
+        for rec_ocurn_parmt_publc in cur_ocurn_parmt_publc (rec_parmt_publc_travl.seqnc) loop
+          insert into   vd_i_sie_25_ocurn_parmt_publc (valr_date, valr_numbr, valr_varch, ref_parmt_publc_travl)
+               values   (rec_ocurn_parmt_publc.valr_date,
+                         rec_ocurn_parmt_publc.valr_numbr,
+                         rec_ocurn_parmt_publc.valr_varch,
+                         vnu_nouv_parmt_publc_travl);
+        end loop;
+      end loop;
+    end loop;
+  end copie_publc_travl;
+
+  procedure ajout_travl_courn (pnu_travl in number default null,
+                               pnu_publc_travl in number default null) is
+    vnu_travl_courn                         number (10) default 0;
+  begin
+    vnu_travl_courn := nvl (obten_travl_courn (false), obten_nouv_travl (null));
+    copie_publc_travl (pnu_travl,
+                       vnu_travl_courn,
+                       pnu_publc_travl);
+  end ajout_travl_courn;
+
+  procedure defnr_stat_publc_travl (pnu_seqnc in number,
+                                    pva_code_stat in varchar2) is
+    vnu_stat_seqnc                          number (10);
+  begin
+    vnu_stat_seqnc :=
+      sie_12_stat_pkg.obten_stat ('PUBLC_TRAVL',
+                                  pva_code_stat,
+                                  'AFW');
+
+    update   vd_sie_25_publc_travl
+       set   ref_stat = vnu_stat_seqnc
+     where   seqnc = pnu_seqnc;
+
+    commit;
+  end defnr_stat_publc_travl;
+/*
+          procedure lancr_raprt is
+  begin
+    sie_25_publc_noyau_pkg.lancr_travl ('PDF');
+  end lancr_raprt;
+  procedure lancr_raprt (pva_nom_raprt in varchar2,
+                         pva_type_raprt in varchar2,
+                         pva_code_parmt in varchar2,
+                         pnu_valr_parmt in number) is
+    pragma autonomous_transaction;
+  begin
+    initl_exect_raprt (pva_nom_raprt,
+                       pva_type_raprt);
+    ajout_parmt (pva_code_parmt,
+                 pnu_valr_parmt);
+    commit;
+    lancr_raprt ();
+    commit;
+  end lancr_raprt;*/
+
+end sie_25_publc_pkg;
+/
+
+Prompt Package Body SIE_25_RAPRT_INTER_EXPOR_PKG;
+/* Formatted on 19/12/2013 11:24:55 AM (QP5 v5.185.11230.41888) */
+create or replace package body "SIE_25_RAPRT_INTER_EXPOR_PKG" as
+  knu_marge_gauch                constant number default 0.5;
+  knu_marge_droit                constant number default 0.5;
+
+  type typ_rec_parmt_impre is record
+  (
+    va_indic_trouv                          varchar2 (1) default 'N',
+    va_contn_disps                          apex_regn.prn_content_disposition%type default 'ATTACHMENT',
+    va_formt_papr                           apex_regn.prn_paper_size%type default 'LETTER',
+    va_orien_papr                           apex_regn.prn_orientation%type default 'VERTICAL',
+    va_unite_mesr                           apex_regn.prn_units%type default 'INCHES',
+    nu_largr_papr                           apex_regn.prn_width%type default 8.5,
+    nu_hautr_papr                           apex_regn.prn_height%type default 11,
+    nu_bordr_tail                           apex_regn.prn_border_width%type default 0.5,
+    va_bordr_coulr                          apex_regn.prn_border_color%type,
+    va_entet_polc_faml                      apex_regn.prn_page_header_font_family%type default 'Helvetica',
+    va_entet_polc_poids                     apex_regn.prn_page_header_font_weight%type default 'normal',
+    nu_entet_polc_tail                      apex_regn.prn_page_header_font_size%type default 12,
+    va_entet_polc_coulr                     apex_regn.prn_page_header_font_color%type,
+    va_entet_align                          apex_regn.prn_page_header_alignment%type default 'LEFT',
+    va_entet_texte                          apex_regn.prn_page_header%type,
+    va_coln_polc_faml                       apex_regn.prn_header_font_family%type default 'Helvetica',
+    va_coln_polc_poids                      apex_regn.prn_header_font_weight%type default 'bold',
+    nu_coln_polc_tail                       apex_regn.prn_header_font_size%type default 8,
+    va_coln_polc_coulr                      apex_regn.prn_header_font_color%type,
+    va_coln_fond_coulr                      apex_regn.prn_header_bg_color%type default '#e0e0e0',
+    va_corps_polc_faml                      apex_regn.prn_body_font_family%type default 'Helvetica',
+    va_corps_polc_poids                     apex_regn.prn_body_font_weight%type default 'normal',
+    nu_corps_polc_tail                      apex_regn.prn_body_font_size%type default 8,
+    va_corps_polc_coulr                     apex_regn.prn_body_font_color%type,
+    va_corps_fond_coulr                     apex_regn.prn_body_bg_color%type default '#f5f5f5',
+    va_pied_polc_faml                       apex_regn.prn_page_footer_font_family%type default 'Helvetica',
+    va_pied_polc_poids                      apex_regn.prn_page_footer_font_weight%type default 'normal',
+    nu_pied_polc_tail                       apex_regn.prn_page_footer_font_size%type default 8,
+    va_pied_polc_coulr                      apex_regn.prn_page_footer_font_color%type,
+    va_pied_align                           apex_regn.prn_page_footer_alignment%type default 'LEFT',
+    va_pied_texte                           apex_regn.prn_page_footer%type
+  );
+
+  type typ_rec_page is record
+  (
+    nu_largr                                number default 0,
+    nu_dernr_coln                           binary_integer default 0
+  );
+
+  type typ_arr_page is table of typ_rec_page
+                         index by binary_integer;
+
+  gar_tail_papr                           sie_07_sql_pkg.typ_arr_ndx_vc30;
+
+  function formt_nom_fichr (pva_nom in varchar2)
     return varchar2 is
-    vva_jquer_ui_css_scope                  vd_i_sie_11_prodt.jquer_ui_css_scope%type;
+    vva_nom                                 varchar2 (1000) default lower (pva_nom);
   begin
-    select   jquer_ui_css_scope
-      into   vva_jquer_ui_css_scope
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
+    vva_nom :=
+      sie_07_sql_pkg.rempl_br (vva_nom,
+                               '_');
 
-    return vva_jquer_ui_css_scope;
-  exception
-    when others then
-      --TODO::CARLO
-      return obten_code_prodt (pnu_prodt);
-  end obten_jquer_ui_css_scope;
+    return substr (translate (vva_nom,
+                              'çàâéèêöùû /\?',
+                              'caaeeeouu____'),
+                   1,
+                   120);
+  end;
 
-  function obten_mesg_tout_droit_resrv (pnu_prodt in number default null)
-    return varchar2 is
-    vva_mesg_tout_droit_resrv               vd_i_sie_11_prodt.mesg_tout_droit_resrv%type;
-  begin
-    select   mesg_tout_droit_resrv
-      into   vva_mesg_tout_droit_resrv
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vva_mesg_tout_droit_resrv;
-  exception
-    when others then
-      return null;
-  end obten_mesg_tout_droit_resrv;
-
-  function obten_templ_javsc_core_1 (pnu_prodt in number default null)
+  function formt_date (pda_date in date default sysdate)
     return varchar2 is
   begin
-    return    sie_15_htp_pkg.ouvri_bals (
-                'script',
-                'src',
-                obten_dosr_fichr_afw || 'javascript/afw_core_4.1.0.js?v=' || obten_numr_versn_prodt_afw,
-                'type',
-                'text/javascript'
-              )
-           || sie_15_htp_pkg.fermr_bals ('script');
-  exception
-    when others then
-      return null;
-  end obten_templ_javsc_core_1;
+    return    'Le '
+           || trim (to_char (pda_date,
+                             'day'))
+           || ' '
+           || extract (day from pda_date)
+           || ' '
+           || trim (to_char (pda_date,
+                             'month'))
+           || ' '
+           || extract (year from pda_date);
+  end;
 
-  function obten_templ_theme_jquer_ui (pnu_prodt in number default null)
+  function convr_parmt_align (pva_parmt in varchar2,
+                              pva_deft in varchar2)
     return varchar2 is
   begin
-    return    '<!-- APEXFramework - Theme - jQuery UI - CSS -->'
-           || '<link rel="stylesheet" href="'
-           || obten_dosr_fichr_afw
-           || 'theme/jquery-ui/css/ui-afw/jquery-ui-1.8.17.custom.css?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/css" />'
-           || '<link rel="stylesheet" href="'
-           || obten_dosr_fichr_prodt
-           || 'theme/jquery-ui/css/'
-           || obten_jquer_ui_css_scope
-           || '/jquery-ui-1.8.17.custom.css?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/css" />'
-           || '<!-- APEXFramework - Theme - jQuery UI - Custom Icons -->'
-           || '<link rel="stylesheet" href="'
-           || obten_dosr_fichr_afw
-           || 'theme/jquery-ui/custom_icons/assets/css/fff.icon.core.css?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/css" />'
-           || '<link rel="stylesheet" href="'
-           || obten_dosr_fichr_afw
-           || 'theme/jquery-ui/custom_icons/assets/css/fff.icon.icons.css?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/css" />';
-  end obten_templ_theme_jquer_ui;
+    return case upper (pva_parmt) when 'LEFT' then 'L' when 'RIGHT' then 'R' when 'CENTER' then 'C' else pva_deft end;
+  end;
 
-  function obten_templ_javsc_core_2 (pnu_prodt in number default null)
+  function convr_parmt_faml (pva_parmt in varchar2)
     return varchar2 is
   begin
-    return    sie_15_htp_pkg.ouvri_bals (
-                'script',
-                'src',
-                obten_dosr_fichr_afw || 'javascript/afw_4.1.0.js?v=' || obten_numr_versn_prodt_afw,
-                'type',
-                'text/javascript'
-              )
-           || sie_15_htp_pkg.fermr_bals ('script')
-           || sie_15_htp_pkg.ouvri_bals (
-                'script',
-                'src',
-                obten_dosr_fichr_afw || 'javascript/afw_legacy.js?v=' || obten_numr_versn_prodt_afw,
-                'type',
-                'text/javascript'
-              )
-           || sie_15_htp_pkg.fermr_bals ('script')
-           || sie_15_htp_pkg.ouvri_bals (
-                'script',
-                'src',
-                   obten_dosr_fichr_afw
-                || 'theme/jquery-ui/js/jquery-ui-1.8.17.custom.min.js?v='
-                || obten_numr_versn_prodt_afw,
-                'type',
-                'text/javascript'
-              )
-           || sie_15_htp_pkg.fermr_bals ('script');
-  end obten_templ_javsc_core_2;
+    return case lower (pva_parmt) when 'times' then 'Times new roman' when 'courier' then 'Courier' else 'Arial' -- Défaut
+                                                                                                                end;
+  end;
 
-  function obten_templ_javsc_jquer (pnu_prodt in number default null)
+  function convr_parmt_poids (pva_parmt in varchar2,
+                              pva_deft in varchar2)
     return varchar2 is
   begin
-    --todo CARLO
-    --remplacer impromptu par jquery ui dialog
-    --trouver un remplacement pour hotkey
-    return    '<!-- APEXFramework - JavaScript - jQuery Plug-in -->'
-           || '<script src="'
-           || obten_dosr_fichr_afw
-           || 'javascript/jquery/plugin/jquery.apex-aplic_procs-4.1.0.js?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/javascript" defer></script>'
-           || '<script src="'
-           || obten_dosr_fichr_afw
-           || 'javascript/jquery/plugin/jquery.apex-session-4.1.0.js?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/javascript" defer></script>'
-           || '<script src="'
-           || obten_dosr_fichr_afw
-           || 'javascript/jquery/plugin/jquery-impromptu.2.8.js?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/javascript" defer></script>'
-           || '<script src="'
-           || obten_dosr_fichr_afw
-           || 'javascript/jquery/plugin/jgrowl/javascript/jquery.jgrowl_minimized.js?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/javascript" defer></script>';
-  end obten_templ_javsc_jquer;
+    return case lower (pva_parmt) when 'bold' then 'B' when 'normal' then null else pva_deft end;
+  end;
 
-  function obten_templ_custm (pnu_prodt in number default null)
-    return varchar2 is
+  function obten_parmt_impre_raprt (pnu_ref_ir in number)
+    return typ_rec_parmt_impre is
+    vpi_deft                                typ_rec_parmt_impre;
+    vpi_parmt_impr                          typ_rec_parmt_impre;
   begin
-    return    '<!-- Application - Theme - CSS -->'
-           || '<link rel="stylesheet" href="'
-           || obten_dosr_fichr_afw
-           || 'css/theme.css?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/css" />'
-           || '<link rel="stylesheet" href="'
-           || obten_dosr_fichr_prodt
-           || 'css/theme.css?v='
-           || obten_numr_versn_prodt_afw
-           || '" type="text/css" />';
-  end obten_templ_custm;
+    begin
+      select   'O',
+               reg.prn_content_disposition,
+               reg.prn_paper_size,
+               reg.prn_orientation,
+               reg.prn_units,
+               reg.prn_width,
+               reg.prn_height,
+               reg.prn_border_width,
+               reg.prn_border_color,
+               reg.prn_page_header_font_family,
+               reg.prn_page_header_font_weight,
+               reg.prn_page_header_font_size,
+               reg.prn_page_header_font_color,
+               reg.prn_page_header_alignment,
+               reg.prn_page_header,
+               reg.prn_header_font_family,
+               reg.prn_header_font_weight,
+               reg.prn_header_font_size,
+               reg.prn_header_font_color,
+               reg.prn_header_bg_color,
+               reg.prn_body_font_family,
+               reg.prn_body_font_weight,
+               reg.prn_body_font_size,
+               reg.prn_body_font_color,
+               reg.prn_body_bg_color,
+               reg.prn_page_footer_font_family,
+               reg.prn_page_footer_font_weight,
+               reg.prn_page_footer_font_size,
+               reg.prn_page_footer_font_color,
+               reg.prn_page_footer_alignment,
+               reg.prn_page_footer
+        into   vpi_parmt_impr
+        from   vd_sie_13_page_ir pir,
+               apex_ir air,
+               apex_regn reg
+       where   pir.seqnc = pnu_ref_ir and air.id = pir.id_apex and reg.id = air.region_id;
+    exception
+      when no_data_found then
+        vpi_parmt_impr.va_indic_trouv := 'N';
+    end;
 
-  function obten_boutn_deplc_range_raprt
-    return varchar2 is
-  begin
-    return    sie_15_htp_pkg.ouvri_bals ('div',
-                                         'class',
-                                         'barre_boutn_deplc_range_raprt')
-           || sie_15_htp_pkg.ouvri_bals ('a',
-                                         'href',
-                                         '#',
-                                         'onclick',
-                                         'afw.sie_13.page.raprt_sql.deplc_rang_haut(this);')
-           || sie_15_htp_pkg.ouvri_bals (
-                'span',
-                'class',
-                'small_text_button ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only'
-              )
-           || sie_15_htp_pkg.ouvri_bals ('span',
-                                         'class',
-                                         'ui-icon-primary ui-icon ui-icon-triangle-1-n',
-                                         'title',
-                                         'Déplacer vers le haut.')
-           || sie_15_htp_pkg.fermr_bals ('span')
-           || sie_15_htp_pkg.ouvri_bals ('span',
-                                         'class',
-                                         'ui-button-text')
-           || 'Déplacer vers le haut.'
-           || sie_15_htp_pkg.fermr_bals ('span')
-           || sie_15_htp_pkg.fermr_bals ('span')
-           || sie_15_htp_pkg.fermr_bals ('a')
-           || sie_15_htp_pkg.ouvri_bals ('a',
-                                         'href',
-                                         '#',
-                                         'onclick',
-                                         'afw.sie_13.page.raprt_sql.deplc_rang_bas(this);')
-           || sie_15_htp_pkg.ouvri_bals (
-                'span',
-                'class',
-                'small_text_button ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only'
-              )
-           || sie_15_htp_pkg.ouvri_bals ('span',
-                                         'class',
-                                         'ui-icon-primary ui-icon ui-icon-triangle-1-s',
-                                         'title',
-                                         'Déplacer vers le bas.')
-           || sie_15_htp_pkg.fermr_bals ('span')
-           || sie_15_htp_pkg.ouvri_bals ('span',
-                                         'class',
-                                         'ui-button-text')
-           || 'Déplacer vers le bas.'
-           || sie_15_htp_pkg.fermr_bals ('span')
-           || sie_15_htp_pkg.fermr_bals ('span')
-           || sie_15_htp_pkg.fermr_bals ('a')
-           || sie_15_htp_pkg.fermr_bals ('div');
-  end obten_boutn_deplc_range_raprt;
+    return vpi_parmt_impr;
+  end;
 
-  function obten_url_acuei (pnu_prodt in number default obten_prodt_sesn)
-    return varchar2 is
-  begin
-    return    obten_base_url (pnu_prodt)
-           || sie_08_url_pkg.genr_url (obten_numr_apex_aplic_acuei (pnu_prodt),
-                                       obten_numr_apex_page_acuei (pnu_prodt),
-                                       'SIDF',
-                                       null);
-  end obten_url_acuei;
 
-  function obten_url_authe_cible_sesn
-    return varchar2 is
-  begin
-    return    obten_base_url (obten_prodt_sesn)
-           || sie_08_url_pkg.genr_url (sie_07_sesn_pkg.obten_valr_sesn ('S_AUTHE_CIBLE_NUMR_APEX_APLIC'),
-                                       sie_07_sesn_pkg.obten_valr_sesn ('S_AUTHE_CIBLE_NUMR_APEX_PAGE'),
-                                       'SIDF',
-                                       null);
-  end obten_url_authe_cible_sesn;
+  procedure afich_pdf (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
+                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID')) is
+    vpi_parmt_impr                          typ_rec_parmt_impre;
 
-  procedure defnr_item_aplic_apex is
+    vnu_ref_ir                              number;
+    vva_nom_raprt                           varchar2 (200);
+    vva_mesg_aucun_don                      varchar2 (32767);
+    vnu_largr_deft                          number;
+    --vnu_unite_mesr_largr_deft number(10);
+
+    vva_selct                               varchar2 (32767);
+    vnu_cursr                               number;
+    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
+    vnu_largr_dispo                         number;
+    vnu_compt_ligne                         number;
+
+    var_pages                               typ_arr_page;
+    vnu_index_page                          binary_integer;
+    vnu_somme_largr                         number;
+    vnu_dernr_coln_ajout                    number;
+    vnu_rpts_id                             number;
+
+    -- variables plpdf
+    vnu_elmnt_lign                          number := 0;
+    vnu_elmnt_tabl                          number := 0;
+    vnu_elmnt_restn                         number := 0;
+    vnu_tail_polc_ent                       number := 0;
+    vnu_tail_polc_corps                     number := 0;
+    vnu_tail_polc_pied                      number := 0;
+    vnu_largr_restn                         number := 0;
+    vva_elmnt                               varchar2 (300);
+    vbo_type_indtr                          boolean := false;
+    v_blob                                  blob;
+
+    --variable des paramètres du tableau
+    v_bordr_cell                            plpdf.plpdf_type.t_row_borders;
+    v_data_cell                             plpdf.plpdf_type.t_row_datas;
+    v_data_row_ent                          plpdf.plpdf_type.t_row_datas;
+    v_tail_cell                             plpdf.plpdf_type.t_row_widths;
+    v_tail_intr_cell                        plpdf.plpdf_type.t_row_widths;
+    v_algnm_cell                            plpdf.plpdf_type.t_row_aligns;
+    v_algnm_entet                           plpdf.plpdf_type.t_row_aligns;
+    v_style_cell                            plpdf.plpdf_type.t_row_styles;
+    v_lign_max                              plpdf.plpdf_type.t_row_maxlines;
   begin
-    --Initialisation d'etat dans la session
-    if sie_12_utils_pkg.obten_usagr_conct is not null
-   and sie_07_sesn_pkg.obten_valr_sesn ('S_SIE_11_TRAIT_MESGS_ERR') is null then
-      sie_07_sesn_pkg.defnr_valr_sesn ('S_SIE_11_TRAIT_MESGS_ERR',
-                                       0);
+    begin
+      -- Chercher le rapport interactif sur la page
+      select                                                                                           /*pir.libl_regn*/
+             ( select   plug_name
+                 from   apex_regn reg
+                where   reg.id = air.region_id),
+               air.no_data_found_message,
+               pir.seqnc,
+               pir.largr_deft
+        --pir.unite_mesr_largr_deft
+        into   vva_nom_raprt,
+               vva_mesg_aucun_don,
+               vnu_ref_ir,
+               vnu_largr_deft
+        --vnu_unite_mesr_largr_deft
+        from   vd_sie_13_page pag,
+               vd_sie_13_page_ir pir,
+               apex_ir air
+       where   pag.ref_aplic = sie_11_aplic_pkg.obten_aplic_numr_apex (pnu_aplic)
+           and pag.numr_apex = pnu_page
+           and pir.ref_page = pag.seqnc
+           and air.id = pir.id_apex;
+
+      -- Récupérer le select
+      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
+      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
+    exception
+      when no_data_found then
+        vva_selct := null;
+    end;
+
+    vva_nom_raprt := aa.do_substitutions (vva_nom_raprt);
+
+    if vva_selct is null then
+      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
+                                               pva_code_prodt             => 'AFW');
     end if;
 
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_NUMR_VERSN_PRODT',
-                                     obten_numr_versn_prodt);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_NUMR_VERSN_PRODT_AFW',
-                                     obten_numr_versn_prodt_afw);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_DOSR_FICHR',
-                                     obten_dosr_fichr_prodt);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_DOSR_FICHR_AFW',
-                                     obten_dosr_fichr_afw);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_ENVIR',
-                                     '<span class="ident_envir">' || obten_ident_envir || '</span>');
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_VERSN_PRODT',
-                                     obten_versn);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_ACRON_PRODT',
-                                     obten_code_prodt);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_JQUER_UI_CSS_SCOPE',
-                                     obten_jquer_ui_css_scope);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_MESG_TOUT_DROIT_RESRV',
-                                     obten_mesg_tout_droit_resrv);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TEMPL_JAVSC_CORE_1',
-                                     obten_templ_javsc_core_1);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TEMPL_THEME_JQUER_UI',
-                                     obten_templ_theme_jquer_ui);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TEMPL_JAVSC_CORE_2',
-                                     obten_templ_javsc_core_2);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TEMPL_JAVSC_JQUER',
-                                     obten_templ_javsc_jquer);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TEMPL_CUSTM',
-                                     obten_templ_custm);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_MESG_SUPRS',
-                                     sie_07_util_pkg.obten_mesg_suprs ());
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_TRAIT_MESGS_ERR',
-                                     nvl (sie_07_sesn_pkg.obten_valr_sesn ('S_SIE_11_TRAIT_MESGS_ERR'), 0));
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_URL_ACUEI',
-                                     obten_url_acuei);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_URL_AUTHE_CIBLE',
-                                     obten_url_authe_cible_sesn);
-    sie_07_util_pkg.defnr_etat_sesn ('A_SIE_11_DEPLC_RANGE_RAPRT',
-                                     obten_boutn_deplc_range_raprt);
+    vnu_largr_deft := nvl (vnu_largr_deft, 0);
+
+    if vnu_largr_deft <= 0 then
+      vnu_largr_deft := 1.5;
+    end if;
+
+    -- Récupérer les paramètres du raport
+    vpi_parmt_impr := obten_parmt_impre_raprt (vnu_ref_ir);
+
+    vnu_cursr :=
+      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
+                                  vnu_rpts_id,
+                                  vva_selct,
+                                  var_infor_coln,
+                                  '\n');
+
+    declare
+      vbo_aucun_afich                         boolean default true;
+    begin
+      if var_infor_coln.first () is not null then
+        for i in var_infor_coln.first () .. var_infor_coln.last () loop
+          if var_infor_coln (i).va_indic_expor = 'O' then
+            vbo_aucun_afich := false;
+            exit;
+          end if;
+        end loop;
+      end if;
+
+      if vbo_aucun_afich then
+        var_infor_coln.delete ();
+      end if;
+    end;
+
+    if var_infor_coln.first () is not null then
+      -- vnu_largr_dispo                            := obten_largr_dispo_page (vpi_parmt_impr);
+
+      -- Transformer toutes les valeurs en pouces
+      vnu_index_page := 1;
+      -- Créer la premiere page
+      var_pages (vnu_index_page).nu_dernr_coln := 0;
+
+      for i in var_infor_coln.first () .. var_infor_coln.last () loop
+        if var_infor_coln (i).va_indic_expor = 'O' then
+          -- La page sera créée si elle n'existe pas
+          var_pages (vnu_index_page).nu_dernr_coln := i;
+          var_pages (vnu_index_page).nu_largr := var_pages (vnu_index_page).nu_largr + var_infor_coln (i).nu_largr_reltv;
+        end if;
+      end loop;
+
+
+      -- Instancier le titre du rapport
+      declare
+        vva_titre_raprt                         varchar2 (1000);
+      begin
+        vva_titre_raprt := apex_application.do_substitutions (vpi_parmt_impr.va_entet_texte);
+        vva_titre_raprt :=
+          sie_07_sql_pkg.rempl_br (vva_titre_raprt,
+                                   ' ');
+
+        vva_titre_raprt :=
+          nvl (replace (vva_titre_raprt,
+                        '#TITLE#',
+                        vva_nom_raprt),
+               vva_nom_raprt);
+        vva_titre_raprt :=
+          sie_07_sql_pkg.rempl_br (vva_titre_raprt,
+                                   chr (10));
+      end;
+
+      begin
+        --compter le nombre d'éléments
+        for i in var_infor_coln.first () .. var_infor_coln.last () loop
+          if var_infor_coln (i).va_indic_expor = 'O' then
+            vnu_elmnt_lign := vnu_elmnt_lign + 1;
+          end if;
+        end loop;
+
+        --initialiser le pdf
+        if vnu_elmnt_lign > 4 then
+          plpdf.plpdf.init ('L');
+          plpdf.plpdf.nopalias;
+          plpdf.plpdf.setdoctitle (formt_nom_fichr (vva_nom_raprt) || '.pdf');
+          plpdf.plpdf.setallmargin (plpdf.plpdf_toolkit.conv (knu_marge_droit,
+                                                              'cm'),
+                                    plpdf.plpdf_toolkit.conv (0.5,
+                                                              'cm'),
+                                    plpdf.plpdf_toolkit.conv (knu_marge_gauch,
+                                                              'cm'));
+          plpdf.plpdf.newpage;
+          plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_entet_polc_faml),
+                                    convr_parmt_poids (vpi_parmt_impr.va_entet_polc_poids,
+                                                       'B'),
+                                    14);
+          plpdf.plpdf.printcell (0,
+                                 10,
+                                 vva_nom_raprt,
+                                 0,
+                                 0,
+                                 'C');
+          plpdf.plpdf.linebreak (20);
+        else
+          plpdf.plpdf.init;
+          plpdf.plpdf.nopalias;
+          plpdf.plpdf.setdoctitle (formt_nom_fichr (vva_nom_raprt) || '.pdf');
+          plpdf.plpdf.setallmargin (plpdf.plpdf_toolkit.conv (knu_marge_droit,
+                                                              'cm'),
+                                    plpdf.plpdf_toolkit.conv (0.5,
+                                                              'cm'),
+                                    plpdf.plpdf_toolkit.conv (knu_marge_gauch,
+                                                              'cm'));
+          plpdf.plpdf.newpage;
+          plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_entet_polc_faml),
+                                    convr_parmt_poids (vpi_parmt_impr.va_entet_polc_poids,
+                                                       'B'),
+                                    14);
+          plpdf.plpdf.printcell (0,
+                                 10,
+                                 vva_nom_raprt,
+                                 0,
+                                 0,
+                                 convr_parmt_align (vpi_parmt_impr.va_entet_align,
+                                                    'C'));
+          plpdf.plpdf.linebreak (20);
+        end if;
+
+        -- Créer les différents set d'entêtes (tableau)
+        vnu_dernr_coln_ajout := 0;
+        vnu_largr_restn := (plpdf.plpdf.getpageavailablewidth);
+        vnu_elmnt_restn := vnu_elmnt_lign;
+
+        for j in var_pages.first () .. var_pages.last () loop
+          for i in vnu_dernr_coln_ajout + 1 .. var_pages (j).nu_dernr_coln loop
+            if var_infor_coln (i).va_indic_expor = 'O' then
+              --Taille selon la largeur du champ
+              case var_infor_coln (i).va_type_largr
+                when 'POUCE' then
+                  var_infor_coln (i).nu_largr_reltv :=
+                    plpdf.plpdf_toolkit.conv (var_infor_coln (i).nu_largr,
+                                              'in');
+                  v_tail_intr_cell (i) := (var_infor_coln (i).nu_largr_reltv / plpdf.plpdf.getpageavailablewidth) * 100;
+                when 'POURC' then
+                  var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr / 100;
+                  v_tail_intr_cell (i) := plpdf.plpdf.getpageavailablewidth * var_infor_coln (i).nu_largr_reltv;
+                when 'POINT' then
+                  var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr;
+                  v_tail_intr_cell (i) := var_infor_coln (i).nu_largr_reltv;
+                else
+                  v_tail_intr_cell (i) := vnu_largr_restn / vnu_elmnt_restn;
+              end case;
+
+              vnu_elmnt_tabl := vnu_elmnt_tabl + 1;
+
+              vva_elmnt := var_infor_coln (i).va_libl;
+
+              v_bordr_cell (vnu_elmnt_tabl) := '1';
+              v_tail_cell (vnu_elmnt_tabl) := v_tail_intr_cell (i);
+
+              if var_infor_coln (i).va_type_largr != 'INDET' then
+                vnu_largr_restn := vnu_largr_restn - v_tail_cell (vnu_elmnt_tabl);
+                vnu_elmnt_restn := vnu_elmnt_lign - vnu_elmnt_tabl;
+              else
+                --Vérifier s'il y d'autre type que 'indeterminé' et calculer la largeur restante
+                for k in i .. var_pages (j).nu_dernr_coln loop
+                  if k != var_pages (j).nu_dernr_coln and var_infor_coln (k).va_type_largr != 'INDET' then
+                    vbo_type_indtr := true;
+                  end if;
+                end loop;
+
+                if vbo_type_indtr then
+                  vnu_largr_restn := vnu_largr_restn - v_tail_cell (vnu_elmnt_tabl);
+                  vnu_elmnt_restn := vnu_elmnt_lign - vnu_elmnt_tabl;
+                end if;
+              end if;
+
+              v_algnm_entet (vnu_elmnt_tabl) :=
+                convr_parmt_align (var_infor_coln (i).va_align_entet,
+                                   'C');
+              v_data_cell (vnu_elmnt_tabl) := vva_elmnt;
+              vbo_type_indtr := false;
+            end if;
+          end loop;
+
+          vnu_dernr_coln_ajout := var_pages (j).nu_dernr_coln;
+        end loop;
+
+        vnu_elmnt_tabl := 0;
+
+        if vpi_parmt_impr.nu_coln_polc_tail is not null then
+          vnu_tail_polc_ent := vpi_parmt_impr.nu_coln_polc_tail;
+        else
+          vnu_tail_polc_ent := 11;
+        end if;
+
+        plpdf.plpdf.setcolor4filling (224,
+                                      224,
+                                      224);
+        plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_coln_polc_faml),
+                                  convr_parmt_poids (vpi_parmt_impr.va_coln_polc_poids,
+                                                     'B'),
+                                  vnu_tail_polc_ent);
+        v_data_row_ent := v_data_cell;
+        plpdf.plpdf.row_print2 (v_data_cell,
+                                v_bordr_cell,
+                                v_tail_cell,
+                                v_algnm_entet,
+                                v_style_cell,
+                                v_lign_max,
+                                10,
+                                1);
+
+        -- Écrire les données
+        vnu_compt_ligne := 0;
+
+        while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
+                                               var_infor_coln) loop
+          vnu_compt_ligne := vnu_compt_ligne + 1;
+
+          --Instancier les couleurs de fond des lignes paires et impaires
+          if mod (vnu_compt_ligne,
+                  2) = 0 then
+            plpdf.plpdf.setcolor4filling (245,
+                                          245,
+                                          245);
+          else
+            plpdf.plpdf.setcolor4filling (255,
+                                          255,
+                                          255);
+          end if;
+
+          --Remplir le tableau
+          for i in var_infor_coln.first () .. var_infor_coln.last () loop
+            if var_infor_coln (i).va_indic_expor = 'O' then
+              vnu_elmnt_tabl := vnu_elmnt_tabl + 1;
+
+              v_bordr_cell (vnu_elmnt_tabl) := '1';
+
+              v_tail_cell (vnu_elmnt_tabl) := v_tail_intr_cell (i);
+
+              --Aligner selon le type de données
+              case var_infor_coln (i).va_type_valr
+                when 'VARCH' then
+                  vva_elmnt := var_infor_coln (i).va_valr_varch;
+
+                  if vva_elmnt is null then
+                    vva_elmnt := '-';
+                  end if;
+                when 'NUMBR' then
+                  if var_infor_coln (i).va_formt is null then
+                    vva_elmnt := '-';
+                  else
+                    vva_elmnt :=
+                      (ltrim (to_char (var_infor_coln (i).nu_valr_numbr,
+                                       var_infor_coln (i).va_formt)));
+                  end if;
+                when 'DATE' then
+                  if to_char (var_infor_coln (i).da_valr_date,
+                              var_infor_coln (i).va_formt)
+                       is null then
+                    vva_elmnt := '-';
+                  else
+                    vva_elmnt :=
+                      (to_char (var_infor_coln (i).da_valr_date,
+                                var_infor_coln (i).va_formt));
+                  end if;
+                when 'TIMST' then
+                  if var_infor_coln (i).va_formt is null then
+                    vva_elmnt := '-';
+                  else
+                    vva_elmnt :=
+                      (to_char (var_infor_coln (i).ts_valr_timst,
+                                var_infor_coln (i).va_formt));
+                  end if;
+                else
+                  vva_elmnt := var_infor_coln (i).va_valr_varch;
+              end case;
+
+              v_algnm_cell (vnu_elmnt_tabl) :=
+                convr_parmt_align (var_infor_coln (i).va_align_coln,
+                                   'C');
+              v_data_cell (vnu_elmnt_tabl) := vva_elmnt;
+            end if;
+          end loop;
+
+          vnu_elmnt_tabl := 0;
+
+          if vpi_parmt_impr.nu_corps_polc_tail is not null then
+            vnu_tail_polc_corps := vpi_parmt_impr.nu_corps_polc_tail;
+          else
+            vnu_tail_polc_corps := 8;
+          end if;
+
+          plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_corps_polc_faml),
+                                    convr_parmt_poids (vpi_parmt_impr.va_corps_polc_poids,
+                                                       null),
+                                    vnu_tail_polc_corps);
+          plpdf.plpdf.row_print2 (v_data_cell,
+                                  v_bordr_cell,
+                                  v_tail_cell,
+                                  v_algnm_cell,
+                                  v_style_cell,
+                                  v_lign_max,
+                                  5,
+                                  1);
+
+          if vpi_parmt_impr.nu_pied_polc_tail is not null then
+            vnu_tail_polc_pied := vpi_parmt_impr.nu_pied_polc_tail;
+          else
+            vnu_tail_polc_pied := 8;
+          end if;
+
+          --pied de page
+          if round ( (plpdf.plpdf.getpageavailableheight - 20),
+                    0) < round (plpdf.plpdf.getcurrenty,
+                                0) then
+            plpdf.plpdf.setcurrenty (round (plpdf.plpdf.getpageavailableheight - 6,
+                                            0));
+            plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_pied_polc_faml),
+                                      convr_parmt_poids (vpi_parmt_impr.va_pied_polc_poids,
+                                                         null),
+                                      vnu_tail_polc_pied);
+
+            if vpi_parmt_impr.va_pied_texte is not null then
+              plpdf.plpdf.printcell (0,
+                                     10,
+                                     apex_application.do_substitutions (vpi_parmt_impr.va_pied_texte),
+                                     0,
+                                     0,
+                                     'C');
+            end if;
+
+            plpdf.plpdf.printcell (0,
+                                   10,
+                                   to_char (plpdf.plpdf.currentpagenumber),
+                                   0,
+                                   0,
+                                   'C');
+
+            --Créer une nouvelle entête de tableau sur une nouvelle page s'il reste des données
+            if sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
+                                                var_infor_coln) = true then
+              plpdf.plpdf.newpage;
+              plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_coln_polc_faml),
+                                        convr_parmt_poids (vpi_parmt_impr.va_coln_polc_poids,
+                                                           null),
+                                        vnu_tail_polc_ent);
+              plpdf.plpdf.setcolor4filling (224,
+                                            224,
+                                            224);
+              plpdf.plpdf.row_print2 (v_data_row_ent,
+                                      v_bordr_cell,
+                                      v_tail_cell,
+                                      v_algnm_entet,
+                                      v_style_cell,
+                                      v_lign_max,
+                                      10,
+                                      1);
+            end if;
+          end if;
+        end loop;
+
+        --pied de page
+        plpdf.plpdf.setcurrenty (round (plpdf.plpdf.getpageavailableheight - 6,
+                                        0));
+        plpdf.plpdf.setprintfont (convr_parmt_faml (vpi_parmt_impr.va_pied_polc_faml),
+                                  convr_parmt_poids (vpi_parmt_impr.va_pied_polc_poids,
+                                                     null),
+                                  vnu_tail_polc_pied);
+
+        if vpi_parmt_impr.va_pied_texte is not null then
+          plpdf.plpdf.printcell (0,
+                                 10,
+                                 apex_application.do_substitutions (vpi_parmt_impr.va_pied_texte),
+                                 0,
+                                 0,
+                                 'C');
+        end if;
+
+        plpdf.plpdf.printcell (0,
+                               10,
+                               to_char (plpdf.plpdf.currentpagenumber),
+                               0,
+                               0,
+                               'C');
+
+        --Envoyer les données au fichier blob
+        plpdf.plpdf.senddoc (v_blob);
+      end;
+
+      --téléverser pdf
+      owa_util.mime_header ('application/pdf',
+                            false);
+      htp.p ('Content-length: ' || dbms_lob.getlength (v_blob));
+      htp.p ('Content-Disposition: attachment; filename="' || formt_nom_fichr (vva_nom_raprt) || '.pdf');
+      owa_util.http_header_close ();
+      wpg_docload.download_file (v_blob);
+    else
+      null;
+      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
+      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
+    end if;
+
+    -- Fermer le curseur
+    sie_07_sql_pkg.fermr_selct (vnu_cursr);
+
+    -- Arrêter tous les autres traitements d'APEX
+    sie_07_util_pkg.aret_trait_page_apex;
+  end;
+
+  procedure afich_csv (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
+                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID'),
+                       pva_seprt_coln in varchar2 default kva_seprt_coln) is
+    vbo_dirct                               boolean default false;
+    vnu_ref_ir                              number;
+    vva_nom_raprt                           varchar2 (200);
+    vva_mesg_aucun_don                      varchar2 (32767);
+    vnu_largr_deft                          number;
+    --vnu_unite_mesr_largr_deft number(10);
+
+    vva_selct                               varchar2 (32767);
+    vnu_cursr                               number;
+    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
+
+    vcl_corps                               clob;
+    vva_seprt_coln                          varchar2 (1);
+
+    vnu_compt_ligne                         number;
+    vnu_rpts_id                             number;
+
+    procedure ajouter (pva_pre in varchar2,
+                       pva_chaine in varchar2) is
+    begin
+      if pva_pre is not null
+      or pva_chaine is not null then
+        if vbo_dirct then
+          --htp.putraw (utl_raw.cast_to_raw(pva_pre || pva_chaine));
+          htp.prn (pva_pre || pva_chaine);
+        --dbms_output.put (pva_pre || pva_chaine);
+        else
+          dbms_lob.writeappend (vcl_corps,
+                                length (pva_pre || pva_chaine),
+                                pva_pre || pva_chaine);
+        end if;
+      end if;
+    end;
+
+    procedure ajouter_chaine (pva_pre in varchar2,
+                              pva_chaine in varchar2) is
+    begin
+      ajouter (pva_pre,
+                  '"'
+               || replace (pva_chaine,
+                           '"',
+                           '""')
+               || '"');
+    end;
+  begin
+    begin
+      -- Chercher le rapport interactif sur la page
+      select   pir.libl_regn,
+               air.no_data_found_message,
+               pir.seqnc,
+               pir.largr_deft
+        --pir.unite_mesr_largr_deft
+        into   vva_nom_raprt,
+               vva_mesg_aucun_don,
+               vnu_ref_ir,
+               vnu_largr_deft
+        --vnu_unite_mesr_largr_deft
+        from   vd_sie_13_page pag,
+               vd_sie_13_page_ir pir,
+               apex_ir air
+       where   pag.ref_aplic = sie_11_aplic_pkg.obten_aplic_numr_apex (pnu_aplic)
+           and pag.numr_apex = pnu_page
+           and pir.ref_page = pag.seqnc
+           and air.id = pir.id_apex;
+
+      -- Récupérer le select
+      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
+      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
+    exception
+      when no_data_found then
+        vva_selct := null;
+    end;
+
+    if vva_selct is null then
+      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
+                                               pva_code_prodt             => 'AFW');
+    end if;
+
+    vnu_cursr :=
+      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
+                                  vnu_rpts_id,
+                                  vva_selct,
+                                  var_infor_coln,
+                                  chr (10));
+
+    declare
+      vbo_aucun_afich                         boolean default true;
+    begin
+      if var_infor_coln.first () is not null then
+        for i in var_infor_coln.first () .. var_infor_coln.last () loop
+          if var_infor_coln (i).va_indic_expor = 'O' then
+            vbo_aucun_afich := false;
+            exit;
+          end if;
+        end loop;
+      end if;
+
+      if vbo_aucun_afich then
+        var_infor_coln.delete ();
+      end if;
+    end;
+
+    if var_infor_coln.first () is not null then
+      if vbo_dirct then
+        owa_util.mime_header ('text/csv',
+                              false);
+        htp.p ('Content-Disposition: attachment; filename="' || formt_nom_fichr (vva_nom_raprt) || '.csv' || '"');
+        --dbms_output.put_line ('HTTP/1.x 200 OK');
+        --dbms_output.put_line ('Content-Type: text/csv; charset=UTF-8');
+        --dbms_output.put_line ('Content-Disposition: attachment; filename="' || formt_nom_fichr(vva_nom_raprt) || '.csv' || '"');
+        owa_util.http_header_close;
+      --dbms_output.put_line (null);
+      else
+        dbms_lob.createtemporary (vcl_corps,
+                                  true);
+      end if;
+
+      -- Créer la ligne d'entête
+      vva_seprt_coln := null;
+
+      for i in var_infor_coln.first () .. var_infor_coln.last () loop
+        if var_infor_coln (i).va_indic_expor = 'O' then
+          ajouter_chaine (vva_seprt_coln,
+                          var_infor_coln (i).va_libl);
+          vva_seprt_coln := pva_seprt_coln;
+        end if;
+      end loop;
+
+      -- Saut de ligne
+      ajouter (null,
+               chr (10));
+
+      -- Écrire les données
+      vnu_compt_ligne := 0;
+
+      while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
+                                             var_infor_coln) loop
+        vnu_compt_ligne := vnu_compt_ligne + 1;
+
+        vva_seprt_coln := null;
+
+        for i in var_infor_coln.first () .. var_infor_coln.last () loop
+          if var_infor_coln (i).va_indic_expor = 'O' then
+            case var_infor_coln (i).va_type_valr
+              when 'VARCH' then
+                ajouter_chaine (vva_seprt_coln,
+                                var_infor_coln (i).va_valr_varch);
+              when 'NUMBR' then
+                ajouter_chaine (vva_seprt_coln,
+                                var_infor_coln (i).nu_valr_numbr);
+              when 'DATE' then
+                ajouter_chaine (vva_seprt_coln,
+                                to_char (var_infor_coln (i).da_valr_date,
+                                         'YYYY-MM-DD'));
+              when 'TIMST' then
+                ajouter_chaine (vva_seprt_coln,
+                                var_infor_coln (i).ts_valr_timst);
+              else
+                ajouter_chaine (vva_seprt_coln,
+                                var_infor_coln (i).va_valr_varch);
+            end case;
+
+            vva_seprt_coln := pva_seprt_coln;
+          end if;
+        end loop;
+
+        -- Saut de ligne
+        ajouter (null,
+                 chr (10));
+      end loop;
+
+      if vnu_compt_ligne = 0 then
+        ajouter_chaine (null,
+                        vva_mesg_aucun_don);
+        ajouter (null,
+                 chr (10));
+      end if;
+
+      if vbo_dirct then
+        null;
+      else
+        sie_11_prodt_pkg.telvs_fichr (vcl_corps,
+                                      formt_nom_fichr (vva_nom_raprt) || '.csv',
+                                      true,
+                                      'texte/csv, charset=UTF-8');
+
+        dbms_lob.freetemporary (vcl_corps);
+      end if;
+    else
+      null;
+      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
+      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
+    end if;
+
+    -- Fermer le curseur
+    sie_07_sql_pkg.fermr_selct (vnu_cursr);
+
+    -- Arrêter tous les autres traitements d'APEX
+    sie_07_util_pkg.aret_trait_page_apex;
+  /*exception
+  when others then
+    htp.p (sqlerrm);*/
+  end;
+end;
+/
+
+Prompt Package Body SIE_25_SPX_EXPOR_IR_PKG;
+/* Formatted on 19/12/2013 11:24:56 AM (QP5 v5.185.11230.41888) */
+create or replace package body "SIE_25_SPX_EXPOR_IR_PKG" as
+  knu_marge_gauch                constant number default 0.5;
+  knu_marge_droit                constant number default 0.5;
+
+  type typ_rec_parmt_impre is record
+  (
+    va_indic_trouv                          varchar2 (1) default 'N',
+    va_contn_disps                          apex_regn.prn_content_disposition%type default 'ATTACHMENT',
+    va_formt_papr                           apex_regn.prn_paper_size%type default 'LETTER',
+    va_orien_papr                           apex_regn.prn_orientation%type default 'VERTICAL',
+    va_unite_mesr                           apex_regn.prn_units%type default 'INCHES',
+    nu_largr_papr                           apex_regn.prn_width%type default 8.5,
+    nu_hautr_papr                           apex_regn.prn_height%type default 11,
+    nu_bordr_tail                           apex_regn.prn_border_width%type default 0.5,
+    va_bordr_coulr                          apex_regn.prn_border_color%type,
+    va_entet_polc_faml                      apex_regn.prn_page_header_font_family%type default 'Helvetica',
+    va_entet_polc_poids                     apex_regn.prn_page_header_font_weight%type default 'normal',
+    nu_entet_polc_tail                      apex_regn.prn_page_header_font_size%type default 12,
+    va_entet_polc_coulr                     apex_regn.prn_page_header_font_color%type,
+    va_entet_align                          apex_regn.prn_page_header_alignment%type default 'LEFT',
+    va_entet_texte                          apex_regn.prn_page_header%type,
+    va_coln_polc_faml                       apex_regn.prn_header_font_family%type default 'Helvetica',
+    va_coln_polc_poids                      apex_regn.prn_header_font_weight%type default 'bold',
+    nu_coln_polc_tail                       apex_regn.prn_header_font_size%type default 8,
+    va_coln_polc_coulr                      apex_regn.prn_header_font_color%type,
+    va_coln_fond_coulr                      apex_regn.prn_header_bg_color%type default '#e0e0e0',
+    va_corps_polc_faml                      apex_regn.prn_body_font_family%type default 'Helvetica',
+    va_corps_polc_poids                     apex_regn.prn_body_font_weight%type default 'normal',
+    nu_corps_polc_tail                      apex_regn.prn_body_font_size%type default 8,
+    va_corps_polc_coulr                     apex_regn.prn_body_font_color%type,
+    va_corps_fond_coulr                     apex_regn.prn_body_bg_color%type default '#f5f5f5',
+    va_pied_polc_faml                       apex_regn.prn_page_footer_font_family%type default 'Helvetica',
+    va_pied_polc_poids                      apex_regn.prn_page_footer_font_weight%type default 'normal',
+    nu_pied_polc_tail                       apex_regn.prn_page_footer_font_size%type default 8,
+    va_pied_polc_coulr                      apex_regn.prn_page_footer_font_color%type,
+    va_pied_align                           apex_regn.prn_page_footer_alignment%type default 'LEFT',
+    va_pied_texte                           apex_regn.prn_page_footer%type
+  );
+
+  type typ_rec_page is record
+  (
+    nu_largr                                number default 0,
+    nu_dernr_coln                           binary_integer default 0
+  );
+
+  type typ_arr_page is table of typ_rec_page
+                         index by binary_integer;
+
+  gar_tail_papr                           sie_07_sql_pkg.typ_arr_ndx_vc30;
+
+  function formt_nom_fichr (pva_nom in varchar2)
+    return varchar2 is
+    vva_nom                                 varchar2 (1000) default lower (pva_nom);
+  begin
+    vva_nom :=
+      sie_07_sql_pkg.rempl_br (vva_nom,
+                               '_');
+
+    return substr (translate (vva_nom,
+                              'çàâéèêöùû /\?',
+                              'caaeeeouu____'),
+                   1,
+                   120);
+  end;
+
+  function formt_date (pda_date in date default sysdate)
+    return varchar2 is
+  begin
+    return    'Le '
+           || trim (to_char (pda_date,
+                             'day'))
+           || ' '
+           || extract (day from pda_date)
+           || ' '
+           || trim (to_char (pda_date,
+                             'month'))
+           || ' '
+           || extract (year from pda_date);
+  end;
+
+  procedure alimn_tail_papr (ppi_parmt in typ_rec_parmt_impre) is
+    vnu_factr_conv                          number;
+  begin
+    gar_tail_papr ('LETTER-L') := 8.5;
+    gar_tail_papr ('LETTER-H') := 11;
+
+    gar_tail_papr ('LEGAL-L') := 8.5;
+    gar_tail_papr ('LEGAL-H') := 14;
+
+    gar_tail_papr ('A4-L') := 8.26;
+    gar_tail_papr ('A4-H') := 11.69;
+
+    gar_tail_papr ('A3-L') := 11.69;
+    gar_tail_papr ('A3-H') := 16.53;
+
+    gar_tail_papr ('TABLOID-L') := 17;
+    gar_tail_papr ('TABLOID-H') := 11;
+
+    if nvl (ppi_parmt.nu_largr_papr, 0) = 0
+    or nvl (ppi_parmt.nu_hautr_papr, 0) = 0 then
+      gar_tail_papr ('CUSTOM-L') := gar_tail_papr ('LETTER-L');
+      gar_tail_papr ('CUSTOM-H') := gar_tail_papr ('LETTER-H');
+    else
+      vnu_factr_conv :=
+        case upper (nvl (ppi_parmt.va_unite_mesr, 'INCHES'))
+          when 'POINTS' then 72
+          when 'MILLIMETERS' then 25.4
+          when 'CENTIMETERS' then 2.54
+          else 1                                                                                        --Défaut: INCHES
+        end;
+      gar_tail_papr ('CUSTOM-L') :=
+        round (ppi_parmt.nu_largr_papr / vnu_factr_conv,
+               2);
+      gar_tail_papr ('CUSTOM-H') :=
+        round (ppi_parmt.nu_hautr_papr / vnu_factr_conv,
+               2);
+    end if;
+  end;
+
+  function convr_parmt_largr_papr (ppi_parmt in typ_rec_parmt_impre)
+    return number is
+    vva_axe                                 varchar2 (1);
+    vva_index                               varchar2 (30);
+  begin
+    if nvl (ppi_parmt.va_orien_papr, 'VERTICAL') = 'VERTICAL' then
+      vva_axe := 'L';
+    else
+      vva_axe := 'H';
+    end if;
+
+    vva_index := ppi_parmt.va_formt_papr || '-' || vva_axe;
+
+    if not gar_tail_papr.exists (vva_index) then
+      vva_index := 'LETTER-' || vva_axe;
+    end if;
+
+    return gar_tail_papr (vva_index);
+  end;
+
+  function convr_parmt_hautr_papr (ppi_parmt in typ_rec_parmt_impre)
+    return number is
+    vva_axe                                 varchar2 (1);
+    vva_index                               varchar2 (30);
+  begin
+    if nvl (ppi_parmt.va_orien_papr, 'VERTICAL') = 'VERTICAL' then
+      vva_axe := 'H';
+    else
+      vva_axe := 'L';
+    end if;
+
+    vva_index := ppi_parmt.va_formt_papr || '-' || vva_axe;
+
+    if not gar_tail_papr.exists (vva_index) then
+      vva_index := 'LETTER-' || vva_axe;
+    end if;
+
+    return gar_tail_papr (vva_index);
+  end;
+
+  function convr_parmt_align (pva_parmt in varchar2,
+                              pva_deft in varchar2)
+    return varchar2 is
+  begin
+    return case upper (pva_parmt)
+             when 'LEFT' then 'gauche'
+             when 'RIGHT' then 'droite'
+             when 'CENTER' then 'centre'
+             else pva_deft
+           end;
+  end;
+
+  function convr_parmt_faml (pva_parmt in varchar2)
+    return varchar2 is
+  begin
+    return case lower (pva_parmt)
+             when 'times' then 'times new roman'
+             when 'courier' then 'courier'
+             else 'helvetica'                                                                                  -- Défaut
+           end;
+  end;
+
+  function convr_parmt_poids (pva_parmt in varchar2,
+                              pva_deft in varchar2)
+    return varchar2 is
+  begin
+    return case lower (pva_parmt) when 'bold' then 'gras' when 'normal' then 'normal' else pva_deft end;
+  end;
+
+  procedure ecrir_feuil_style (ppi_parmt in typ_rec_parmt_impre) is
+  begin
+    spx_xml_pkg.creer_sectn_feuil_style ();
+
+    -- Marges gauches et droites sont communes
+    spx_xml_pkg.creer_sectn_style ();
+    spx_xml_pkg.creer_elemn_cible_style ('entete');
+    spx_xml_pkg.creer_elemn_cible_style ('pied-page');
+    spx_xml_pkg.creer_elemn_cible_style ('section');
+    spx_xml_pkg.creer_elemn_atrib_numrq ('marge-gauche',
+                                         knu_marge_gauch);
+    spx_xml_pkg.creer_elemn_atrib_numrq ('marge-droite',
+                                         knu_marge_droit);
+    spx_xml_pkg.fermr_sectn ('style');
+
+    spx_xml_pkg.creer_sectn_style ('entete');
+    spx_xml_pkg.creer_elemn_atrib_numrq ('marge-haut',
+                                         0.5);
+    spx_xml_pkg.creer_elemn_atrib ('police-famille',
+                                   convr_parmt_faml (ppi_parmt.va_entet_polc_faml));
+    spx_xml_pkg.creer_elemn_atrib ('police-poids',
+                                   convr_parmt_poids (ppi_parmt.va_entet_polc_poids,
+                                                      'gras'));
+    spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
+                                         nvl (ppi_parmt.nu_entet_polc_tail, 10));
+
+    if ppi_parmt.va_entet_polc_coulr like '#%' then
+      spx_xml_pkg.creer_elemn_atrib ('police-couleur',
+                                     ppi_parmt.va_entet_polc_coulr);
+    end if;
+
+    spx_xml_pkg.creer_elemn_atrib ('alignement-h',
+                                   convr_parmt_align (ppi_parmt.va_entet_align,
+                                                      'gauche'));
+    spx_xml_pkg.fermr_sectn ('style');
+
+    begin
+      spx_xml_pkg.creer_sectn_style ('pied-page');
+
+      begin
+        spx_xml_pkg.creer_sectn_style ('texte',
+                                       'pied-texte');
+        spx_xml_pkg.creer_elemn_atrib_numrq ('espacement-bas',
+                                             0.04);
+        spx_xml_pkg.fermr_sectn ('style');
+      end;
+
+      begin
+        spx_xml_pkg.creer_sectn_style ('tableau');
+        spx_xml_pkg.creer_elemn_atrib_numrq ('bordure-haut-taille',
+                                             1);
+
+        --spx_xml_pkg.creer_elemn_atrib_rgb ('bordure-haut-couleur', 224, 224, 224);
+        if ppi_parmt.va_pied_polc_coulr like '#%' then
+          spx_xml_pkg.creer_elemn_atrib ('bordure-haut-couleur',
+                                         ppi_parmt.va_pied_polc_coulr);
+        end if;
+
+        spx_xml_pkg.fermr_sectn ('style');
+      end;
+
+      spx_xml_pkg.creer_elemn_atrib_numrq ('marge-bas',
+                                           0.5);
+
+      spx_xml_pkg.creer_elemn_atrib ('police-famille',
+                                     convr_parmt_faml (ppi_parmt.va_pied_polc_faml));
+      spx_xml_pkg.creer_elemn_atrib ('police-poids',
+                                     convr_parmt_poids (ppi_parmt.va_pied_polc_poids,
+                                                        'normal'));
+      spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
+                                           nvl (ppi_parmt.nu_pied_polc_tail, 8));
+
+      if ppi_parmt.va_pied_polc_coulr like '#%' then
+        spx_xml_pkg.creer_elemn_atrib ('police-couleur',
+                                       ppi_parmt.va_pied_polc_coulr);
+      end if;
+
+      spx_xml_pkg.creer_elemn_atrib ('alignement-h',
+                                     convr_parmt_align (ppi_parmt.va_pied_align,
+                                                        'centre'));
+
+      begin
+        spx_xml_pkg.creer_sectn_style (null,
+                                       'usager');
+        spx_xml_pkg.creer_elemn_atrib ('alignement-h',
+                                       'gauche');
+        spx_xml_pkg.fermr_sectn ('style');
+
+        spx_xml_pkg.creer_sectn_style (null,
+                                       'date');
+        spx_xml_pkg.creer_elemn_atrib ('alignement-h',
+                                       'centre');
+        spx_xml_pkg.fermr_sectn ('style');
+
+        spx_xml_pkg.creer_sectn_style (null,
+                                       'page-x-de-y');
+        spx_xml_pkg.creer_elemn_atrib ('alignement-h',
+                                       'droite');
+        spx_xml_pkg.fermr_sectn ('style');
+      end;
+
+      spx_xml_pkg.fermr_sectn ('style');
+    end;
+
+    begin
+      spx_xml_pkg.creer_sectn_style ('section');
+      spx_xml_pkg.creer_elemn_atrib_numrq ('largeur',
+                                           convr_parmt_largr_papr (ppi_parmt));
+      spx_xml_pkg.creer_elemn_atrib_numrq ('hauteur',
+                                           convr_parmt_hautr_papr (ppi_parmt));
+      spx_xml_pkg.creer_elemn_atrib_numrq ('marge-haut',
+                                           0.125);
+      spx_xml_pkg.creer_elemn_atrib_numrq ('marge-bas',
+                                           0.125);
+
+      spx_xml_pkg.creer_elemn_atrib ('police-famille',
+                                     convr_parmt_faml (ppi_parmt.va_corps_polc_faml));
+      spx_xml_pkg.creer_elemn_atrib ('police-poids',
+                                     convr_parmt_poids (ppi_parmt.va_corps_polc_poids,
+                                                        'normal'));
+      spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
+                                           nvl (ppi_parmt.nu_corps_polc_tail, 8));
+
+      if ppi_parmt.va_corps_polc_coulr like '#%' then
+        spx_xml_pkg.creer_elemn_atrib ('police-couleur',
+                                       ppi_parmt.va_corps_polc_coulr);
+      end if;
+
+      begin
+        spx_xml_pkg.creer_sectn_style ('ligne',
+                                       'pair');
+
+        spx_xml_pkg.creer_sectn_style ('cellule');
+
+        if ppi_parmt.va_corps_fond_coulr like '#%' then
+          spx_xml_pkg.creer_elemn_atrib ('fond-couleur',
+                                         ppi_parmt.va_corps_fond_coulr);
+        else
+          spx_xml_pkg.creer_elemn_atrib_rgb ('fond-couleur',
+                                             245,
+                                             245,
+                                             245);
+        end if;
+
+        spx_xml_pkg.fermr_sectn ('style');
+
+        spx_xml_pkg.fermr_sectn ('style');
+      end;
+
+      begin
+        spx_xml_pkg.creer_sectn_style ('ligne',
+                                       'impair');
+        -- Aucun style particulier pour les lignes impaires
+        spx_xml_pkg.fermr_sectn ('style');
+      end;
+
+      begin
+        spx_xml_pkg.creer_sectn_style ('entete-tableau');
+        spx_xml_pkg.creer_elemn_atrib ('police-famille',
+                                       convr_parmt_faml (ppi_parmt.va_coln_polc_faml));
+        spx_xml_pkg.creer_elemn_atrib ('police-poids',
+                                       convr_parmt_poids (ppi_parmt.va_coln_polc_poids,
+                                                          'gras'));
+        spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
+                                             nvl (ppi_parmt.nu_coln_polc_tail, 8));
+
+        if ppi_parmt.va_coln_polc_coulr like '#%' then
+          spx_xml_pkg.creer_elemn_atrib ('police-couleur',
+                                         ppi_parmt.va_coln_polc_coulr);
+        end if;
+
+        if ppi_parmt.va_coln_fond_coulr like '#%' then
+          spx_xml_pkg.creer_elemn_atrib ('fond-couleur',
+                                         ppi_parmt.va_coln_fond_coulr);
+        else
+          spx_xml_pkg.creer_elemn_atrib_rgb ('fond-couleur',
+                                             245,
+                                             245,
+                                             245);
+        end if;
+
+        spx_xml_pkg.fermr_sectn ('style');
+
+        spx_xml_pkg.creer_sectn_style ('colonne');
+
+        spx_xml_pkg.creer_elemn_atrib_rgb ('bordure-couleur',
+                                           20,
+                                           20,
+                                           20);
+
+        spx_xml_pkg.creer_elemn_atrib_numrq ('bordure-taille',
+                                             0.01);
+        spx_xml_pkg.fermr_sectn ('style');
+      end;
+
+      spx_xml_pkg.fermr_sectn ('style');
+    end;
+
+    spx_xml_pkg.creer_sectn_style (null,
+                                   'gauche');
+    spx_xml_pkg.creer_elemn_atrib ('alignement-h',
+                                   'gauche');
+    spx_xml_pkg.fermr_sectn ('style');
+
+    spx_xml_pkg.creer_sectn_style (null,
+                                   'centre');
+    spx_xml_pkg.creer_elemn_atrib ('alignement-h',
+                                   'centre');
+    spx_xml_pkg.fermr_sectn ('style');
+
+    spx_xml_pkg.creer_sectn_style (null,
+                                   'droite');
+    spx_xml_pkg.creer_elemn_atrib ('alignement-h',
+                                   'droite');
+    spx_xml_pkg.fermr_sectn ('style');
+
+    spx_xml_pkg.creer_sectn_style (null,
+                                   'gras');
+    spx_xml_pkg.creer_elemn_atrib ('police-poids',
+                                   'gras');
+    spx_xml_pkg.fermr_sectn ('style');
+
+    --Style utilisé pour aligner vert. texte
+    spx_xml_pkg.creer_sectn_style (null,
+                                   'align_vertc');
+    spx_xml_pkg.creer_elemn_atrib_numrq ('police-taille',
+                                         1);
+    spx_xml_pkg.fermr_sectn ('style');
+
+    spx_xml_pkg.fermr_sectn ('feuil_style');
+  end;
+
+  function obten_parmt_impre_raprt (pnu_ref_ir in number)
+    return typ_rec_parmt_impre is
+    vpi_deft                                typ_rec_parmt_impre;
+    vpi_parmt_impr                          typ_rec_parmt_impre;
+  begin
+    begin
+      select   'O',
+               reg.prn_content_disposition,
+               reg.prn_paper_size,
+               reg.prn_orientation,
+               reg.prn_units,
+               reg.prn_width,
+               reg.prn_height,
+               reg.prn_border_width,
+               reg.prn_border_color,
+               reg.prn_page_header_font_family,
+               reg.prn_page_header_font_weight,
+               reg.prn_page_header_font_size,
+               reg.prn_page_header_font_color,
+               reg.prn_page_header_alignment,
+               reg.prn_page_header,
+               reg.prn_header_font_family,
+               reg.prn_header_font_weight,
+               reg.prn_header_font_size,
+               reg.prn_header_font_color,
+               reg.prn_header_bg_color,
+               reg.prn_body_font_family,
+               reg.prn_body_font_weight,
+               reg.prn_body_font_size,
+               reg.prn_body_font_color,
+               reg.prn_body_bg_color,
+               reg.prn_page_footer_font_family,
+               reg.prn_page_footer_font_weight,
+               reg.prn_page_footer_font_size,
+               reg.prn_page_footer_font_color,
+               reg.prn_page_footer_alignment,
+               reg.prn_page_footer
+        into   vpi_parmt_impr
+        from   vd_sie_13_page_ir pir,
+               apex_ir air,
+               apex_regn reg
+       where   pir.seqnc = pnu_ref_ir and air.id = pir.id_apex and reg.id = air.region_id;
+    exception
+      when no_data_found then
+        vpi_parmt_impr.va_indic_trouv := 'N';
+    end;
+
+    alimn_tail_papr (vpi_parmt_impr);
+
+    return vpi_parmt_impr;
+  end;
+
+  function obten_largr_dispo_page (ppi_parmt in typ_rec_parmt_impre)
+    return number is
+    vnu_largr_page                          number;
+  begin
+    vnu_largr_page := convr_parmt_largr_papr (ppi_parmt);
+
+    return vnu_largr_page - knu_marge_gauch - knu_marge_droit;
+  end;
+
+  procedure afich_pdf (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
+                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID')) is
+    vpi_parmt_impr                          typ_rec_parmt_impre;
+    vnu_ref_ir                              number;
+    vva_nom_raprt                           varchar2 (200);
+    vva_mesg_aucun_don                      varchar2 (32767);
+    vnu_largr_deft                          number;
+    --vnu_unite_mesr_largr_deft number(10);
+
+    vva_selct                               varchar2 (32767);
+    vnu_cursr                               number;
+    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
+    vnu_largr_dispo                         number;
+    vnu_compt_ligne                         number;
+    var_pages                               typ_arr_page;
+    vnu_index_page                          binary_integer;
+    vnu_somme_largr                         number;
+    vnu_dernr_coln_ajout                    number;
+    vnu_rpts_id                             number;
+  begin
+    begin
+      -- Chercher le rapport interactif sur la page
+      select                                                                                           /*pir.libl_regn*/
+             ( select   plug_name
+                 from   apex_regn reg
+                where   reg.id = air.region_id),
+               air.no_data_found_message,
+               pir.seqnc,
+               pir.largr_deft
+        --pir.unite_mesr_largr_deft
+        into   vva_nom_raprt,
+               vva_mesg_aucun_don,
+               vnu_ref_ir,
+               vnu_largr_deft
+        --vnu_unite_mesr_largr_deft
+        from   vd_sie_13_page pag,
+               vd_sie_13_page_ir pir,
+               apex_ir air
+       where   pag.ref_aplic = (select   pro.seqnc
+                                  from   vd_sie_11_aplic pro
+                                 where   pro.numr_aplic_apex = pnu_aplic)
+           and pag.numr_apex = pnu_page
+           and pir.ref_page = pag.seqnc
+           and air.id = pir.id_apex;
+
+      -- Récupérer le select
+      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
+      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
+    exception
+      when no_data_found then
+        vva_selct := null;
+    end;
+
+    vva_nom_raprt := aa.do_substitutions (vva_nom_raprt);
+
+    if vva_selct is null then
+      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
+                                               pva_code_prodt             => 'SDP');
+    end if;
+
+    vnu_largr_deft := nvl (vnu_largr_deft, 0);
+
+    if vnu_largr_deft <= 0 then
+      vnu_largr_deft := 1.5;
+    end if;
+
+    -- Récupérer les paramètres du raport
+    vpi_parmt_impr := obten_parmt_impre_raprt (vnu_ref_ir);
+
+    vnu_cursr :=
+      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
+                                  vnu_rpts_id,
+                                  vva_selct,
+                                  var_infor_coln,
+                                  '\n');
+
+    declare
+      vbo_aucun_afich                         boolean default true;
+    begin
+      if var_infor_coln.first () is not null then
+        for i in var_infor_coln.first () .. var_infor_coln.last () loop
+          if var_infor_coln (i).va_indic_expor = 'O' then
+            vbo_aucun_afich := false;
+            exit;
+          end if;
+        end loop;
+      end if;
+
+      if vbo_aucun_afich then
+        var_infor_coln.delete ();
+      end if;
+    end;
+
+    if var_infor_coln.first () is not null then
+      vnu_largr_dispo := obten_largr_dispo_page (vpi_parmt_impr);
+
+      -- Transformer toutes les valeurs en pouces
+      vnu_index_page := 1;
+      -- Créer la premiere page
+      var_pages (vnu_index_page).nu_dernr_coln := 0;
+
+      for i in var_infor_coln.first () .. var_infor_coln.last () loop
+        case var_infor_coln (i).va_type_largr
+          when 'POUCE' then
+            var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr;
+          when 'POURC' then
+            var_infor_coln (i).nu_largr_reltv := (var_infor_coln (i).nu_largr / 100) * vnu_largr_dispo;
+          when 'RELTF' then
+            var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr * vnu_largr_deft;
+          when 'POINT' then
+            var_infor_coln (i).nu_largr_reltv := var_infor_coln (i).nu_largr / 72;
+          else
+            var_infor_coln (i).nu_largr_reltv := vnu_largr_deft;
+        end case;
+
+        -- Assurer une largeur minimale
+        if nvl (var_infor_coln (i).nu_largr_reltv, 0) < 0.25 then
+          var_infor_coln (i).nu_largr_reltv := 0.25;
+        end if;
+
+        -- Assurer une largeur maximale
+        if nvl (var_infor_coln (i).nu_largr_reltv, 0) > vnu_largr_dispo then
+          var_infor_coln (i).nu_largr_reltv := vnu_largr_dispo;
+        end if;
+
+        if var_infor_coln (i).va_indic_expor = 'O' then
+          -- Changer de page si ca ne rentre pas
+          if var_pages (vnu_index_page).nu_largr + var_infor_coln (i).nu_largr_reltv > vnu_largr_dispo then
+            vnu_index_page := vnu_index_page + 1;
+          end if;
+
+          -- La page sera créée si elle n'existe pas
+          var_pages (vnu_index_page).nu_dernr_coln := i;
+          var_pages (vnu_index_page).nu_largr := var_pages (vnu_index_page).nu_largr + var_infor_coln (i).nu_largr_reltv;
+        end if;
+      end loop;
+
+      spx_util_pkg.debtr_docmn (formt_nom_fichr (vva_nom_raprt) || '.pdf',
+                                true);
+
+      -- Écrire la feuille de style
+      ecrir_feuil_style (vpi_parmt_impr);
+
+      -- Écrire l'entête
+      declare
+        vva_titre_raprt                         varchar2 (1000);
+      begin
+        vva_titre_raprt := apex_application.do_substitutions (vpi_parmt_impr.va_entet_texte);
+        vva_titre_raprt :=
+          sie_07_sql_pkg.rempl_br (vva_titre_raprt,
+                                   ' ');
+
+        vva_titre_raprt :=
+          nvl (replace (vva_titre_raprt,
+                        '#TITLE#',
+                        vva_nom_raprt),
+               vva_nom_raprt);
+        vva_titre_raprt :=
+          sie_07_sql_pkg.rempl_br (vva_titre_raprt,
+                                   chr (10));
+
+        spx_xml_pkg.creer_sectn_entet ();
+
+        if gbl_logo is not null then
+          declare
+            vnu_largr_table                         number;
+          begin
+            if nvl (gnu_largr_logo, 0) = 0 then
+              vnu_largr_table := 100;
+            else
+              vnu_largr_table :=
+                (gnu_largr_logo * 100) / (convr_parmt_largr_papr (vpi_parmt_impr) - knu_marge_gauch - knu_marge_droit);
+            end if;
+
+            spx_xml_pkg.creer_sectn_tabl ();
+            spx_xml_pkg.creer_sectn_entet_tabl (false);
+            spx_xml_pkg.creer_elemn_coln_tabl (null,
+                                               round (vnu_largr_table));
+            spx_xml_pkg.creer_elemn_coln_tabl (null,
+                                               5);
+            spx_xml_pkg.creer_elemn_coln_tabl (null,
+                                               95 - round (vnu_largr_table));
+            spx_xml_pkg.fermr_sectn ('entet_tabl');
+            spx_xml_pkg.creer_sectn_ligne ();
+            spx_xml_pkg.creer_sectn_cell ();
+            spx_xml_pkg.creer_elemn_image ('logo',
+                                           gbl_logo);
+            spx_xml_pkg.fermr_sectn ('cell');
+            spx_xml_pkg.creer_sectn_cell ();
+            spx_xml_pkg.fermr_sectn ('cell');
+            spx_xml_pkg.creer_sectn_cell ();
+            spx_xml_pkg.creer_elemn_ligne_texte (vva_titre_raprt);
+            spx_xml_pkg.fermr_sectn ('cell');
+            spx_xml_pkg.fermr_sectn ('ligne');
+            spx_xml_pkg.fermr_sectn ('tabl');
+          end;
+        else
+          spx_xml_pkg.creer_elemn_ligne_texte (vva_titre_raprt);
+        end if;
+
+        spx_xml_pkg.fermr_sectn ('entet');
+      end;
+
+      -- Écrire le pied de page
+      begin
+        spx_xml_pkg.creer_sectn_pied_page ();
+
+        if vpi_parmt_impr.va_pied_texte is not null then
+          spx_xml_pkg.creer_elemn_ligne_texte (apex_application.do_substitutions (vpi_parmt_impr.va_pied_texte),
+                                               'pied-texte');
+        end if;
+
+        begin
+          spx_xml_pkg.creer_sectn_tabl ();
+
+          begin
+            spx_xml_pkg.creer_sectn_entet_tabl (false);
+            spx_xml_pkg.creer_elemn_coln_tabl (null,
+                                               1,
+                                               'usager');
+            spx_xml_pkg.creer_elemn_coln_tabl (null,
+                                               1,
+                                               'date');
+            spx_xml_pkg.creer_elemn_coln_tabl (null,
+                                               1,
+                                               'page-x-de-y');
+            spx_xml_pkg.fermr_sectn ('entet_tabl');
+          end;
+
+          begin
+            spx_xml_pkg.creer_sectn_ligne ();
+
+            spx_xml_pkg.creer_sectn_cell ();
+            spx_xml_pkg.creer_elemn_ligne_texte (
+              'Demandé par: ' || sie_12_utils_pkg.obten_nom_formt_de_code_utils (sie_07_util_pkg.v ('APP_USER'))
+            );
+            spx_xml_pkg.fermr_sectn ('cell');
+
+            spx_xml_pkg.creer_sectn_cell ();
+            spx_xml_pkg.creer_elemn_ligne_texte (formt_date ());
+            spx_xml_pkg.fermr_sectn ('cell');
+
+            spx_xml_pkg.creer_sectn_cell ();
+            spx_xml_pkg.creer_elemn_ligne_texte (
+              'Page ' || spx_xml_pkg.obten_champ_numr_page () || ' de ' || spx_xml_pkg.obten_champ_nombr_pages ()
+            );
+            spx_xml_pkg.fermr_sectn ('cell');
+
+            spx_xml_pkg.fermr_sectn ('ligne');
+          end;
+
+          spx_xml_pkg.fermr_sectn ('tabl');
+        end;
+
+        spx_xml_pkg.fermr_sectn ('pied_page');
+      end;
+
+      -- Créer le corps du rapport
+      begin
+        spx_xml_pkg.creer_sectn_sectn (null,
+                                       null,
+                                       'aucun',
+                                       false);
+
+        -- Créer le tableau qui affichera les données
+        spx_xml_pkg.creer_sectn_tabl ();
+
+        -- Créer les différents set d'entêtes (pages)
+        vnu_dernr_coln_ajout := 0;
+
+        for j in var_pages.first () .. var_pages.last () loop
+          spx_xml_pkg.creer_sectn_entet_tabl ();
+          spx_xml_pkg.ajout_atrib ('largeur',
+                                      round ( (var_pages (j).nu_largr / vnu_largr_dispo) * 100,
+                                             0)
+                                   || '%');
+
+          for i in vnu_dernr_coln_ajout + 1 .. var_pages (j).nu_dernr_coln loop
+            if var_infor_coln (i).va_indic_expor = 'O' then
+              spx_xml_pkg.creer_elemn_coln_tabl (var_infor_coln (i).va_libl,
+                                                 var_infor_coln (i).nu_largr_reltv,
+                                                 convr_parmt_align (var_infor_coln (i).va_align_entet,
+                                                                    'gauche'));
+            end if;
+          end loop;
+
+          vnu_dernr_coln_ajout := var_pages (j).nu_dernr_coln;
+
+          spx_xml_pkg.fermr_sectn ('entet_tabl');
+        end loop;
+
+        -- Écrire les données
+        vnu_compt_ligne := 0;
+
+        while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
+                                               var_infor_coln) loop
+          vnu_compt_ligne := vnu_compt_ligne + 1;
+
+          spx_xml_pkg.creer_sectn_ligne ();
+
+          if instr (var_infor_coln (1).va_valr_varch,
+                    'indic_surlg_ligne_raprt') != 0 then
+            spx_xml_pkg.ajout_atrib ('classe',
+                                     'gras');
+            var_infor_coln (1).va_valr_varch :=
+              substr (var_infor_coln (1).va_valr_varch,
+                      instr (var_infor_coln (1).va_valr_varch,
+                             '</span>') +
+                      7);
+          end if;
+
+          /*if mod (vnu_compt_ligne,
+                  2) = 0 then
+            spx_xml_pkg.ajout_atrib ('classe',
+                                     'pair');
+          else
+            spx_xml_pkg.ajout_atrib ('classe',
+                                     'impair');
+          end if;*/
+
+          for i in var_infor_coln.first () .. var_infor_coln.last () loop
+            if var_infor_coln (i).va_indic_expor = 'O' then
+              spx_xml_pkg.creer_sectn_cell ();
+              spx_xml_pkg.ajout_atrib ('classe',
+                                       convr_parmt_align (var_infor_coln (i).va_align_coln,
+                                                          'gauche'));
+
+              case var_infor_coln (i).va_type_valr
+                when 'VARCH' then
+                  spx_xml_pkg.creer_elemn_bloc_texte (var_infor_coln (i).va_valr_varch);
+                when 'NUMBR' then
+                  if var_infor_coln (i).va_formt is null then
+                    spx_xml_pkg.creer_elemn_ligne_texte (var_infor_coln (i).nu_valr_numbr);
+                  else
+                    spx_xml_pkg.creer_elemn_ligne_texte (ltrim (to_char (var_infor_coln (i).nu_valr_numbr,
+                                                                         var_infor_coln (i).va_formt)));
+                  end if;
+                when 'DATE' then
+                  if var_infor_coln (i).va_formt is null then
+                    spx_xml_pkg.creer_elemn_ligne_texte (var_infor_coln (i).da_valr_date);
+                  else
+                    spx_xml_pkg.creer_elemn_ligne_texte (to_char (var_infor_coln (i).da_valr_date,
+                                                                  var_infor_coln (i).va_formt));
+                  end if;
+                when 'TIMST' then
+                  if var_infor_coln (i).va_formt is null then
+                    spx_xml_pkg.creer_elemn_ligne_texte (var_infor_coln (i).ts_valr_timst);
+                  else
+                    spx_xml_pkg.creer_elemn_ligne_texte (to_char (var_infor_coln (i).ts_valr_timst,
+                                                                  var_infor_coln (i).va_formt));
+                  end if;
+                else
+                  spx_xml_pkg.creer_elemn_bloc_texte (var_infor_coln (i).va_valr_varch);
+              end case;
+
+              spx_xml_pkg.creer_elemn_ligne_texte (' ',
+                                                   'align_vertc');
+              spx_xml_pkg.fermr_sectn ('cell');
+            end if;
+          end loop;
+
+          spx_xml_pkg.fermr_sectn ('ligne');
+        end loop;
+
+        spx_xml_pkg.fermr_sectn ('tabl');
+
+        if vnu_compt_ligne = 0 then
+          spx_xml_pkg.creer_elemn_ligne_texte (aa.do_substitutions (vva_mesg_aucun_don));
+        end if;
+
+        spx_xml_pkg.fermr_sectn ('sectn');
+      end;
+
+      spx_util_pkg.afich_pdf ( (nvl (vpi_parmt_impr.va_contn_disps, 'ATTACHMENT') = 'ATTACHMENT'),
+                              true);
+    /*sie_02_fichr_pkg.telvs_fichr (
+      spx_xml_pkg.obten_xml(),
+      formt_nom_fichr(vva_nom_raprt) || '.xml',
+      true,
+      'texte/xml'
+    );*/
+
+    else
+      null;
+      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
+      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
+    end if;
+
+    -- Fermer le curseur
+    sie_07_sql_pkg.fermr_selct (vnu_cursr);
+
+    -- Arrêter tous les autres traitements d'APEX
+    sie_07_util_pkg.aret_trait_page_apex;
+  end;
+
+  procedure afich_csv (pnu_aplic in number default sie_07_util_pkg.v ('APP_ID'),
+                       pnu_page in number default sie_07_util_pkg.v ('APP_PAGE_ID'),
+                       pva_seprt_coln in varchar2 default kva_seprt_coln) is
+    vbo_dirct                               boolean default false;
+    vnu_ref_ir                              number;
+    vva_nom_raprt                           varchar2 (200);
+    vva_mesg_aucun_don                      varchar2 (32767);
+    vnu_largr_deft                          number;
+    --vnu_unite_mesr_largr_deft number(10);
+
+    vva_selct                               varchar2 (32767);
+    vnu_cursr                               number;
+    var_infor_coln                          sie_07_sql_pkg.typ_arr_infor_coln;
+    vcl_corps                               clob;
+    vva_seprt_coln                          varchar2 (1);
+    vnu_compt_ligne                         number;
+    vnu_rpts_id                             number;
+
+    procedure ajouter (pva_pre in varchar2,
+                       pva_chaine in varchar2) is
+    begin
+      if pva_pre is not null
+      or pva_chaine is not null then
+        if vbo_dirct then
+          --htp.putraw (utl_raw.cast_to_raw(pva_pre || pva_chaine));
+          htp.prn (pva_pre || pva_chaine);
+        --dbms_output.put (pva_pre || pva_chaine);
+        else
+          dbms_lob.writeappend (vcl_corps,
+                                length (pva_pre || pva_chaine),
+                                pva_pre || pva_chaine);
+        end if;
+      end if;
+    end;
+
+    procedure ajouter_chaine (pva_pre in varchar2,
+                              pva_chaine in varchar2) is
+    begin
+      ajouter (pva_pre,
+                  '"'
+               || replace (pva_chaine,
+                           '"',
+                           '""')
+               || '"');
+    end;
+  begin
+    begin
+      -- Chercher le rapport interactif sur la page
+      select   pir.libl_regn,
+               air.no_data_found_message,
+               pir.seqnc,
+               pir.largr_deft
+        --pir.unite_mesr_largr_deft
+        into   vva_nom_raprt,
+               vva_mesg_aucun_don,
+               vnu_ref_ir,
+               vnu_largr_deft
+        --vnu_unite_mesr_largr_deft
+        from   vd_sie_13_page pag,
+               vd_sie_13_page_ir pir,
+               apex_ir air
+       where   pag.ref_aplic = (select   pro.seqnc
+                                  from   vd_sie_11_aplic pro
+                                 where   pro.numr_aplic_apex = pnu_aplic)
+           and pag.numr_apex = pnu_page
+           and pir.ref_page = pag.seqnc
+           and air.id = pir.id_apex;
+
+      -- Récupérer le select
+      vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
+      vva_selct := sie_13_raprt_inter_pkg.obten_selct_rpts (vnu_rpts_id);
+    exception
+      when no_data_found then
+        vva_selct := null;
+    end;
+
+    if vva_selct is null then
+      sie_01_err_apex_pkg.lever_err_apex_code ('SPX.000001',
+                                               pva_code_prodt             => 'AFW');
+    end if;
+
+    vnu_cursr :=
+      sie_07_sql_pkg.ouvri_selct (vnu_ref_ir,
+                                  vnu_rpts_id,
+                                  vva_selct,
+                                  var_infor_coln,
+                                  chr (10));
+
+    declare
+      vbo_aucun_afich                         boolean default true;
+    begin
+      if var_infor_coln.first () is not null then
+        for i in var_infor_coln.first () .. var_infor_coln.last () loop
+          if var_infor_coln (i).va_indic_expor = 'O' then
+            vbo_aucun_afich := false;
+            exit;
+          end if;
+        end loop;
+      end if;
+
+      if vbo_aucun_afich then
+        var_infor_coln.delete ();
+      end if;
+    end;
+
+    if var_infor_coln.first () is not null then
+      if vbo_dirct then
+        owa_util.mime_header ('text/csv',
+                              false);
+        htp.p ('Content-Disposition: attachment; filename="' || formt_nom_fichr (vva_nom_raprt) || '.csv' || '"');
+        --dbms_output.put_line ('HTTP/1.x 200 OK');
+        --dbms_output.put_line ('Content-Type: text/csv; charset=UTF-8');
+        --dbms_output.put_line ('Content-Disposition: attachment; filename="' || formt_nom_fichr(vva_nom_raprt) || '.csv' || '"');
+        owa_util.http_header_close;
+      --dbms_output.put_line (null);
+      else
+        dbms_lob.createtemporary (vcl_corps,
+                                  true);
+      end if;
+
+      -- Créer la ligne d'entête
+      vva_seprt_coln := null;
+
+      for i in var_infor_coln.first () .. var_infor_coln.last () loop
+        if var_infor_coln (i).va_indic_expor = 'O' then
+          ajouter_chaine (vva_seprt_coln,
+                          var_infor_coln (i).va_libl);
+          vva_seprt_coln := pva_seprt_coln;
+        end if;
+      end loop;
+
+      -- Saut de ligne
+      ajouter (null,
+               chr (10));
+
+      -- Écrire les données
+      vnu_compt_ligne := 0;
+
+      while sie_07_sql_pkg.lire_ligne_selct (vnu_cursr,
+                                             var_infor_coln) loop
+        vnu_compt_ligne := vnu_compt_ligne + 1;
+
+        vva_seprt_coln := null;
+
+        for i in var_infor_coln.first () .. var_infor_coln.last () loop
+          if var_infor_coln (i).va_indic_expor = 'O' then
+            case var_infor_coln (i).va_type_valr
+              when 'VARCH' then
+                ajouter_chaine (vva_seprt_coln,
+                                var_infor_coln (i).va_valr_varch);
+              when 'NUMBR' then
+                ajouter_chaine (vva_seprt_coln,
+                                var_infor_coln (i).nu_valr_numbr);
+              when 'DATE' then
+                ajouter_chaine (vva_seprt_coln,
+                                to_char (var_infor_coln (i).da_valr_date,
+                                         'YYYY-MM-DD'));
+              when 'TIMST' then
+                ajouter_chaine (vva_seprt_coln,
+                                var_infor_coln (i).ts_valr_timst);
+              else
+                ajouter_chaine (vva_seprt_coln,
+                                var_infor_coln (i).va_valr_varch);
+            end case;
+
+            vva_seprt_coln := pva_seprt_coln;
+          end if;
+        end loop;
+
+        -- Saut de ligne
+        ajouter (null,
+                 chr (10));
+      end loop;
+
+      if vnu_compt_ligne = 0 then
+        ajouter_chaine (null,
+                        vva_mesg_aucun_don);
+        ajouter (null,
+                 chr (10));
+      end if;
+
+      if vbo_dirct then
+        null;
+      else
+        sie_11_prodt_pkg.telvs_fichr (vcl_corps,
+                                      formt_nom_fichr (vva_nom_raprt) || '.csv',
+                                      true,
+                                      'texte/csv');
+
+        dbms_lob.freetemporary (vcl_corps);
+      end if;
+    else
+      null;
+      -- On a un problème... afficher une erreur dans le PDF ou lever une erreur...
+      htp.p ('<h1>Aucune colonne affichable n''a été trouvée.</h1>');
+    end if;
+
+    -- Fermer le curseur
+    sie_07_sql_pkg.fermr_selct (vnu_cursr);
+
+    -- Arrêter tous les autres traitements d'APEX
+    sie_07_util_pkg.aret_trait_page_apex;
+  /*exception
+          when others then
+    htp.p (sqlerrm);*/
+  end;
+end;
+/
+
+Prompt Package Body SIE_25_TRAVL_PUBLC_CU_PKG;
+/* Formatted on 19/12/2013 11:24:56 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_25_travl_publc_cu_pkg is
+  function obten_pdf (pnu_travl in number,
+                      pnu_publc_travl in number,
+                      pva_iden_procd in varchar2)
+    return blob is
+    vbl_pdf                                 blob;
+  begin
+    execute immediate 'select ' || pva_iden_procd || '(:1, :2) from dual'
+                                          into   vbl_pdf
+      using pnu_travl,
+            pnu_publc_travl;
+
+    update   vd_i_sie_25_travl
+       set   ref_stat =
+               sie_12_stat_pkg.obten_stat ('TRAVL',
+                                           'TERMN',
+                                           'AFW')
+     where   seqnc = pnu_travl;
+
+    return vbl_pdf;
   exception
     when others then
       ete ();
       raise;
-  end defnr_item_aplic_apex;
+  end obten_pdf;
+end sie_25_travl_publc_cu_pkg;
+/
 
-  function obten_page_inexs_maj_refrn (pnu_prodt in vd_i_sie_11_prodt.seqnc%type)
-    return boolean is
-    vva_indic_page_inexs_maj_refrn          varchar2 (1);
+Prompt Package Body SIE_25_TRAVL_PUBLC_PKG;
+/* Formatted on 19/12/2013 11:24:56 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_25_travl_publc_pkg as
+  gnu_travl                               number (10);
+  gnu_publc_travl                         number (10);
+  gbl_travl_termn                         blob;
+  gva_mime_type_travl                     varchar2 (100);
+  gnu_tail_fichr                          pls_integer;
+  gva_nom_fichr                           varchar2 (200);
+
+  procedure maj_stat_travl (pnu_travl in number,
+                            pnu_stat in number) is
+    pragma autonomous_transaction;
   begin
-    select   indic_page_inexs_maj_refrn
-      into   vva_indic_page_inexs_maj_refrn
-      from   vd_i_sie_11_prodt
-     where   seqnc = pnu_prodt;
+    update   vd_i_sie_25_travl
+       set   ref_stat = pnu_stat
+     where   seqnc = pnu_travl;
 
-    return (vva_indic_page_inexs_maj_refrn = 'O');
-  end obten_page_inexs_maj_refrn;
+    commit;
+  end maj_stat_travl;
 
-  function obten_mesg_sucs_prodt (pnu_prodt in number default null)
+  function exect_raprt (pva_indic_secrs varchar2,
+                        pva_servr varchar2,
+                        pva_parmt varchar2,
+                        pnu_travl in number)
     return varchar2 is
-    vva_mesg                                vd_i_sie_01_mesg_lang.mesg%type;
+    vva_prefx_url                           varchar2 (2000);
+    vva_url                                 varchar2 (2000);
+    vnu_pos                                 number;
+    vnu_id_raprt                            number;
+    vnu_code_stat                           number default 1;
+
+    vre_reqt                                utl_http.req;
+    vre_repns                               utl_http.resp;
+    vva_ligne                               varchar2 (2000);
+    vnu_compt                               number;
   begin
-    select   sie_01_gestn_mesg_pkg.obten_mesg (ref_mesg_sucs)
-      into   vva_mesg
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
+    -- Etape 1. Construire l'URL pour commander l'execution
+    vva_prefx_url := 'http' || case when pva_indic_secrs = 'O' then 's' else null end || '://' || pva_servr;
 
-    return vva_mesg;
-  exception
-    when others then
-      raise;
-  end obten_mesg_sucs_prodt;
+    vva_url := vva_prefx_url || '?background=yes&statusformat=xml&' || pva_parmt;
 
-  function obten_mesg_echec_prodt (pnu_prodt in number default null)
-    return varchar2 is
-    vva_mesg                                vd_i_sie_01_mesg_lang.mesg%type;
-  begin
-    select   sie_01_gestn_mesg_pkg.obten_mesg (ref_mesg_echec)
-      into   vva_mesg
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vva_mesg;
-  end obten_mesg_echec_prodt;
-
-  function obten_mesg_fetch_prodt (pnu_prodt in number default null)
-    return varchar2 is
-    vva_mesg                                vd_i_sie_01_mesg_lang.mesg%type;
-  begin
-    select   sie_01_gestn_mesg_pkg.obten_mesg (ref_mesg_fetch)
-      into   vva_mesg
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vva_mesg;
-  end obten_mesg_fetch_prodt;
-
-  function obten_mesg_suprm_prodt (pnu_prodt in number default null)
-    return varchar2 is
-    vva_mesg                                vd_i_sie_01_mesg_lang.mesg%type;
-  begin
-    select   sie_01_gestn_mesg_pkg.obten_mesg (ref_mesg_range_suprm)
-      into   vva_mesg
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vva_mesg;
-  end obten_mesg_suprm_prodt;
-
-  function obten_mesg_modf_prodt (pnu_prodt in number default null)
-    return varchar2 is
-    vva_mesg                                vd_i_sie_01_mesg_lang.mesg%type;
-  begin
-    select   sie_01_gestn_mesg_pkg.obten_mesg (ref_mesg_range_modf)
-      into   vva_mesg
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vva_mesg;
-  end obten_mesg_modf_prodt;
-
-  function obten_mesg_inser_prodt (pnu_prodt in number default null)
-    return varchar2 is
-    vva_mesg                                vd_i_sie_01_mesg_lang.mesg%type;
-  begin
-    select   sie_01_gestn_mesg_pkg.obten_mesg (ref_mesg_range_inser)
-      into   vva_mesg
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vva_mesg;
-  end obten_mesg_inser_prodt;
-
-  function obten_mesg_aucun_don_prodt (pnu_prodt in number default null)
-    return varchar2 is
-    vva_mesg                                vd_i_sie_01_mesg_lang.mesg%type;
-  begin
-    select   sie_01_gestn_mesg_pkg.obten_mesg (ref_mesg_aucun_don_trouv)
-      into   vva_mesg
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vva_mesg;
-  end obten_mesg_aucun_don_prodt;
-
-  function obten_mesg_trop_don_prodt (pnu_prodt in number default null)
-    return varchar2 is
-    vva_mesg                                vd_i_sie_01_mesg_lang.mesg%type;
-  begin
-    select   sie_01_gestn_mesg_pkg.obten_mesg (ref_mesg_trop_don_trouv)
-      into   vva_mesg
-      from   vd_i_sie_11_prodt
-     where   seqnc = nvl (pnu_prodt, obten_prodt_sesn);
-
-    return vva_mesg;
-  end obten_mesg_trop_don_prodt;
-
-  procedure deplr_formt_resrc_prodt (pnu_prodt in number) is
-  begin
-    --delete from vd_i_sie_13_formt_resrc where ref_prodt = pnu_prodt;
+    -- Etape 2. Demarrer l'execution
     begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, largr, hautr, nom)
-           values   ('ICONE_16PX',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'IMAG'),
-                     16,
-                     16,
-                     'Icone 16 pixels');
+      begin
+        vre_reqt := utl_http.begin_request (vva_url);
+      exception
+        when others then
+          ete ('Erreur',
+               utl_http.get_detailed_sqlerrm);
+      end;
+
+      utl_http.set_header (vre_reqt,
+                           'User-Agent',
+                           'Oracle UTL_HTTP');
+
+      vre_repns := utl_http.get_response (vre_reqt);
+
+      loop
+        utl_http.read_line (vre_repns,
+                            vva_ligne,
+                            true);
+        vnu_pos :=
+          instr (vva_ligne,
+                 '<job id="');
+
+        if vnu_pos > 0 then
+          vnu_id_raprt :=
+            substr (vva_ligne,
+                    vnu_pos + 9,
+                    instr (vva_ligne,
+                           '"',
+                           1,
+                           2) -
+                    (vnu_pos + 9));
+        end if;
+      end loop;
+
+      utl_http.end_response (vre_repns);
     exception
-      when dup_val_on_index then
-        null;
+      when utl_http.end_of_body then
+        utl_http.end_response (vre_repns);
     end;
 
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, largr, hautr, nom)
-           values   ('IMAGE_MOYEN',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'IMAG'),
-                     48,
-                     48,
-                     'Icone moyenne');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, largr, hautr, nom)
-           values   ('IMAGE_24PX',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'IMAG'),
-                     24,
-                     24,
-                     'Icone 24 pixels');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, largr, hautr, nom)
-           values   ('IMAGE_32PX',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'IMAG'),
-                     32,
-                     32,
-                     'Icone 32 pixels');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, largr, hautr, nom)
-           values   ('IMAGE_64PX',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'IMAG'),
-                     64,
-                     64,
-                     'Icone 64 pixels');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, largr, hautr, nom)
-           values   ('IMAGE_48PX',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'IMAG'),
-                     48,
-                     48,
-                     'Icone 48 pixels');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, largr, hautr, nom)
-           values   ('IMAGE_128PX',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'IMAG'),
-                     128,
-                     128,
-                     'Icone 128 pixels');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, nom)
-           values   ('NON_COMPR',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'CSS'),
-                     'Non compresse');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, nom)
-           values   ('NON_COMPR',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'JS'),
-                     'Non compresse');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, nom)
-           values   ('COMPR',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'JS'),
-                     'Compresse');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, nom)
-           values   ('JS_MIN',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'JS'),
-                     'Javascript compresse (minify)');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-
-    begin
-      insert into   vd_i_sie_13_formt_resrc (code, ref_prodt, ref_type_fichr, nom)
-           values   ('JS_DEBUG',
-                     pnu_prodt,
-                     (select   seqnc
-                        from   vd_sie_13_type_fichr
-                       where   code = 'JS'),
-                     'Javascript non compresse (debug)');
-    exception
-      when dup_val_on_index then
-        null;
-    end;
-  end deplr_formt_resrc_prodt;
-
-  function obten_dosr_fichr_afw (pnu_prodt in number default null)
-    return varchar2
-    result_cache relies_on (sie_11_prodt) is
-    vva_dosr_fichr                          varchar2 (200);
-  begin
-    select   dosr_fichr
-      into   vva_dosr_fichr
-      from   vd_i_sie_11_prodt
-     where   code = 'AFW';
-
-    return vva_dosr_fichr;
-  end obten_dosr_fichr_afw;
-
-  function obten_fonct_obten_base_url (pnu_prodt in vd_i_sie_11_prodt.seqnc%type)
-    return varchar2 is
-    vva_fonct_obten_base_url                vd_i_sie_11_prodt.fonct_obten_base_url%type;
-  begin
-    select   fonct_obten_base_url
-      into   vva_fonct_obten_base_url
-      from   vd_i_sie_11_prodt s
-     where   s.seqnc = pnu_prodt;
-
-    return vva_fonct_obten_base_url;
-  exception
-    when no_data_found then
-      raise;
-  end obten_fonct_obten_base_url;
-
-  function obten_base_url (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return varchar2 is
-    vva_base_url                            varchar2 (1000);
-    vva_fonct_obten_base_url                vd_i_sie_11_prodt.fonct_obten_base_url%type;
-
-    function exect_fonct_obten_base_url (pva_nom_fonct in varchar2)
-      return varchar2 is
-      vva_progr_a_lancr                       varchar2 (4000)
-        default    'begin '
-                || '  sie_11_prodt_pkg.gva_base_url := %FONCT_PERSN%; '
-                || '  exception when others then ete();'
-                || 'end;';
-    begin
-      vva_progr_a_lancr :=
-        replace (vva_progr_a_lancr,
-                 '%FONCT_PERSN%',
-                 pva_nom_fonct);
-
-      execute immediate vva_progr_a_lancr;
-
-      return gva_base_url;
-    exception
-      when others then
-        return null;
-    end exect_fonct_obten_base_url;
-  begin
-    vva_fonct_obten_base_url := obten_fonct_obten_base_url (pnu_prodt);
-
-    if vva_fonct_obten_base_url is not null then
-      vva_base_url :=
-           rtrim (exect_fonct_obten_base_url (vva_fonct_obten_base_url),
-                  '/')
-        || '/';
-    else
-      vva_base_url :=
-           case when sie_08_url_pkg.obten_port_servr = 443 then 'https://' else 'http://' end
-        || sie_08_url_pkg.obten_host_http
-        || case
-             when sie_08_url_pkg.obten_port_servr not in (80, 443, 8080) then ':' || sie_08_url_pkg.obten_port_servr
-             else null
-           end
-        || sie_08_url_pkg.obten_nom_scrip
-        || '/';
+    if vnu_id_raprt is null then
+      maj_stat_travl (pnu_travl,
+                      sie_12_stat_pkg.obten_stat ('TRAVL',
+                                                  'EREUR',
+                                                  'AFW'));
+      raise_application_error (-20501,
+                               'Erreur au demarrage du rapport');
     end if;
 
-    return vva_base_url;
+    -- Etape 3. Verifier le statut de l'execution
+    vva_url := vva_prefx_url || '/showjobid' || vnu_id_raprt || '?statusformat=xml';
+    vnu_compt := 0;
+
+    while vnu_code_stat > 0 and vnu_code_stat < 4 loop
+      dbms_lock.sleep (1);                                                                   -- Pause de 1/10 de seconde
+
+      begin
+        vre_reqt := utl_http.begin_request (vva_url);
+        utl_http.set_header (vre_reqt,
+                             'User-Agent',
+                             'Oracle UTL_HTTP');
+
+        vre_repns := utl_http.get_response (vre_reqt);
+        vnu_code_stat := 0;
+
+        loop
+          utl_http.read_line (vre_repns,
+                              vva_ligne,
+                              true);
+
+          vnu_pos :=
+            instr (vva_ligne,
+                   '<status code="');
+
+          if vnu_pos > 0 then
+            vnu_code_stat :=
+              substr (vva_ligne,
+                      vnu_pos + 14,
+                      instr (vva_ligne,
+                             '"',
+                             1,
+                             2) -
+                      (vnu_pos + 14));
+          end if;
+        end loop;
+
+        utl_http.end_response (vre_repns);
+      exception
+        when utl_http.end_of_body then
+          utl_http.end_response (vre_repns);
+      end;
+
+      vnu_compt := vnu_compt + 1;
+    end loop;
+
+    if vnu_code_stat = 4 then
+      -- Etape 4. Transmettre l'adresse du rapport produit
+      maj_stat_travl (pnu_travl,
+                      sie_12_stat_pkg.obten_stat ('TRAVL',
+                                                  'TERMN',
+                                                  'AFW'));
+
+      vva_url := vva_prefx_url || '/getjobid' || vnu_id_raprt;
+
+      return vva_url;
+    elsif vnu_code_stat = 5 then
+      maj_stat_travl (pnu_travl,
+                      sie_12_stat_pkg.obten_stat ('TRAVL',
+                                                  'EREUR',
+                                                  'AFW'));
+      raise_application_error (-20502,
+                               'Le rapport a termine en echec.');
+    else
+      maj_stat_travl (pnu_travl,
+                      sie_12_stat_pkg.obten_stat ('TRAVL',
+                                                  'EREUR',
+                                                  'AFW'));
+      raise_application_error (-20503,
+                               'Erreur a la verification du statut du rapport: ' || vnu_code_stat);
+    end if;
+  end exect_raprt;
+
+  procedure lancr_travl (pnu_travl in number,
+                         pnu_publc_travl in number,
+                         pnu_formt in varchar,
+                         pbo_redrg_web_reslt in boolean default true) is
+    vva_url_inter                           varchar2 (256);
+    vva_url_exter                           varchar2 (256);
+    vnu_engin                               number (10);
+    vnu_travl_publc                         number (10);
+    vbo_pdf                                 blob;
+    vbo_pdf_travl                           blob;
+    vva_url                                 varchar2 (300);
+    vva_imedt                               varchar2 (1);
+    vva_parmt                               varchar2 (4000);
+    vva_nom_raprt                           varchar2 (60);
+    vva_nom_fichr_sort                      varchar2 (200);
+    vnu_publc                               number (10);
+    vbo_premr_exect                         boolean default true;
+
+    cursor cur_parmt (pnu_publc_travl in number) is
+      select   ppt.ref_code_parmt_tp_formt,
+               coalesce (valr_varch,
+                         to_char (valr_numbr),
+                         to_char (valr_date))
+                 valr
+        from   vd_sie_25_parmt_publc_travl ppt
+       where   (ppt.ref_publc_travl = pnu_publc_travl) and indic_presn_appel = 'O';
+
+    cursor cur_parmt_engin (pnu_engin in number) is
+      select   code,
+               valr_deft valr
+        from   vd_i_sie_25_parmt_type_publc
+       where   ref_engin = pnu_engin and indic_presn_appel = 'O';
+
+    cursor cur_publc_distn is
+      select   distinct ref_versn_publc
+        from   vd_i_sie_25_publc_travl pt
+       where   pt.ref_travl = pnu_travl
+           and (pt.seqnc = pnu_publc_travl
+             or pnu_publc_travl is null);
+  begin
+    select   t.indic_imedt
+      into   vva_imedt
+      from   vd_i_sie_25_travl t
+     where   t.seqnc = pnu_travl;
+
+    if pnu_formt = 'PDF' then
+      select   e.seqnc,
+               url_servl,
+               e.url_servl url_servl_exter
+        into   vnu_engin,
+               vva_url_inter,
+               vva_url_exter
+        from   vd_i_sie_25_engin e
+       where   e.code = 'ORACL_REPRT';
+
+      for rec_publc_distn in cur_publc_distn loop
+        --Obtenir le nom du fichier reports à lancer
+        select   iden_acces
+          into   vva_nom_raprt
+          from   vd_i_sie_25_engin_versn_publc evp
+         where   evp.ref_versn_publc = rec_publc_distn.ref_versn_publc                 /*and evp.ref_engin = vnu_engin*/
+                                                                      ;
+
+        if lower (vva_nom_raprt) like '%rep' then
+          for rec_parmt in cur_parmt_engin (vnu_engin) loop
+            if rec_parmt.code = 'PNU_TRAVL' then
+              vva_parmt :=
+                   vva_parmt
+                || '&'
+                || rec_parmt.code
+                || '='
+                || replace (rec_parmt.valr,
+                            '#SEQNC#',
+                            pnu_travl);
+            elsif rec_parmt.code = 'PNU_PUBLC_TRAVL' then
+              vva_parmt :=
+                   vva_parmt
+                || '&'
+                || rec_parmt.code
+                || '='
+                || replace (rec_parmt.valr,
+                            '#SEQNC_PUBLC_TRAVL#',
+                            pnu_publc_travl);
+            elsif rec_parmt.code = 'report' then
+              vva_parmt := vva_parmt || '&' || rec_parmt.code || '=' || rec_parmt.valr || vva_nom_raprt;
+            else
+              vva_parmt := vva_parmt || '&' || rec_parmt.code || '=' || rec_parmt.valr;
+            end if;
+          end loop;
+
+          if substr (vva_parmt,
+                     1,
+                     1) = '&' then
+            vva_parmt :=
+              substr (vva_parmt,
+                      2);
+          end if;
+
+          for rec_parmt in cur_parmt (vnu_travl_publc) loop
+            vva_parmt := vva_parmt || '&' || rec_parmt.ref_code_parmt_tp_formt || '=' || rec_parmt.valr;
+          end loop;
+
+          if substr (vva_parmt,
+                     1,
+                     1) = '&' then
+            vva_parmt :=
+              substr (vva_parmt,
+                      2);
+          end if;
+
+          vva_url :=
+            exect_raprt (pva_indic_secrs            => 'N',
+                         pva_servr                  => vva_url_inter,
+                         pva_parmt                  => vva_parmt,
+                         pnu_travl                  => pnu_travl);
+          sie_08_url_pkg.obten_pdf_de_url (vva_url,
+                                           vbo_pdf);
+        else
+          vbo_pdf :=
+            sie_25_travl_publc_cu_pkg.obten_pdf (pnu_travl,
+                                                 pnu_publc_travl,
+                                                 vva_nom_raprt);
+        end if;
+
+        --merger les pdf
+        if vbo_premr_exect then
+          vbo_premr_exect := false;
+          vbo_pdf_travl := vbo_pdf;
+        else
+          vbo_pdf_travl :=
+            plpdf_toolkit.merge (vbo_pdf_travl,
+                                 vbo_pdf);
+        end if;
+      end loop;
+
+      if pnu_publc_travl is null then
+        select   nom
+          into   vva_nom_fichr_sort
+          from   vd_i_sie_25_travl t
+         where   t.seqnc = pnu_travl;
+
+        if vva_nom_fichr_sort is null then
+          vva_nom_fichr_sort :=
+               'Lot d''impression généré le '
+            || to_char (sysdate,
+                        'yyyy-mm-dd hh24:mi:ss')
+            || '.pdf';
+        end if;
+      else
+        select   nom
+          into   vva_nom_fichr_sort
+          from   vd_sie_25_publc_travl pt
+         where   pt.seqnc = pnu_publc_travl;
+      end if;
+
+      if pbo_redrg_web_reslt then
+        sie_11_prodt_pkg.telvs_fichr (vbo_pdf_travl,
+                                      vva_nom_fichr_sort,
+                                      'application/pdf',
+                                      true,
+                                      true);
+      else
+        gbl_travl_termn := vbo_pdf_travl;
+        gva_mime_type_travl := 'application/pdf';
+        gnu_tail_fichr := dbms_lob.getlength (vbo_pdf_travl);
+        gva_nom_fichr := vva_nom_fichr_sort;
+      end if;
+    end if;
   exception
     when others then
-      return null;
-  end obten_base_url;
+      ete ();
+      raise;
+  end lancr_travl;
 
-  function obten_procd_entet_plpdf (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return vd_i_sie_11_prodt.procd_impre_entet_pdf_ir%type is
-    vva_procd                               vd_i_sie_11_prodt.procd_impre_entet_pdf_ir%type;
+  procedure lancr_publc_travl (pnu_publc_travl in number,
+                               pnu_formt in varchar,
+                               pbo_redrg_web_reslt in boolean default true) is
+    vnu_travl                               number (10);
   begin
-    select   procd_impre_entet_pdf_ir
-      into   vva_procd
-      from   vd_i_sie_11_prodt
-     where   seqnc = pnu_prodt;
+    select   ref_travl
+      into   vnu_travl
+      from   vd_i_sie_25_publc_travl pt
+     where   pt.seqnc = pnu_publc_travl;
 
-    return vva_procd;
-  end obten_procd_entet_plpdf;
+    lancr_travl (vnu_travl,
+                 pnu_publc_travl,
+                 pnu_formt,
+                 pbo_redrg_web_reslt);
+  end lancr_publc_travl;
 
-  function obten_procd_pied_page_plpdf (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return vd_i_sie_11_prodt.procd_impre_pied_page_pdf_ir%type is
-    vva_procd                               vd_i_sie_11_prodt.procd_impre_pied_page_pdf_ir%type;
+  procedure lancr_travl (pnu_travl in number,
+                         pnu_formt in varchar,
+                         pbo_redrg_web_reslt in boolean default true) is
   begin
-    select   procd_impre_pied_page_pdf_ir
-      into   vva_procd
-      from   vd_i_sie_11_prodt
-     where   seqnc = pnu_prodt;
+    lancr_travl (pnu_travl,
+                 null,
+                 pnu_formt,
+                 pbo_redrg_web_reslt);
+  end lancr_travl;
 
-    return vva_procd;
-  end obten_procd_pied_page_plpdf;
+  procedure defnr_contx_exect_raprt (pnu_travl in number,
+                                     pnu_travl_publc in number,
+                                     pva_type_publc in varchar2,
+                                     pva_code_publc in varchar2) is
+    vva_varch                               varchar2 (256);
+    vda_date                                date;
+    vnu_numbr                               number;
+    vva_parmt_alimn                         varchar2 (1);
+    pragma autonomous_transaction;
 
-  function obten_procd_coulr_plpdf (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return vd_i_sie_11_prodt.procd_plpdf_coulr%type is
-    vva_procd                               vd_i_sie_11_prodt.procd_plpdf_coulr%type;
+    cursor cur_travl_publc is
+      select   seqnc
+        from   vd_sie_25_publc_travl pt
+       where   pt.ref_travl = pnu_travl
+           and pt.ref_code_type_publc = pva_type_publc
+           and ref_code_publc = pva_code_publc
+           and pt.ref_stat <> sie_12_stat_pkg.obten_stat ('PUBLC_TRAVL',
+                                                          'ANUL',
+                                                          'AFW');
+
+    cursor cur_parmt (pnu_publc_travl in number) is
+      select     valr_varch,
+                 valr_date,
+                 valr_numbr
+          from   vd_sie_25_parmt_publc_travl
+         where   ref_publc_travl = pnu_publc_travl and indic_presn_appel = 'N'
+      order by   ordre_presn asc;
+
+    vnu_numr_elemn                          pls_integer;
+
+    procedure trans_ajout_parmt_table_ts (pnu_numr_elemn in number,
+                                          pnu_travl_publc in number,
+                                          pva_valr in varchar2,
+                                          pva_numbr in number,
+                                          pva_date in date) is
+      vva_enonc_updat                         varchar2 (500)
+        default 'update vd_i_sie_25_par_pub_tra_exect set  valr_numbr% = :1, valr_varch% = :2, valr_date% = :3 where ref_travl_publc = :4 and ref_travl = :5';
+    begin
+      if pnu_numr_elemn = 1 then
+        insert into   vd_i_sie_25_par_pub_tra_exect (ref_travl, ref_travl_publc, valr_numbr1, valr_varch1, valr_date1)
+             values   (gnu_travl,
+                       pnu_travl_publc,
+                       pva_numbr,
+                       pva_valr,
+                       pva_date);
+      else
+        vva_enonc_updat :=
+          replace (vva_enonc_updat,
+                   '%',
+                   pnu_numr_elemn);
+
+        execute immediate vva_enonc_updat
+          using pva_numbr,
+                pva_valr,
+                pva_date,
+                pnu_travl_publc,
+                gnu_travl;
+      end if;
+    end trans_ajout_parmt_table_ts;
   begin
-    select   procd_plpdf_coulr
-      into   vva_procd
-      from   vd_sie_11_prodt
-     where   seqnc = pnu_prodt;
+    select   indic_parmt_alimn
+      into   vva_parmt_alimn
+      from   vd_sie_25_publc_travl pt
+     where   ref_code_publc = pva_code_publc and ref_travl = pnu_travl and rownum = 1;
 
-    return vva_procd;
-  end obten_procd_coulr_plpdf;
+    gnu_travl := pnu_travl;
+    gnu_publc_travl := pnu_travl_publc;
 
-  function obten_numr_versn_prodt (pnu_prodt in vd_i_sie_11_prodt.seqnc%type default obten_prodt_sesn)
-    return varchar2 is
-    vva_numr_versn                          varchar2 (200);
+    if vva_parmt_alimn = 'N' then
+      --Alimenter la table temporaire des paramètres
+      for rec_travl_publc in cur_travl_publc loop
+        vnu_numr_elemn := 0;
+
+        for rec_parmt in cur_parmt (rec_travl_publc.seqnc) loop
+          vnu_numr_elemn := vnu_numr_elemn + 1;
+          trans_ajout_parmt_table_ts (vnu_numr_elemn,
+                                      rec_travl_publc.seqnc,
+                                      rec_parmt.valr_varch,
+                                      rec_parmt.valr_numbr,
+                                      rec_parmt.valr_date);
+        end loop;
+      end loop;
+
+      update   vd_sie_25_publc_travl pt
+         set   indic_parmt_alimn = 'O'
+       where   ref_code_publc = pva_code_publc and ref_travl = pnu_travl;
+    end if;
+
+    commit;
+  exception
+    when others then
+      raise;
+  end defnr_contx_exect_raprt;
+
+  function obten_domn_contx_exect
+    return number is
+    vnu_domn                                number (10);
   begin
-    select   (select   sie_11_versn_pkg.obten_versn (v.numr_versn_1,
-                                                     v.numr_versn_2,
-                                                     v.numr_versn_3,
-                                                     v.numr_versn_4)
-                from   vd_i_sie_11_versn v
-               where   v.seqnc = p.ref_versn)
-      into   vva_numr_versn
-      from   vd_sie_11_prodt p
-     where   p.seqnc = pnu_prodt;
+    select   ref_domn
+      into   vnu_domn
+      from   vd_i_sie_25_travl t
+     where   t.seqnc = gnu_travl;
 
-    return vva_numr_versn;
+    return vnu_domn;
   exception
     when no_data_found then
       return null;
-  end obten_numr_versn_prodt;
+  end obten_domn_contx_exect;
 
-  function obten_numr_versn_prodt_afw
-    return varchar2 is
+  function obten_travl_exect
+    return number is
   begin
-    return obten_numr_versn_prodt (obten_prodt ('AFW'));
-  end obten_numr_versn_prodt_afw;
+    return gnu_travl;
+  end obten_travl_exect;
 
-  function obten_nom (pnu_seqnc in number)
-    return varchar2 is
-    vva_nom                                 vd_i_sie_11_prodt.nom%type;
+  function obten_publc_travl_exect
+    return number is
   begin
-    select   nom
-      into   vva_nom
-      from   vd_i_sie_11_prodt
-     where   seqnc = pnu_seqnc;
+    return gnu_publc_travl;
+  end obten_publc_travl_exect;
 
-    return vva_nom;
+  function obten_utils_contx_exect
+    return number is
+    vnu_utils                               number (10);
+  begin
+    select   ref_utils
+      into   vnu_utils
+      from   vd_i_sie_25_travl t
+     where   t.seqnc = gnu_travl;
+
+    return vnu_utils;
   exception
     when no_data_found then
       return null;
-  end obten_nom;
+  end obten_utils_contx_exect;
 
-  procedure creer_mesg_base_prodt (pnu_prodt in vd_i_sie_11_prodt.seqnc%type,
-                                   pnu_lang in vd_i_sie_01_lang.seqnc%type default null) is
-    vva_mesg_sucs                           vd_i_sie_01_mesg_lang.mesg%type default 'Opération réussie.';
-    vva_type_mesg_sucs                      varchar2 (1) default sie_01_gestn_mesg_pkg.kva_type_mesg_infor;
-
-    vva_mesg_echec                          vd_i_sie_01_mesg_lang.mesg%type default 'Opération échouée.';
-    vva_type_mesg_echec                     varchar2 (1) default sie_01_gestn_mesg_pkg.kva_type_mesg_err;
-
-    vva_mesg_extra                          vd_i_sie_01_mesg_lang.mesg%type default 'Impossible d''extraire la ligne.';
-    vva_type_mesg_extra                     varchar2 (1) default sie_01_gestn_mesg_pkg.kva_type_mesg_err;
-
-    vva_mesg_rang_suprm                     vd_i_sie_01_mesg_lang.mesg%type default 'rangée(s) supprimée(s)';
-    vva_type_mesg_rang_suprm                varchar2 (1) default sie_01_gestn_mesg_pkg.kva_type_mesg_infor;
-
-    vva_mesg_rang_modf                      vd_i_sie_01_mesg_lang.mesg%type default 'rangée(s) modifiée(s)';
-    vva_type_mesg_rang_modf                 varchar2 (1) default sie_01_gestn_mesg_pkg.kva_type_mesg_infor;
-
-    vva_mesg_rang_inser                     vd_i_sie_01_mesg_lang.mesg%type default 'rangée(s) insérée(s)';
-    vva_type_mesg_rang_inser                varchar2 (1) default sie_01_gestn_mesg_pkg.kva_type_mesg_infor;
-
-    vva_mesg_aucun_don                      vd_i_sie_01_mesg_lang.mesg%type default 'Aucune donnée trouvée.';
-    vva_type_mesg_aucun_don                 varchar2 (1) default sie_01_gestn_mesg_pkg.kva_type_mesg_infor;
-
-    vva_mesg_trop_don                       vd_i_sie_01_mesg_lang.mesg%type
-      default 'La requête retourne plus de #MAX_ROW_COUNT# enregistrements. Veuillez utiliser un filtre pour accéder aux enregistrements désirés.';
-    vva_type_mesg_trop_don                  varchar2 (1) default sie_01_gestn_mesg_pkg.kva_type_mesg_err;
-
-    vva_catgr_mesg                          varchar2 (3) default 'GEN';
-
-    vnu_mesg_sucs                           vd_i_sie_11_prodt.ref_mesg_sucs%type;
-    vnu_mesg_echec                          vd_i_sie_11_prodt.ref_mesg_echec%type;
-    vnu_mesg_extra                          vd_i_sie_11_prodt.ref_mesg_fetch%type;
-    vnu_mesg_rang_suprm                     vd_i_sie_11_prodt.ref_mesg_range_suprm%type;
-    vnu_mesg_rang_modf                      vd_i_sie_11_prodt.ref_mesg_range_modf%type;
-    vnu_mesg_rang_inser                     vd_i_sie_11_prodt.ref_mesg_range_inser%type;
-    vnu_mesg_aucun_don                      vd_i_sie_11_prodt.ref_mesg_aucun_don_trouv%type;
-    vnu_mesg_trop_don                       vd_i_sie_11_prodt.ref_mesg_trop_don_trouv%type;
-
-    vnu_lang                                vd_i_sie_01_lang.seqnc%type;
+  procedure vider_cache is
   begin
-    vnu_lang := nvl (pnu_lang, sie_01_lang_pkg.obten_lang ('FR-CA'));
+    gbl_travl_termn := null;
+    gva_mime_type_travl := null;
+    gnu_tail_fichr := null;
+    gva_nom_fichr := null;
+  end vider_cache;
 
-    vnu_mesg_sucs :=
-      sie_01_gestn_mesg_pkg.creer_mesg (vva_catgr_mesg,
-                                        vva_mesg_sucs,
-                                        vva_type_mesg_sucs,
-                                        pnu_prodt,
-                                        vnu_lang);
+  procedure obten_fichr_sort (pbl_travl_termn   out nocopy blob,
+                              pva_mime_type_travl   out varchar2,
+                              pnu_tail_fichr   out pls_integer,
+                              pva_nom_fichr   out varchar2,
+                              pbo_suprm_fichr_cache in boolean default true) is
+  begin
+    pbl_travl_termn := gbl_travl_termn;
+    pva_mime_type_travl := gva_mime_type_travl;
+    pnu_tail_fichr := gnu_tail_fichr;
+    pva_nom_fichr := gva_nom_fichr;
 
-    vnu_mesg_echec :=
-      sie_01_gestn_mesg_pkg.creer_mesg (vva_catgr_mesg,
-                                        vva_mesg_echec,
-                                        vva_type_mesg_echec,
-                                        pnu_prodt,
-                                        vnu_lang);
+    if pbo_suprm_fichr_cache then
+      vider_cache ();
+    end if;
+  end obten_fichr_sort;
 
-    vnu_mesg_extra :=
-      sie_01_gestn_mesg_pkg.creer_mesg (vva_catgr_mesg,
-                                        vva_mesg_extra,
-                                        vva_type_mesg_extra,
-                                        pnu_prodt,
-                                        vnu_lang);
+  function obten_stat_publc_travl (pnu_publc_travl in number)
+    return number is
+    vnu_stat                                number (10);
+  begin
+    select   ref_stat
+      into   vnu_stat
+      from   vd_i_sie_25_publc_travl
+     where   seqnc = pnu_publc_travl;
 
-    vnu_mesg_rang_suprm :=
-      sie_01_gestn_mesg_pkg.creer_mesg (vva_catgr_mesg,
-                                        vva_mesg_rang_suprm,
-                                        vva_type_mesg_rang_suprm,
-                                        pnu_prodt,
-                                        vnu_lang);
+    return vnu_stat;
+  end obten_stat_publc_travl;
 
-    vnu_mesg_rang_modf :=
-      sie_01_gestn_mesg_pkg.creer_mesg (vva_catgr_mesg,
-                                        vva_mesg_rang_modf,
-                                        vva_type_mesg_rang_modf,
-                                        pnu_prodt,
-                                        vnu_lang);
+  function obten_versn_publc_courn (pnu_publc in number)
+    return number is
+    vnu_versn_publc                         number (10);
+  begin
+    select   seqnc
+      into   vnu_versn_publc
+      from   vd_sie_25_versn_publc
+     where   date_debut_efect <= (select   sysdate
+                                    from   dual)
+         and (date_fin_efect is null
+           or date_fin_efect >= (select   sysdate
+                                   from   dual))
+         and ref_publc = pnu_publc;
 
-    vnu_mesg_rang_inser :=
-      sie_01_gestn_mesg_pkg.creer_mesg (vva_catgr_mesg,
-                                        vva_mesg_rang_inser,
-                                        vva_type_mesg_rang_inser,
-                                        pnu_prodt,
-                                        vnu_lang);
+    return vnu_versn_publc;
+  end obten_versn_publc_courn;
+end sie_25_travl_publc_pkg;
+/
 
-    vnu_mesg_aucun_don :=
-      sie_01_gestn_mesg_pkg.creer_mesg (vva_catgr_mesg,
-                                        vva_mesg_aucun_don,
-                                        vva_type_mesg_aucun_don,
-                                        pnu_prodt,
-                                        vnu_lang);
+Prompt Package Body SIE_25_TRI_ALTER_PKG;
+/* Formatted on 19/12/2013 11:24:56 AM (QP5 v5.185.11230.41888) */
+create or replace package body "SIE_25_TRI_ALTER_PKG" as
+  kva_chemn_image_tri_asc                 varchar2 (100) := '/i/ws/dup.gif';
+  kva_chemn_image_tri_desc                varchar2 (100) := '/i/ws/ddown.gif';
 
-    vnu_mesg_trop_don :=
-      sie_01_gestn_mesg_pkg.creer_mesg (vva_catgr_mesg,
-                                        vva_mesg_trop_don,
-                                        vva_type_mesg_trop_don,
-                                        pnu_prodt,
-                                        vnu_lang);
+  procedure afich_info_tri_alter is
+    vnu_rpts_id                             number;
 
-    update   vd_i_sie_11_prodt
-       set   ref_mesg_sucs = vnu_mesg_sucs,
-             ref_mesg_echec = vnu_mesg_echec,
-             ref_mesg_fetch = vnu_mesg_extra,
-             ref_mesg_range_suprm = vnu_mesg_rang_suprm,
-             ref_mesg_range_modf = vnu_mesg_rang_modf,
-             ref_mesg_range_inser = vnu_mesg_rang_inser,
-             ref_mesg_aucun_don_trouv = vnu_mesg_aucun_don,
-             ref_mesg_trop_don_trouv = vnu_mesg_trop_don
-     where   seqnc = pnu_prodt;
-  end creer_mesg_base_prodt;
---OBSOLETE::CARLO
-/*procedure defnr_prodt_safp (pnu_prodt in number) is
-begin
-  sie_07_sesn_pkg.defnr_valr_sesn ('S_SIE_11_PRODT_DEFT',
-                                   obten_code_prodt (pnu_prodt));
-end defnr_prodt_safp;*/
+    cursor cur_tri_alter is
+      select   s.nom,
+               nvl (upper (t.dirct), 'ASC') dirct,
+               t.ordre
+        from   (select   sort_column_1 nom,
+                         sort_direction_1 dirct,
+                         1 ordre
+                  from   apex_ir_rpts
+                 where   id = vnu_rpts_id
+                union all
+                select   sort_column_2 nom,
+                         sort_direction_2 dirct,
+                         2 ordre
+                  from   apex_ir_rpts
+                 where   id = vnu_rpts_id
+                union all
+                select   sort_column_3 nom,
+                         sort_direction_3 dirct,
+                         3 ordre
+                  from   apex_ir_rpts
+                 where   id = vnu_rpts_id
+                union all
+                select   sort_column_4 nom,
+                         sort_direction_4 dirct,
+                         4 ordre
+                  from   apex_ir_rpts
+                 where   id = vnu_rpts_id
+                union all
+                select   sort_column_5 nom,
+                         sort_direction_5 dirct,
+                         5 ordre
+                  from   apex_ir_rpts
+                 where   id = vnu_rpts_id
+                union all
+                select   sort_column_6 nom,
+                         sort_direction_6 dirct,
+                         6 ordre
+                  from   apex_ir_rpts
+                 where   id = vnu_rpts_id) t,
+               (select   cs.column_value nom
+                  from   apex_ir_rpts r,
+                         table (sie_07_util_pkg.strin_to_table_va (r.report_columns)) cs
+                 where   r.id = vnu_rpts_id) s
+       where   t.nom like '%$TRI'
+           and s.nom =    substr (t.nom,
+                                  1,
+                                  length (t.nom) - 4)
+                       || '$AFF';
 
---OBSOLETE::CARLO
-/*
-procedure chang_prodt_safp (pnu_prodt in number) is
-begin
-  defnr_prodt_safp (pnu_prodt);
-  apex_util.ir_reset (12031);
-  apex_util.ir_clear (12031);
-end chang_prodt_safp;
-*/
-end sie_11_prodt_pkg;
+    vva_chemn_image_tri                     varchar2 (100);
+    vnu_nb_coln                             number default 0;
+  begin
+    -- Construire un objet du type: [{coln:'COLONNE$AFF',img:'<img src="/..." />'},{}]
+    -- OU
+    -- Générer du JS: $('#apexir_COLONNE$AFF').append('<img src="/..." />');
+    vnu_rpts_id := sie_13_raprt_inter_pkg.obten_repts_courn ();
+
+    htp.prn ('[');
+
+    for rec_tri_alter in cur_tri_alter loop
+      vnu_nb_coln := vnu_nb_coln + 1;
+
+      if vnu_nb_coln <> 1 then
+        htp.prn (',');
+      end if;
+
+      if rec_tri_alter.dirct = 'ASC' then
+        vva_chemn_image_tri := kva_chemn_image_tri_asc;
+      else
+        vva_chemn_image_tri := kva_chemn_image_tri_desc;
+      end if;
+
+      htp.prn (
+           '{nom:'''
+        || rec_tri_alter.nom
+        || ''','
+        || 'img:''<img align="absmiddle" alt="" src="'
+        || vva_chemn_image_tri
+        || '" />'','
+        || 'ordre:'
+        || rec_tri_alter.ordre
+        || '}'
+      );
+    end loop;
+
+    htp.prn (']');
+  end afich_info_tri_alter;
+end sie_25_tri_alter_pkg;
+/
+
+Prompt Package Body SIE_25_TYPE_PUBLC_PKG;
+/* Formatted on 19/12/2013 11:24:56 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_25_type_publc_pkg is
+  procedure alimn_domn_type_publc (pnu_seqnc in number) is
+    cseqnc                                  vd_i_sie_12_domn.seqnc%type;
+
+    cursor c_domn is
+      select   seqnc
+        from   vd_i_sie_12_domn;
+  begin
+    open c_domn;
+
+    loop
+      fetch c_domn
+      into cseqnc;
+
+      exit when c_domn%notfound;
+
+      if c_domn%found then
+        sie_25_domn_type_publc_pkg.ajout_domn_type_publc (cseqnc,
+                                                          pnu_seqnc);
+      end if;
+    end loop;
+
+    close c_domn;
+  end alimn_domn_type_publc;
+end sie_25_type_publc_pkg;
+/
+
+Prompt Package Body SIE_25_TYPE_TRAVL_PKG;
+/* Formatted on 19/12/2013 11:24:56 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_25_type_travl_pkg is
+  function obten_seqnc (pnu_domn in number,
+                        pva_code in varchar2)
+    return vd_sie_25_type_publc.seqnc%type is
+    vnu_seqnc                               vd_sie_25_type_publc.seqnc%type;
+  begin
+    select   seqnc
+      into   vnu_seqnc
+      from   vd_sie_25_type_travl
+     where   ref_domn = pnu_domn and code = pva_code;
+
+    return vnu_seqnc;
+  exception
+    when no_data_found then
+      return null;
+  end obten_seqnc;
+end sie_25_type_travl_pkg;
+/
+
+Prompt Package Body SIE_29_ASURN_QUALT_CORCT_PKG;
+/* Formatted on 19/12/2013 11:24:56 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_29_asurn_qualt_corct_pkg as
+  procedure corgr_item_hidn (pnu_aplic number) is
+    vnu_id                                  number;
+    vnu_compt                               number (1);
+    vnu_numr_aplic_apex                     number;
+
+    cursor cur_item is
+      select   id,
+               flow_id
+        from   apex_item_page aip
+       where   display_as like '%HIDDEN%'
+           and item_plug_id != (select   id
+                                  from   apex_regn ar
+                                 where   page_id = 0 and plug_name = 'Items cachés' and ar.flow_id = aip.flow_id)
+           and flow_id = (select   numr_aplic_apex
+                            from   vd_i_sie_11_aplic p
+                           where   p.seqnc = pnu_aplic);
+  begin
+    select   numr_aplic_apex
+      into   vnu_numr_aplic_apex
+      from   vd_i_sie_11_aplic p
+     where   p.seqnc = pnu_aplic;
+
+
+    select   count (1)
+      into   vnu_compt
+      from   apex_regn
+     where   page_id = 0 and plug_name = 'Items cachés' and flow_id = vnu_numr_aplic_apex;
+
+    if (vnu_compt != 0) then
+      select   id
+        into   vnu_id
+        from   apex_regn
+       where   page_id = 0 and plug_name = 'Items cachés' and flow_id = vnu_numr_aplic_apex;
+
+      for rec_item in cur_item loop
+        update   apex_item_page aia
+           set   item_plug_id = vnu_id
+         where   aia.id = rec_item.id;
+      end loop;
+    end if;
+  end corgr_item_hidn;
+
+  procedure corgr_ir_aucun_don_trouv (pnu_aplic number) is
+  begin
+    update   apex_ir
+       set   no_data_found_message = '&A_SIE_13_MESG_AUCUN_DON_TROUV.'
+     where   flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic (pnu_aplic)
+         and no_data_found_message != '&A_SIE_13_MESG_AUCUN_DON_TROUV.';
+  end corgr_ir_aucun_don_trouv;
+
+  procedure corgr_ir_trop_don_trouv (pnu_aplic number) is
+  begin
+    update   apex_ir
+       set   max_row_count_message = '&A_SIE_13_MESG_TROP_DON_TROUV.'
+     where   flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic (pnu_aplic)
+         and max_row_count_message != '&A_SIE_13_MESG_TROP_DON_TROUV.';
+  end corgr_ir_trop_don_trouv;
+
+  procedure corgr_regn_trop_don_trouv (pnu_aplic number) is
+  begin
+    update   apex_regn
+       set   plug_query_more_data = '&A_SIE_13_MESG_TROP_DON_TROUV.'
+     where   flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic (pnu_aplic)
+         and (plug_query_more_data != '&A_SIE_13_MESG_TROP_DON_TROUV.'
+           or plug_query_more_data is null)
+         and plug_source_type like '%SQL_QUERY%';
+  end corgr_regn_trop_don_trouv;
+
+  procedure corgr_regn_aucun_don_trouv (pnu_aplic number) is
+  begin
+    update   apex_regn
+       set   plug_query_no_data_found = '&A_SIE_13_MESG_AUCUN_DON_TROUV.'
+     where   flow_id = sie_11_aplic_pkg.obten_numr_apex_aplic (pnu_aplic)
+         and (plug_query_no_data_found != '&A_SIE_13_MESG_AUCUN_DON_TROUV.'
+           or plug_query_no_data_found is null)
+         and plug_source_type like '%SQL_QUERY%';
+  end corgr_regn_aucun_don_trouv;
+end sie_29_asurn_qualt_corct_pkg;
+/
+
+Prompt Package Body SIE_29_ASURN_QUALT_PKG;
+/* Formatted on 19/12/2013 11:24:56 AM (QP5 v5.185.11230.41888) */
+create or replace package body sie_29_asurn_qualt_pkg as
+  procedure exect_reqt (pva_liste_contrl in varchar2,
+                        pnu_page in number default null) is
+    cursor cur_contr is
+      select   c.seqnc,
+               c.nom_struc_acces,
+               c.niv_gravt
+        from   vd_sie_29_contr c
+       where   instr (':' || pva_liste_contrl || ':',
+                      ':' || to_char (c.seqnc) || ':') > 0;
+
+    vva_where                               varchar2 (1000);
+  begin
+    vva_where := 'where flow_id not between 4000 and 4999';
+
+    if pnu_page is not null then
+      vva_where := vva_where || ' and page_id = ' || pnu_page;
+
+      delete   vd_i_sie_29_reslt_requt_aq
+       where   page_id = pnu_page
+           and instr (':' || pva_liste_contrl || ':',
+                      ':' || to_char (ref_contr) || ':') > 0;
+    else
+      delete   vd_i_sie_29_reslt_requt_aq
+       where   instr (':' || pva_liste_contrl || ':',
+                      ':' || to_char (ref_contr) || ':') > 0;
+    end if;
+
+    for rec_contr in cur_contr loop
+      execute immediate
+           'insert into vd_i_sie_29_reslt_requt_aq(ref_contr,id,flow_id,page_id,nom_comps,natr,niv_gravt)
+        select :ref_contr, sa.id, sa.flow_id, sa.page_id, sa.nom_comps, sa.natr, :niv_gravt
+          from '
+        || rec_contr.nom_struc_acces
+        || ' sa '
+        || vva_where
+        using rec_contr.seqnc,
+              rec_contr.niv_gravt;
+    end loop;
+  exception
+    when others then
+      raise;
+  end exect_reqt;
+end sie_29_asurn_qualt_pkg;
 /

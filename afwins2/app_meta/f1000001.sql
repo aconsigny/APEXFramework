@@ -12,7 +12,7 @@ prompt  APPLICATION 1000001 - SAF - SIE APEXFramework (Entrée)
 -- Application Export:
 --   Application:     1000001
 --   Name:            SAF - SIE APEXFramework (Entrée)
---   Date and Time:   22:13 Mercredi Décembre 18, 2013
+--   Date and Time:   11:43 Jeudi Décembre 19, 2013
 --   Exported By:     CONAL
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -30665,4 +30665,4 @@ end;
 commit;
 commit;
 
---export elap=           2.0438
+--export elap=           1.6287

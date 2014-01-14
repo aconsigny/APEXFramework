@@ -12,7 +12,7 @@ prompt  APPLICATION 1000004 - SAFD - SIE APEXFramework - Domaine
 -- Application Export:
 --   Application:     1000004
 --   Name:            SAFD - SIE APEXFramework - Domaine
---   Date and Time:   22:13 Mercredi Décembre 18, 2013
+--   Date and Time:   11:43 Jeudi Décembre 19, 2013
 --   Exported By:     CONAL
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -70842,4 +70842,4 @@ end;
 commit;
 commit;
 
---export elap=          10.8036
+--export elap=           9.8688

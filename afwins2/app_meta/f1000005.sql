@@ -12,7 +12,7 @@ prompt  APPLICATION 1000005 - SAFU - SIE APEXFramework - Utilisateur
 -- Application Export:
 --   Application:     1000005
 --   Name:            SAFU - SIE APEXFramework - Utilisateur
---   Date and Time:   22:13 Mercredi Décembre 18, 2013
+--   Date and Time:   11:43 Jeudi Décembre 19, 2013
 --   Exported By:     CONAL
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -35792,4 +35792,4 @@ end;
 commit;
 commit;
 
---export elap=          12.3929
+--export elap=          11.4287

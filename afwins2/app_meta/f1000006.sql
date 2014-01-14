@@ -12,7 +12,7 @@ prompt  APPLICATION 1000006 - SAFM - SIE APEXFramework - Méthodologie
 -- Application Export:
 --   Application:     1000006
 --   Name:            SAFM - SIE APEXFramework - Méthodologie
---   Date and Time:   22:13 Mercredi Décembre 18, 2013
+--   Date and Time:   11:43 Jeudi Décembre 19, 2013
 --   Exported By:     CONAL
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -46432,4 +46432,4 @@ end;
 commit;
 commit;
 
---export elap=          14.2151
+--export elap=          13.3752
